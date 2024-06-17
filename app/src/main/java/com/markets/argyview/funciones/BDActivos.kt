@@ -1,0 +1,42 @@
+package com.markets.argyview.funciones
+
+import android.util.Log
+
+class BDActivos {
+    companion object{
+        val bonos = listOf("AE38","AE38D","AE38X","AL29","AL29D","AL29X","AL30","AL30C","AL30D","AL30X","AL30Y","AL30Z","AL35","AL35D","AL41","AL41D","AL41X","BA37D","BA7DD","BA7DX","BA7DZ","BB37D","BB7DD","BC37D","BC7DD","BDC24","BDC28","BPA7C","BPA7D","BPB7C","BPB7D","BPB7X","BPB7Z","BPC7C","BPC7D","BPC7X","BPC7Z","BPD7C","BPD7D","BPJ25","BPJ5C","BPJ5D","BPOA7","BPOB7","BPOC7","BPOD7","BPY26","BPY6C","BPY6D","CEDI","CO21X","CO26","CO26D","CO26X","CUAP","DICP","DICPD","DIP0","ERF25","GD29","GD29D","GD30","GD30C","GD30D","GD30X","GD30Y","GD30Z","GD35","GD35D","GD35X","GD35Y","GD35Z","GD38","GD38D","GD38X","GD38Z","GD41","GD41D","GD41X","GD41Z","GD46","GD46D","NDT25","NDT5D","PAP0","PARP","PARPD","PARPX","PARPZ","PAY0","PBA25","PBY24","PM29D","PMM29","PR13","PR17","S24DD","SA24D","T2V4","T2V4X","T2X4","T2X4X","T2X5","T2X5X","T2X5Z","T3X4","T3X4X","T3X5","T4X4","T4X4D","T4X4X","T5X4","T5X4X","T5X4Y","T6X4","T6X4X","TB24","TB27","TC25P","TDA24","TDA4D","TDA4X","TDE25","TDG24","TDG4D","TDG4X","TDJ24","TDJ4D","TDJ4X","TDN24","TO26","TV24","TV24C","TV24D","TV24X","TV25","TV25D","TV25X","TVPA","TVPAD","TVPE","TVPP","TVPPD","TVPY","TVPYX","TX24","TX24D","TX24X","TX24Y","TX24Z","TX25","TX25D","TX25X","TX26","TX26D","TX26X","TX28","TX28D","TX31","TZV25","TZX25","TZX26","TZX27","TZX5X","TZX6D","TZX6X","TZX6Y","TZX6Z","BNA26","BNA6D","BNM25","BNO25","X20Y4","XY4C","XY4D","XY4X","XY4Y","XY4Z")
+        val ONs = listOf("AEC1D","AEC1O","AEC2O","AER5O","AER9O","ARC1D","ARC1O","ATS1O","BACFD","BACFO","BOL1D","BOL1O","CAC2D","CAC2O","CAC5C","CAC5D","CAC5O","CLSID","CLSIO","CP17D","CP17O","CP30D","CP30O","CP31D","CP31O","CP32D","CP32O","CP34D","CP34O","CP34Y","CRCED","CRCEO","CS34D","CS34O","CS35O","CS37D","CS37O","CS38D","CS38O","CS40O","CS42O","CS43O","CS44D","CS44O","CSKZD","CSKZO","DEC1O","DNC1D","DNC1O","DNC2D","DNC2O","DNC3D","DNC3O","DNC4O","DRS9O","DRSBO","EAC1O","FMS1P","FOS2O","FOS3O","GMCGO","GN34D","GN34O","GN35O","GN37O","GN40D","GN40O","GN42O","GN43D","GNCXC","GNCXD","GNCXO","GO12P","GYC1O","HJC7D","HJC9D","IRCBO","IRCED","IRCEO","IRCFD","IRCFO","IRCGD","IRCGO","IRCHD","IRCHO","IRCID","IRCIO","IRCJD","IRCJO","LEC5O","LEC9O","LECAD","LECAO","LECBD","LECBO","LECDO","LECED","LECEO","LECFO","LIC3O","LIC5O","LMS1D","LMS4O","LMS6O","LMS7D","LMS7O","LOC1O","LOC2D","LOC2O","LOC3D","LOC3O","LUC1O","MAC4O","MGC9D","MGC9O","MGCED","MGCEO","MGCGD","MGCGO","MGCHC","MGCHD","MGCHO","MGCJD","MGCJO","MRCAD","MRCAO","MRCBO","MRCFO","MRCGD","MRCGO","MRCHD","MRCHO","MRCID","MRCIO","MRCJO","MRCKO","MRCLD","MRCLO","MRCMO","MRCOO","MRCPO","MRCQD","MRCQO","MRCRO","MRFCD","MROCD","MSSAD","MSSAO","MSSBO","MSSED","MSSEO","MTCGC","MTCGD","MTCGO","MTCIO","MU21O","NLCEO","NPCAD","NPCAO","NPCBD","NPCBO","OLC3O","PEC2O","PEC7O","PECAO","PECBO","PN5CO","PN7CO","PNDCD","PNDCO","PNECO","PNJCO","PNMCD","PNQCX","PNRCO","PNTCC","PNTCD","PNUCO","PNVCO","PNWCO","PQCEO","PQCHO","PQCKO","PQCNO","PQCOO","PUC1O","PZC6O","RAC4D","RAC4O","RCCIO","RCCJD","RCCJO","RCCLO","RCCMD","RCCMO","RFCAC","RFCAD","RFCAO","RFCBO","RUC4D","RUC4O","RUC5D","RUC5O","RUC6D","RUC6O","RUC6Y","RUC6Z","RUC7D","RUC7O","RZ6BO","RZ7BO","SNS8O","SNS9D","SNS9O","SPC1O","T532O","TBC4O","TBC6O","TBC6X","TBC9O","TLC1D","TLC1O","TLC5D","TLC5O","TLC8O","TLC9O","TLCAO","TLCDO","TLCJO","TN52D","TN52O","TTC5O","VIC2D","VSC6O","VSCBO","VSCED","VSCEO","VSCFD","VSCFO","VSCGO","VSCJO","VSCKO","VSCLD","VSCLO","VSCMO","VSCOO","WNCGO","YCA1O","YCA6O","YCA6P","YFCEO","YMCHD","YMCHO","YMCID","YMCIO","YMCJD","YMCJO","YMCMO","YMCNO","YMCOD","YMCOO","YMCPO","YMCQD","YMCQO","YMCRO","YMCTO","YPCUD","YPCUO")
+        val acciones = listOf("ALUA","BBAR","BMA","BYMA","CEPU","COME","CRES","EDN","GGAL","LOMA","MIRG","PAMP","SUPV","TECO2","TGNO4","TGSU2","TRAN","TXAR","VALO","YPFD")
+        val accionesGeneral = listOf("AGRO","ALUAD","AUSO","BHIP","BOLT","BPAT","CADO","CAPX","CARC","CECO2","CELU","CGPA2","CRE3W","CTIO","CVH","DGCU2","DOME","DYCA","FERR","FIPL","GAMI","GARO","GBAN","GCDI","GCLA","GGALD","GRIM","HARG","HAVA","INTR","INVJ","IRS2W","IRSA","LEDE","LONG","METR","MOLA","MOLI","MOLI5","MORI","MTR","OEST","PAMPB","PAMPD","PATA","POLL","REGE","RICH","RIGO","ROSE","SAMI","SEMI","TXARD","YPFDB","YPFDD")
+        val cedears = listOf("AAL","AALD","AAPL","AAPLC","AAPLD","ABBV","ABBVD","ABEV","ABEVD","ABNB","ABNBD","ABT","ABTD","ADBE","ADBED","ADGO","ADGOD","ADI","ADID","ADP","ADS","ADSD","AEG","AEM","AIG","AIGD","AKO.B","AMAT","AMATD","AMD","AMDD","AMGN","AMGND","AMX","AMXD","AMZN","AMZND","ANF","AOCA","AOCAD","ARCO","ARCOD","ARKK","ARKKD","ASR","AVGO","AVGOD","AVY","AVYD","AXP","AXPD","AZN","AZND","BA","BA.C","BA.CD","BABA","BABAD","BAD","BAK","BB","BBD","BBDD","BBV","BBVD","BCS","BHP","BIDU","BIDUD","BIIB","BIIBD","BIOX","BIOXD","BITF","BITFD","BK","BMY","BMYD","BNG","BNGD","BP","BPD","BRFS","BRKB","BRKBD","BSBR","C","C.D","CAAP","CAAPD","CAH","CAHD","CAR","CAT","CATD","CBRD","CBRDD","CDE","CL","CLD","COIN","COIND","COST","COSTD","CRM","CRMD","CSCO","CSCOD","CVX","CVXD","CX","DD","DE","DED","DEO","DESP","DESPD","DIA","DIAD","DISN","DISND","DJNJ3","DOCU","DOCUD","DOW","DOWD","DTEA","E","EA","EAD","EBAY","EBAYD","EBR","EEM","EEMD","EFX","EFXD","ELP","ERIC","ERICD","ERJ","ERJD","ETSY","ETSYD","EWZ","EWZD","F","FCX","FCXD","FD","FDX","FDXD","FMX","FMXD","FSLR","GE","GED","GFI","GGB","GGBD","GILD","GILDD","GLOB","GLOBD","GLW","GM","GMD","GOGLD","GOLD","GOLDD","GOOGL","GPRK","GRMN","GS","GSD","GSK","GSKD","HAL","HALD","HD","HDB","HDD","HL","HMC","HMY","HMYD","HOG","HON","HPQ","HPQD","HSBC","HSY","HSYD","HUT","HUTD","HWM","HWMD","IBM","IBMD","IBN","IFF","INFY","ING","INTC","INTCD","IP","ITUB","ITUBD","IWM","IWMD","JCI","JD","JDD","JMIA","JMIAD","JNJ","JNJD","JPM","JPMD","KB","KEP","KGC","KMB","KO","KOD","KOFM","LLY","LLYD","LMT","LMTD","LND","LRCX","LRCXD","LVS","LYG","MA","MAD","MBG","MCD","MCDD","MDT","MELI","MELID","META","METAD","MFG","MMC","MMM","MMMD","MO","MOD","MOS","MOSD","MRK","MRKD","MSFT","MSFTD","MSI","MSTR","MSTRD","MU","MUD","MUFG","NEM","NEMD","NFLX","NFLXD","NG","NGG","NIO","NIOD","NKE","NKED","NMR","NOKA","NSAN","NTES","NTESD","NUE","NVDA","NVDAD","NVS","NVSD","ORAN","ORCL","ORCLD","OXY","OXYD","PAAS","PAASD","PAC","PANW","PANWD","PBI","PBR","PBRD","PCAR","PCRF","PEP","PEPD","PFE","PFED","PG","PGD","PHG","PKS","PSX","PSXD","PYPL","PYPLD","QCOM","QCOMD","QQQ","QQQD","RBLX","RBLXD","RIO","RIOD","ROST","RTX","RTXD","SAN","SAP","SAPD","SATL","SATLD","SBS","SBUX","SBUXD","SCCO","SE","SED","SHEL","SHELD","SHOP","SHOPD","SID","SLB","SLBD","SMSN","SNA","SNAP","SNOW","SNOWD","SONY","SONYD","SPGI","SPGID","SPOT","SPOTD","SPY","SPYB","SPYD","SQ","SQD","SUZ","SYY","T","TCOM","TCOMD","TD","TEFO","TEN","TEND","TGT","TGTD","TIMB","TM","TMD","TMO","TRIP","TRIPD","TRVV","TSLA","TSLAD","TSM","TSMD","TTE","TV","TWLO","TWLOD","TXN","TXND","TXR","TXRD","UAL","UALD","UBER","UBERD","UGP","UGPD","UL","ULD","UNH","UNHD","UNP","UNPD","UPST","UPSTD","URBN","USB","V","VALE","VALED","VD","VIST","VISTD","VIV","VOD","VODD","VRSN","VZ","VZD","WBA","WBAD","WBO","WBOD","WFC","WFCD","WMT","WMTD","X","XD","XLE","XLEB","XLED","XLF","XLFD","XOM","XOMD","XP","XPD","XROX","YELP","YY","YZCA","ZM","ZMD")
+
+        val arr = bonos + ONs + acciones + accionesGeneral + cedears
+        val mapa = hashMapOf<String,List<String>>(
+            Pair("bonos", bonos) ,
+            Pair("ONs", ONs),
+            Pair("acciones", acciones),
+            Pair("accionesGeneral", accionesGeneral),
+            Pair("cedears", cedears)
+        )
+
+        fun obtenerTipo(ticker:String) : String? {
+            mapa.keys.forEach { k ->
+                if (mapa[k]!!.contains(ticker)){
+                    return@obtenerTipo k
+                }
+            }
+            return "bonos"
+            //throw Exception("No existe el activo $ticker")
+        }
+
+        fun obtenerListado(url:String){
+            var x = Red.conectar(url)
+            var col = x!!.select("#lideres1 > tbody > tr > td:nth-child(1), #lideres > tbody > tr > td:nth-child(1)")
+            var txt = col.map {it.text()}
+                //.filter { !it.endsWith("Z") && !it.endsWith("X") }
+                .toSet()
+                .joinToString("\",\"","\"","\"")
+            Log.i("listado",txt.toString())
+        }
+    }
+}

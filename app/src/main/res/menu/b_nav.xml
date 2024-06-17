@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemFavFragment"
+        android:icon="@drawable/fav_star"
+        android:title="Favoritos"/>
+
+    <item
+        android:id="@+id/itemGrafFragment"
+        android:icon="@drawable/menu_chart"
+        android:title="Gráfico"/>
+
+    <item
+        android:id="@+id/itemCotizFragment"
+        android:icon="@drawable/menu_money"
+        android:title="Cotizaciones"/>
+
+    <item
+        android:id="@+id/itemConfigFragment"
+        android:icon="@drawable/menu_config"
+        android:title="Configuración"/>
+
+</menu>
