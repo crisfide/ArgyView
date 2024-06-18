@@ -85,7 +85,7 @@ class Frag1Fav : Fragment() {
         }
         binding.edtBuscar.setOnEditorActionListener { v, actionId, event ->
             if (actionId == EditorInfo.IME_ACTION_DONE) {
-                SnackbarX.make(binding.root,binding.edtBuscar.text.toString(),Color.BLACK)
+                SnackbarX.make(binding.root,binding.edtBuscar.text.toString(),resources.getColor(R.color.fondo))
                 agregarActivo(binding.edtBuscar.text.toString())
                 return@setOnEditorActionListener true
             }

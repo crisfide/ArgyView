@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="error">#FF770000</color>
+<resources> <!-- LIGHT -->
+    <color name="fondo">#FFFFFFFF</color>
+    <color name="texto">#FF000000</color>
+    <color name="error">#FFDCDA</color>
     <color name="transparent">#00FFFFFF</color>
 
     //activos
