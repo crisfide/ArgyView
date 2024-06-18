@@ -1,9 +1,7 @@
 package com.markets.argyview.funciones
 
-import android.graphics.Color
 import android.view.View
 import com.google.android.material.snackbar.Snackbar
-import com.markets.argyview.R
 
 class SnackbarX {
     companion object{

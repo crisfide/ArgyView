@@ -26,13 +26,14 @@
         android:layout_width="12sp"
         android:layout_height="12sp"
         android:layout_margin="0dp"
+        android:contentDescription="@string/estrella_desc"
         android:src="@drawable/fav_star"
         app:layout_constraintBottom_toBottomOf="@+id/rv_fav_ticker"
         app:layout_constraintEnd_toStartOf="@+id/rv_fav_precio"
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toEndOf="@+id/rv_fav_ticker"
         app:layout_constraintTop_toTopOf="@+id/rv_fav_ticker"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/rv_fav_precio"
@@ -55,13 +56,14 @@
         android:layout_marginTop="7dp"
         android:textColor="@color/sube"
         android:textSize="17sp"
-        tools:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/rv_fav_ticker"
         app:layout_constraintTop_toBottomOf="@+id/rv_fav_precio"
         app:layout_constraintVertical_bias="0.0"
-        tools:text="+30,25%" />
+        tools:ignore="TextContrastCheck"
+        tools:text="+30,25%"
+        tools:textStyle="bold" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,7 @@
 package com.markets.argyview
 
 import android.content.Context.INPUT_METHOD_SERVICE
+import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
@@ -30,11 +31,13 @@ class Frag1Fav : Fragment() {
     private val binding get() = _binding!!
 
     private var favoritos = mutableListOf<Activo>()
+    private lateinit var preferences: SharedPreferences
+    private lateinit var editor: SharedPreferences.Editor
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentFrag1FavBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -42,10 +45,16 @@ class Frag1Fav : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        preferences = this.requireActivity().getSharedPreferences("db", 0)
+        editor = preferences.edit()
+        val tickers = preferences.getStringSet("tickers", mutableSetOf())!!.toList()
+        favoritos += CrearActivo.crear(tickers)
+        favoritos.sortBy { it.ticker }
+
         val adapterEdtBuscar = ArrayAdapter(this.requireContext(),R.layout.edt_buscar_item, BDActivos.arr)
         binding.edtBuscar.setAdapter(adapterEdtBuscar)
 
-        binding.rvFav.adapter = ActivoAdapter(favoritos, this.requireActivity() as MainActivity)
+        binding.rvFav.adapter = ActivoAdapter(favoritos, this)
         val manager = LinearLayoutManager(this.requireContext())
         binding.rvFav.layoutManager = manager
         binding.rvFav.addItemDecoration(DividerItemDecoration(this.requireContext(),manager.orientation))
@@ -83,7 +92,6 @@ class Frag1Fav : Fragment() {
             return@setOnEditorActionListener false
         }
         binding.edtBuscar.setOnItemClickListener { parent, view, position, id ->
-            //SnackbarX.make(binding.root,binding.edtBuscar.text.toString(),Color.BLACK)
             agregarActivo(binding.edtBuscar.text.toString())
         }
 
@@ -109,11 +117,26 @@ class Frag1Fav : Fragment() {
             favoritos.add(activo!!)
             binding.rvFav.adapter!!.notifyItemInserted(favoritos.indexOf(activo))
 
-            //guardarPreferences(activo.ticker)
+            guardarPreferences(activo.ticker)
 
         }catch (e:Exception){
             SnackbarX.make(binding.root,"Error " + e.message, resources.getColor(R.color.error))
         }
+    }
+
+    private fun guardarPreferences(ticker: String) {
+        val tickers = HashSet(preferences.getStringSet("tickers", hashSetOf())!!)
+        tickers.add(ticker)
+        editor.putStringSet("tickers",tickers)
+        editor.apply()
+        Log.i("prefesG",preferences.getStringSet("tickers",null)!!.joinToString(" "))
+    }
+    fun borrarPreferences(ticker: String) {
+        val tickers = HashSet(preferences.getStringSet("tickers", hashSetOf())!!)
+        tickers.remove(ticker)
+        editor.putStringSet("tickers",tickers)
+        editor.apply()
+        Log.i("prefesB",preferences.getStringSet("tickers",null)!!.joinToString(" "))
     }
 
     override fun onDestroyView() {

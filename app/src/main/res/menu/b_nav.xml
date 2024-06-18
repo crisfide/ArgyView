@@ -3,21 +3,21 @@
     <item
         android:id="@+id/itemFavFragment"
         android:icon="@drawable/fav_star"
-        android:title="Favoritos"/>
+        android:title="@string/bNav_favoritos"/>
 
     <item
         android:id="@+id/itemGrafFragment"
         android:icon="@drawable/menu_chart"
-        android:title="Gráfico"/>
+        android:title="@string/bNav_grafico"/>
 
     <item
         android:id="@+id/itemCotizFragment"
         android:icon="@drawable/menu_money"
-        android:title="Cotizaciones"/>
+        android:title="@string/bNav_cotizaciones"/>
 
     <item
         android:id="@+id/itemConfigFragment"
         android:icon="@drawable/menu_config"
-        android:title="Configuración"/>
+        android:title="@string/bNav_configuracion"/>
 
 </menu>

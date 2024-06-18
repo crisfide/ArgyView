@@ -28,6 +28,7 @@
             android:layout_gravity="bottom"
             app:labelVisibilityMode="labeled"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:menu="@menu/b_nav" />
+            app:menu="@menu/b_nav"
+            tools:ignore="VisualLintBottomNav" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

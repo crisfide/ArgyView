@@ -55,14 +55,14 @@ class CrearActivo {
                 val ticker = it.uppercase()
                 lateinit var tipo: String
                 if (!ticker.contains("MEP")) {
-                    tipo = BDActivos.obtenerTipo(ticker)!!
+                    tipo = BDActivos.obtenerTipo(ticker)
                     if (!docs.containsKey(tipo)) docs.put(tipo, Red.conectar(Urls.urlsBolsar[tipo]!!))
                 }
                 return@map when {
                     ticker == "MEP" || ticker == "MEP " || ticker == "DOLAR MEP" || ticker == "DÓLAR MEP" ->
                         calcularMEP("AL30")!!
                     ticker.contains("MEP ") -> calcularMEP(ticker)!!
-                    else -> crearBonoBolsar(ticker, docs[tipo])!!
+                    else -> crearBonoBolsar(ticker, docs[tipo])
                 }
             }
         }
@@ -94,7 +94,7 @@ class CrearActivo {
             }
         }
 
-        private fun crearBonoBonistas(str:String):Bono?{
+        private fun crearBonoBonistas(str:String):Bono{
             var ticker = str
             var moneda = ARS
             if (ticker.startsWith("AL") || ticker.startsWith("AE") ||
@@ -103,12 +103,12 @@ class CrearActivo {
                 if (!ticker.endsWith("D")) ticker += "D"
             }
 
-            var doc = Red.conectar(Urls.urlBonistas)
-            var row = doc!!.getElementById(ticker + "_2") ?: throw Exception("No existe el activo")
+            val doc = Red.conectar(Urls.urlBonistas)
+            val row = doc!!.getElementById(ticker + "_2") ?: throw Exception("No existe el activo")
 
             //var ticker = row!!.getElementById("ticker")!!.text()
-            var precio = row!!.getElementById("last_price")!!.text().toDouble()
-            var dif = row!!.getElementById("day_difference")!!.text()
+            val precio = row.getElementById("last_price")!!.text().toDouble()
+            val dif = row.getElementById("day_difference")!!.text()
                 .replace("=","")
                 .replace("+","")
                 .replace("%","").toDouble()
@@ -117,19 +117,19 @@ class CrearActivo {
         }
 
 
-        private fun crearBonoBolsar(str: String): Activo? {
-            var ticker = str
-            var moneda = establecerMoneda(ticker)
+        private fun crearBonoBolsar(str: String): Activo {
+            val ticker = str
+            val moneda = establecerMoneda(ticker)
             val tipo = BDActivos.obtenerTipo(ticker)
 
-            var doc = Red.conectar(Urls.urlsBolsar[tipo]!!)
-            var row = doc!!.getElementById(ticker + "_24hs") ?: throw Exception("No existe el activo")
+            val doc = Red.conectar(Urls.urlsBolsar[tipo]!!)
+            val row = doc!!.getElementById(ticker + "_24hs") ?: throw Exception("No existe el activo")
 
-            var precio = if (row!!.selectFirst("td:nth-child(7)")!!.text()=="-") 0.0
-                        else row!!.selectFirst("td:nth-child(7)")!!.text()
+            val precio = if (row.selectFirst("td:nth-child(7)")!!.text()=="-") 0.0
+                        else row.selectFirst("td:nth-child(7)")!!.text()
                             .replace(".","")
                             .replace(",",".").toDouble()
-            var dif = row!!.selectFirst("td:nth-child(8)")!!.text()
+            val dif = row.selectFirst("td:nth-child(8)")!!.text()
                 .replace("%","")
                 .replace(",",".").toDouble()
 
@@ -137,17 +137,17 @@ class CrearActivo {
             else Activo(ticker,precio,moneda,dif)
 
         }
-        private fun crearBonoBolsar(str: String, doc:Document?): Bono? {
-            var ticker = str
-            var moneda = establecerMoneda(ticker)
+        private fun crearBonoBolsar(str: String, doc:Document?): Bono {
+            val ticker = str
+            val moneda = establecerMoneda(ticker)
 
-            var row = doc!!.getElementById(ticker + "_24hs") ?: throw Exception("No existe el activo")
+            val row = doc!!.getElementById(ticker + "_24hs") ?: throw Exception("No existe el activo")
 
-            var precio = if (row!!.selectFirst("td:nth-child(7)")!!.text()=="-") 0.0
-                        else row!!.selectFirst("td:nth-child(7)")!!.text()
+            val precio = if (row.selectFirst("td:nth-child(7)")!!.text()=="-") 0.0
+                        else row.selectFirst("td:nth-child(7)")!!.text()
                             .replace(".","")
                             .replace(",",".").toDouble()
-            var dif = row!!.selectFirst("td:nth-child(8)")!!.text()
+            val dif = row.selectFirst("td:nth-child(8)")!!.text()
                 .replace("%","")
                 .replace(",",".").toDouble()
 
@@ -155,7 +155,7 @@ class CrearActivo {
         }
 
         fun crearBonoBYMA(str: String): Bono? {
-            var ticker = str
+            val ticker = str
             var moneda = establecerMoneda(ticker)
 
             var json = Red.conectar(Urls.urlBymaBonos,
@@ -173,7 +173,7 @@ class CrearActivo {
         }
 
         private fun establecerMoneda(ticker: String): String {
-            var moneda = if (ticker.endsWith("D")) USD else ARS
+            val moneda = if (ticker.endsWith("D")) USD else ARS
             return when (ticker){
                 "YPFD" -> ARS
                 "BA37D" -> ARS

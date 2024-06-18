@@ -13,7 +13,7 @@
         android:id="@+id/textInputLayoutBuscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/textInputLayoutTitulo"
+        android:hint="@string/textInputLayout_desc"
         app:boxBackgroundMode="filled"
 
         app:endIconMode="clear_text"
@@ -23,17 +23,18 @@
         app:layout_constraintTop_toTopOf="parent"
         android:paddingTop="50dp"
         >
+
         <AutoCompleteTextView
             android:id="@+id/edtBuscar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:padding="1dp"
-            android:maxLines="1"
-            android:inputType="text"
             android:imeOptions="actionDone"
+            android:inputType="text"
             android:labelFor="@+id/edtBuscar"
-            />
+            android:maxLines="1"
+            android:padding="1dp"
+            android:textSize="15sp"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

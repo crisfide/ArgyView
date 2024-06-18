@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.markets.argyview.databinding.FragmentFrag1FavBinding
 import com.markets.argyview.databinding.FragmentFrag2GrafBinding
 import com.markets.argyview.funciones.SnackbarX
 
@@ -19,7 +18,7 @@ class Frag2Graf : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentFrag2GrafBinding.inflate(inflater, container, false)
         return binding.root
     }

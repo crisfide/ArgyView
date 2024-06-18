@@ -2,30 +2,18 @@ package com.markets.argyview.funciones
 
 import android.content.Context
 import android.net.ConnectivityManager
-import android.os.StrictMode
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.viewmodel.viewModelFactory
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import org.jsoup.Connection
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
-import java.io.BufferedReader
-import java.io.IOException
-import java.io.InputStream
-import java.io.InputStreamReader
-import java.net.HttpURLConnection
-import java.net.URL
 
 class Red {
     companion object{
-        @Throws(IOException::class)
+
+        /*@Throws(IOException::class)
         fun downloadData(url:String):String {
             //Envia solicitud HTTP y devuelve String
             val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
@@ -46,13 +34,13 @@ class Red {
                     inputStream.close()
                 }
             }
-        }
-        fun downloadData(url:String, body: String):String {
+        }*/
+        /*fun downloadData(url:String, body: String):String {
             //Envia solicitud HTTP y devuelve String
             val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
             StrictMode.setThreadPolicy(policy)
 
-            var inputStream: InputStream? = null
+            val inputStream: InputStream? = null
             try {
                 val url = URL(url)
                 val connection = url.openConnection() as HttpURLConnection
@@ -86,7 +74,7 @@ class Red {
                     inputStream.close()
                 }
             }
-        }
+        }*/
 
         @OptIn(DelicateCoroutinesApi::class)
         @JvmStatic
@@ -111,7 +99,7 @@ class Red {
         fun conectar(url:String, body:String): String? {
             //Envia solicitud HTTP y devuelve documentoHTML de Jsoup
 
-            var response:Document? = null
+            var response:Document?
             try {
                 runBlocking(Dispatchers.IO) {
                     response = Jsoup.connect(url)

@@ -19,7 +19,7 @@ class BDActivos {
             Pair("cedears", cedears)
         )
 
-        fun obtenerTipo(ticker:String) : String? {
+        fun obtenerTipo(ticker:String) : String {
             mapa.keys.forEach { k ->
                 if (mapa[k]!!.contains(ticker)){
                     return@obtenerTipo k
@@ -30,13 +30,13 @@ class BDActivos {
         }
 
         fun obtenerListado(url:String){
-            var x = Red.conectar(url)
-            var col = x!!.select("#lideres1 > tbody > tr > td:nth-child(1), #lideres > tbody > tr > td:nth-child(1)")
-            var txt = col.map {it.text()}
+            val x = Red.conectar(url)
+            val col = x!!.select("#lideres1 > tbody > tr > td:nth-child(1), #lideres > tbody > tr > td:nth-child(1)")
+            val txt = col.map {it.text()}
                 //.filter { !it.endsWith("Z") && !it.endsWith("X") }
                 .toSet()
                 .joinToString("\",\"","\"","\"")
-            Log.i("listado",txt.toString())
+            Log.i("listado",txt)
         }
     }
 }

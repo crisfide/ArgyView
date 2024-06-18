@@ -2,5 +2,19 @@
     <string name="app_name">Argy View</string>
 
     //frag1Fav
-    <string name="textInputLayoutTitulo">Ticker o símbolo</string>
+    <string name="textInputLayout_desc">Ticker o símbolo</string>
+    <string name="estrella_desc">estrella</string>
+
+
+    //toDo
+    <string name="grafico_to_do">Grafico disponible proximamente…</string>
+    <string name="cotizaciones_to_do">Cotizaciones disponibles proximamente…</string>
+    <string name="configuracion_to_do">Configuracion…</string>
+
+
+    //barra de nav inferior
+    <string name="bNav_favoritos">Favoritos</string>
+    <string name="bNav_grafico">Gráfico</string>
+    <string name="bNav_cotizaciones">Cotizaciones</string>
+    <string name="bNav_configuracion">Configuración</string>
 </resources>
