@@ -5,7 +5,10 @@
     <color name="error">#FF770000</color>
     <color name="transparent">#00FFFFFF</color>
 
-    <color name="sube">#4CAF50</color>
-    <color name="baja">#F44336</color>
-    <color name="fav">#FFEB3B</color>
+    //activos
+    <color name="sube">#01A363</color>
+    <color name="baja">#BC0D00</color>
+    <color name="fav">#CCBC33</color>
+
+    <color name="my_light_primary">#2196F3</color>
 </resources>

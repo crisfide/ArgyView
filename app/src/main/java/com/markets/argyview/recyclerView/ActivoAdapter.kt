@@ -36,7 +36,8 @@ class ActivoAdapter(var favoritos:MutableList<Activo>, val frag1Fav: Frag1Fav)
             binding.rvFavTicker.text = activo.ticker
             binding.rvFavPrecio.text = activo.precioF
             binding.rvFavDif.text = activo.difF
-            binding.rvFavDif.setTextColor(if (activo.dif<0) Color.RED else Color.GREEN)
+            val res = frag1Fav.resources
+            binding.rvFavDif.setTextColor(if (activo.dif<0) res.getColor(R.color.baja) else res.getColor(R.color.sube))
 
             binding.rvFavEstrella.setOnClickListener {
                 activo.fav=false

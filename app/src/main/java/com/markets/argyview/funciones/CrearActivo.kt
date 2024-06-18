@@ -135,11 +135,11 @@ class CrearActivo {
 
             return if (tipo == "bonos" || tipo == "ONs") Bono(ticker, precio, moneda, dif, obtenerFlujo(ticker))
             else Activo(ticker,precio,moneda,dif)
-
         }
-        private fun crearBonoBolsar(str: String, doc:Document?): Bono {
+        private fun crearBonoBolsar(str: String, doc:Document?): Activo {
             val ticker = str
             val moneda = establecerMoneda(ticker)
+            val tipo = BDActivos.obtenerTipo(ticker)
 
             val row = doc!!.getElementById(ticker + "_24hs") ?: throw Exception("No existe el activo")
 
@@ -151,7 +151,8 @@ class CrearActivo {
                 .replace("%","")
                 .replace(",",".").toDouble()
 
-            return Bono(ticker,precio,moneda,dif, obtenerFlujo(ticker))
+            return if (tipo == "bonos" || tipo == "ONs") Bono(ticker, precio, moneda, dif, obtenerFlujo(ticker))
+            else Activo(ticker,precio,moneda,dif)
         }
 
         fun crearBonoBYMA(str: String): Bono? {
