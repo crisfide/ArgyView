@@ -1,8 +1,6 @@
 package com.markets.argyview.funciones
 
-import android.os.Build
 import android.util.Log
-import androidx.annotation.RequiresApi
 import com.markets.argyview.activos.Activo
 import com.markets.argyview.activos.Bono
 import com.markets.argyview.activos.PagoBono
@@ -40,7 +38,7 @@ class CrearActivo {
         val USD = "US$"
 
         fun crear(str: String):Activo?{
-            var ticker = str.uppercase()
+            val ticker = str.uppercase()
             return when {
                 ticker == "MEP" || ticker == "MEP " || ticker == "DOLAR MEP" || ticker == "DÓLAR MEP" ->
                     calcularMEP("AL30")
@@ -52,7 +50,7 @@ class CrearActivo {
 
         fun crear(arr: List<String>):List<Activo>{
             //val doc = Red.conectar(Urls.urlBolsarBonos)
-            var docs = hashMapOf<String, Document?>()
+            val docs = hashMapOf<String, Document?>()
             return arr.map {
                 val ticker = it.uppercase()
                 lateinit var tipo: String
@@ -70,15 +68,15 @@ class CrearActivo {
         }
 
         private fun calcularMEP(str: String): Activo? {
-            var tickerP = str.replace("MEP","").trim()
+            val tickerP = str.replace("MEP","").trim()
 
-            var bonos = crear(tickerP, dolarizarActivo(tickerP))
-            var bonoP = bonos[0]
-            var bonoD = bonos[1]
+            val bonos = crear(tickerP, dolarizarActivo(tickerP))
+            val bonoP = bonos[0]
+            val bonoD = bonos[1]
 
             if (bonoP == null || bonoD == null) return null
 
-            var dif = (((bonoP.dif+100.0)/(bonoD.dif+100.0))-1.0)*100
+            val dif = (((bonoP.dif+100.0)/(bonoD.dif+100.0))-1.0)*100
             return Activo("MEP "+tickerP,bonoP.precio/bonoD.precio, ARS,dif )
         }
 
@@ -196,7 +194,15 @@ class CrearActivo {
                 (PagoBono(LocalDate.of(2024, 5, 1), 10.0, 0.0)),
                 (PagoBono(LocalDate.of(2025, 5, 1), 15.0, 0.0)),
                 (PagoBono(LocalDate.of(2026, 5, 1), 20.0, 0.0)),
-                (PagoBono(LocalDate.of(2027, 5, 1), 25.0, 100.0))
+                (PagoBono(LocalDate.of(2027, 5, 1), 10.0, 0.0)),
+                (PagoBono(LocalDate.of(2028, 5, 1), 15.0, 0.0)),
+                (PagoBono(LocalDate.of(2029, 5, 1), 20.0, 0.0)),
+                (PagoBono(LocalDate.of(2030, 5, 1), 15.0, 0.0)),
+                (PagoBono(LocalDate.of(2031, 5, 1), 20.0, 0.0)),
+                (PagoBono(LocalDate.of(2032, 5, 1), 10.0, 0.0)),
+                (PagoBono(LocalDate.of(2033, 5, 1), 15.0, 0.0)),
+                (PagoBono(LocalDate.of(2034, 5, 1), 20.0, 0.0)),
+                (PagoBono(LocalDate.of(2035, 5, 1), 25.0, 100.0))
             )
         }
 

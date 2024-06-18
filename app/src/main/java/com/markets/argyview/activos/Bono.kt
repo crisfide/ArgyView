@@ -17,12 +17,12 @@ open class Bono(ticker: String, precio: Double, moneda: String, dif: Double,
                 @Expose val flujo : List<PagoBono>) : Activo(ticker, precio, moneda, dif) {
 
     fun getTIR():Double{
-        var compra = Transaction(-this.precio, LocalDate.now())
-        var trans:List<Transaction> =  flujo.filter { it.fecha > LocalDate.now() }.map {
+        val compra = Transaction(-this.precio, LocalDate.now())
+        val trans:List<Transaction> =  flujo.filter { it.fecha > LocalDate.now() }.map {
             Transaction(it.cupon+it.amort, it.fecha)
         } + compra
 
-        var tasa = Xirr(trans).xirr()
+        val tasa = Xirr(trans).xirr()
         return tasa
     }
     fun getTIRf() = String.format("%.2f",this.getTIR()*100) + "%"
@@ -30,13 +30,13 @@ open class Bono(ticker: String, precio: Double, moneda: String, dif: Double,
     fun getVN():Double = this.flujo.filter { it.fecha > LocalDate.now() }.sumOf { it.amort }
 
     fun getValTec():Double{
-        var hoy = LocalDate.now()
-        var ultCupon: PagoBono = this.flujo.filter { it.fecha < hoy }.last()
-        var proxCupon: PagoBono = this.flujo.filter { it.fecha > hoy }.first()
+        val hoy = LocalDate.now()
+        val ultCupon: PagoBono = this.flujo.filter { it.fecha < hoy }.last()
+        val proxCupon: PagoBono = this.flujo.filter { it.fecha > hoy }.first()
 
-        var diasPasados = ChronoUnit.DAYS.between(ultCupon.fecha, hoy)
-        var diasTotales = ChronoUnit.DAYS.between(ultCupon.fecha, proxCupon.fecha)
-        var intCorrido = diasPasados * proxCupon.cupon /diasTotales
+        val diasPasados = ChronoUnit.DAYS.between(ultCupon.fecha, hoy)
+        val diasTotales = ChronoUnit.DAYS.between(ultCupon.fecha, proxCupon.fecha)
+        val intCorrido = diasPasados * proxCupon.cupon /diasTotales
 
         return getVN() + intCorrido
     }
@@ -45,21 +45,21 @@ open class Bono(ticker: String, precio: Double, moneda: String, dif: Double,
 
     @RequiresApi(Build.VERSION_CODES.O)
     fun getMD():Double{
-        var flujoDesc = this.flujo.filter { it.fecha > LocalDate.now() }
+        val flujoDesc = this.flujo.filter { it.fecha > LocalDate.now() }
             .mapIndexed { i, pago ->
                 (pago.cupon + pago.amort) / (1 + this.getTIR()).pow(i+1)
             }
-        var precioDesc = flujoDesc.sum()
-        var dMAC = flujoDesc.reduceIndexed { i, a, v ->
+        val precioDesc = flujoDesc.sum()
+        val dMAC = flujoDesc.reduceIndexed { i, a, v ->
             flujoDesc[i] * (i+1) / precioDesc
         }
 
-        var flujoFuturo = this.flujo.filter { it.fecha > LocalDate.now() }
-        var periodos = mutableListOf<Long>()
+        val flujoFuturo = this.flujo.filter { it.fecha > LocalDate.now() }
+        val periodos = mutableListOf<Long>()
         for (i in 1..< flujoFuturo.size){
             periodos.add(ChronoUnit.DAYS.between(flujoFuturo[i-1].fecha, flujoFuturo[i].fecha))
         }
-        var frecuencia = 1 / (periodos.average() / 365)
+        val frecuencia = 1 / (periodos.average() / 365)
         Log.i("pagobono",frecuencia.toString())
 
         return dMAC / (1+this.getTIR()) / frecuencia

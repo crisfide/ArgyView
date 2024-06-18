@@ -1,8 +1,6 @@
 package com.markets.argyview
 
-import android.app.Activity
 import android.content.Context.INPUT_METHOD_SERVICE
-import android.content.res.Resources
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
@@ -14,7 +12,6 @@ import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.getSystemService
 import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -45,7 +42,7 @@ class Frag1Fav : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        var adapterEdtBuscar = ArrayAdapter(this.requireContext(),R.layout.edt_buscar_item, BDActivos.arr)
+        val adapterEdtBuscar = ArrayAdapter(this.requireContext(),R.layout.edt_buscar_item, BDActivos.arr)
         binding.edtBuscar.setAdapter(adapterEdtBuscar)
 
         binding.rvFav.adapter = ActivoAdapter(favoritos, this.requireActivity() as MainActivity)
@@ -69,8 +66,8 @@ class Frag1Fav : Fragment() {
         }
 
         binding.edtBuscar.addTextChangedListener {
-            var str = binding.edtBuscar.text.toString().uppercase()
-            var cursor = binding.edtBuscar.selectionStart
+            val str = binding.edtBuscar.text.toString().uppercase()
+            val cursor = binding.edtBuscar.selectionStart
             if (str == binding.edtBuscar.text.toString()){
                 return@addTextChangedListener
             }
@@ -108,7 +105,7 @@ class Frag1Fav : Fragment() {
                 if (it.ticker == ticker || it.ticker == "$ticker AL30")
                     throw Exception("El activo ya esta en favoritos")
             }
-            var activo = CrearActivo.crear(ticker)
+            val activo = CrearActivo.crear(ticker)
             favoritos.add(activo!!)
             binding.rvFav.adapter!!.notifyItemInserted(favoritos.indexOf(activo))
 
