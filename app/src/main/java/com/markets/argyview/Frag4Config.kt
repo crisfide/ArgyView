@@ -27,7 +27,7 @@ class Frag4Config : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.txtConfigFalopa.setOnClickListener {
-            SnackbarX.make(binding.root,"holarlem 4", Color.BLACK)
+            SnackbarX.make(binding.root,"holarlem 4", resources.getColor(R.color.fondo))
         }
 
     }

@@ -2,7 +2,6 @@ package com.markets.argyview
 
 import android.content.Context.INPUT_METHOD_SERVICE
 import android.content.SharedPreferences
-import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -42,17 +41,26 @@ class Frag1Fav : Fragment() {
         return binding.root
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val adapterEdtBuscar = ArrayAdapter(this.requireContext(),R.layout.edt_buscar_item, BDActivos.arr)
+        binding.edtBuscar.setAdapter(adapterEdtBuscar)
+
+        if (!Red.isConnected(this.requireActivity() as AppCompatActivity)){
+            SnackbarX.make(binding.root,"No hay conexión a internet", resources.getColor(R.color.error))
+        }
 
         preferences = this.requireActivity().getSharedPreferences("db", 0)
         editor = preferences.edit()
         val tickers = preferences.getStringSet("tickers", mutableSetOf())!!.toList()
-        favoritos += CrearActivo.crear(tickers)
-        favoritos.sortBy { it.ticker }
-
-        val adapterEdtBuscar = ArrayAdapter(this.requireContext(),R.layout.edt_buscar_item, BDActivos.arr)
-        binding.edtBuscar.setAdapter(adapterEdtBuscar)
+        try {
+            favoritos.addAll(CrearActivo.crear(tickers))
+            favoritos.sortBy { it.ticker }
+        }catch (e:Exception){
+            Log.e("prefs", e.message.toString())
+        }
 
         binding.rvFav.adapter = ActivoAdapter(favoritos, this)
         val manager = LinearLayoutManager(this.requireContext())
@@ -62,16 +70,21 @@ class Frag1Fav : Fragment() {
         binding.swipePLayout.setColorSchemeResources(R.color.sube, R.color.baja)
         binding.swipePLayout.setOnRefreshListener {
             try {
-                val tickers = favoritos.map { it.ticker }
-                tickers.forEach { Log.e("swipeERROR",it) }
+                if (!Red.isConnected(this.requireActivity() as AppCompatActivity)){
+                    SnackbarX.make(binding.root,"No hay conexión a internet", resources.getColor(R.color.error))
+                    throw Exception("No hay conexión a internet")
+                }
+                //val tickers = favoritos.map { it.ticker }
                 favoritos.removeAll(favoritos)
+
                 favoritos.addAll(CrearActivo.crear(tickers))
                 binding.rvFav.adapter!!.notifyItemRangeChanged(0,favoritos.size)
-                binding.swipePLayout.isRefreshing=false
 
             }catch (e:Exception){
-                SnackbarX.make(binding.root,e.message.toString(),resources.getColor(R.color.error))
+                Log.e("swipeLayout", e.message.toString())
             }
+
+            binding.swipePLayout.isRefreshing=false
         }
 
         binding.edtBuscar.addTextChangedListener {
@@ -85,7 +98,6 @@ class Frag1Fav : Fragment() {
         }
         binding.edtBuscar.setOnEditorActionListener { v, actionId, event ->
             if (actionId == EditorInfo.IME_ACTION_DONE) {
-                SnackbarX.make(binding.root,binding.edtBuscar.text.toString(),resources.getColor(R.color.fondo))
                 agregarActivo(binding.edtBuscar.text.toString())
                 return@setOnEditorActionListener true
             }

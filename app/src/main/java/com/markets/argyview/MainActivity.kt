@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
 
     private lateinit var navigation : BottomNavigationView
+
     private val mOnNavMenu = BottomNavigationView.OnNavigationItemSelectedListener{item->
         when(item.itemId){
             R.id.itemFavFragment->{
@@ -65,12 +66,6 @@ class MainActivity : AppCompatActivity() {
                 setReorderingAllowed(true)
                 add<Frag1Fav>(R.id.fragmentContainer)
             }
-        }
-
-
-        if (!Red.isConnected(this)){
-            SnackbarX.make(binding.root,"No hay conexión a internet", resources.getColor(R.color.error))
-            return
         }
 
     }
