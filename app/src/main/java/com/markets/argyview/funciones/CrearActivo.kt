@@ -5,6 +5,7 @@ import com.markets.argyview.activos.Activo
 import com.markets.argyview.activos.Bono
 import com.markets.argyview.activos.PagoBono
 import org.jsoup.nodes.Document
+import org.jsoup.select.Elements
 import java.time.LocalDate
 
 class CrearActivo {
@@ -20,11 +21,11 @@ class CrearActivo {
             val urlBolsarCedears = urlBolsar+"Cedears.php"
 
             val urlsBolsar = hashMapOf<String,String>(
-                Pair("bonos", urlBolsarBonos) ,
-                Pair("ONs", urlBolsarONs),
-                Pair("acciones", urlBolsarAcciones),
-                Pair("accionesGeneral", urlBolsarPGeneral),
-                Pair("cedears", urlBolsarCedears)
+                Pair("Bonos", urlBolsarBonos) ,
+                Pair("Obligaciones negociables", urlBolsarONs),
+                Pair("Acciones", urlBolsarAcciones),
+                Pair("Panel General", urlBolsarPGeneral),
+                Pair("Cedears", urlBolsarCedears)
             )
 
             private val urlByma = "https://open.bymadata.com.ar/vanoms-be-core/rest/api/bymadata/free/"
@@ -67,6 +68,27 @@ class CrearActivo {
             }
         }
 
+        fun crear(tipo: String, doc: Document?):List<Activo>{
+            val rows = doc!!.select("#lideres > tbody > tr")
+
+            /*for (row in rows){
+                if (row.id().endsWith("_24hs")){
+
+                }
+            }*/
+            val rows24 = rows.filter { element -> element.id().endsWith("_24hs") }
+            val primerasCeldas = rows24.map { it.select("td:nth-child(1)") }
+            val lista = primerasCeldas.map { it.text() }
+
+            Log.i("creapb",lista.joinToString("-"))
+            return lista.map { crearBonoBolsar(it,doc) }
+        }
+
+        fun crearPanelBolsar(tipo:String):List<Activo>{
+            val doc = Red.conectar(Urls.urlsBolsar[tipo]!!)
+            return crear(tipo, doc)
+        }
+
         private fun calcularMEP(str: String): Activo? {
             val tickerP = str.replace("MEP","").trim()
 
@@ -104,7 +126,7 @@ class CrearActivo {
             }
 
             val doc = Red.conectar(Urls.urlBonistas)
-            val row = doc!!.getElementById(ticker + "_2") ?: throw Exception("No existe el activo")
+            val row = doc!!.getElementById(ticker + "_2") ?: throw Exception("No existe el activo" + ticker)
 
             //var ticker = row!!.getElementById("ticker")!!.text()
             val precio = row.getElementById("last_price")!!.text().toDouble()
@@ -123,7 +145,7 @@ class CrearActivo {
             val tipo = BDActivos.obtenerTipo(ticker)
 
             val doc = Red.conectar(Urls.urlsBolsar[tipo]!!)
-            val row = doc!!.getElementById(ticker + "_24hs") ?: throw Exception("No existe el activo")
+            val row = doc!!.getElementById(ticker + "_24hs") ?: throw Exception("No existe el activo" + ticker)
 
             val precio = if (row.selectFirst("td:nth-child(7)")!!.text()=="-") 0.0
                         else row.selectFirst("td:nth-child(7)")!!.text()
@@ -133,7 +155,7 @@ class CrearActivo {
                 .replace("%","")
                 .replace(",",".").toDouble()
 
-            return if (tipo == "bonos" || tipo == "ONs") Bono(ticker, precio, moneda, dif, obtenerFlujo(ticker))
+            return if (tipo == "Bonos" || tipo == "Obligaciones negociables") Bono(ticker, precio, moneda, dif, obtenerFlujo(ticker))
             else Activo(ticker,precio,moneda,dif)
         }
         private fun crearBonoBolsar(str: String, doc:Document?): Activo {
@@ -141,7 +163,7 @@ class CrearActivo {
             val moneda = establecerMoneda(ticker)
             val tipo = BDActivos.obtenerTipo(ticker)
 
-            val row = doc!!.getElementById(ticker + "_24hs") ?: throw Exception("No existe el activo")
+            val row = doc!!.getElementById(ticker + "_24hs") ?: throw Exception("No existe el activo" + ticker)
 
             val precio = if (row.selectFirst("td:nth-child(7)")!!.text()=="-") 0.0
                         else row.selectFirst("td:nth-child(7)")!!.text()
@@ -151,7 +173,7 @@ class CrearActivo {
                 .replace("%","")
                 .replace(",",".").toDouble()
 
-            return if (tipo == "bonos" || tipo == "ONs") Bono(ticker, precio, moneda, dif, obtenerFlujo(ticker))
+            return if (tipo == "Bonos" || tipo == "Obligaciones negociables") Bono(ticker, precio, moneda, dif, obtenerFlujo(ticker))
             else Activo(ticker,precio,moneda,dif)
         }
 

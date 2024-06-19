@@ -6,6 +6,18 @@
     <string name="estrella_desc">estrella</string>
 
 
+    //frag3Cotiz
+    <string-array name="paneles">
+        <item>Acciones</item>
+        <item>Panel General</item>
+        <item>Opciones</item>
+        <item>Cedears</item>
+        <item>Bonos</item>
+        <item>Letras</item>
+        <item>Obligaciones negociables</item>
+    </string-array>
+
+
     //toDo
     <string name="grafico_to_do">Grafico disponible proximamente…</string>
     <string name="cotizaciones_to_do">Cotizaciones disponibles proximamente…</string>

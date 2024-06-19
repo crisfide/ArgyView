@@ -7,8 +7,8 @@ import androidx.fragment.app.commit
 import androidx.fragment.app.replace
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.markets.argyview.databinding.ActivityMainBinding
-import com.markets.argyview.funciones.Red
-import com.markets.argyview.funciones.SnackbarX
+import com.markets.argyview.funciones.BDActivos
+import com.markets.argyview.funciones.CrearActivo
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
@@ -67,6 +67,7 @@ class MainActivity : AppCompatActivity() {
                 add<Frag1Fav>(R.id.fragmentContainer)
             }
         }
+
 
     }
 

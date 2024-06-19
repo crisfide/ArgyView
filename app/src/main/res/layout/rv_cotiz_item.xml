@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/rv_fav_ticker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="AL30D" />
+
+    <ImageView
+        android:id="@+id/rv_fav_estrella"
+        android:layout_width="12sp"
+        android:layout_height="12sp"
+        android:layout_margin="0dp"
+        android:contentDescription="@string/estrella_desc"
+        android:src="@drawable/fav_star_no"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_fav_ticker"
+        app:layout_constraintEnd_toStartOf="@+id/rv_fav_precio"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/rv_fav_ticker"
+        app:layout_constraintTop_toTopOf="@+id/rv_fav_ticker"
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/rv_fav_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/rv_fav_ticker"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="$ 33.000,00" />
+
+    <TextView
+        android:id="@+id/rv_fav_dif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/sube"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/rv_fav_ticker"
+        app:layout_constraintTop_toBottomOf="@+id/rv_fav_precio"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck"
+        tools:text="+30,25%"
+        tools:textStyle="bold" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
