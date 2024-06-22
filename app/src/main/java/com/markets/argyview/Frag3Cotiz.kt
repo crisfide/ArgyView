@@ -1,5 +1,6 @@
 package com.markets.argyview
 
+import android.annotation.SuppressLint
 import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Bundle
@@ -114,6 +115,7 @@ class Frag3Cotiz : Fragment() {
 
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     suspend fun cargarCotiz(tipo:String){
         try {
             //val arr = CrearActivo.crear(BDActivos.mapa[tipo]!!)
@@ -126,13 +128,14 @@ class Frag3Cotiz : Fragment() {
                 val manager = LinearLayoutManager(this.requireContext())
                 binding.rvCotiz.layoutManager = manager
                 binding.rvCotiz.addItemDecoration(DividerItemDecoration(this.requireContext(),manager.orientation))
-                Log.i("spinner", "1ra vez")
             }else{
                 listado.removeAll(listado)
                 listado.addAll(CrearActivo.crearPanelBolsar(tipo))
                 listado.sortBy { it.ticker }
-                binding.rvCotiz.adapter!!.notifyItemRangeChanged(0,listado.size)
-
+                Log.i("spinner",listado.joinToString("-"){it.ticker})
+                Log.i("spinner","itemcount"+ binding.rvCotiz.adapter!!.itemCount )
+                binding.rvCotiz.adapter!!.notifyDataSetChanged()
+                //binding.rvCotiz.adapter!!.notifyItemRangeChanged(0, listado.size)
             }
         }catch (e:Exception){
             Log.e("spinnerError", e.message.toString())
