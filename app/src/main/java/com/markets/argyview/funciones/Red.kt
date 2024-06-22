@@ -4,9 +4,15 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.withContext
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 
@@ -78,7 +84,7 @@ class Red {
 
         @OptIn(DelicateCoroutinesApi::class)
         @JvmStatic
-        fun conectar(url:String): Document? {
+        fun conectar2(url:String): Document? {
             //Envia solicitud HTTP y devuelve documentoHTML de Jsoup
             //val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
             //StrictMode.setThreadPolicy(policy)
@@ -90,6 +96,21 @@ class Red {
 
             return doc
         }
+
+        suspend fun conectar(url: String): Document? {
+            return withContext(Dispatchers.IO) {
+                try {
+                    val asyncResult = async {
+                        Jsoup.connect(url).get()
+                    }
+                    asyncResult.await()
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                    null
+                }
+            }
+        }
+
 
         @JvmStatic
         fun conectar(url:String, body:String): String? {

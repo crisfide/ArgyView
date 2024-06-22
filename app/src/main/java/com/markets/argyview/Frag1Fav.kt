@@ -13,6 +13,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.markets.argyview.activos.Activo
@@ -22,6 +23,10 @@ import com.markets.argyview.funciones.CrearActivo
 import com.markets.argyview.funciones.Red
 import com.markets.argyview.funciones.SnackbarX
 import com.markets.argyview.recyclerView.ActivoAdapter
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 
 class Frag1Fav : Fragment() {
@@ -55,36 +60,53 @@ class Frag1Fav : Fragment() {
         preferences = this.requireActivity().getSharedPreferences("db", 0)
         editor = preferences.edit()
         val tickers = preferences.getStringSet("tickers", mutableSetOf())!!.toList()
-        try {
-            favoritos.addAll(CrearActivo.crear(tickers))
-            favoritos.sortBy { it.ticker }
-        }catch (e:Exception){
-            Log.e("prefs", e.message.toString())
+        viewLifecycleOwner.lifecycleScope.launch{
+            try {
+                withContext(Dispatchers.Main){
+                    SnackbarX.make(binding.root,"Cargando...",resources.getColor(R.color.fondo))
+                }
+                favoritos.addAll(CrearActivo.crear(tickers))
+                withContext(Dispatchers.Main){
+                    favoritos.sortBy { it.ticker }
+                    binding.rvFav.adapter = ActivoAdapter(favoritos, this@Frag1Fav)
+                    val manager = LinearLayoutManager(this@Frag1Fav.requireContext())
+                    binding.rvFav.layoutManager = manager
+                    binding.rvFav.addItemDecoration(DividerItemDecoration(this@Frag1Fav.requireContext(),manager.orientation))
+                }
+            }catch (e:Exception){
+                Log.e("prefs", e.message.toString())
+            }
         }
 
-        binding.rvFav.adapter = ActivoAdapter(favoritos, this)
-        val manager = LinearLayoutManager(this.requireContext())
-        binding.rvFav.layoutManager = manager
-        binding.rvFav.addItemDecoration(DividerItemDecoration(this.requireContext(),manager.orientation))
+
+
 
         binding.swipePLayout.setColorSchemeResources(R.color.sube, R.color.baja)
         binding.swipePLayout.setOnRefreshListener {
-            try {
-                if (!Red.isConnected(this.requireActivity() as AppCompatActivity)){
-                    SnackbarX.make(binding.root,"No hay conexión a internet", resources.getColor(R.color.error))
-                    throw Exception("No hay conexión a internet")
+            viewLifecycleOwner.lifecycleScope.launch {
+                try {
+                    withContext(Dispatchers.Main){
+                        if (!Red.isConnected(this@Frag1Fav.requireActivity() as AppCompatActivity)){
+                            SnackbarX.make(binding.root,"No hay conexión a internet", resources.getColor(R.color.error))
+                            throw Exception("No hay conexión a internet")
+                        }
+                    }
+                    var tickers2 = favoritos.map { it.ticker }
+                    favoritos.removeAll(favoritos)
+                    favoritos.addAll(CrearActivo.crear(tickers2))
+                    binding.rvFav.adapter!!.notifyItemRangeChanged(0,favoritos.size+1)
+
+                }catch (e:Exception){
+                    Log.e("swipeLayout", e.message.toString())
                 }
-                //val tickers = favoritos.map { it.ticker }
-                favoritos.removeAll(favoritos)
-
-                favoritos.addAll(CrearActivo.crear(tickers))
-                binding.rvFav.adapter!!.notifyItemRangeChanged(0,favoritos.size)
-
-            }catch (e:Exception){
-                Log.e("swipeLayout", e.message.toString())
+                withContext(Dispatchers.Main){
+                    binding.swipePLayout.isRefreshing=false
+                }
             }
 
-            binding.swipePLayout.isRefreshing=false
+
+
+
         }
 
         binding.edtBuscar.addTextChangedListener {
@@ -125,14 +147,21 @@ class Frag1Fav : Fragment() {
                 if (it.ticker == ticker || it.ticker == "$ticker AL30")
                     throw Exception("El activo ya esta en favoritos")
             }
-            val activo = CrearActivo.crear(ticker)
-            favoritos.add(activo!!)
-            binding.rvFav.adapter!!.notifyItemInserted(favoritos.indexOf(activo))
+            lifecycleScope.launch {
+                try{
+                    val activo = CrearActivo.crear(ticker)
+                    favoritos.add(activo!!)
+                    binding.rvFav.adapter!!.notifyItemInserted(favoritos.indexOf(activo))
 
-            guardarPreferences(activo.ticker)
-
+                    guardarPreferences(activo.ticker)
+                }catch (e:Exception){
+                    withContext(Dispatchers.Main){
+                        SnackbarX.make(binding.root,""+e.message, resources.getColor(R.color.error))
+                    }
+                }
+            }
         }catch (e:Exception){
-            SnackbarX.make(binding.root,"Error " + e.message, resources.getColor(R.color.error))
+            SnackbarX.make(binding.root,""+e.message, resources.getColor(R.color.error))
         }
     }
 

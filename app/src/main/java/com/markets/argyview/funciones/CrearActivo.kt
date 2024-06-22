@@ -38,7 +38,7 @@ class CrearActivo {
         val ARS = "$"
         val USD = "US$"
 
-        fun crear(str: String):Activo?{
+        suspend fun crear(str: String):Activo?{
             val ticker = str.uppercase()
             return when {
                 ticker == "MEP" || ticker == "MEP " || ticker == "DOLAR MEP" || ticker == "DÓLAR MEP" ->
@@ -47,9 +47,9 @@ class CrearActivo {
                 else -> crearBonoBolsar(ticker)
             }
         }
-        fun crear(vararg arr: String):List<Activo> = crear(arr.toList())
+        suspend fun crear(vararg arr: String):List<Activo> = crear(arr.toList())
 
-        fun crear(arr: List<String>):List<Activo>{
+        suspend fun crear(arr: List<String>):List<Activo>{
             //val doc = Red.conectar(Urls.urlBolsarBonos)
             val docs = hashMapOf<String, Document?>()
             return arr.map {
@@ -71,25 +71,28 @@ class CrearActivo {
         fun crear(tipo: String, doc: Document?):List<Activo>{
             val rows = doc!!.select("#lideres > tbody > tr")
 
-            /*for (row in rows){
-                if (row.id().endsWith("_24hs")){
-
-                }
-            }*/
             val rows24 = rows.filter { element -> element.id().endsWith("_24hs") }
             val primerasCeldas = rows24.map { it.select("td:nth-child(1)") }
-            val lista = primerasCeldas.map { it.text() }
+            var lista = primerasCeldas.map { it.text() }
+
+            //por error de bolsar
+            if (tipo=="Bonos") lista = lista.filter {
+                !BDActivos.cedears.contains(it)
+                        && !it.endsWith("X")
+                        && !it.endsWith("Y")
+                        && !it.endsWith("Z")
+            }
 
             Log.i("creapb",lista.joinToString("-"))
             return lista.map { crearBonoBolsar(it,doc) }
         }
 
-        fun crearPanelBolsar(tipo:String):List<Activo>{
+        suspend fun crearPanelBolsar(tipo:String):List<Activo>{
             val doc = Red.conectar(Urls.urlsBolsar[tipo]!!)
             return crear(tipo, doc)
         }
 
-        private fun calcularMEP(str: String): Activo? {
+        private suspend fun calcularMEP(str: String): Activo? {
             val tickerP = str.replace("MEP","").trim()
 
             val bonos = crear(tickerP, dolarizarActivo(tickerP))
@@ -116,7 +119,7 @@ class CrearActivo {
             }
         }
 
-        private fun crearBonoBonistas(str:String):Bono{
+        private suspend fun crearBonoBonistas(str:String):Bono{
             var ticker = str
             var moneda = ARS
             if (ticker.startsWith("AL") || ticker.startsWith("AE") ||
@@ -126,7 +129,7 @@ class CrearActivo {
             }
 
             val doc = Red.conectar(Urls.urlBonistas)
-            val row = doc!!.getElementById(ticker + "_2") ?: throw Exception("No existe el activo" + ticker)
+            val row = doc!!.getElementById(ticker + "_2") ?: throw Exception("No existe el activo $ticker")
 
             //var ticker = row!!.getElementById("ticker")!!.text()
             val precio = row.getElementById("last_price")!!.text().toDouble()
@@ -139,13 +142,13 @@ class CrearActivo {
         }
 
 
-        private fun crearBonoBolsar(str: String): Activo {
+        private suspend fun crearBonoBolsar(str: String): Activo {
             val ticker = str
             val moneda = establecerMoneda(ticker)
             val tipo = BDActivos.obtenerTipo(ticker)
 
             val doc = Red.conectar(Urls.urlsBolsar[tipo]!!)
-            val row = doc!!.getElementById(ticker + "_24hs") ?: throw Exception("No existe el activo" + ticker)
+            val row = doc!!.getElementById(ticker + "_24hs") ?: throw Exception("No existe el activo $ticker")
 
             val precio = if (row.selectFirst("td:nth-child(7)")!!.text()=="-") 0.0
                         else row.selectFirst("td:nth-child(7)")!!.text()
@@ -161,9 +164,13 @@ class CrearActivo {
         private fun crearBonoBolsar(str: String, doc:Document?): Activo {
             val ticker = str
             val moneda = establecerMoneda(ticker)
-            val tipo = BDActivos.obtenerTipo(ticker)
+            val span = doc!!.selectFirst(".mercados")!!.text()
+            val tipo = if(span.contains("Bonos")) "Bonos"
+                        else if (span.contains("Obligaciones")) "Obligaciones negociables"
+                        else "Otro"
+            Log.i("span","$ticker $span $tipo")
 
-            val row = doc!!.getElementById(ticker + "_24hs") ?: throw Exception("No existe el activo" + ticker)
+            val row = doc.getElementById(ticker + "_24hs") ?: throw Exception("No existe el activo $ticker")
 
             val precio = if (row.selectFirst("td:nth-child(7)")!!.text()=="-") 0.0
                         else row.selectFirst("td:nth-child(7)")!!.text()

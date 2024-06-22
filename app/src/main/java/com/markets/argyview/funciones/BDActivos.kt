@@ -25,11 +25,11 @@ class BDActivos {
                     return@obtenerTipo k
                 }
             }
-            return "bonos"
-            //throw Exception("No existe el activo $ticker")
+            //return "bonos"
+            throw Exception("No existe el activo $ticker ot")
         }
 
-        fun obtenerListado(url:String){
+        suspend fun obtenerListado(url:String){
             val x = Red.conectar(url)
             val col = x!!.select("#lideres > tbody > tr > td:nth-child(1)")
             val txt = col.map {it.text()}

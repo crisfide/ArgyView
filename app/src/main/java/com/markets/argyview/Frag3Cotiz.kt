@@ -12,6 +12,8 @@ import android.widget.AdapterView
 import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.withCreated
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.markets.argyview.activos.Activo
@@ -21,6 +23,9 @@ import com.markets.argyview.funciones.CrearActivo
 import com.markets.argyview.funciones.Red
 import com.markets.argyview.funciones.SnackbarX
 import com.markets.argyview.recyclerView.Activo3Adapter
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 
 class Frag3Cotiz : Fragment() {
@@ -59,52 +64,64 @@ class Frag3Cotiz : Fragment() {
 
         binding.spinnerCotiz.onItemSelectedListener = object : OnItemSelectedListener{
             override fun onItemSelected(parent: AdapterView<*>?,view: View?,position: Int,id: Long) {
-                try {
-                    if (!Red.isConnected(requireActivity() as AppCompatActivity)){
-                        SnackbarX.make(binding.root,"No hay conexión a internet", resources.getColor(R.color.error))
-                        throw Exception("No hay conexión a internet")
+                viewLifecycleOwner.lifecycleScope.launch{
+                    try {
+                        withContext(Dispatchers.Main){
+                            if (!Red.isConnected(requireActivity() as AppCompatActivity)){
+                                throw Exception("No hay conexión a internet")
+                            }
+                            SnackbarX.make(binding.root,"Cargando...",resources.getColor(R.color.fondo))
+                        }
+                        editor.putString("panelCotiz",arrPaneles[position])
+                        editor.apply()
+                        cargarCotiz(arrPaneles[position])
+                        Log.i("spinnerSelect",arrPaneles[position])
+                    }catch (e:Exception){
+                        Log.e("spinnerError", e.message.toString())
+                        withContext(Dispatchers.Main){
+                            SnackbarX.make(binding.root,""+e.message, resources.getColor(R.color.error))
+                        }
                     }
-                    editor.putString("panelCotiz",arrPaneles[position])
-                    editor.apply()
-                    cargarCotiz(arrPaneles[position])
-                    Log.i("spinnerSelect",arrPaneles[position])
-                }catch (e:Exception){
-                    Log.e("spinnerError", e.message.toString())
                 }
             }
 
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-
-            }
+            override fun onNothingSelected(parent: AdapterView<*>?) {}
         }
 
         binding.swipePLayout.setColorSchemeResources(R.color.sube, R.color.baja)
         binding.swipePLayout.setOnRefreshListener {
-            try {
-                if (!Red.isConnected(this.requireActivity() as AppCompatActivity)){
-                    SnackbarX.make(binding.root,"No hay conexión a internet", resources.getColor(R.color.error))
-                    throw Exception("No hay conexión a internet")
+            viewLifecycleOwner.lifecycleScope.launch{
+                try {
+                    withContext(Dispatchers.Main){
+                        if (!Red.isConnected(this@Frag3Cotiz.requireActivity() as AppCompatActivity)){
+                            throw Exception("No hay conexión a internet")
+                        }
+                    }
+                    cargarCotiz(arrPaneles[binding.spinnerCotiz.selectedItemPosition])
+                }catch (e:Exception){
+                    Log.e("swipeLayout", e.message.toString())
+                    withContext(Dispatchers.Main){
+                        SnackbarX.make(binding.root,""+e.message, resources.getColor(R.color.error))
+                    }
                 }
-                cargarCotiz(arrPaneles[binding.spinnerCotiz.selectedItemPosition])
-            }catch (e:Exception){
-                Log.e("swipeLayout", e.message.toString())
+                withContext(Dispatchers.Main){
+                    binding.swipePLayout.isRefreshing = false
+                }
             }
-
-            binding.swipePLayout.isRefreshing=false
         }
 
 
 
     }
 
-    fun cargarCotiz(tipo:String){
+    suspend fun cargarCotiz(tipo:String){
         try {
             //val arr = CrearActivo.crear(BDActivos.mapa[tipo]!!)
-            listado.addAll(CrearActivo.crearPanelBolsar(tipo).toMutableList())
-            listado.sortBy { it.ticker }
-            Log.i("creando",listado.joinToString("-") { it.ticker })
 
             if (binding.rvCotiz.adapter==null){
+                listado.addAll(CrearActivo.crearPanelBolsar(tipo).toMutableList())
+                listado.sortBy { it.ticker }
+                Log.i("spinner-creando",listado.joinToString("-") { it.ticker })
                 binding.rvCotiz.adapter = Activo3Adapter(listado,this)
                 val manager = LinearLayoutManager(this.requireContext())
                 binding.rvCotiz.layoutManager = manager
@@ -117,8 +134,6 @@ class Frag3Cotiz : Fragment() {
                 binding.rvCotiz.adapter!!.notifyItemRangeChanged(0,listado.size)
 
             }
-
-
         }catch (e:Exception){
             Log.e("spinnerError", e.message.toString())
         }
