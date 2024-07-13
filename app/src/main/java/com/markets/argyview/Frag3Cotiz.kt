@@ -35,8 +35,9 @@ class Frag3Cotiz : Fragment() {
     private val binding get() = _binding!!
 
     private var listado = mutableListOf<Activo>()
-    private lateinit var preferences: SharedPreferences
-    private lateinit var editor: SharedPreferences.Editor
+    lateinit var preferences: SharedPreferences
+    lateinit var editor: SharedPreferences.Editor
+    lateinit var tickersFav : HashSet<String>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -60,6 +61,8 @@ class Frag3Cotiz : Fragment() {
 
         preferences = this.requireActivity().getSharedPreferences("db", 0)
         editor = preferences.edit()
+        tickersFav = HashSet(preferences.getStringSet("tickers", hashSetOf())!!)
+
         val panel = preferences.getString("panelCotiz", "Acciones")
         binding.spinnerCotiz.setSelection(arrPaneles.indexOf(panel))
 
@@ -76,9 +79,9 @@ class Frag3Cotiz : Fragment() {
                         editor.putString("panelCotiz",arrPaneles[position])
                         editor.apply()
                         cargarCotiz(arrPaneles[position])
-                        Log.i("spinnerSelect",arrPaneles[position])
+                        //Log.i("spinnerSelect",arrPaneles[position])
                     }catch (e:Exception){
-                        Log.e("spinnerError", e.message.toString())
+                        //Log.e("spinnerError", e.message.toString())
                         withContext(Dispatchers.Main){
                             SnackbarX.make(binding.root,""+e.message, resources.getColor(R.color.error))
                         }

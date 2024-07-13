@@ -6,13 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.markets.argyview.Frag1Fav
 import com.markets.argyview.Frag3Cotiz
 import com.markets.argyview.R
 import com.markets.argyview.activos.Activo
 import com.markets.argyview.databinding.RvCotizItemBinding
-import com.markets.argyview.databinding.RvFavItemBinding
 import com.markets.argyview.funciones.SnackbarX
+import kotlin.math.log
 
 
 class Activo3Adapter(var listado:List<Activo>, val frag3Cotiz: Frag3Cotiz)
@@ -33,16 +32,39 @@ class Activo3Adapter(var listado:List<Activo>, val frag3Cotiz: Frag3Cotiz)
     inner class ActivoViewHolder(view: View): RecyclerView.ViewHolder(view) {
         val binding = RvCotizItemBinding.bind(view)
 
+        val preferences = frag3Cotiz.preferences
+        val editor = frag3Cotiz.editor
+        val tickersFav = frag3Cotiz.tickersFav
+
         fun render(activo: Activo){
             binding.rvFavTicker.text = activo.ticker
             binding.rvFavPrecio.text = activo.precioF
             binding.rvFavDif.text = activo.difF
             val res = frag3Cotiz.resources
-            binding.rvFavDif.setTextColor(if (activo.dif<0) res.getColor(R.color.baja) else res.getColor(R.color.sube))
+            binding.rvFavDif.setTextColor(
+                if (activo.dif<0) res.getColor(R.color.baja)
+                else res.getColor(R.color.sube))
 
-            binding.rvFavEstrella.setOnClickListener {
-                //todo
-                Log.i("estrella", activo.ticker)
+            if (!tickersFav.contains(activo.ticker)){
+                binding.rvFavEstrella.setImageDrawable(res.getDrawable(R.drawable.fav_star_no))
+                binding.rvFavEstrella.setOnClickListener {
+                    tickersFav.add(activo.ticker)
+                    editor.putStringSet("tickers",tickersFav)
+                    editor.apply()
+                    //Log.i("prefesG",tickersFav.joinToString(" ") + preferences.getStringSet("tickers",null)!!.joinToString(" "))
+                    SnackbarX.make(this.itemView,"${activo.ticker} fué agregado a favoritos",res.getColor(R.color.fondo))
+                    render(activo)
+                }
+            }else{
+                binding.rvFavEstrella.setImageDrawable(res.getDrawable(R.drawable.fav_star))
+                binding.rvFavEstrella.setOnClickListener {
+                    tickersFav.remove(activo.ticker)
+                    editor.putStringSet("tickers",tickersFav)
+                    editor.apply()
+                    //Log.i("prefesB",tickersFav.joinToString(" ") + preferences.getStringSet("tickers",null)!!.joinToString(" "))
+                    SnackbarX.make(this.itemView,"${activo.ticker} fué eliminado de favoritos",res.getColor(R.color.fondo))
+                    render(activo)
+                }
             }
 
             itemView.setOnClickListener {
