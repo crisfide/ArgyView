@@ -76,6 +76,12 @@ class Frag1Fav : Fragment() {
             }catch (e:Exception){
                 Log.e("prefs", e.message.toString())
             }
+
+            try {
+                CrearActivo.crearBonoBYMA("AL30")
+            }catch (e:Exception){
+                Log.e("BYMADATA",e.message.toString())
+            }
         }
 
 

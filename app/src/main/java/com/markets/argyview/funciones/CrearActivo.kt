@@ -20,7 +20,7 @@ class CrearActivo {
             val urlBolsarPGeneral = urlBolsar+"paneles.php?panel=2&titulo=Panel%20General"
             val urlBolsarCedears = urlBolsar+"Cedears.php"
 
-            val urlsBolsar = hashMapOf<String,String>(
+            val urlsBolsar = hashMapOf(
                 Pair("Bonos", urlBolsarBonos) ,
                 Pair("Obligaciones negociables", urlBolsarONs),
                 Pair("Acciones", urlBolsarAcciones),
@@ -30,6 +30,18 @@ class CrearActivo {
 
             private val urlByma = "https://open.bymadata.com.ar/vanoms-be-core/rest/api/bymadata/free/"
             val urlBymaBonos = urlByma+"public-bonds"
+            val urlBymaONs = urlByma+"negociable-obligations"
+            val urlBymaAcciones = urlByma+"leading-equity"
+            val urlBymaPGeneral = urlByma+"general-equity"
+            val urlBymaCedears = urlByma+"cedears"
+
+            val urlsByma = hashMapOf(
+                Pair("Bonos", urlBymaBonos) ,
+                Pair("Obligaciones negociables", urlBymaONs),
+                Pair("Acciones", urlBymaAcciones),
+                Pair("Panel General", urlBymaPGeneral),
+                Pair("Cedears", urlBymaCedears)
+            )
         }
     }
 
@@ -184,16 +196,15 @@ class CrearActivo {
             else Activo(ticker,precio,moneda,dif)
         }
 
-        fun crearBonoBYMA(str: String): Bono? {
+        suspend fun crearBonoBYMA(str: String): Bono? {
             val ticker = str
             var moneda = establecerMoneda(ticker)
 
             var json = Red.conectar(Urls.urlBymaBonos,
-                "{\"T2\":true,\"T1\":false,\"T0\":false,\"Content-Type\":\"application/json\"}")
+                "{\"T2\":false,\"T1\":true,\"T0\":false,\"Content-Type\":\"application/json\"}")
             json=json.toString()
             Log.i("BYMADATA",json)
             return null
-            //TODO("Error de certificado en la solicitud POST")
 
             var precio = "settlementPrice"
             var dif = "imbalance"// * 100
