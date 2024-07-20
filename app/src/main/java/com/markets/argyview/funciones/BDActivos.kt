@@ -25,8 +25,8 @@ class BDActivos {
                     return@obtenerTipo k
                 }
             }
-            //return "bonos"
-            throw Exception("No existe el activo $ticker ot")
+            return "bonos"
+            //throw Exception("No existe el activo $ticker ot")
         }
 
         suspend fun obtenerListado(url:String){

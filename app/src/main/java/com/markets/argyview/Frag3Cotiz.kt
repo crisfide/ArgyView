@@ -2,7 +2,6 @@ package com.markets.argyview
 
 import android.annotation.SuppressLint
 import android.content.SharedPreferences
-import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -14,12 +13,10 @@ import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.withCreated
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.markets.argyview.activos.Activo
 import com.markets.argyview.databinding.FragmentFrag3CotizBinding
-import com.markets.argyview.funciones.BDActivos
 import com.markets.argyview.funciones.CrearActivo
 import com.markets.argyview.funciones.Red
 import com.markets.argyview.funciones.SnackbarX
@@ -124,7 +121,7 @@ class Frag3Cotiz : Fragment() {
             //val arr = CrearActivo.crear(BDActivos.mapa[tipo]!!)
 
             if (binding.rvCotiz.adapter==null){
-                listado.addAll(CrearActivo.crearPanelBolsar(tipo).toMutableList())
+                listado.addAll(CrearActivo.crearPanelBYMA(tipo).toMutableList())
                 listado.sortBy { it.ticker }
                 Log.i("spinner-creando",listado.joinToString("-") { it.ticker })
                 binding.rvCotiz.adapter = Activo3Adapter(listado,this)
@@ -133,7 +130,7 @@ class Frag3Cotiz : Fragment() {
                 binding.rvCotiz.addItemDecoration(DividerItemDecoration(this.requireContext(),manager.orientation))
             }else{
                 listado.removeAll(listado)
-                listado.addAll(CrearActivo.crearPanelBolsar(tipo))
+                listado.addAll(CrearActivo.crearPanelBYMA(tipo))
                 listado.sortBy { it.ticker }
                 Log.i("spinner",listado.joinToString("-"){it.ticker})
                 Log.i("spinner","itemcount"+ binding.rvCotiz.adapter!!.itemCount )
