@@ -5,14 +5,8 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
@@ -23,83 +17,6 @@ import javax.net.ssl.X509TrustManager
 class Red {
     companion object{
 
-        /*@Throws(IOException::class)
-        fun downloadData(url:String):String {
-            //Envia solicitud HTTP y devuelve String
-            val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
-            StrictMode.setThreadPolicy(policy)
-
-            var inputStream: InputStream? = null
-            try {
-                val url = URL(url)
-                val connection = url.openConnection() as HttpURLConnection
-                connection.requestMethod = "GET"
-                connection.connect()
-                inputStream = connection.inputStream
-                return inputStream.bufferedReader().use{
-                    it.readText()
-                }
-            }finally {
-                if(inputStream != null){
-                    inputStream.close()
-                }
-            }
-        }*/
-        /*fun downloadData(url:String, body: String):String {
-            //Envia solicitud HTTP y devuelve String
-            val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
-            StrictMode.setThreadPolicy(policy)
-
-            val inputStream: InputStream? = null
-            try {
-                val url = URL(url)
-                val connection = url.openConnection() as HttpURLConnection
-                connection.requestMethod = "POST"
-                connection.setRequestProperty("content-type","application/json; charset=UTF-8")
-
-                connection.doOutput = true
-                val outputStream = connection.outputStream
-                outputStream.write(body.toByteArray())
-                outputStream.flush()
-                outputStream.close()
-
-                val responseCode = connection.responseCode
-                if (responseCode < 300 ) {
-                    val inputStream = connection.inputStream
-                    val reader = BufferedReader(InputStreamReader(inputStream))
-                    val response = StringBuilder()
-                    var line: String?
-                    while (reader.readLine().also { line = it } != null) {
-                        response.append(line)
-                    }
-                    reader.close()
-                    return "Respuesta: ${response.toString()}"
-                } else {
-                    return "Error HTTP " + connection.responseCode
-                }
-            }catch (ex:Exception){
-                return "Error " + ex.message
-            }finally {
-                if(inputStream != null){
-                    inputStream.close()
-                }
-            }
-        }*/
-
-        @OptIn(DelicateCoroutinesApi::class)
-        @JvmStatic
-        fun conectar2(url:String): Document? {
-            //Envia solicitud HTTP y devuelve documentoHTML de Jsoup
-            //val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
-            //StrictMode.setThreadPolicy(policy)
-
-            var doc:Document? = null
-            runBlocking(Dispatchers.IO) {
-                doc = Jsoup.connect(url).get()
-            }
-
-            return doc
-        }
 
         suspend fun conectar(url: String): Document? {
             return withContext(Dispatchers.IO) {
@@ -154,16 +71,15 @@ class Red {
 
         }
 
+        @SuppressLint("CustomX509TrustManager", "TrustAllX509TrustManager")
         private fun sslCert(): SSLContext {
             val trustAllCerts: Array<TrustManager> = arrayOf(object : X509TrustManager {
                 override fun getAcceptedIssuers(): Array<java.security.cert.X509Certificate>? {
                     return null
                 }
-                @SuppressLint("TrustAllX509TrustManager")
                 override fun checkClientTrusted(certs: Array<java.security.cert.X509Certificate>?, authType: String?) {
                     // Do nothing - accept all clients
                 }
-                @SuppressLint("TrustAllX509TrustManager")
                 override fun checkServerTrusted(certs: Array<java.security.cert.X509Certificate>?, authType: String?) {
                     // Do nothing - accept all servers
                 }

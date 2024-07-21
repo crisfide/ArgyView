@@ -61,7 +61,7 @@ class CrearActivo {
 
         private val body = "{\"excludeZeroPxAndQty\":true,\"T2\":false,\"T1\":true,\"T0\":false,\"Content-Type\":\"application/json\"}"
 
-        suspend fun crear(str: String):Activo?{
+        suspend fun crear(str: String):Activo{
             val ticker = str.uppercase()
             return when {
                 ticker == "MEP" || ticker == "MEP " || ticker == "DOLAR MEP" || ticker == "DÓLAR MEP" ->
@@ -83,8 +83,8 @@ class CrearActivo {
                 }
                 return@map when {
                     ticker == "MEP" || ticker == "MEP " || ticker == "DOLAR MEP" || ticker == "DÓLAR MEP" ->
-                        calcularMEP("AL30")!!
-                    ticker.contains("MEP ") -> calcularMEP(ticker)!!
+                        calcularMEP("AL30")
+                    ticker.contains("MEP ") -> calcularMEP(ticker)
                     else -> crearBonoBYMA(ticker, docs[tipo]!!, tipo)
                 }
             }
@@ -115,8 +115,7 @@ class CrearActivo {
             val tipo = BDActivos.obtenerTipo(ticker)
 
             val jsonStr = Red.conectar(Urls.urlsByma[tipo]!!,body)
-            val json = Gson().fromJson(jsonStr, Map::class.java)
-            val data = json["data"] as List<Map<*,*>>
+            val data = jsonToData(jsonStr)
 
             val papelEncontrado = data.filter { it ["symbol"] == ticker }
             if (papelEncontrado.isEmpty()) return Activo(ticker,0.0, getMoneda(ticker),0.0)
@@ -150,7 +149,7 @@ class CrearActivo {
         }
 
 
-
+        @Suppress("UNCHECKED_CAST")
         private fun jsonToData(jsonStr: String?): List<Map<*,*>> {
             val gson = Gson()
             if (jsonStr!!.startsWith("[")){
@@ -159,7 +158,7 @@ class CrearActivo {
             return gson.fromJson(jsonStr, Map::class.java)["data"] as List<Map<*,*>>
         }
 
-        private suspend fun calcularMEP(str: String): Activo? {
+        private suspend fun calcularMEP(str: String): Activo {
             val tickerP = str.replace("MEP","").trim()
 
             val bonos = crear(tickerP, dolarizarActivo(tickerP))

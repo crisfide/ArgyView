@@ -43,7 +43,6 @@ open class Bono(ticker: String, precio: Double, moneda: String, dif: Double,
     fun getParidad() = this.precio / this.getValTec()
     fun getParidadF() = String.format("%.1f",this.getParidad()*100) + "%"
 
-    @RequiresApi(Build.VERSION_CODES.O)
     fun getMD():Double{
         val flujoDesc = this.flujo.filter { it.fecha > LocalDate.now() }
             .mapIndexed { i, pago ->
