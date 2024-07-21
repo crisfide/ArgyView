@@ -5,7 +5,6 @@ import com.google.gson.Gson
 import com.markets.argyview.activos.Activo
 import com.markets.argyview.activos.Bono
 import com.markets.argyview.activos.PagoBono
-import org.jsoup.nodes.Document
 import java.time.LocalDate
 
 class CrearActivo {
@@ -86,32 +85,13 @@ class CrearActivo {
                     ticker == "MEP" || ticker == "MEP " || ticker == "DOLAR MEP" || ticker == "DÓLAR MEP" ->
                         calcularMEP("AL30")!!
                     ticker.contains("MEP ") -> calcularMEP(ticker)!!
-                    else -> crearBonoBYMA(ticker, docs[tipo]!!)
+                    else -> crearBonoBYMA(ticker, docs[tipo]!!, tipo)
                 }
             }
         }
 
-        suspend fun crear2(arr: List<String>):List<Activo>{
-            //val doc = Red.conectar(Urls.urlBolsarBonos)
-            val docs = hashMapOf<String, Document?>()
-            return arr.map {
-                val ticker = it.uppercase()
-                lateinit var tipo: String
-                if (!ticker.contains("MEP")) {
-                    tipo = BDActivos.obtenerTipo(ticker)
-                    if (!docs.containsKey(tipo)) docs.put(tipo, Red.conectar(Urls.urlsBolsar[tipo]!!))
-                }
-                return@map when {
-                    ticker == "MEP" || ticker == "MEP " || ticker == "DOLAR MEP" || ticker == "DÓLAR MEP" ->
-                        calcularMEP("AL30")!!
-                    ticker.contains("MEP ") -> calcularMEP(ticker)!!
-                    else -> crearBonoBolsar(ticker, docs[tipo])
-                }
-            }
-        }
-
-        fun crear(tipo: String, jsonStr: String?):List<Activo>{
-            var data = jsonToData(jsonStr)
+        private fun crear(tipo: String, jsonStr: String?):List<Activo>{
+            val data = jsonToData(jsonStr)
             var lista = data.map { it["symbol"] as String }
 
             if (tipo=="Bonos") lista = lista.filter {
@@ -122,9 +102,54 @@ class CrearActivo {
             }
 
             Log.i("creapb",lista.joinToString("-"))
-            return lista.map { crearBonoBYMA(it,jsonStr) }
-
+            return lista.map { crearBonoBYMA(it, jsonStr, tipo) }
         }
+
+
+        suspend fun crearPanelBYMA(tipo:String):List<Activo>{
+            val json = Red.conectar(Urls.urlsByma[tipo]!!, body)
+            return crear(tipo, json)
+        }
+
+        private suspend fun crearBonoBYMA(ticker: String): Activo {
+            val tipo = BDActivos.obtenerTipo(ticker)
+
+            val jsonStr = Red.conectar(Urls.urlsByma[tipo]!!,body)
+            val json = Gson().fromJson(jsonStr, Map::class.java)
+            val data = json["data"] as List<Map<*,*>>
+
+            val papelEncontrado = data.filter { it ["symbol"] == ticker }
+            if (papelEncontrado.isEmpty()) return Activo(ticker,0.0, getMoneda(ticker),0.0)
+            val papel = papelEncontrado[0]
+
+            val precio = (if (papel["last"] == null) papel["closingPrice"] else papel["last"]) as Double
+            val moneda = monedas[papel["denominationCcy"]] as String
+            val dif = (papel["imbalance"] as Double) * 100
+
+            //Log.i("byma",papel["symbol"].toString())
+
+            return if (tipo == "Bonos" || tipo == "Obligaciones negociables") Bono(ticker, precio, moneda, dif, obtenerFlujo(ticker))
+            else Activo(ticker,precio,moneda,dif)
+        }
+
+        private fun crearBonoBYMA(ticker: String, jsonStr: String?, tipo: String): Activo {
+            val data = jsonToData(jsonStr)
+
+            val papelEncontrado = data.filter { it ["symbol"] == ticker }
+            if (papelEncontrado.isEmpty()) return Activo(ticker,0.0, getMoneda(ticker),0.0)
+            val papel = papelEncontrado[0]
+
+            val precio = (if (papel["last"] == null) papel["closingPrice"] else papel["last"]) as Double
+            val moneda = monedas[papel["denominationCcy"]].toString()
+            val dif = (papel["imbalance"] as Double) * 100
+
+            //Log.i("byma",papel["symbol"].toString())
+
+            return if (tipo == "Bonos" || tipo == "Obligaciones negociables") Bono(ticker, precio, moneda, dif, obtenerFlujo(ticker))
+            else Activo(ticker,precio,moneda,dif)
+        }
+
+
 
         private fun jsonToData(jsonStr: String?): List<Map<*,*>> {
             val gson = Gson()
@@ -132,35 +157,6 @@ class CrearActivo {
                 return gson.fromJson(jsonStr, List::class.java) as List<Map<*, *>>
             }
             return gson.fromJson(jsonStr, Map::class.java)["data"] as List<Map<*,*>>
-        }
-
-        fun crear2(tipo: String, doc: Document?):List<Activo>{
-            val rows = doc!!.select("#lideres > tbody > tr")
-
-            val rows24 = rows.filter { element -> element.id().endsWith("_24hs") }
-            val primerasCeldas = rows24.map { it.select("td:nth-child(1)") }
-            var lista = primerasCeldas.map { it.text() }
-
-            //por error de bolsar
-            if (tipo=="Bonos") lista = lista.filter {
-                !BDActivos.cedears.contains(it)
-                        && !it.endsWith("X")
-                        && !it.endsWith("Y")
-                        && !it.endsWith("Z")
-            }
-
-            Log.i("creapb2",lista.joinToString("-"))
-            return lista.map { crearBonoBolsar(it,doc) }
-        }
-
-        suspend fun crearPanelBYMA(tipo:String):List<Activo>{
-            val json = Red.conectar(Urls.urlsByma[tipo]!!, body)
-            return crear(tipo, json)
-        }
-
-        suspend fun crearPanelBolsar(tipo:String):List<Activo>{
-            val doc = Red.conectar(Urls.urlsBolsar[tipo]!!)
-            return crear2(tipo, doc)
         }
 
         private suspend fun calcularMEP(str: String): Activo? {
@@ -190,109 +186,8 @@ class CrearActivo {
             }
         }
 
-        private suspend fun crearBonoBonistas(str:String):Bono{
-            var ticker = str
-            var moneda = ARS
-            if (ticker.startsWith("AL") || ticker.startsWith("AE") ||
-                ticker.startsWith("GD") ){
-                moneda = USD
-                if (!ticker.endsWith("D")) ticker += "D"
-            }
 
-            val doc = Red.conectar(Urls.urlBonistas)
-            val row = doc!!.getElementById(ticker + "_2") ?: throw Exception("No existe el activo $ticker")
-
-            //var ticker = row!!.getElementById("ticker")!!.text()
-            val precio = row.getElementById("last_price")!!.text().toDouble()
-            val dif = row.getElementById("day_difference")!!.text()
-                .replace("=","")
-                .replace("+","")
-                .replace("%","").toDouble()
-
-            return Bono(ticker,precio,moneda,dif,obtenerFlujo(ticker))
-        }
-
-
-        private suspend fun crearBonoBolsar(str: String): Activo {
-            val ticker = str
-            val moneda = establecerMoneda(ticker)
-            val tipo = BDActivos.obtenerTipo(ticker)
-
-            val doc = Red.conectar(Urls.urlsBolsar[tipo]!!)
-            val row = doc!!.getElementById(ticker + "_24hs") ?: throw Exception("No existe el activo $ticker")
-
-            val precio = if (row.selectFirst("td:nth-child(7)")!!.text()=="-") 0.0
-                        else row.selectFirst("td:nth-child(7)")!!.text()
-                            .replace(".","")
-                            .replace(",",".").toDouble()
-            val dif = row.selectFirst("td:nth-child(8)")!!.text()
-                .replace("%","")
-                .replace(",",".").toDouble()
-
-            return if (tipo == "Bonos" || tipo == "Obligaciones negociables") Bono(ticker, precio, moneda, dif, obtenerFlujo(ticker))
-            else Activo(ticker,precio,moneda,dif)
-        }
-
-        private fun crearBonoBolsar(str: String, doc:Document?): Activo {
-            val ticker = str
-            val moneda = establecerMoneda(ticker)
-            val span = doc!!.selectFirst(".mercados")!!.text()
-            val tipo = if(span.contains("Bonos")) "Bonos"
-                        else if (span.contains("Obligaciones")) "Obligaciones negociables"
-                        else "Otro"
-            Log.i("span","$ticker $span $tipo")
-
-            val row = doc.getElementById(ticker + "_24hs") ?: throw Exception("No existe el activo $ticker")
-
-            val precio = if (row.selectFirst("td:nth-child(7)")!!.text()=="-") 0.0
-                        else row.selectFirst("td:nth-child(7)")!!.text()
-                            .replace(".","")
-                            .replace(",",".").toDouble()
-            val dif = row.selectFirst("td:nth-child(8)")!!.text()
-                .replace("%","")
-                .replace(",",".").toDouble()
-
-            return if (tipo == "Bonos" || tipo == "Obligaciones negociables") Bono(ticker, precio, moneda, dif, obtenerFlujo(ticker))
-            else Activo(ticker,precio,moneda,dif)
-        }
-
-        suspend fun crearBonoBYMA(str: String): Activo {
-            val ticker = str
-            val tipo = BDActivos.obtenerTipo(ticker)
-
-            var jsonStr = Red.conectar(Urls.urlsByma[tipo]!!,body)
-            val json = Gson().fromJson(jsonStr, Map::class.java)
-            val data = json["data"] as List<Map<*,*>>
-
-            val papel = data.filter { it ["symbol"] == ticker }[0]
-            val precio = (if (papel["last"] == null) papel["closingPrice"] else papel["last"]) as Double
-            val moneda = monedas[papel["denominationCcy"]] as String
-            val dif = (papel["imbalance"] as Double) * 100
-
-            //Log.i("byma",papel["symbol"].toString())
-
-            return if (tipo == "Bonos" || tipo == "Obligaciones negociables") Bono(ticker, precio, moneda, dif, obtenerFlujo(ticker))
-            else Activo(ticker,precio,moneda,dif)
-        }
-
-        private fun crearBonoBYMA(str: String, jsonStr: String?): Activo {
-            val ticker = str
-            val tipo = BDActivos.obtenerTipo(ticker)
-
-            var data = jsonToData(jsonStr)
-
-            val papel = data.filter { it ["symbol"] == ticker }[0]
-            val precio = (if (papel["last"] == null) papel["closingPrice"] else papel["last"]) as Double
-            val moneda = monedas[papel["denominationCcy"]].toString()
-            val dif = (papel["imbalance"] as Double) * 100
-
-            //Log.i("byma",papel["symbol"].toString())
-
-            return if (tipo == "Bonos" || tipo == "Obligaciones negociables") Bono(ticker, precio, moneda, dif, obtenerFlujo(ticker))
-            else Activo(ticker,precio,moneda,dif)
-        }
-
-        private fun establecerMoneda(ticker: String): String {
+        private fun getMoneda(ticker: String): String {
             val moneda = if (ticker.endsWith("D")) USD else ARS
             return when (ticker){
                 "YPFD" -> ARS

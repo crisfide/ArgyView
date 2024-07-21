@@ -25,7 +25,7 @@ class BDActivos {
                     return@obtenerTipo k
                 }
             }
-            return "bonos"
+            return "Bonos"
             //throw Exception("No existe el activo $ticker ot")
         }
 
