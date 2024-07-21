@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources> <!-- LIGHT -->
+<!-- LIGHT -->
+<resources>
     <color name="fondo">#FFFFFFFF</color>
     <color name="texto">#FF000000</color>
     <color name="error">#FFDCDA</color>

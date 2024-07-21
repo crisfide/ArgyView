@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?> <!-- DARK -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DARK -->
 <resources xmlns:tools="http://schemas.android.com/tools">
     <color name="fondo">#FF000000</color>
     <color name="texto">#FFFFFFFF</color>

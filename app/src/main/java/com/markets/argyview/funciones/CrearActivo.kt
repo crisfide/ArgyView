@@ -59,7 +59,7 @@ class CrearActivo {
             Pair("EXT", USD)
         )
 
-        private val body = "{\"excludeZeroPxAndQty\":true,\"T2\":false,\"T1\":true,\"T0\":false,\"Content-Type\":\"application/json\"}"
+        private val body = "{\"excludeZeroPxAndQty\":true,\"T2\":false,\"T1\":true,\"T0\":false,\"Content-Type\":\"application/json\",\"page_size\":400}"
 
         suspend fun crear(str: String):Activo{
             val ticker = str.uppercase()
