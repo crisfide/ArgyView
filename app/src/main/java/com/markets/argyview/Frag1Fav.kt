@@ -35,6 +35,7 @@ class Frag1Fav : Fragment() {
     private val binding get() = _binding!!
 
     private var favoritos = mutableListOf<Activo>()
+
     private lateinit var preferences: SharedPreferences
     private lateinit var editor: SharedPreferences.Editor
 

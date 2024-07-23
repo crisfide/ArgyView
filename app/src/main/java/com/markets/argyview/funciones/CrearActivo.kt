@@ -121,7 +121,10 @@ class CrearActivo {
             if (papelEncontrado.isEmpty()) return Activo(ticker,0.0, getMoneda(ticker),0.0)
             val papel = papelEncontrado[0]
 
-            val precio = (if (papel["last"] == null) papel["closingPrice"] else papel["last"]) as Double
+            val precio = (if (papel.keys.contains("settlementPrice")) papel["settlementPrice"]
+                        else if (papel.keys.contains("last")) papel["last"]
+                        else if (papel.keys.contains("closingPrice")) papel["closingPrice"]
+                        else 0.0) as Double
             val moneda = monedas[papel["denominationCcy"]] as String
             val dif = (papel["imbalance"] as Double) * 100
 
@@ -138,14 +141,17 @@ class CrearActivo {
             if (papelEncontrado.isEmpty()) return Activo(ticker,0.0, getMoneda(ticker),0.0)
             val papel = papelEncontrado[0]
 
-            val precio = (if (papel["last"] == null) papel["closingPrice"] else papel["last"]) as Double
+            val precio = (if (papel.keys.contains("settlementPrice")) papel["settlementPrice"]
+                        else if (papel.keys.contains("last")) papel["last"]
+                        else if (papel.keys.contains("closingPrice")) papel["closingPrice"]
+                        else 0.0) as Double
             val moneda = monedas[papel["denominationCcy"]].toString()
             val dif = (papel["imbalance"] as Double) * 100
 
             //Log.i("byma",papel["symbol"].toString())
 
             return if (tipo == "Bonos" || tipo == "Obligaciones negociables") Bono(ticker, precio, moneda, dif, obtenerFlujo(ticker))
-            else Activo(ticker,precio,moneda,dif)
+                else Activo(ticker,precio,moneda,dif)
         }
 
 

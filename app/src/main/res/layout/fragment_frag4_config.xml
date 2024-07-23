@@ -7,13 +7,28 @@
     tools:context=".Frag4Config">
 
     <TextView
-        android:id="@+id/txtConfigFalopa"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvConfigTema"
+        android:text="Seleccionar tema"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/configuracion_to_do" />
+        app:layout_constraintBottom_toTopOf="@+id/spinnerTema"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinnerTema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="1dp"
+        android:spinnerMode="dropdown"
+        android:textSize="15sp"
+
+        app:layout_constraintTop_toBottomOf="@+id/tvConfigTema"
+
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

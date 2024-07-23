@@ -1,8 +1,10 @@
 package com.markets.argyview
 
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
@@ -15,6 +17,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
 
     private lateinit var navigation : BottomNavigationView
+
+    lateinit var preferences: SharedPreferences
+    lateinit var editor: SharedPreferences.Editor
 
     private val mOnNavMenu = BottomNavigationView.OnNavigationItemSelectedListener{item->
         when(item.itemId){
@@ -54,10 +59,26 @@ class MainActivity : AppCompatActivity() {
         false
     }
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        preferences = this.getSharedPreferences("db", 0)
+        editor = preferences.edit()
+
+        val tema = preferences.getInt("tema", 2)
+        val mode = when(tema){
+            0-> AppCompatDelegate.MODE_NIGHT_NO
+            1-> AppCompatDelegate.MODE_NIGHT_YES
+            else-> AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
+        }
+        AppCompatDelegate.setDefaultNightMode(mode)
+
+
 
         navigation = binding.bNav
         navigation.setOnNavigationItemSelectedListener(mOnNavMenu)
@@ -68,6 +89,7 @@ class MainActivity : AppCompatActivity() {
                 add<Frag1Fav>(R.id.fragmentContainer)
             }
         }
+
 
 
     }
