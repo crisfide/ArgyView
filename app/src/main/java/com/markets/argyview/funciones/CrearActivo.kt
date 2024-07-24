@@ -113,25 +113,9 @@ class CrearActivo {
 
         private suspend fun crearBonoBYMA(ticker: String): Activo {
             val tipo = BDActivos.obtenerTipo(ticker)
-
             val jsonStr = Red.conectar(Urls.urlsByma[tipo]!!,body)
-            val data = jsonToData(jsonStr)
 
-            val papelEncontrado = data.filter { it ["symbol"] == ticker }
-            if (papelEncontrado.isEmpty()) return Activo(ticker,0.0, getMoneda(ticker),0.0)
-            val papel = papelEncontrado[0]
-
-            val precio = (if (papel.keys.contains("settlementPrice")) papel["settlementPrice"]
-                        else if (papel.keys.contains("last")) papel["last"]
-                        else if (papel.keys.contains("closingPrice")) papel["closingPrice"]
-                        else 0.0) as Double
-            val moneda = monedas[papel["denominationCcy"]] as String
-            val dif = (papel["imbalance"] as Double) * 100
-
-            //Log.i("byma",papel["symbol"].toString())
-
-            return if (tipo == "Bonos" || tipo == "Obligaciones negociables") Bono(ticker, precio, moneda, dif, obtenerFlujo(ticker))
-            else Activo(ticker,precio,moneda,dif)
+            return crearBonoBYMA(ticker,jsonStr,tipo)
         }
 
         private fun crearBonoBYMA(ticker: String, jsonStr: String?, tipo: String): Activo {
@@ -141,7 +125,8 @@ class CrearActivo {
             if (papelEncontrado.isEmpty()) return Activo(ticker,0.0, getMoneda(ticker),0.0)
             val papel = papelEncontrado[0]
 
-            val precio = (if (papel.keys.contains("settlementPrice")) papel["settlementPrice"]
+            val precio = (if (papel.keys.contains("trade")) papel["trade"]
+                        else if (papel.keys.contains("settlementPrice")) papel["settlementPrice"]
                         else if (papel.keys.contains("last")) papel["last"]
                         else if (papel.keys.contains("closingPrice")) papel["closingPrice"]
                         else 0.0) as Double
@@ -171,7 +156,7 @@ class CrearActivo {
             val bonoP = bonos[0]
             val bonoD = bonos[1]
 
-            //if (bonoP == null || bonoD == null) return null
+            if (bonoP.precio==0.0 || bonoD.precio==0.0) return Activo("MEP $tickerP",0.0, ARS,0.0)
 
             val dif = (((bonoP.dif+100.0)/(bonoD.dif+100.0))-1.0)*100
             return Activo("MEP $tickerP",bonoP.precio/bonoD.precio, ARS,dif )
