@@ -158,12 +158,12 @@ class Frag1Fav : Fragment() {
                     guardarPreferences(activo.ticker)
                 }catch (e:Exception){
                     withContext(Dispatchers.Main){
-                        SnackbarX.make(binding.root,""+e.message, resources.getColor(R.color.error))
+                        SnackbarX.make(binding.root, "${e.message}", resources.getColor(R.color.error))
                     }
                 }
             }
         }catch (e:Exception){
-            SnackbarX.make(binding.root,""+e.message, resources.getColor(R.color.error))
+            SnackbarX.make(binding.root, "${e.message}", resources.getColor(R.color.error))
         }
     }
 

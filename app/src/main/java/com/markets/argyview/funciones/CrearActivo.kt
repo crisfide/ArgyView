@@ -1,7 +1,10 @@
 package com.markets.argyview.funciones
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.util.Log
 import com.google.gson.Gson
+import com.markets.argyview.MainActivity
 import com.markets.argyview.activos.Activo
 import com.markets.argyview.activos.Bono
 import com.markets.argyview.activos.PagoBono
@@ -61,6 +64,12 @@ class CrearActivo {
 
         val bodyByma = "{\"excludeZeroPxAndQty\":true,\"T2\":false,\"T1\":true,\"T0\":false,\"Content-Type\":\"application/json\",\"page_size\":400}"
 
+        private lateinit var preferences: SharedPreferences
+
+        fun initPrefs(context : Context) {
+            preferences = context.getSharedPreferences("db", 0)
+        }
+
         suspend fun crear(str: String):Activo{
             val ticker = str.uppercase()
             return when {
@@ -79,7 +88,7 @@ class CrearActivo {
                 lateinit var tipo: String
                 if (!ticker.contains("MEP")) {
                     tipo = BDActivos.obtenerTipo(ticker)
-                    if (!docs.containsKey(tipo)) docs.put(tipo, Red.conectar(Urls.urlsByma[tipo]!!, bodyByma))
+                    if (!docs.containsKey(tipo)) docs[tipo] = obtenerJson(tipo)
                 }
                 return@map when {
                     ticker == "MEP" || ticker == "MEP " || ticker == "DOLAR MEP" || ticker == "DÓLAR MEP" ->
@@ -107,13 +116,13 @@ class CrearActivo {
 
 
         suspend fun crearPanelBYMA(tipo:String):List<Activo>{
-            val json = Red.conectar(Urls.urlsByma[tipo]!!, bodyByma)
+            val json = obtenerJson(tipo)
             return crear(tipo, json)
         }
 
         private suspend fun crearBonoBYMA(ticker: String): Activo {
             val tipo = BDActivos.obtenerTipo(ticker)
-            val jsonStr = Red.conectar(Urls.urlsByma[tipo]!!,bodyByma)
+            val jsonStr = obtenerJson(tipo)
 
             return crearBonoBYMA(ticker,jsonStr,tipo)
         }
@@ -137,6 +146,15 @@ class CrearActivo {
 
             return if (tipo == "Bonos" || tipo == "Obligaciones negociables") Bono(ticker, precio, moneda, dif, obtenerFlujo(ticker))
                 else Activo(ticker,precio,moneda,dif)
+        }
+
+
+        private suspend fun obtenerJson(tipo: String): String? {
+            if (CheckMercado.cerrado()){
+                val json = preferences.getString("json-$tipo", null)
+                if (json != null) return json
+            }
+            return Red.conectar(Urls.urlsByma[tipo]!!, bodyByma)
         }
 
 

@@ -17,7 +17,6 @@ import com.markets.argyview.funciones.SnackbarX
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import java.time.LocalTime
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
@@ -83,7 +82,7 @@ class MainActivity : AppCompatActivity() {
 
         if (savedInstanceState == null){
 
-            this.getDatosAlCierre()
+            this.datosAlCierre()
 
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
@@ -106,8 +105,18 @@ class MainActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(mode)
     }
 
-    private fun getDatosAlCierre() {
-        if (!CheckMercado.cerrado()) return
+    private fun datosAlCierre() {
+        if ( ! CheckMercado.cerrado()) {
+            editor.putBoolean("datosGuardados", false)
+            editor.apply()
+            return
+        }
+
+        CrearActivo.initPrefs(this)
+
+        val guardados = preferences.getBoolean("datosGuardados", false)
+        if (guardados)
+            return
 
         val arrPaneles = resources.getStringArray(R.array.paneles)
         lifecycleScope.launch {
@@ -124,7 +133,7 @@ class MainActivity : AppCompatActivity() {
 
             }catch (e:Exception){
                 withContext(Dispatchers.Main){
-                    SnackbarX.make(binding.root,""+e.message, resources.getColor(R.color.error))
+                    SnackbarX.make(binding.root, "${e.message}", resources.getColor(R.color.error))
                 }
             }
         }
