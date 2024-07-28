@@ -3,15 +3,21 @@ package com.markets.argyview
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import androidx.lifecycle.lifecycleScope
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.markets.argyview.databinding.ActivityMainBinding
-import com.markets.argyview.funciones.BDActivos
+import com.markets.argyview.funciones.CheckMercado
 import com.markets.argyview.funciones.CrearActivo
+import com.markets.argyview.funciones.Red
+import com.markets.argyview.funciones.SnackbarX
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import java.time.LocalTime
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
@@ -70,20 +76,15 @@ class MainActivity : AppCompatActivity() {
         preferences = this.getSharedPreferences("db", 0)
         editor = preferences.edit()
 
-        val tema = preferences.getInt("tema", 2)
-        val mode = when(tema){
-            0-> AppCompatDelegate.MODE_NIGHT_NO
-            1-> AppCompatDelegate.MODE_NIGHT_YES
-            else-> AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
-        }
-        AppCompatDelegate.setDefaultNightMode(mode)
-
-
+        this.establecerTema()
 
         navigation = binding.bNav
         navigation.setOnNavigationItemSelectedListener(mOnNavMenu)
 
         if (savedInstanceState == null){
+
+            this.getDatosAlCierre()
+
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
                 add<Frag1Fav>(R.id.fragmentContainer)
@@ -91,8 +92,43 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
     }
 
+
+
+    private fun establecerTema() {
+        val tema = preferences.getInt("tema", 2)
+        val mode = when (tema) {
+            0 -> AppCompatDelegate.MODE_NIGHT_NO
+            1 -> AppCompatDelegate.MODE_NIGHT_YES
+            else -> AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
+        }
+        AppCompatDelegate.setDefaultNightMode(mode)
+    }
+
+    private fun getDatosAlCierre() {
+        if (!CheckMercado.cerrado()) return
+
+        val arrPaneles = resources.getStringArray(R.array.paneles)
+        lifecycleScope.launch {
+            try {
+                if (!Red.isConnected(this@MainActivity)){
+                    throw Exception("No hay conexión a internet")
+                }
+
+                arrPaneles.forEach {
+                    val json = Red.conectar(CrearActivo.Urls.urlsByma[it]!!, CrearActivo.bodyByma)
+                    editor.putString("json-$it", json)
+                    editor.apply()
+                }
+
+            }catch (e:Exception){
+                withContext(Dispatchers.Main){
+                    SnackbarX.make(binding.root,""+e.message, resources.getColor(R.color.error))
+                }
+            }
+        }
+
+    }
 
 }

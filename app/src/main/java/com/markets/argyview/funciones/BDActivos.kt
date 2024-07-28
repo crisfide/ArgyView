@@ -9,6 +9,7 @@ class BDActivos {
         val acciones = listOf("YPFD","COME","TECO2","BMA","IRSA","SUPV","TGNO4","TXAR","CEPU","BYMA","TRAN","BBAR","LOMA","VALO","TGSU2","MIRG","CRES","GGAL","EDN","PAMP","ALUA")
         val accionesGeneral = listOf("BBARB","CAPX","FIPL","HARGB","CECO2","YPFDB","HAVA","CRE3W","TECOB","PAMPB","HSAT","SUPVD","PAMPD","LOMAB","CEPUB","GCDI","CTIO","CVH","CECOB","BYMAD","SEMI","TGSUB","BOLT","DGCE","VALOC","IRS2W","YPFDD","SUPVB","MTR","GAMI","GGALB","ROSE","EDND","LONG","BHIPB","MOLA","HARG","OEST","GGADB","REGE","BHIP","BMA.D","CEPDB","GARO","AUSO","DGCU2","CRESB","LEDE","AGRO","MOLI","MOLA5","INVJ","MOLI5","BPAT","CELU","BYMAB","CARC","GBAN","CADO","TXARB","GGALD","DYCA","INTR","GGALC","COUR","METR","FERR","RICH","SAMI","TXARD","CEPUD","PATA","BMA.B","MORI","GCLAB","POLL","ALUAD","GCLA","CGPA2","GRIM","DOME","RIGO")
         val cedears = listOf("TMD","HOG","VISTD","UAL","NFLXD","AZN","MSFT","META","TSMD","AEG","UNHD","SHELD","VIV","GILDD","UBER","WMT.B","XOM","SQ","PFED","AIG","XLF","UPST","MOD","MU","GFI","GE","QQQD","GMD","NEM","RIOT","GSK","XLED","NG","MCD","GM","HUT","DOCU","MOSD","KEP","DE","PG","QCOMD","BRKB","KOD","MRVLD","XROX","DOW","ARKK","TSLAD","BBV","DESP","IWM","IBMD","TD","ABNBD","KMB","GED","AMX","MUD","YY","VALED","DAL","WBO","QCOM","BB","AMD","MSI","HSBC","VIST","DIAD","FDXD","EWZD","GLW","T","HDB","PBR","IWMD","GGB","JNJ","SAP","BIOX","NKE","F","VRSN","E","SDA","WMTD","XLE","MUX","ABBV","UNP","KO","MMMD","UNH","TCOM","SHOPD","HMC","CAT","DISN","GPRK","PKS","MA","MCDD","SBUX","SPOT","SLB","HPQD","VD","SATL","ADBED","ROKU","JPMD","TSM","BBD","USB","ORAN","BABAB","ERJ","BRKBD","BSBR","GLOBD","PLTRD","DIA","IFF","JD","EBR","PBI","TEN","EEMD","PAC","MSFTD","VZ","ZMD","CCL","BIOXD","AVGO","SNOWD","ADBE","CL","BMY","COIND","AXP","QQQDB","ARKKD","CRMD","TXR","COST","ERIC","SE","SHPW","MAD","IBM","INFY","KGC","EEM","MGLU3","AMAT","BBDD","C","SYY","TGT","AVGOD","GLOB","ASR","FMX","CRM","BIDU","NVDA","BMYD","EA","TXN","CVX","RIO","FDX","XLFD","AKO.B","CX","BHP","CAH","ORCL","WBA","LMT","BCS","SCCO","BA.C","JMIA","BP","AMGN","TRIP","QQQ","AOCA","CSCO","BA","NUE","HMYD","JNJD","RENT3","SPGID","HSY","COIN","V","MDT","ROST","JDD","YELP","SPGI","RIOD","VALE","PAAS","XOMD","NUD","BBAS3","SPYD","SPOTD","WBAD","MOS","BABAD","RTX","GS","XD","AAL","CATD","NVS","UL","PLTR","EWZ","LREN3","DED","EBAY","GOLDD","ABNB","DISND","PAGS","MSTR","URBN","PAASD","MO","ARCO","GOGLD","HAL","HSYD","HON","SED","PRIO3","RBLX","MSTRD","SBUXD","UPSTD","AALD","CDE","FSLR","LLYD","RACE","LRCX","TXND","BNG","ZM","X","GOOGL","PYPLD","PBRD","BITFD","WFCD","DESPD","NFLX","PEP","ITUB","GILD","JPM","XLEDB","IP","UGP","INTC","ACN","MDLZ","BAK","DEO","CVXD","SID","ELP","OXY","GRMN","NKED","TEND","AMDD","KOFM","METAD","VOD","ETSY","LLY","HPQ","SAN","UBERD","HMY","CAAP","MUFG","AVY","PYPL","WMT","SHOP","IBN","WFC","MELI","MELID","NIOD","EFX","BIIB","VZD","NVDAD","SBS","FCX","TM","NIO","C.D","ANF","TV","SNOW","NU","SNA","AAP","MFG","SUZ","MRVL","TTE","TMO","KMBD","TIMB","HD","AAPLD","NGG","PM","TEFO","AXPD","PEPD","DD","PANW","HWM","LND","ADGO","ABEV","TSLA","INTCD","PFE","PCAR","LAC","SPY","OXYD","CSCOD","LACD","CAR","ABBVD","BITF","NMR","MMC","ERJD","PGD","ADI","HAPV3","MRK","GOLD","ABEVD","SONY","MMM","CVS","LVS","TXRD","XP","BK","TWLO","AAPL","JMIAD","BRFS","NTES","HUTD","AMZND","NOKA","BA.CD","AMZN","SNAP","AEM","BABA","STLA","ADP","MRNA","SHEL","TRVV","HL","XPD","RACED","ABT","AZND","PSX","DJN3C","ING","PHG","EAD","DOWD","STNE","LYG")
+        val letras = listOf("S30S4")
 
         val arr = bonos + ONs + acciones + accionesGeneral + cedears
         val mapa = hashMapOf<String,List<String>>(
@@ -16,7 +17,8 @@ class BDActivos {
             Pair("Obligaciones negociables", ONs),
             Pair("Acciones", acciones),
             Pair("Panel General", accionesGeneral),
-            Pair("Cedears", cedears)
+            Pair("Cedears", cedears),
+            Pair("Letras", letras)
         )
 
         fun obtenerTipo(ticker:String) : String {
@@ -29,14 +31,14 @@ class BDActivos {
             //throw Exception("No existe el activo $ticker ot")
         }
 
-        suspend fun obtenerListado(url:String){
-            val x = Red.conectar(url)
-            val col = x!!.select("#lideres > tbody > tr > td:nth-child(1)")
-            val txt = col.map {it.text()}
-                //.filter { !it.endsWith("Z") && !it.endsWith("X") }
-                .toSet()
-                .joinToString("\",\"","\"","\"")
-            Log.i("listado",txt)
-        }
+//        suspend fun obtenerListado(url:String){
+//            val x = Red.conectar(url)
+//            val col = x!!.select("#lideres > tbody > tr > td:nth-child(1)")
+//            val txt = col.map {it.text()}
+//                //.filter { !it.endsWith("Z") && !it.endsWith("X") }
+//                .toSet()
+//                .joinToString("\",\"","\"","\"")
+//            Log.i("listado",txt)
+//        }
     }
 }

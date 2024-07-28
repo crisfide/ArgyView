@@ -59,7 +59,7 @@ class CrearActivo {
             Pair("EXT", USD)
         )
 
-        private val body = "{\"excludeZeroPxAndQty\":true,\"T2\":false,\"T1\":true,\"T0\":false,\"Content-Type\":\"application/json\",\"page_size\":400}"
+        val bodyByma = "{\"excludeZeroPxAndQty\":true,\"T2\":false,\"T1\":true,\"T0\":false,\"Content-Type\":\"application/json\",\"page_size\":400}"
 
         suspend fun crear(str: String):Activo{
             val ticker = str.uppercase()
@@ -79,7 +79,7 @@ class CrearActivo {
                 lateinit var tipo: String
                 if (!ticker.contains("MEP")) {
                     tipo = BDActivos.obtenerTipo(ticker)
-                    if (!docs.containsKey(tipo)) docs.put(tipo, Red.conectar(Urls.urlsByma[tipo]!!, body))
+                    if (!docs.containsKey(tipo)) docs.put(tipo, Red.conectar(Urls.urlsByma[tipo]!!, bodyByma))
                 }
                 return@map when {
                     ticker == "MEP" || ticker == "MEP " || ticker == "DOLAR MEP" || ticker == "DÓLAR MEP" ->
@@ -107,13 +107,13 @@ class CrearActivo {
 
 
         suspend fun crearPanelBYMA(tipo:String):List<Activo>{
-            val json = Red.conectar(Urls.urlsByma[tipo]!!, body)
+            val json = Red.conectar(Urls.urlsByma[tipo]!!, bodyByma)
             return crear(tipo, json)
         }
 
         private suspend fun crearBonoBYMA(ticker: String): Activo {
             val tipo = BDActivos.obtenerTipo(ticker)
-            val jsonStr = Red.conectar(Urls.urlsByma[tipo]!!,body)
+            val jsonStr = Red.conectar(Urls.urlsByma[tipo]!!,bodyByma)
 
             return crearBonoBYMA(ticker,jsonStr,tipo)
         }
