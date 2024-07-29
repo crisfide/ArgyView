@@ -130,6 +130,8 @@ class MainActivity : AppCompatActivity() {
                     editor.putString("json-$it", json)
                     editor.apply()
                 }
+                editor.putBoolean("datosGuardados", true)
+                editor.apply()
 
             }catch (e:Exception){
                 SnackbarX.err(binding.root, "${e.message}")
