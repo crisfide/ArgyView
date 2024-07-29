@@ -133,7 +133,7 @@ class MainActivity : AppCompatActivity() {
 
             }catch (e:Exception){
                 withContext(Dispatchers.Main){
-                    SnackbarX.make(binding.root, "${e.message}", resources.getColor(R.color.error))
+                    SnackbarX.err(binding.root, "${e.message}")
                 }
             }
         }

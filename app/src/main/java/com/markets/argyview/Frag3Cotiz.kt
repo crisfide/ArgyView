@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.markets.argyview.activos.Activo
 import com.markets.argyview.databinding.FragmentFrag3CotizBinding
+import com.markets.argyview.funciones.CheckMercado
 import com.markets.argyview.funciones.CrearActivo
 import com.markets.argyview.funciones.Red
 import com.markets.argyview.funciones.SnackbarX
@@ -36,6 +37,8 @@ class Frag3Cotiz : Fragment() {
     lateinit var editor: SharedPreferences.Editor
     lateinit var tickersFav : HashSet<String>
 
+    private val cerrado = CheckMercado.cerrado()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -52,8 +55,8 @@ class Frag3Cotiz : Fragment() {
         adapterSpinnerCotiz.setDropDownViewResource(R.layout.edt_buscar_item)
         binding.spinnerCotiz.adapter = adapterSpinnerCotiz
 
-        if (!Red.isConnected(this.requireActivity() as AppCompatActivity)){
-            SnackbarX.make(binding.root,"No hay conexión a internet", resources.getColor(R.color.error))
+        if (!cerrado && !Red.isConnected(this.requireActivity() as AppCompatActivity)){
+            SnackbarX.noInternet(binding.root)
         }
 
         preferences = this.requireActivity().getSharedPreferences("db", 0)
@@ -67,20 +70,20 @@ class Frag3Cotiz : Fragment() {
             override fun onItemSelected(parent: AdapterView<*>?,view: View?,position: Int,id: Long) {
                 viewLifecycleOwner.lifecycleScope.launch{
                     try {
-                        withContext(Dispatchers.Main){
-                            if (!Red.isConnected(requireActivity() as AppCompatActivity)){
-                                throw Exception("No hay conexión a internet")
+                        if (!cerrado) {
+                            withContext(Dispatchers.Main) {
+                                if (!Red.isConnected(requireActivity() as AppCompatActivity)) {
+                                    throw Exception("No hay conexión a internet")
+                                }
+                                SnackbarX.cargando(binding.root)
                             }
-                            SnackbarX.make(binding.root,"Cargando...",resources.getColor(R.color.fondo))
                         }
                         editor.putString("panelCotiz",arrPaneles[position])
                         editor.apply()
                         cargarCotiz(arrPaneles[position])
-                        //Log.i("spinnerSelect",arrPaneles[position])
                     }catch (e:Exception){
-                        //Log.e("spinnerError", e.message.toString())
                         withContext(Dispatchers.Main){
-                            SnackbarX.make(binding.root,""+e.message, resources.getColor(R.color.error))
+                            SnackbarX.err(binding.root, "${e.message}")
                         }
                     }
                 }
@@ -93,16 +96,18 @@ class Frag3Cotiz : Fragment() {
         binding.swipePLayout.setOnRefreshListener {
             viewLifecycleOwner.lifecycleScope.launch{
                 try {
-                    withContext(Dispatchers.Main){
-                        if (!Red.isConnected(this@Frag3Cotiz.requireActivity() as AppCompatActivity)){
-                            throw Exception("No hay conexión a internet")
+                    if (!cerrado) {
+                        withContext(Dispatchers.Main) {
+                            if (!Red.isConnected(this@Frag3Cotiz.requireActivity() as AppCompatActivity)) {
+                                throw Exception("No hay conexión a internet")
+                            }
                         }
                     }
                     cargarCotiz(arrPaneles[binding.spinnerCotiz.selectedItemPosition])
                 }catch (e:Exception){
                     Log.e("swipeLayout", e.message.toString())
                     withContext(Dispatchers.Main){
-                        SnackbarX.make(binding.root,""+e.message, resources.getColor(R.color.error))
+                        SnackbarX.err(binding.root, "${e.message}")
                     }
                 }
                 withContext(Dispatchers.Main){

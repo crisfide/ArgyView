@@ -27,7 +27,7 @@ class Frag2Graf : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.txtGrafFalopa.setOnClickListener {
-            SnackbarX.make(binding.root,"holarlem 2", resources.getColor(R.color.fondo))
+            SnackbarX.normal(binding.root,"holarlem 2")
         }
 
     }

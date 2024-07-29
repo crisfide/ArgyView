@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.markets.argyview.activos.Activo
 import com.markets.argyview.databinding.FragmentFrag1FavBinding
 import com.markets.argyview.funciones.BDActivos
+import com.markets.argyview.funciones.CheckMercado
 import com.markets.argyview.funciones.CrearActivo
 import com.markets.argyview.funciones.Red
 import com.markets.argyview.funciones.SnackbarX
@@ -39,6 +40,8 @@ class Frag1Fav : Fragment() {
     private lateinit var preferences: SharedPreferences
     private lateinit var editor: SharedPreferences.Editor
 
+    private val cerrado = CheckMercado.cerrado()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -54,8 +57,8 @@ class Frag1Fav : Fragment() {
         val adapterEdtBuscar = ArrayAdapter(this.requireContext(),R.layout.edt_buscar_item, BDActivos.arr)
         binding.edtBuscar.setAdapter(adapterEdtBuscar)
 
-        if (!Red.isConnected(this.requireActivity() as AppCompatActivity)){
-            SnackbarX.make(binding.root,"No hay conexión a internet", resources.getColor(R.color.error))
+        if (!cerrado && !Red.isConnected(this.requireActivity() as AppCompatActivity)){
+            SnackbarX.noInternet(binding.root)
         }
 
         preferences = this.requireActivity().getSharedPreferences("db", 0)
@@ -64,7 +67,8 @@ class Frag1Fav : Fragment() {
         viewLifecycleOwner.lifecycleScope.launch{
             try {
                 withContext(Dispatchers.Main){
-                    SnackbarX.make(binding.root,"Cargando...",resources.getColor(R.color.fondo))
+                    if (!cerrado)
+                        SnackbarX.cargando(binding.root)
                 }
                 favoritos.addAll(CrearActivo.crear(tickers))
                 withContext(Dispatchers.Main){
@@ -87,16 +91,19 @@ class Frag1Fav : Fragment() {
         binding.swipePLayout.setOnRefreshListener {
             viewLifecycleOwner.lifecycleScope.launch {
                 try {
-                    withContext(Dispatchers.Main){
-                        if (!Red.isConnected(this@Frag1Fav.requireActivity() as AppCompatActivity)){
-                            SnackbarX.make(binding.root,"No hay conexión a internet", resources.getColor(R.color.error))
-                            throw Exception("No hay conexión a internet")
+                    if (!cerrado){
+                        withContext(Dispatchers.Main){
+                            if (!Red.isConnected(this@Frag1Fav.requireActivity() as AppCompatActivity)){
+                                SnackbarX.noInternet(binding.root)
+                                throw Exception("No hay conexión a internet")
+                            }
                         }
+                        val tickers2 = favoritos.map { it.ticker }
+                        favoritos.removeAll(favoritos)
+                        favoritos.addAll(CrearActivo.crear(tickers2))
+                        binding.rvFav.adapter!!.notifyItemRangeChanged(0,favoritos.size+1)
                     }
-                    var tickers2 = favoritos.map { it.ticker }
-                    favoritos.removeAll(favoritos)
-                    favoritos.addAll(CrearActivo.crear(tickers2))
-                    binding.rvFav.adapter!!.notifyItemRangeChanged(0,favoritos.size+1)
+
 
                 }catch (e:Exception){
                     Log.e("swipeLayout", e.message.toString())
@@ -140,8 +147,8 @@ class Frag1Fav : Fragment() {
             val imm = this.requireActivity().getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
             imm.hideSoftInputFromWindow(binding.edtBuscar.getWindowToken(), 0)
 
-            if (!Red.isConnected(this.activity as AppCompatActivity)){
-                SnackbarX.make(binding.root,"No hay conexión a internet", resources.getColor(R.color.error))
+            if (!cerrado && !Red.isConnected(this.activity as AppCompatActivity)){
+                SnackbarX.noInternet(binding.root)
                 return
             }
 
@@ -152,18 +159,18 @@ class Frag1Fav : Fragment() {
             lifecycleScope.launch {
                 try{
                     val activo = CrearActivo.crear(ticker)
-                    favoritos.add(activo!!)
+                    favoritos.add(activo)
                     binding.rvFav.adapter!!.notifyItemInserted(favoritos.indexOf(activo))
 
                     guardarPreferences(activo.ticker)
                 }catch (e:Exception){
                     withContext(Dispatchers.Main){
-                        SnackbarX.make(binding.root, "${e.message}", resources.getColor(R.color.error))
+                        SnackbarX.err(binding.root, "${e.message}")
                     }
                 }
             }
         }catch (e:Exception){
-            SnackbarX.make(binding.root, "${e.message}", resources.getColor(R.color.error))
+            SnackbarX.err(binding.root, "${e.message}")
         }
     }
 

@@ -6,7 +6,7 @@ import com.markets.argyview.R
 
 class SnackbarX {
     companion object{
-        fun make(view:View, texto:String, fondo:Int) {
+        private fun make(view:View, texto:String, fondo:Int) {
             val snackbar = Snackbar.make(view,texto, Snackbar.LENGTH_SHORT)
             with(snackbar) {
                 setTextColor(view.resources.getColor(R.color.texto))
@@ -15,6 +15,14 @@ class SnackbarX {
             }
         }
 
+        fun normal(view: View, texto: String) = make(view, texto, view.resources.getColor(R.color.fondo))
+
+        fun err (view: View, texto: String) = make(view, texto, view.resources.getColor(R.color.error))
+
+
+        fun cargando(view: View) = normal(view, view.resources.getString(R.string.cargando))
+
+        fun noInternet(view: View) = err(view, view.resources.getString(R.string.noInternet))
 
     }
 }

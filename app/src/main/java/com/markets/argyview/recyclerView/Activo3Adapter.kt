@@ -52,7 +52,7 @@ class Activo3Adapter(var listado:List<Activo>, val frag3Cotiz: Frag3Cotiz)
                     editor.putStringSet("tickers",tickersFav)
                     editor.apply()
                     //Log.i("prefesG",tickersFav.joinToString(" ") + preferences.getStringSet("tickers",null)!!.joinToString(" "))
-                    SnackbarX.make(this.itemView,"${activo.ticker} fué agregado a favoritos",res.getColor(R.color.fondo))
+                    SnackbarX.normal(this.itemView,"${activo.ticker} fué agregado a favoritos")
                     render(activo)
                 }
             }else{
@@ -62,7 +62,7 @@ class Activo3Adapter(var listado:List<Activo>, val frag3Cotiz: Frag3Cotiz)
                     editor.putStringSet("tickers",tickersFav)
                     editor.apply()
                     //Log.i("prefesB",tickersFav.joinToString(" ") + preferences.getStringSet("tickers",null)!!.joinToString(" "))
-                    SnackbarX.make(this.itemView,"${activo.ticker} fué eliminado de favoritos",res.getColor(R.color.fondo))
+                    SnackbarX.normal(this.itemView,"${activo.ticker} fué eliminado de favoritos")
                     render(activo)
                 }
             }
@@ -70,7 +70,7 @@ class Activo3Adapter(var listado:List<Activo>, val frag3Cotiz: Frag3Cotiz)
             itemView.setOnClickListener {
                 val txvListado = frag3Cotiz.requireActivity().findViewById<TextView>(R.id.txvListado)
 
-                if (activo.dif == 0.0) SnackbarX.make(itemView,"Precio no disponible",res.getColor(R.color.fondo))
+                if (activo.dif == 0.0) SnackbarX.normal(itemView,"Precio no disponible")
                 else txvListado.text = activo.toString()
             }
 

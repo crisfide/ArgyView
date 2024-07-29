@@ -45,13 +45,13 @@ class ActivoAdapter(var favoritos:MutableList<Activo>, val frag1Fav: Frag1Fav)
                 favoritos.remove(activo)
                 frag1Fav.borrarPreferences(activo.ticker)
                 Log.i("render", favoritos.joinToString (", "){ it.ticker })
-                SnackbarX.make(binding.root, "Eliminado " + activo.ticker, res.getColor(R.color.fondo))
+                SnackbarX.normal(binding.root, "Eliminado ${activo.ticker}")
             }
 
             itemView.setOnClickListener {
                 val txvListado = frag1Fav.requireActivity().findViewById<TextView>(R.id.txvListado)
 
-                if (activo.dif == 0.0) SnackbarX.make(itemView,"Precio no disponible",res.getColor(R.color.fondo))
+                if (activo.dif == 0.0) SnackbarX.normal(itemView,"Precio no disponible")
                 else txvListado.text = activo.toString()
             }
 

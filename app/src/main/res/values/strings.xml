@@ -29,4 +29,9 @@
     <string name="bNav_grafico">Gráfico</string>
     <string name="bNav_cotizaciones">Cotizaciones</string>
     <string name="bNav_configuracion">Configuración</string>
+
+
+    //snackbarX
+    <string name="cargando">Cargando…</string>
+    <string name="noInternet">No hay conexiòn a internet</string>
 </resources>
