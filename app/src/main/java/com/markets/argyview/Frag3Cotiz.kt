@@ -12,7 +12,9 @@ import android.widget.AdapterView
 import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.markets.argyview.activos.Activo
@@ -71,20 +73,17 @@ class Frag3Cotiz : Fragment() {
                 viewLifecycleOwner.lifecycleScope.launch{
                     try {
                         if (!cerrado) {
-                            withContext(Dispatchers.Main) {
-                                if (!Red.isConnected(requireActivity() as AppCompatActivity)) {
-                                    throw Exception("No hay conexión a internet")
-                                }
-                                SnackbarX.cargando(binding.root)
+                            if (!Red.isConnected(requireActivity() as AppCompatActivity)) {
+                                throw Exception("No hay conexión a internet")
                             }
+                            SnackbarX.cargando(binding.root)
+
                         }
                         editor.putString("panelCotiz",arrPaneles[position])
                         editor.apply()
                         cargarCotiz(arrPaneles[position])
                     }catch (e:Exception){
-                        withContext(Dispatchers.Main){
-                            SnackbarX.err(binding.root, "${e.message}")
-                        }
+                        SnackbarX.err(binding.root, "${e.message}")
                     }
                 }
             }
@@ -95,22 +94,19 @@ class Frag3Cotiz : Fragment() {
         binding.swipePLayout.setColorSchemeResources(R.color.sube, R.color.baja)
         binding.swipePLayout.setOnRefreshListener {
             viewLifecycleOwner.lifecycleScope.launch{
-                try {
-                    if (!cerrado) {
-                        withContext(Dispatchers.Main) {
+                viewLifecycleOwner.lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED){
+                    try {
+                        if (!cerrado) {
                             if (!Red.isConnected(this@Frag3Cotiz.requireActivity() as AppCompatActivity)) {
                                 throw Exception("No hay conexión a internet")
                             }
                         }
-                    }
-                    cargarCotiz(arrPaneles[binding.spinnerCotiz.selectedItemPosition])
-                }catch (e:Exception){
-                    Log.e("swipeLayout", e.message.toString())
-                    withContext(Dispatchers.Main){
+                        cargarCotiz(arrPaneles[binding.spinnerCotiz.selectedItemPosition])
+                    }catch (e:Exception){
+                        Log.e("swipeLayout", e.message.toString())
                         SnackbarX.err(binding.root, "${e.message}")
+
                     }
-                }
-                withContext(Dispatchers.Main){
                     binding.swipePLayout.isRefreshing = false
                 }
             }
@@ -126,17 +122,25 @@ class Frag3Cotiz : Fragment() {
             //val arr = CrearActivo.crear(BDActivos.mapa[tipo]!!)
 
             if (binding.rvCotiz.adapter==null){
-                listado.addAll(CrearActivo.crearPanelBYMA(tipo).toMutableList())
-                listado.sortBy { it.ticker }
+
+                withContext(Dispatchers.IO){
+
+                    listado.addAll(CrearActivo.crearPanelBYMA(tipo).toMutableList())
+                    listado.sortBy { it.ticker }
+                }
                 Log.i("spinner-creando",listado.joinToString("-") { it.ticker })
                 binding.rvCotiz.adapter = Activo3Adapter(listado,this)
                 val manager = LinearLayoutManager(this.requireContext())
                 binding.rvCotiz.layoutManager = manager
                 binding.rvCotiz.addItemDecoration(DividerItemDecoration(this.requireContext(),manager.orientation))
             }else{
-                listado.removeAll(listado)
-                listado.addAll(CrearActivo.crearPanelBYMA(tipo))
-                listado.sortBy { it.ticker }
+
+                withContext(Dispatchers.IO){
+                    listado.removeAll(listado)
+                    listado.addAll(CrearActivo.crearPanelBYMA(tipo))
+                    listado.sortBy { it.ticker }
+                }
+
                 Log.i("spinner",listado.joinToString("-"){it.ticker})
                 Log.i("spinner","itemcount"+ binding.rvCotiz.adapter!!.itemCount )
                 binding.rvCotiz.adapter!!.notifyDataSetChanged()

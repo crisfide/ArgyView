@@ -13,7 +13,9 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.markets.argyview.activos.Activo
@@ -66,18 +68,15 @@ class Frag1Fav : Fragment() {
         val tickers = preferences.getStringSet("tickers", mutableSetOf())!!.toList()
         viewLifecycleOwner.lifecycleScope.launch{
             try {
-                withContext(Dispatchers.Main){
-                    if (!cerrado)
-                        SnackbarX.cargando(binding.root)
-                }
+                if (!cerrado)
+                    SnackbarX.cargando(binding.root)
+
                 favoritos.addAll(CrearActivo.crear(tickers))
-                withContext(Dispatchers.Main){
-                    favoritos.sortBy { it.ticker }
-                    binding.rvFav.adapter = ActivoAdapter(favoritos, this@Frag1Fav)
-                    val manager = LinearLayoutManager(this@Frag1Fav.requireContext())
-                    binding.rvFav.layoutManager = manager
-                    binding.rvFav.addItemDecoration(DividerItemDecoration(this@Frag1Fav.requireContext(),manager.orientation))
-                }
+                favoritos.sortBy { it.ticker }
+                binding.rvFav.adapter = ActivoAdapter(favoritos, this@Frag1Fav)
+                val manager = LinearLayoutManager(this@Frag1Fav.requireContext())
+                binding.rvFav.layoutManager = manager
+                binding.rvFav.addItemDecoration(DividerItemDecoration(this@Frag1Fav.requireContext(),manager.orientation))
             }catch (e:Exception){
                 Log.e("prefs", e.message.toString())
             }
@@ -90,27 +89,28 @@ class Frag1Fav : Fragment() {
         binding.swipePLayout.setColorSchemeResources(R.color.sube, R.color.baja)
         binding.swipePLayout.setOnRefreshListener {
             viewLifecycleOwner.lifecycleScope.launch {
-                try {
-                    if (!cerrado){
-                        withContext(Dispatchers.Main){
+                viewLifecycleOwner.lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED){
+                    try {
+                        if (!cerrado){
                             if (!Red.isConnected(this@Frag1Fav.requireActivity() as AppCompatActivity)){
                                 SnackbarX.noInternet(binding.root)
                                 throw Exception("No hay conexión a internet")
+
                             }
+                            val tickers2 = favoritos.map { it.ticker }
+                            favoritos.removeAll(favoritos)
+                            favoritos.addAll(CrearActivo.crear(tickers2))
+                            binding.rvFav.adapter!!.notifyItemRangeChanged(0,favoritos.size+1)
                         }
-                        val tickers2 = favoritos.map { it.ticker }
-                        favoritos.removeAll(favoritos)
-                        favoritos.addAll(CrearActivo.crear(tickers2))
-                        binding.rvFav.adapter!!.notifyItemRangeChanged(0,favoritos.size+1)
+
+
+                    }catch (e:Exception){
+                        Log.e("swipeLayout", e.message.toString())
                     }
-
-
-                }catch (e:Exception){
-                    Log.e("swipeLayout", e.message.toString())
-                }
-                withContext(Dispatchers.Main){
                     binding.swipePLayout.isRefreshing=false
                 }
+
+
             }
 
 
@@ -161,12 +161,9 @@ class Frag1Fav : Fragment() {
                     val activo = CrearActivo.crear(ticker)
                     favoritos.add(activo)
                     binding.rvFav.adapter!!.notifyItemInserted(favoritos.indexOf(activo))
-
                     guardarPreferences(activo.ticker)
                 }catch (e:Exception){
-                    withContext(Dispatchers.Main){
-                        SnackbarX.err(binding.root, "${e.message}")
-                    }
+                    SnackbarX.err(binding.root, "${e.message}")
                 }
             }
         }catch (e:Exception){

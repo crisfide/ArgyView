@@ -132,9 +132,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
             }catch (e:Exception){
-                withContext(Dispatchers.Main){
-                    SnackbarX.err(binding.root, "${e.message}")
-                }
+                SnackbarX.err(binding.root, "${e.message}")
             }
         }
 
