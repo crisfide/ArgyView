@@ -1,25 +1,32 @@
 package com.markets.argyview.activos
 
-//import org.threeten.bp.LocalDate
-//import org.threeten.bp.temporal.ChronoUnit
 import android.os.Build
 import android.util.Log
-import androidx.annotation.RequiresApi
 import com.google.gson.annotations.Expose
 import org.decampo.xirr.Transaction
 import org.decampo.xirr.Xirr
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
-import java.time.temporal.ChronoUnit
+import java.time.LocalDate as ldJT
+import java.time.format.DateTimeFormatter as dtfJT
+import java.time.temporal.ChronoUnit as cuJT
 import kotlin.math.pow
+
+
+import org.threeten.bp.LocalDate
+import org.threeten.bp.format.DateTimeFormatter
+import org.threeten.bp.temporal.ChronoUnit
 
 open class Bono(ticker: String, precio: Double, moneda: String, dif: Double,
                 @Expose val flujo : List<PagoBono>) : Activo(ticker, precio, moneda, dif) {
 
     fun getTIR():Double{
-        val compra = Transaction(-this.precio, LocalDate.now())
-        val trans:List<Transaction> =  flujo.filter { it.fecha > LocalDate.now() }.map {
-            Transaction(it.cupon+it.amort, it.fecha)
+        if (Build.VERSION.SDK_INT < 26) {
+            //todo
+            return 0.0
+        }
+
+        val compra = Transaction(-this.precio, ldJT.now())
+        val trans:List<Transaction> =  flujo.filter { ldJT.ofEpochDay(it.fecha.toEpochDay()) > ldJT.now() }.map {
+            Transaction(it.cupon+it.amort, ldJT.ofEpochDay(it.fecha.toEpochDay()))
         } + compra
 
         val tasa = Xirr(trans).xirr()
@@ -44,6 +51,11 @@ open class Bono(ticker: String, precio: Double, moneda: String, dif: Double,
     fun getParidadF() = String.format("%.1f",this.getParidad()*100) + "%"
 
     fun getMD():Double{
+        if (Build.VERSION.SDK_INT < 26) {
+            //todo
+            return 0.0
+        }
+
         val flujoDesc = this.flujo.filter { it.fecha > LocalDate.now() }
             .mapIndexed { i, pago ->
                 (pago.cupon + pago.amort) / (1 + this.getTIR()).pow(i+1)

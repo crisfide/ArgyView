@@ -8,7 +8,9 @@ import com.markets.argyview.MainActivity
 import com.markets.argyview.activos.Activo
 import com.markets.argyview.activos.Bono
 import com.markets.argyview.activos.PagoBono
-import java.time.LocalDate
+import java.time.LocalDate as ldJ8
+
+import org.threeten.bp.LocalDate
 
 class CrearActivo {
     class Urls{
