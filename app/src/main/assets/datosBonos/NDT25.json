@@ -1,0 +1,88 @@
+{
+    "nombre": "NDT25 - Provincia de Neuquen 27/04/2030",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "NDT25 - Provincia de Neuquen 27/04/2030 - USP7169GAA78",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "NDT25",
+    "valorResidual": 84.61538462,
+    "flujo": [
+        {
+            "fecha": 1745722800000,
+            "amortizacion": 7.69,
+            "renta": 2.91,
+            "total": 10.6,
+            "valorResidual": 84.61538462
+        },
+        {
+            "fecha": 1761534000000,
+            "amortizacion": 7.69,
+            "renta": 2.64,
+            "total": 10.33,
+            "valorResidual": 76.92307692
+        },
+        {
+            "fecha": 1777258800000,
+            "amortizacion": 7.69,
+            "renta": 2.38,
+            "total": 10.07,
+            "valorResidual": 69.23076923
+        },
+        {
+            "fecha": 1793070000000,
+            "amortizacion": 7.69,
+            "renta": 2.12,
+            "total": 9.81,
+            "valorResidual": 61.53846154
+        },
+        {
+            "fecha": 1808794800000,
+            "amortizacion": 7.69,
+            "renta": 1.85,
+            "total": 9.54,
+            "valorResidual": 53.84615385
+        },
+        {
+            "fecha": 1824606000000,
+            "amortizacion": 7.69,
+            "renta": 1.59,
+            "total": 9.28,
+            "valorResidual": 46.15384615
+        },
+        {
+            "fecha": 1840417200000,
+            "amortizacion": 7.69,
+            "renta": 1.32,
+            "total": 9.01,
+            "valorResidual": 38.46153846
+        },
+        {
+            "fecha": 1856228400000,
+            "amortizacion": 7.69,
+            "renta": 1.06,
+            "total": 8.75,
+            "valorResidual": 30.76923077
+        },
+        {
+            "fecha": 1871953200000,
+            "amortizacion": 7.69,
+            "renta": 0.79,
+            "total": 8.48,
+            "valorResidual": 23.07692308
+        },
+        {
+            "fecha": 1887764400000,
+            "amortizacion": 7.69,
+            "renta": 0.53,
+            "total": 8.22,
+            "valorResidual": 15.38461538
+        },
+        {
+            "fecha": 1903489200000,
+            "amortizacion": 7.69,
+            "renta": 0.26,
+            "total": 7.95,
+            "valorResidual": 7.69230769
+        }
+    ]
+}

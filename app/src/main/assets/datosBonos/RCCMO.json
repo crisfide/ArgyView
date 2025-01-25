@@ -1,0 +1,25 @@
+{
+    "nombre": "RCCMO - ON ARCOR CLASE 21 U$S ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "RCCMO - ON ARCOR CLASE 21 U$S  - ARARCS5600I4",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "RCCMO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1747882800000,
+            "amortizacion": 0,
+            "renta": 1.74,
+            "total": 1.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1763780400000,
+            "amortizacion": 100,
+            "renta": 1.76,
+            "total": 101.76,
+            "valorResidual": 100
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "nombre": "CAC5O - CAPEX SA ON V EN USD 9 250 ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CAC5O - CAPEX SA ON V EN USD 9 250 ",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "CAC5O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1740452400000,
+            "amortizacion": 12.5,
+            "renta": 4.66,
+            "total": 17.16,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1756090800000,
+            "amortizacion": 12.5,
+            "renta": 4.01,
+            "total": 16.51,
+            "valorResidual": 87.5
+        },
+        {
+            "fecha": 1771988400000,
+            "amortizacion": 12.5,
+            "renta": 3.5,
+            "total": 16,
+            "valorResidual": 75
+        },
+        {
+            "fecha": 1787626800000,
+            "amortizacion": 12.5,
+            "renta": 2.87,
+            "total": 15.37,
+            "valorResidual": 62.5
+        },
+        {
+            "fecha": 1803524400000,
+            "amortizacion": 12.5,
+            "renta": 2.33,
+            "total": 14.83,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 1819162800000,
+            "amortizacion": 12.5,
+            "renta": 1.72,
+            "total": 14.22,
+            "valorResidual": 37.5
+        },
+        {
+            "fecha": 1835060400000,
+            "amortizacion": 12.5,
+            "renta": 1.17,
+            "total": 13.67,
+            "valorResidual": 25
+        },
+        {
+            "fecha": 1850785200000,
+            "amortizacion": 12.5,
+            "renta": 0.58,
+            "total": 13.08,
+            "valorResidual": 12.5
+        }
+    ]
+}

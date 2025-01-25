@@ -1,0 +1,46 @@
+{
+    "nombre": "CRCMO - ON CELULOSA C21 DLK EFECT COMP",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CRCMO - ON CELULOSA C21 DLK EFECT COMP - AR0904079826",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "CRCMO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1738983600000,
+            "amortizacion": 0,
+            "renta": 1.76,
+            "total": 1.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1746673200000,
+            "amortizacion": 0,
+            "renta": 1.71,
+            "total": 1.71,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1754622000000,
+            "amortizacion": 0,
+            "renta": 1.76,
+            "total": 1.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1762570800000,
+            "amortizacion": 0,
+            "renta": 1.76,
+            "total": 1.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1770519600000,
+            "amortizacion": 100,
+            "renta": 1.76,
+            "total": 101.76,
+            "valorResidual": 100
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "nombre": "PN7CO - PAE USD-L Clase 7",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PN7CO - PAE USD-L Clase 7 - ARAXIO5600E7",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "PN7CO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1739934000000,
+            "amortizacion": 0,
+            "renta": 1.19,
+            "total": 1.19,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1747623600000,
+            "amortizacion": 0,
+            "renta": 1.19,
+            "total": 1.19,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1755572400000,
+            "amortizacion": 0,
+            "renta": 1.19,
+            "total": 1.19,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1763521200000,
+            "amortizacion": 100,
+            "renta": 1.19,
+            "total": 101.19,
+            "valorResidual": 100
+        }
+    ]
+}

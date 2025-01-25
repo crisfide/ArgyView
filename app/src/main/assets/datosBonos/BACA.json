@@ -1,0 +1,39 @@
+{
+    "nombre": "BACA - Banco Macro 2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "BACA - Banco Macro 2026 - USP1047VAF42",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "BACA",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1746327600000,
+            "amortizacion": 0,
+            "renta": 3.38,
+            "total": 3.38,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1762225200000,
+            "amortizacion": 0,
+            "renta": 3.38,
+            "total": 3.38,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1777863600000,
+            "amortizacion": 0,
+            "renta": 3.38,
+            "total": 3.38,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1793761200000,
+            "amortizacion": 100,
+            "renta": 3.38,
+            "total": 103.38,
+            "valorResidual": 100
+        }
+    ]
+}

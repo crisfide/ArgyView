@@ -1,0 +1,165 @@
+{
+    "nombre": "VSCTO - ON VISTA ENERGY CL XXVII 10/12/2035",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "VSCTO - ON VISTA ENERGY CL XXVII 10/12/2035 - USP965RAA60",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "VSCTO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1749524400000,
+            "amortizacion": 0,
+            "renta": 3.8,
+            "total": 3.8,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1765335600000,
+            "amortizacion": 0,
+            "renta": 3.82,
+            "total": 3.82,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1781060400000,
+            "amortizacion": 0,
+            "renta": 3.8,
+            "total": 3.8,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1796871600000,
+            "amortizacion": 0,
+            "renta": 3.82,
+            "total": 3.82,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1812596400000,
+            "amortizacion": 0,
+            "renta": 3.8,
+            "total": 3.8,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1828407600000,
+            "amortizacion": 0,
+            "renta": 3.82,
+            "total": 3.82,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1844218800000,
+            "amortizacion": 0,
+            "renta": 3.82,
+            "total": 3.82,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1860030000000,
+            "amortizacion": 0,
+            "renta": 3.82,
+            "total": 3.82,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1875754800000,
+            "amortizacion": 0,
+            "renta": 3.8,
+            "total": 3.8,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1891566000000,
+            "amortizacion": 0,
+            "renta": 3.82,
+            "total": 3.82,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1907290800000,
+            "amortizacion": 0,
+            "renta": 3.8,
+            "total": 3.8,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1923102000000,
+            "amortizacion": 0,
+            "renta": 3.82,
+            "total": 3.82,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1938826800000,
+            "amortizacion": 0,
+            "renta": 3.8,
+            "total": 3.8,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1954638000000,
+            "amortizacion": 0,
+            "renta": 3.82,
+            "total": 3.82,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1970449200000,
+            "amortizacion": 0,
+            "renta": 3.82,
+            "total": 3.82,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1986260400000,
+            "amortizacion": 0,
+            "renta": 3.82,
+            "total": 3.82,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2001985200000,
+            "amortizacion": 0,
+            "renta": 3.8,
+            "total": 3.8,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2017796400000,
+            "amortizacion": 33,
+            "renta": 3.82,
+            "total": 36.82,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2033521200000,
+            "amortizacion": 0,
+            "renta": 2.55,
+            "total": 2.55,
+            "valorResidual": 67
+        },
+        {
+            "fecha": 2049332400000,
+            "amortizacion": 33,
+            "renta": 2.56,
+            "total": 35.56,
+            "valorResidual": 67
+        },
+        {
+            "fecha": 2065057200000,
+            "amortizacion": 0,
+            "renta": 1.29,
+            "total": 1.29,
+            "valorResidual": 34
+        },
+        {
+            "fecha": 2080868400000,
+            "amortizacion": 34,
+            "renta": 1.3,
+            "total": 35.3,
+            "valorResidual": 34
+        }
+    ]
+}

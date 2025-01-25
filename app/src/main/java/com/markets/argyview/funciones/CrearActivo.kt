@@ -2,15 +2,16 @@ package com.markets.argyview.funciones
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.content.res.AssetManager
 import android.util.Log
 import com.google.gson.Gson
-import com.markets.argyview.MainActivity
 import com.markets.argyview.activos.Activo
 import com.markets.argyview.activos.Bono
 import com.markets.argyview.activos.PagoBono
-import java.time.LocalDate as ldJ8
+import org.threeten.bp.Instant
 
 import org.threeten.bp.LocalDate
+import org.threeten.bp.ZoneId
 
 class CrearActivo {
     class Urls{
@@ -67,9 +68,11 @@ class CrearActivo {
         val bodyByma = "{\"excludeZeroPxAndQty\":true,\"T2\":false,\"T1\":true,\"T0\":false,\"Content-Type\":\"application/json\",\"page_size\":400}"
 
         private lateinit var preferences: SharedPreferences
+        private lateinit var assets: AssetManager
 
         fun initPrefs(context : Context) {
             preferences = context.getSharedPreferences("db", 0)
+            assets = context.assets
         }
 
         suspend fun crear(str: String):Activo{
@@ -196,6 +199,29 @@ class CrearActivo {
             }
         }
 
+        private fun pesificarActivo(tickerD: String): String {
+            if (tickerD.endsWith("D") && BDActivos.ONs.contains(tickerD.removeSuffix("D") + "O")) {
+                return tickerD.removeSuffix("D") + "O"
+            }
+            if (tickerD.endsWith("C") && BDActivos.ONs.contains(tickerD.removeSuffix("C") + "O")) {
+                return tickerD.removeSuffix("C") + "O"
+            }
+            if (tickerD.endsWith("C")){
+                return tickerD.removeSuffix("C")
+            }
+
+            return when (tickerD) {
+                "BA7DD" -> "BA37D"
+                "BB7DD" -> "BB37D"
+                "BPA7D" -> "BPOA7"
+                "BPB7D" -> "BPOB7"
+                "BPC7D" -> "BPOC7"
+                "BPD7D" -> "BPOD7"
+                else -> tickerD.removeSuffix("D")
+            }
+        }
+
+
 
         private fun getMoneda(ticker: String): String {
             val moneda = if (ticker.endsWith("D")) USD else ARS
@@ -208,26 +234,45 @@ class CrearActivo {
         }
 
 
+        private fun jsonDesdeAssets(nombreArchivo: String): String? {
+            return try {
+                assets.open(nombreArchivo).bufferedReader().use { it.readText() }
+            } catch (e: Exception) {
+                null
+            }
+        }
+
         private fun obtenerFlujo(ticker: String): List<PagoBono> {
-            //todo
-            return flujoLoco()
+            val tickerP = pesificarActivo(ticker)
+            var jsonStr = jsonDesdeAssets("datosBonos/${tickerP}.json")
+            Log.i("bono.json",jsonStr.toString())
+
+            if (jsonStr == null){
+                return flujoLoco()
+            }
+
+            val gson = Gson()
+            var flujoArr = gson.fromJson(jsonStr, Map::class.java)["flujo"] as List<Map<String,Double>>
+            Log.i("bono.flujo",flujoArr[0].toString())
+
+            var flujo = flujoArr.map {
+                PagoBono(
+                    Instant.ofEpochMilli(it["fecha"]!!.toLong()) // Convertir a Instant
+                        .atZone(ZoneId.systemDefault())    // Aplicar zona horaria
+                        .toLocalDate(),
+                    it["renta"]!!,
+                    it["amortizacion"]!!)
+            }
+
+            Log.i("bono.ff",flujo.toString())
+
+            return flujo
         }
 
         private fun flujoLoco(): List<PagoBono> {
             return listOf<PagoBono>(
-                (PagoBono(LocalDate.of(2023, 5, 1), 10.0, 0.0)),
-                (PagoBono(LocalDate.of(2024, 5, 1), 10.0, 0.0)),
-                (PagoBono(LocalDate.of(2025, 5, 1), 15.0, 0.0)),
-                (PagoBono(LocalDate.of(2026, 5, 1), 20.0, 0.0)),
-                (PagoBono(LocalDate.of(2027, 5, 1), 10.0, 0.0)),
-                (PagoBono(LocalDate.of(2028, 5, 1), 15.0, 0.0)),
-                (PagoBono(LocalDate.of(2029, 5, 1), 20.0, 0.0)),
-                (PagoBono(LocalDate.of(2030, 5, 1), 15.0, 0.0)),
-                (PagoBono(LocalDate.of(2031, 5, 1), 20.0, 0.0)),
-                (PagoBono(LocalDate.of(2032, 5, 1), 10.0, 0.0)),
-                (PagoBono(LocalDate.of(2033, 5, 1), 15.0, 0.0)),
-                (PagoBono(LocalDate.of(2034, 5, 1), 20.0, 0.0)),
-                (PagoBono(LocalDate.of(2035, 5, 1), 25.0, 100.0))
+                (PagoBono(LocalDate.of(0, 1, 1), 0.0, 0.0)),
+                (PagoBono(LocalDate.of(2099, 1, 1), 0.0, 100.0))
             )
         }
 

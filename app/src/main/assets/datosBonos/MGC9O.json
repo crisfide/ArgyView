@@ -1,0 +1,39 @@
+{
+    "nombre": "MGC9O - ON Pampa Energía Clase 9 VTO 08/12/2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MGC9O - ON Pampa Energía Clase 9 VTO 08/12/2026 - USP7464EAH91",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MGC9O",
+    "valorResidual": 67,
+    "flujo": [
+        {
+            "fecha": 1749351600000,
+            "amortizacion": 0,
+            "renta": 3.18,
+            "total": 3.18,
+            "valorResidual": 67
+        },
+        {
+            "fecha": 1765162800000,
+            "amortizacion": 33,
+            "renta": 3.18,
+            "total": 36.18,
+            "valorResidual": 67
+        },
+        {
+            "fecha": 1780887600000,
+            "amortizacion": 0,
+            "renta": 1.62,
+            "total": 1.62,
+            "valorResidual": 34
+        },
+        {
+            "fecha": 1796698800000,
+            "amortizacion": 34,
+            "renta": 1.62,
+            "total": 35.62,
+            "valorResidual": 34
+        }
+    ]
+}

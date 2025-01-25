@@ -1,0 +1,18 @@
+{
+    "nombre": "DNC4O - ON EDENOR CL.4 V.07/03/25 $ CG",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "DNC4O - ON EDENOR CL.4 V.07/03/25 $ CG - AR0182630860",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "DNC4O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1741316400000,
+            "amortizacion": 100,
+            "renta": 0.74,
+            "total": 100.74,
+            "valorResidual": 100
+        }
+    ]
+}

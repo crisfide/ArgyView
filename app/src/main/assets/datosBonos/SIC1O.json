@@ -1,0 +1,39 @@
+{
+    "nombre": "SIC1O - ON SIDERSA CL1 V09/12/26 U$S CG",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "SIC1O - ON SIDERSA CL1 V09/12/26 U$S CG - AR0869460326",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "SIC1O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1749438000000,
+            "amortizacion": 0,
+            "renta": 3.24,
+            "total": 3.24,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1765249200000,
+            "amortizacion": 0,
+            "renta": 3.26,
+            "total": 3.26,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1780974000000,
+            "amortizacion": 0,
+            "renta": 3.24,
+            "total": 3.24,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1796785200000,
+            "amortizacion": 100,
+            "renta": 3.26,
+            "total": 103.26,
+            "valorResidual": 100
+        }
+    ]
+}

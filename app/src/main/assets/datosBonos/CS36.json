@@ -1,0 +1,18 @@
+{
+    "nombre": "CS36 - ON CRESUD SER 22 CL 36",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CS36 - ON CRESUD SER 22 CL 36 - ARCRES5600T3",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "CS36",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1739847600000,
+            "amortizacion": 100,
+            "renta": 1,
+            "total": 101,
+            "valorResidual": 100
+        }
+    ]
+}

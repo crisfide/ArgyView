@@ -1,0 +1,46 @@
+{
+    "nombre": "MGC1O - Pampa Energía C1 2027",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MGC1O - Pampa Energía C1 2027",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MGC1O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1737687600000,
+            "amortizacion": 0,
+            "renta": 3.75,
+            "total": 3.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1753326000000,
+            "amortizacion": 0,
+            "renta": 3.75,
+            "total": 3.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1769223600000,
+            "amortizacion": 0,
+            "renta": 3.75,
+            "total": 3.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784862000000,
+            "amortizacion": 0,
+            "renta": 3.75,
+            "total": 3.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1800759600000,
+            "amortizacion": 100,
+            "renta": 3.75,
+            "total": 103.75,
+            "valorResidual": 100
+        }
+    ]
+}

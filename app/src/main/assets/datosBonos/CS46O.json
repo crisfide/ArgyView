@@ -1,0 +1,53 @@
+{
+    "nombre": "CS46O - CRESUD 1 5 18/07/2027 DLK",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CS46O - CRESUD 1 5 18/07/2027 DLK - AR0792642578",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "CS46O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1752807600000,
+            "amortizacion": 0,
+            "renta": 0.74,
+            "total": 0.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1768705200000,
+            "amortizacion": 0,
+            "renta": 0.76,
+            "total": 0.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784343600000,
+            "amortizacion": 0,
+            "renta": 0.74,
+            "total": 0.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1800241200000,
+            "amortizacion": 0,
+            "renta": 0.76,
+            "total": 0.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1815879600000,
+            "amortizacion": 0,
+            "renta": 0.74,
+            "total": 0.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1831777200000,
+            "amortizacion": 100,
+            "renta": 0.76,
+            "total": 100.76,
+            "valorResidual": 100
+        }
+    ]
+}

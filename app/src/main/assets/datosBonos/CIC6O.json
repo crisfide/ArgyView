@@ -1,0 +1,46 @@
+{
+    "nombre": "CIC6O - O.N. CNH INDUSTRIAL CLASE 6 DLK",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CIC6O - O.N. CNH INDUSTRIAL CLASE 6 DLK - AR0586735992",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "CIC6O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1740711600000,
+            "amortizacion": 0,
+            "renta": 1.87,
+            "total": 1.87,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1748401200000,
+            "amortizacion": 0,
+            "renta": 1.83,
+            "total": 1.83,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1756350000000,
+            "amortizacion": 0,
+            "renta": 1.89,
+            "total": 1.89,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1764298800000,
+            "amortizacion": 0,
+            "renta": 1.89,
+            "total": 1.89,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1772247600000,
+            "amortizacion": 100,
+            "renta": 1.89,
+            "total": 101.89,
+            "valorResidual": 100
+        }
+    ]
+}

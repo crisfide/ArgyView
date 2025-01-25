@@ -1,0 +1,18 @@
+{
+    "nombre": "R2F25 - Prov. de La Rioja 9 75  2025",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "R2F25 - Prov. de La Rioja 9 75  2025",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "R2F25",
+    "valorResidual": 25,
+    "flujo": [
+        {
+            "fecha": 1740366000000,
+            "amortizacion": 25,
+            "renta": 1.22,
+            "total": 26.22,
+            "valorResidual": 25
+        }
+    ]
+}

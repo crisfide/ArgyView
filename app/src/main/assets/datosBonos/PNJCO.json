@@ -1,0 +1,74 @@
+{
+    "nombre": "PNJCO - Pan American Energy USD-L 7/2/2027",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PNJCO - Pan American Energy USD-L 7/2/2027",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PNJCO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1738897200000,
+            "amortizacion": 0,
+            "renta": 0.32,
+            "total": 0.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1746586800000,
+            "amortizacion": 0,
+            "renta": 0.3,
+            "total": 0.3,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1754535600000,
+            "amortizacion": 0,
+            "renta": 0.32,
+            "total": 0.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1762484400000,
+            "amortizacion": 0,
+            "renta": 0.32,
+            "total": 0.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1770433200000,
+            "amortizacion": 0,
+            "renta": 0.32,
+            "total": 0.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1778122800000,
+            "amortizacion": 0,
+            "renta": 0.3,
+            "total": 0.3,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1786071600000,
+            "amortizacion": 0,
+            "renta": 0.32,
+            "total": 0.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1794020400000,
+            "amortizacion": 0,
+            "renta": 0.32,
+            "total": 0.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1801969200000,
+            "amortizacion": 100,
+            "renta": 0.32,
+            "total": 100.32,
+            "valorResidual": 100
+        }
+    ]
+}

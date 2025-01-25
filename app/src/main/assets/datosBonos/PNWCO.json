@@ -1,0 +1,32 @@
+{
+    "nombre": "PNWCO - ON PAN AMERICAN 30 V02/03/26 U$S CG ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PNWCO - ON PAN AMERICAN 30 V02/03/26 U$S CG  - AR0365726709",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PNWCO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1740711600000,
+            "amortizacion": 0,
+            "renta": 2.87,
+            "total": 2.87,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1756350000000,
+            "amortizacion": 0,
+            "renta": 2.83,
+            "total": 2.83,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1772247600000,
+            "amortizacion": 100,
+            "renta": 2.87,
+            "total": 102.87,
+            "valorResidual": 100
+        }
+    ]
+}

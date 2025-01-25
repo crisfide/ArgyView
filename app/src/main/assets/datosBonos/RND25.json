@@ -1,0 +1,60 @@
+{
+    "nombre": "RND25 - Prov. de Rio Negro Step Up 2028",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "RND25 - Prov. de Rio Negro Step Up 2028 - USP7920RCL70",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "RND25",
+    "valorResidual": 77.78,
+    "flujo": [
+        {
+            "fecha": 1741575600000,
+            "amortizacion": 11.11,
+            "renta": 2.08,
+            "total": 13.19,
+            "valorResidual": 77.78
+        },
+        {
+            "fecha": 1757473200000,
+            "amortizacion": 11.11,
+            "renta": 1.53,
+            "total": 12.64,
+            "valorResidual": 66.67
+        },
+        {
+            "fecha": 1773111600000,
+            "amortizacion": 11.11,
+            "renta": 1.06,
+            "total": 12.17,
+            "valorResidual": 55.56
+        },
+        {
+            "fecha": 1789009200000,
+            "amortizacion": 11.11,
+            "renta": 0.68,
+            "total": 11.79,
+            "valorResidual": 44.45
+        },
+        {
+            "fecha": 1804647600000,
+            "amortizacion": 11.11,
+            "renta": 0.38,
+            "total": 11.49,
+            "valorResidual": 33.34
+        },
+        {
+            "fecha": 1820545200000,
+            "amortizacion": 11.11,
+            "renta": 0.17,
+            "total": 11.28,
+            "valorResidual": 22.23
+        },
+        {
+            "fecha": 1836270000000,
+            "amortizacion": 11.12,
+            "renta": 0.04,
+            "total": 11.16,
+            "valorResidual": 11.12
+        }
+    ]
+}

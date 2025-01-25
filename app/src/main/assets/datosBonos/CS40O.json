@@ -1,0 +1,32 @@
+{
+    "nombre": "CS40O - ON CRESUD SERIE 26 C40 DLNK CO",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CS40O - ON CRESUD SERIE 26 C40 DLNK CO",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "CS40O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1766372400000,
+            "amortizacion": 33,
+            "renta": 0,
+            "total": 33,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1782097200000,
+            "amortizacion": 33,
+            "renta": 0,
+            "total": 33,
+            "valorResidual": 67
+        },
+        {
+            "fecha": 1797822000000,
+            "amortizacion": 34,
+            "renta": 0,
+            "total": 34,
+            "valorResidual": 34
+        }
+    ]
+}

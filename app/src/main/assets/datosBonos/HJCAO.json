@@ -1,0 +1,46 @@
+{
+    "nombre": "HJCAO - ON JOHN DEERE C10 DLK T UNICO",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "HJCAO - ON JOHN DEERE C10 DLK T UNICO",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "HJCAO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1741402800000,
+            "amortizacion": 0,
+            "renta": 1.88,
+            "total": 1.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1749351600000,
+            "amortizacion": 0,
+            "renta": 1.88,
+            "total": 1.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1757300400000,
+            "amortizacion": 0,
+            "renta": 1.88,
+            "total": 1.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1765162800000,
+            "amortizacion": 0,
+            "renta": 1.88,
+            "total": 1.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1772938800000,
+            "amortizacion": 100,
+            "renta": 1.88,
+            "total": 101.88,
+            "valorResidual": 100
+        }
+    ]
+}

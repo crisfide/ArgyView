@@ -1,0 +1,46 @@
+{
+    "nombre": "CABA2027 - Ciudad de Bs As 7 5  2027",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "CABA2027 - Ciudad de Bs As 7 5  2027 - XS1422866456",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "CABA2027",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1748746800000,
+            "amortizacion": 33.33,
+            "renta": 3.75,
+            "total": 37.08,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1764558000000,
+            "amortizacion": 0,
+            "renta": 2.5,
+            "total": 2.5,
+            "valorResidual": 66.67
+        },
+        {
+            "fecha": 1780282800000,
+            "amortizacion": 33.33,
+            "renta": 2.5,
+            "total": 35.83,
+            "valorResidual": 66.67
+        },
+        {
+            "fecha": 1796094000000,
+            "amortizacion": 0,
+            "renta": 1.25,
+            "total": 1.25,
+            "valorResidual": 33.34
+        },
+        {
+            "fecha": 1811818800000,
+            "amortizacion": 33.34,
+            "renta": 1.25,
+            "total": 34.59,
+            "valorResidual": 33.34
+        }
+    ]
+}

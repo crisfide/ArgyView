@@ -1,0 +1,179 @@
+{
+    "nombre": "BMA2036 - Banco Macro 2036",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "BMA2036 - Banco Macro 2036",
+    "moneda": "USD",
+    "mercado": "EEUU",
+    "ticker": "BMA2036",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1750215600000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1766026800000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1781751600000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1797562800000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1813287600000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1829098800000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1844910000000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1860721200000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1876446000000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1892257200000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1907982000000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1923793200000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1939518000000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1955329200000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1971140400000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1986951600000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2002676400000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2018487600000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2034212400000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2050023600000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2065748400000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2081559600000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2097370800000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2113182000000,
+            "amortizacion": 100,
+            "renta": 6.5,
+            "total": 106.5,
+            "valorResidual": 100
+        }
+    ]
+}

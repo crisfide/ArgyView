@@ -1,0 +1,67 @@
+{
+    "nombre": "CHAQ - Chaco 2026  L. Arg. ",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "CHAQ - Chaco 2026  L. Arg.  - ARPCHA030109",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "CHAQ",
+    "valorResidual": 4,
+    "flujo": [
+        {
+            "fecha": 1741057200000,
+            "amortizacion": 0.51,
+            "renta": 0.04,
+            "total": 0.55,
+            "valorResidual": 4
+        },
+        {
+            "fecha": 1749006000000,
+            "amortizacion": 0.51,
+            "renta": 0.04,
+            "total": 0.55,
+            "valorResidual": 3.5
+        },
+        {
+            "fecha": 1756954800000,
+            "amortizacion": 0.51,
+            "renta": 0.03,
+            "total": 0.54,
+            "valorResidual": 3
+        },
+        {
+            "fecha": 1764817200000,
+            "amortizacion": 0.51,
+            "renta": 0.03,
+            "total": 0.54,
+            "valorResidual": 2.5
+        },
+        {
+            "fecha": 1772593200000,
+            "amortizacion": 0.51,
+            "renta": 0.02,
+            "total": 0.53,
+            "valorResidual": 2
+        },
+        {
+            "fecha": 1780542000000,
+            "amortizacion": 0.51,
+            "renta": 0.02,
+            "total": 0.53,
+            "valorResidual": 1.5
+        },
+        {
+            "fecha": 1788490800000,
+            "amortizacion": 0.51,
+            "renta": 0.01,
+            "total": 0.52,
+            "valorResidual": 1
+        },
+        {
+            "fecha": 1796353200000,
+            "amortizacion": 0.51,
+            "renta": 0.01,
+            "total": 0.52,
+            "valorResidual": 0.5
+        }
+    ]
+}

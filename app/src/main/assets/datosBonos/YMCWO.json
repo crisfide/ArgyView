@@ -1,0 +1,53 @@
+{
+    "nombre": "YMCWO - ON YPF CLASE 30 DLINK ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YMCWO - ON YPF CLASE 30 DLINK  - AR0132676112",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YMCWO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1743476400000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1751338800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1759287600000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1767236400000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1775012400000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1782874800000,
+            "amortizacion": 100,
+            "renta": 0.25,
+            "total": 100.25,
+            "valorResidual": 100
+        }
+    ]
+}

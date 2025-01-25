@@ -1,0 +1,32 @@
+{
+    "nombre": "BOL1O - ON BOLDT DENOMINADA EN DOLARES VTO 2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "BOL1O - ON BOLDT DENOMINADA EN DOLARES VTO 2026",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "BOL1O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1741316400000,
+            "amortizacion": 0,
+            "renta": 5,
+            "total": 5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1757214000000,
+            "amortizacion": 0,
+            "renta": 5,
+            "total": 5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1772852400000,
+            "amortizacion": 100,
+            "renta": 5,
+            "total": 105,
+            "valorResidual": 100
+        }
+    ]
+}

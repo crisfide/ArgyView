@@ -1,0 +1,60 @@
+{
+    "nombre": "SNSBO - ON SAN MIGUEL S11 14/10/2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "SNSBO - ON SAN MIGUEL S11 14/10/2026 - AR0792131879",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "SNSBO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1744599600000,
+            "amortizacion": 0,
+            "renta": 4.74,
+            "total": 4.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1752462000000,
+            "amortizacion": 0,
+            "renta": 2.37,
+            "total": 2.37,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1760410800000,
+            "amortizacion": 0,
+            "renta": 2.39,
+            "total": 2.39,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1768359600000,
+            "amortizacion": 0,
+            "renta": 2.39,
+            "total": 2.39,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1776135600000,
+            "amortizacion": 0,
+            "renta": 2.34,
+            "total": 2.34,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1783998000000,
+            "amortizacion": 0,
+            "renta": 2.37,
+            "total": 2.37,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1791946800000,
+            "amortizacion": 100,
+            "renta": 2.39,
+            "total": 102.39,
+            "valorResidual": 100
+        }
+    ]
+}

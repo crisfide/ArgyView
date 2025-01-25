@@ -1,0 +1,39 @@
+{
+    "nombre": "TX26 - Bono del Tesoro Nacional $ CER 2026",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "TX26 - Bono del Tesoro Nacional $ CER 2026 - ARARGE3209W8",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "TX26",
+    "valorResidual": 80,
+    "flujo": [
+        {
+            "fecha": 1746759600000,
+            "amortizacion": 20,
+            "renta": 0.8,
+            "total": 20.8,
+            "valorResidual": 80
+        },
+        {
+            "fecha": 1762657200000,
+            "amortizacion": 20,
+            "renta": 0.6,
+            "total": 20.6,
+            "valorResidual": 60
+        },
+        {
+            "fecha": 1778295600000,
+            "amortizacion": 20,
+            "renta": 0.4,
+            "total": 20.4,
+            "valorResidual": 40
+        },
+        {
+            "fecha": 1794193200000,
+            "amortizacion": 20,
+            "renta": 0.2,
+            "total": 20.2,
+            "valorResidual": 20
+        }
+    ]
+}

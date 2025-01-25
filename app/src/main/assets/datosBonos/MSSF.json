@@ -1,0 +1,53 @@
+{
+    "nombre": "MSSF - ON MSU 14 US$ EFECTIVO COMPE",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MSSF - ON MSU 14 US$ EFECTIVO COMPE",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MSSF",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1737601200000,
+            "amortizacion": 0,
+            "renta": 3.78,
+            "total": 3.78,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1753239600000,
+            "amortizacion": 0,
+            "renta": 3.72,
+            "total": 3.72,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1769137200000,
+            "amortizacion": 0,
+            "renta": 3.78,
+            "total": 3.78,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784775600000,
+            "amortizacion": 0,
+            "renta": 3.72,
+            "total": 3.72,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1800673200000,
+            "amortizacion": 0,
+            "renta": 3.78,
+            "total": 3.78,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1816311600000,
+            "amortizacion": 100,
+            "renta": 3.72,
+            "total": 103.72,
+            "valorResidual": 100
+        }
+    ]
+}

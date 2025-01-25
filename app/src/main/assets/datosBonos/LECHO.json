@@ -1,0 +1,88 @@
+{
+    "nombre": "LECHO - ON ALBANESI CL 16  DLK SERIE B",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "LECHO - ON ALBANESI CL 16  DLK SERIE B",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "LECHO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1740711600000,
+            "amortizacion": 0,
+            "renta": 1.7,
+            "total": 1.7,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1748401200000,
+            "amortizacion": 0,
+            "renta": 1.65,
+            "total": 1.65,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1756350000000,
+            "amortizacion": 0,
+            "renta": 1.7,
+            "total": 1.7,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1764298800000,
+            "amortizacion": 0,
+            "renta": 2.21,
+            "total": 2.21,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1772247600000,
+            "amortizacion": 0,
+            "renta": 2.21,
+            "total": 2.21,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1779937200000,
+            "amortizacion": 0,
+            "renta": 2.13,
+            "total": 2.13,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1787886000000,
+            "amortizacion": 0,
+            "renta": 2.21,
+            "total": 2.21,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1795834800000,
+            "amortizacion": 0,
+            "renta": 2.21,
+            "total": 2.21,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1803783600000,
+            "amortizacion": 0,
+            "renta": 2.21,
+            "total": 2.21,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1811473200000,
+            "amortizacion": 0,
+            "renta": 2.13,
+            "total": 2.13,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1819422000000,
+            "amortizacion": 100,
+            "renta": 2.21,
+            "total": 102.21,
+            "valorResidual": 100
+        }
+    ]
+}

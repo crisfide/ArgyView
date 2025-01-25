@@ -1,0 +1,25 @@
+{
+    "nombre": "MSSEO - ON MSU SERIE 13 USD ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MSSEO - ON MSU SERIE 13 USD ",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MSSEO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1752721200000,
+            "amortizacion": 0,
+            "renta": 6.5,
+            "total": 6.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784257200000,
+            "amortizacion": 100,
+            "renta": 6.5,
+            "total": 106.5,
+            "valorResidual": 100
+        }
+    ]
+}

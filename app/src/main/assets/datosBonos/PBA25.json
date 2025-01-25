@@ -1,0 +1,18 @@
+{
+    "nombre": "PBA25 - T.D. PCIA. BUENOS AIRES $ V. 12/04/25 CG",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "PBA25 - T.D. PCIA. BUENOS AIRES $ V. 12/04/25 CG - ARPBUE3205N8 ",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "PBA25",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1744426800000,
+            "amortizacion": 100,
+            "renta": 8.74,
+            "total": 108.74,
+            "valorResidual": 100
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "nombre": "VSCPO - ON VISTA ENERGY C24 USD ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "VSCPO - ON VISTA ENERGY C24 USD  - AR0637277028",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "VSCPO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1746241200000,
+            "amortizacion": 0,
+            "renta": 3.97,
+            "total": 3.97,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1762138800000,
+            "amortizacion": 0,
+            "renta": 4.03,
+            "total": 4.03,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1777777200000,
+            "amortizacion": 0,
+            "renta": 3.97,
+            "total": 3.97,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1793674800000,
+            "amortizacion": 0,
+            "renta": 4.03,
+            "total": 4.03,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1809313200000,
+            "amortizacion": 0,
+            "renta": 3.97,
+            "total": 3.97,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1825210800000,
+            "amortizacion": 25,
+            "renta": 4.03,
+            "total": 29.03,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1840935600000,
+            "amortizacion": 25,
+            "renta": 2.99,
+            "total": 27.99,
+            "valorResidual": 75
+        },
+        {
+            "fecha": 1856833200000,
+            "amortizacion": 25,
+            "renta": 2.02,
+            "total": 27.02,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 1872471600000,
+            "amortizacion": 25,
+            "renta": 0.99,
+            "total": 25.99,
+            "valorResidual": 25
+        }
+    ]
+}

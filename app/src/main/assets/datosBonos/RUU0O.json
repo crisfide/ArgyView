@@ -1,0 +1,18 @@
+{
+    "nombre": "RUU0O - MSU ENERGY 6 875  01/02/2025",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "RUU0O - MSU ENERGY 6 875  01/02/2025 - US76706AAA25",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "RUU0O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1738378800000,
+            "amortizacion": 100,
+            "renta": 3.44,
+            "total": 103.44,
+            "valorResidual": 100
+        }
+    ]
+}

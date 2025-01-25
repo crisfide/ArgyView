@@ -1,0 +1,18 @@
+{
+    "nombre": "YMCEO - ON YPF Clase XIII USD 2025",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YMCEO - ON YPF Clase XIII USD 2025 - USP989MJBQ34",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YMCEO",
+    "valorResidual": 12.5,
+    "flujo": [
+        {
+            "fecha": 1742698800000,
+            "amortizacion": 12.5,
+            "renta": 0.53,
+            "total": 13.03,
+            "valorResidual": 12.5
+        }
+    ]
+}

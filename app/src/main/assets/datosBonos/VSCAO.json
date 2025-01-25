@@ -1,0 +1,18 @@
+{
+    "nombre": "VSCAO - Vista Oil & Gas Clase 10 UVA",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "VSCAO - Vista Oil & Gas Clase 10 UVA",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "VSCAO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1742266800000,
+            "amortizacion": 100,
+            "renta": 0.99,
+            "total": 100.99,
+            "valorResidual": 100
+        }
+    ]
+}

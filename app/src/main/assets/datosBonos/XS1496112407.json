@@ -1,0 +1,53 @@
+{
+    "nombre": "XS1496112407 - Municipalidad de Córdoba 29/09/2027",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "XS1496112407 - Municipalidad de Córdoba 29/09/2027",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "XS1496112407",
+    "valorResidual": 75,
+    "flujo": [
+        {
+            "fecha": 1743217200000,
+            "amortizacion": 12.5,
+            "renta": 2.62,
+            "total": 15.12,
+            "valorResidual": 75
+        },
+        {
+            "fecha": 1759114800000,
+            "amortizacion": 12.5,
+            "renta": 2.19,
+            "total": 14.69,
+            "valorResidual": 62.5
+        },
+        {
+            "fecha": 1774753200000,
+            "amortizacion": 12.5,
+            "renta": 1.75,
+            "total": 14.25,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 1790650800000,
+            "amortizacion": 12.5,
+            "renta": 1.31,
+            "total": 13.81,
+            "valorResidual": 37.5
+        },
+        {
+            "fecha": 1806289200000,
+            "amortizacion": 12.5,
+            "renta": 0.88,
+            "total": 13.38,
+            "valorResidual": 25
+        },
+        {
+            "fecha": 1822186800000,
+            "amortizacion": 12.5,
+            "renta": 0.44,
+            "total": 12.94,
+            "valorResidual": 12.5
+        }
+    ]
+}

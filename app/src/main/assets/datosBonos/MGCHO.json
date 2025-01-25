@@ -1,0 +1,25 @@
+{
+    "nombre": "MGCHO - ON PAMPA ENERGIA CL 16 MEP",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MGCHO - ON PAMPA ENERGIA CL 16 MEP - ARPAMP5600I3",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MGCHO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1746327600000,
+            "amortizacion": 0,
+            "renta": 2.47,
+            "total": 2.47,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1762225200000,
+            "amortizacion": 100,
+            "renta": 2.52,
+            "total": 102.52,
+            "valorResidual": 100
+        }
+    ]
+}

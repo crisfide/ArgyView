@@ -1,0 +1,25 @@
+{
+    "nombre": "RCCOO - ON ARCOR CLASE 23 $ T.UNICO",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "RCCOO - ON ARCOR CLASE 23 $ T.UNICO - AR0481902168",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "RCCOO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1741662000000,
+            "amortizacion": 0,
+            "renta": 8.86,
+            "total": 8.86,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1749610800000,
+            "amortizacion": 100,
+            "renta": 9.06,
+            "total": 109.06,
+            "valorResidual": 100
+        }
+    ]
+}

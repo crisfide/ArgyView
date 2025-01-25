@@ -1,0 +1,74 @@
+{
+    "nombre": "AERAO - Aeropuertos Argentina 2000 01/02/2027",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "AERAO - Aeropuertos Argentina 2000 01/02/2027 - US00786PAC86",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "AERAO",
+    "valorResidual": 28.125,
+    "flujo": [
+        {
+            "fecha": 1738378800000,
+            "amortizacion": 3.12,
+            "renta": 1.93,
+            "total": 5.05,
+            "valorResidual": 28.125
+        },
+        {
+            "fecha": 1746068400000,
+            "amortizacion": 3.12,
+            "renta": 1.72,
+            "total": 4.84,
+            "valorResidual": 25
+        },
+        {
+            "fecha": 1754017200000,
+            "amortizacion": 3.12,
+            "renta": 1.5,
+            "total": 4.62,
+            "valorResidual": 21.875
+        },
+        {
+            "fecha": 1761966000000,
+            "amortizacion": 3.12,
+            "renta": 1.29,
+            "total": 4.41,
+            "valorResidual": 18.75
+        },
+        {
+            "fecha": 1769914800000,
+            "amortizacion": 3.12,
+            "renta": 1.07,
+            "total": 4.19,
+            "valorResidual": 15.625
+        },
+        {
+            "fecha": 1777604400000,
+            "amortizacion": 3.12,
+            "renta": 0.86,
+            "total": 3.98,
+            "valorResidual": 12.5
+        },
+        {
+            "fecha": 1785553200000,
+            "amortizacion": 3.12,
+            "renta": 0.64,
+            "total": 3.76,
+            "valorResidual": 9.375
+        },
+        {
+            "fecha": 1793502000000,
+            "amortizacion": 3.12,
+            "renta": 0.43,
+            "total": 3.55,
+            "valorResidual": 6.25
+        },
+        {
+            "fecha": 1801450800000,
+            "amortizacion": 3.12,
+            "renta": 0.21,
+            "total": 3.33,
+            "valorResidual": 3.125
+        }
+    ]
+}

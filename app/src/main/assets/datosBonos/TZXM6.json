@@ -1,0 +1,18 @@
+{
+    "nombre": "TZXM6 - ARG. BONO TESORO NACIONAL $ 31/3/2026",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "TZXM6 - ARG. BONO TESORO NACIONAL $ 31/3/2026 - AR0889577216",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "TZXM6",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1774926000000,
+            "amortizacion": 100,
+            "renta": 0,
+            "total": 100,
+            "valorResidual": 100
+        }
+    ]
+}

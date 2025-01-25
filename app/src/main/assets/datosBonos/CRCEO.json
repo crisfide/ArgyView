@@ -1,0 +1,25 @@
+{
+    "nombre": "CRCEO - Celulosa Clase 13",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CRCEO - Celulosa Clase 13 - ARCELU5600B0",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "CRCEO",
+    "valorResidual": 16,
+    "flujo": [
+        {
+            "fecha": 1741057200000,
+            "amortizacion": 8,
+            "renta": 0.4,
+            "total": 8.4,
+            "valorResidual": 16
+        },
+        {
+            "fecha": 1749006000000,
+            "amortizacion": 8,
+            "renta": 0.2,
+            "total": 8.2,
+            "valorResidual": 8
+        }
+    ]
+}

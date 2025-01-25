@@ -1,0 +1,109 @@
+{
+    "nombre": "CRCJO - ON CELULOSA ARG 18 USD 16/5/2028",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CRCJO - ON CELULOSA ARG 18 USD 16/5/2028 - AR0904133144",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "CRCJO",
+    "valorResidual": 87.5,
+    "flujo": [
+        {
+            "fecha": 1739674800000,
+            "amortizacion": 6.25,
+            "renta": 2.04,
+            "total": 8.29,
+            "valorResidual": 87.5
+        },
+        {
+            "fecha": 1747364400000,
+            "amortizacion": 6.25,
+            "renta": 1.83,
+            "total": 8.08,
+            "valorResidual": 81.25
+        },
+        {
+            "fecha": 1755313200000,
+            "amortizacion": 6.25,
+            "renta": 1.75,
+            "total": 8,
+            "valorResidual": 75
+        },
+        {
+            "fecha": 1763262000000,
+            "amortizacion": 6.25,
+            "renta": 1.6,
+            "total": 7.85,
+            "valorResidual": 68.75
+        },
+        {
+            "fecha": 1771210800000,
+            "amortizacion": 6.25,
+            "renta": 1.46,
+            "total": 7.71,
+            "valorResidual": 62.5
+        },
+        {
+            "fecha": 1778900400000,
+            "amortizacion": 6.25,
+            "renta": 1.27,
+            "total": 7.52,
+            "valorResidual": 56.25
+        },
+        {
+            "fecha": 1786849200000,
+            "amortizacion": 6.25,
+            "renta": 1.17,
+            "total": 7.42,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 1794798000000,
+            "amortizacion": 6.25,
+            "renta": 1.02,
+            "total": 7.27,
+            "valorResidual": 43.75
+        },
+        {
+            "fecha": 1802746800000,
+            "amortizacion": 6.25,
+            "renta": 0.87,
+            "total": 7.12,
+            "valorResidual": 37.5
+        },
+        {
+            "fecha": 1810436400000,
+            "amortizacion": 6.25,
+            "renta": 0.7,
+            "total": 6.95,
+            "valorResidual": 31.25
+        },
+        {
+            "fecha": 1818385200000,
+            "amortizacion": 6.25,
+            "renta": 0.58,
+            "total": 6.83,
+            "valorResidual": 25
+        },
+        {
+            "fecha": 1826334000000,
+            "amortizacion": 6.25,
+            "renta": 0.44,
+            "total": 6.69,
+            "valorResidual": 18.75
+        },
+        {
+            "fecha": 1834282800000,
+            "amortizacion": 6.25,
+            "renta": 0.29,
+            "total": 6.54,
+            "valorResidual": 12.5
+        },
+        {
+            "fecha": 1842058800000,
+            "amortizacion": 6.25,
+            "renta": 0.14,
+            "total": 6.39,
+            "valorResidual": 6.25
+        }
+    ]
+}

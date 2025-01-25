@@ -1,0 +1,74 @@
+{
+    "nombre": "AER1O - Aeropuertos Argentina 2000 01/02/2027",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "AER1O - Aeropuertos Argentina 2000 01/02/2027 - US00786PAD69",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "AER1O",
+    "valorResidual": 37.495,
+    "flujo": [
+        {
+            "fecha": 1738378800000,
+            "amortizacion": 4.17,
+            "renta": 0.88,
+            "total": 5.05,
+            "valorResidual": 37.495
+        },
+        {
+            "fecha": 1746068400000,
+            "amortizacion": 4.17,
+            "renta": 0.78,
+            "total": 4.95,
+            "valorResidual": 33.328
+        },
+        {
+            "fecha": 1754017200000,
+            "amortizacion": 4.17,
+            "renta": 0.68,
+            "total": 4.85,
+            "valorResidual": 29.161
+        },
+        {
+            "fecha": 1761966000000,
+            "amortizacion": 4.17,
+            "renta": 0.59,
+            "total": 4.76,
+            "valorResidual": 24.994
+        },
+        {
+            "fecha": 1769914800000,
+            "amortizacion": 4.17,
+            "renta": 0.49,
+            "total": 4.66,
+            "valorResidual": 20.827
+        },
+        {
+            "fecha": 1777604400000,
+            "amortizacion": 4.17,
+            "renta": 0.39,
+            "total": 4.56,
+            "valorResidual": 16.66
+        },
+        {
+            "fecha": 1785553200000,
+            "amortizacion": 4.17,
+            "renta": 0.29,
+            "total": 4.46,
+            "valorResidual": 12.493
+        },
+        {
+            "fecha": 1793502000000,
+            "amortizacion": 4.17,
+            "renta": 0.2,
+            "total": 4.37,
+            "valorResidual": 8.326
+        },
+        {
+            "fecha": 1801450800000,
+            "amortizacion": 4.17,
+            "renta": 0.1,
+            "total": 4.27,
+            "valorResidual": 4.159
+        }
+    ]
+}

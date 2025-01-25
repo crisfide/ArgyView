@@ -1,0 +1,137 @@
+{
+    "nombre": "PUL26 - Chubut Step-Up 2030",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "PUL26 - Chubut Step-Up 2030 - USP25619AB67",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PUL26",
+    "valorResidual": 58.879,
+    "flujo": [
+        {
+            "fecha": 1737860400000,
+            "amortizacion": 3.85,
+            "renta": 1.14,
+            "total": 4.99,
+            "valorResidual": 58.879
+        },
+        {
+            "fecha": 1745636400000,
+            "amortizacion": 3.85,
+            "renta": 1.07,
+            "total": 4.92,
+            "valorResidual": 55.029
+        },
+        {
+            "fecha": 1753498800000,
+            "amortizacion": 3.85,
+            "renta": 0.99,
+            "total": 4.84,
+            "valorResidual": 51.179
+        },
+        {
+            "fecha": 1761447600000,
+            "amortizacion": 3.85,
+            "renta": 0.92,
+            "total": 4.77,
+            "valorResidual": 47.329
+        },
+        {
+            "fecha": 1769396400000,
+            "amortizacion": 3.85,
+            "renta": 0.84,
+            "total": 4.69,
+            "valorResidual": 43.479
+        },
+        {
+            "fecha": 1777172400000,
+            "amortizacion": 3.85,
+            "renta": 0.77,
+            "total": 4.62,
+            "valorResidual": 39.629
+        },
+        {
+            "fecha": 1785034800000,
+            "amortizacion": 3.85,
+            "renta": 0.69,
+            "total": 4.54,
+            "valorResidual": 35.779
+        },
+        {
+            "fecha": 1792983600000,
+            "amortizacion": 3.85,
+            "renta": 0.62,
+            "total": 4.47,
+            "valorResidual": 31.929
+        },
+        {
+            "fecha": 1800932400000,
+            "amortizacion": 3.85,
+            "renta": 0.54,
+            "total": 4.39,
+            "valorResidual": 28.079
+        },
+        {
+            "fecha": 1808708400000,
+            "amortizacion": 3.85,
+            "renta": 0.47,
+            "total": 4.32,
+            "valorResidual": 24.229
+        },
+        {
+            "fecha": 1816570800000,
+            "amortizacion": 3.85,
+            "renta": 0.39,
+            "total": 4.24,
+            "valorResidual": 20.379
+        },
+        {
+            "fecha": 1824519600000,
+            "amortizacion": 3.85,
+            "renta": 0.32,
+            "total": 4.17,
+            "valorResidual": 16.529
+        },
+        {
+            "fecha": 1832468400000,
+            "amortizacion": 3.5,
+            "renta": 0.25,
+            "total": 3.75,
+            "valorResidual": 12.679
+        },
+        {
+            "fecha": 1840330800000,
+            "amortizacion": 2.85,
+            "renta": 0.18,
+            "total": 3.03,
+            "valorResidual": 9.179
+        },
+        {
+            "fecha": 1848193200000,
+            "amortizacion": 2.85,
+            "renta": 0.12,
+            "total": 2.97,
+            "valorResidual": 6.329
+        },
+        {
+            "fecha": 1856142000000,
+            "amortizacion": 2.85,
+            "renta": 0.07,
+            "total": 2.92,
+            "valorResidual": 3.479
+        },
+        {
+            "fecha": 1864090800000,
+            "amortizacion": 0.35,
+            "renta": 0.01,
+            "total": 0.36,
+            "valorResidual": 0.629
+        },
+        {
+            "fecha": 1871866800000,
+            "amortizacion": 0.28,
+            "renta": 0.01,
+            "total": 0.29,
+            "valorResidual": 0.281
+        }
+    ]
+}

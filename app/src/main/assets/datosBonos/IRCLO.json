@@ -1,0 +1,32 @@
+{
+    "nombre": "IRCLO - IRSA 6 0 10/06/2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "IRCLO - IRSA 6 0 10/06/2026 - AR0200915251",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "IRCLO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1749524400000,
+            "amortizacion": 0,
+            "renta": 2.99,
+            "total": 2.99,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1765335600000,
+            "amortizacion": 0,
+            "renta": 3.01,
+            "total": 3.01,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1781060400000,
+            "amortizacion": 100,
+            "renta": 2.99,
+            "total": 102.99,
+            "valorResidual": 100
+        }
+    ]
+}

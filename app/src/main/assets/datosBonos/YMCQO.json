@@ -1,0 +1,32 @@
+{
+    "nombre": "YMCQO - ON YPF CLASE XXV",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YMCQO - ON YPF CLASE XXV",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YMCQO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1749783600000,
+            "amortizacion": 0,
+            "renta": 2.49,
+            "total": 2.49,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1765594800000,
+            "amortizacion": 0,
+            "renta": 2.51,
+            "total": 2.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1770951600000,
+            "amortizacion": 100,
+            "renta": 0.85,
+            "total": 100.85,
+            "valorResidual": 100
+        }
+    ]
+}

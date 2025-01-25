@@ -1,0 +1,74 @@
+{
+    "nombre": "USP04568AB06 - ARCOS DORADOS 6 125  VTO 2029",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "USP04568AB06 - ARCOS DORADOS 6 125  VTO 2029",
+    "moneda": "USD",
+    "mercado": "EEUU",
+    "ticker": "USP04568AB06",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1748314800000,
+            "amortizacion": 0,
+            "renta": 3.06,
+            "total": 3.06,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1764212400000,
+            "amortizacion": 0,
+            "renta": 3.06,
+            "total": 3.06,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1779850800000,
+            "amortizacion": 0,
+            "renta": 3.06,
+            "total": 3.06,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1795748400000,
+            "amortizacion": 0,
+            "renta": 3.06,
+            "total": 3.06,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1811386800000,
+            "amortizacion": 0,
+            "renta": 3.06,
+            "total": 3.06,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1827284400000,
+            "amortizacion": 0,
+            "renta": 3.06,
+            "total": 3.06,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1843009200000,
+            "amortizacion": 0,
+            "renta": 3.06,
+            "total": 3.06,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1858906800000,
+            "amortizacion": 0,
+            "renta": 3.06,
+            "total": 3.06,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1874545200000,
+            "amortizacion": 100,
+            "renta": 3.06,
+            "total": 103.06,
+            "valorResidual": 100
+        }
+    ]
+}

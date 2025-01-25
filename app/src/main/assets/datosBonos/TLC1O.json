@@ -1,0 +1,32 @@
+{
+    "nombre": "TLC1O - TELECOM ARGENTINA 18/07/2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "TLC1O - TELECOM ARGENTINA 18/07/2026 - USP9028NAV30",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "TLC1O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1752807600000,
+            "amortizacion": 0,
+            "renta": 4,
+            "total": 4,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1768705200000,
+            "amortizacion": 0,
+            "renta": 4,
+            "total": 4,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784343600000,
+            "amortizacion": 100,
+            "renta": 4,
+            "total": 104,
+            "valorResidual": 100
+        }
+    ]
+}

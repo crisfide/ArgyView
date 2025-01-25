@@ -1,0 +1,32 @@
+{
+    "nombre": "RUCAO - ON MSU ENERGY 10 USD ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "RUCAO - ON MSU ENERGY 10 USD ",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "RUCAO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1741748400000,
+            "amortizacion": 0,
+            "renta": 4.12,
+            "total": 4.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1757646000000,
+            "amortizacion": 0,
+            "renta": 4.12,
+            "total": 4.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1773284400000,
+            "amortizacion": 100,
+            "renta": 4.12,
+            "total": 104.12,
+            "valorResidual": 100
+        }
+    ]
+}

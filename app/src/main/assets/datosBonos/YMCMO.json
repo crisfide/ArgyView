@@ -1,0 +1,39 @@
+{
+    "nombre": "YMCMO - ON YPF CLASE XXI ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YMCMO - ON YPF CLASE XXI  - ARYPFS5601S8",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YMCMO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1744254000000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1752116400000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1760065200000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1768014000000,
+            "amortizacion": 100,
+            "renta": 0.25,
+            "total": 100.25,
+            "valorResidual": 100
+        }
+    ]
+}

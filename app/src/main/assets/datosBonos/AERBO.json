@@ -1,0 +1,39 @@
+{
+    "nombre": "AERBO - ON AA2000 C11 U$S 15/12/2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "AERBO - ON AA2000 C11 U$S 15/12/2026 - AR0162186347",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "AERBO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1750647600000,
+            "amortizacion": 0,
+            "renta": 2.74,
+            "total": 2.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1766458800000,
+            "amortizacion": 0,
+            "renta": 2.76,
+            "total": 2.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1782183600000,
+            "amortizacion": 0,
+            "renta": 2.74,
+            "total": 2.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1797303600000,
+            "amortizacion": 100,
+            "renta": 2.64,
+            "total": 102.64,
+            "valorResidual": 100
+        }
+    ]
+}

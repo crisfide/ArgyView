@@ -1,0 +1,95 @@
+{
+    "nombre": "YMCUO - ON CLASE XXVIII DE YPF S.A.",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YMCUO - ON CLASE XXVIII DE YPF S.A. - USP989MJBU46",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YMCUO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1752721200000,
+            "amortizacion": 0,
+            "renta": 4.75,
+            "total": 4.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1768618800000,
+            "amortizacion": 0,
+            "renta": 4.75,
+            "total": 4.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784257200000,
+            "amortizacion": 10,
+            "renta": 4.75,
+            "total": 14.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1800154800000,
+            "amortizacion": 10,
+            "renta": 4.28,
+            "total": 14.28,
+            "valorResidual": 90
+        },
+        {
+            "fecha": 1815793200000,
+            "amortizacion": 10,
+            "renta": 3.8,
+            "total": 13.8,
+            "valorResidual": 80
+        },
+        {
+            "fecha": 1831690800000,
+            "amortizacion": 10,
+            "renta": 3.32,
+            "total": 13.32,
+            "valorResidual": 70
+        },
+        {
+            "fecha": 1847415600000,
+            "amortizacion": 10,
+            "renta": 2.85,
+            "total": 12.85,
+            "valorResidual": 60
+        },
+        {
+            "fecha": 1863313200000,
+            "amortizacion": 10,
+            "renta": 2.38,
+            "total": 12.38,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 1878951600000,
+            "amortizacion": 10,
+            "renta": 1.9,
+            "total": 11.9,
+            "valorResidual": 40
+        },
+        {
+            "fecha": 1894849200000,
+            "amortizacion": 10,
+            "renta": 1.42,
+            "total": 11.42,
+            "valorResidual": 30
+        },
+        {
+            "fecha": 1910487600000,
+            "amortizacion": 10,
+            "renta": 0.95,
+            "total": 10.95,
+            "valorResidual": 20
+        },
+        {
+            "fecha": 1926385200000,
+            "amortizacion": 10,
+            "renta": 0.48,
+            "total": 10.48,
+            "valorResidual": 10
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "nombre": "PNDCO - Pan American Energy 2027",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PNDCO - Pan American Energy 2027 - USE7S78BAB82",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PNDCO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1745982000000,
+            "amortizacion": 20,
+            "renta": 4.56,
+            "total": 24.56,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761793200000,
+            "amortizacion": 20,
+            "renta": 3.65,
+            "total": 23.65,
+            "valorResidual": 80
+        },
+        {
+            "fecha": 1777518000000,
+            "amortizacion": 20,
+            "renta": 2.74,
+            "total": 22.74,
+            "valorResidual": 60
+        },
+        {
+            "fecha": 1793329200000,
+            "amortizacion": 20,
+            "renta": 1.82,
+            "total": 21.82,
+            "valorResidual": 40
+        },
+        {
+            "fecha": 1809054000000,
+            "amortizacion": 20,
+            "renta": 0.91,
+            "total": 20.91,
+            "valorResidual": 20
+        }
+    ]
+}

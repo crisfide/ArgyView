@@ -1,0 +1,53 @@
+{
+    "nombre": "BPOC7 - Bopreal Serie 1C Vto 31/10/27",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "BPOC7 - Bopreal Serie 1C Vto 31/10/27",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "BPOC7",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1745982000000,
+            "amortizacion": 0,
+            "renta": 2.48,
+            "total": 2.48,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761793200000,
+            "amortizacion": 0,
+            "renta": 2.51,
+            "total": 2.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1777518000000,
+            "amortizacion": 0,
+            "renta": 2.49,
+            "total": 2.49,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1793329200000,
+            "amortizacion": 0,
+            "renta": 2.51,
+            "total": 2.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1809054000000,
+            "amortizacion": 50,
+            "renta": 2.49,
+            "total": 52.49,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1824865200000,
+            "amortizacion": 50,
+            "renta": 1.25,
+            "total": 51.25,
+            "valorResidual": 50
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "nombre": "MGCJO - ON PAMPA ENEREGIA CL 18 USD 2025",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MGCJO - ON PAMPA ENEREGIA CL 18 USD 2025 - ARPAMP5600K9",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MGCJO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1741402800000,
+            "amortizacion": 0,
+            "renta": 2.48,
+            "total": 2.48,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1757300400000,
+            "amortizacion": 100,
+            "renta": 2.52,
+            "total": 102.52,
+            "valorResidual": 100
+        }
+    ]
+}

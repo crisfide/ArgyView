@@ -1,0 +1,32 @@
+{
+    "nombre": "VSCNO - VISTA ENERGY ARGENTINA S.A.U. 2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "VSCNO - VISTA ENERGY ARGENTINA S.A.U. 2026",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "VSCNO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1749092400000,
+            "amortizacion": 0,
+            "renta": 2.49,
+            "total": 2.49,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1764903600000,
+            "amortizacion": 0,
+            "renta": 2.51,
+            "total": 2.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1780628400000,
+            "amortizacion": 100,
+            "renta": 2.49,
+            "total": 102.49,
+            "valorResidual": 100
+        }
+    ]
+}

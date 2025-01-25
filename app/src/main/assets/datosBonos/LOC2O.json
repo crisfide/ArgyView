@@ -1,0 +1,25 @@
+{
+    "nombre": "LOC2O - ON LOMA NEGRA 2 U$S ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "LOC2O - ON LOMA NEGRA 2 U$S ",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "LOC2O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1750474800000,
+            "amortizacion": 0,
+            "renta": 3.24,
+            "total": 3.24,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1766286000000,
+            "amortizacion": 100,
+            "renta": 3.26,
+            "total": 103.26,
+            "valorResidual": 100
+        }
+    ]
+}

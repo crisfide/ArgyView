@@ -1,0 +1,67 @@
+{
+    "nombre": "PECHO - ON PETROLERA ACON 16 DLK COMPE",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PECHO - ON PETROLERA ACON 16 DLK COMPE - AR0553485654",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PECHO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1745809200000,
+            "amortizacion": 0,
+            "renta": 3.99,
+            "total": 3.99,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761620400000,
+            "amortizacion": 0,
+            "renta": 4.01,
+            "total": 4.01,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1777345200000,
+            "amortizacion": 0,
+            "renta": 3.99,
+            "total": 3.99,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1793156400000,
+            "amortizacion": 0,
+            "renta": 4.01,
+            "total": 4.01,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1808881200000,
+            "amortizacion": 0,
+            "renta": 3.99,
+            "total": 3.99,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1824692400000,
+            "amortizacion": 0,
+            "renta": 4.01,
+            "total": 4.01,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1840503600000,
+            "amortizacion": 0,
+            "renta": 4.01,
+            "total": 4.01,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1853722800000,
+            "amortizacion": 100,
+            "renta": 3.35,
+            "total": 103.35,
+            "valorResidual": 100
+        }
+    ]
+}

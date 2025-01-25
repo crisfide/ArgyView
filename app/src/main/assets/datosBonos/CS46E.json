@@ -1,0 +1,46 @@
+{
+    "nombre": "CS46E - ON CRESUD S30 C46 DLK EFECTIVO",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CS46E - ON CRESUD S30 C46 DLK EFECTIVO",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "CS46E",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1752807600000,
+            "amortizacion": 0,
+            "renta": 0.74,
+            "total": 0.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1768705200000,
+            "amortizacion": 0,
+            "renta": 0.76,
+            "total": 0.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784343600000,
+            "amortizacion": 0,
+            "renta": 0.74,
+            "total": 0.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1800241200000,
+            "amortizacion": 0,
+            "renta": 0.76,
+            "total": 0.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1815879600000,
+            "amortizacion": 100,
+            "renta": 0.74,
+            "total": 100.74,
+            "valorResidual": 100
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "nombre": "MGC3O - PAMPA ENERGIA USD 15/04/2029",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MGC3O - PAMPA ENERGIA USD 15/04/2029 - USP7464EAB22",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MGC3O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1744686000000,
+            "amortizacion": 0,
+            "renta": 4.56,
+            "total": 4.56,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1760497200000,
+            "amortizacion": 0,
+            "renta": 4.56,
+            "total": 4.56,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1776222000000,
+            "amortizacion": 0,
+            "renta": 4.56,
+            "total": 4.56,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1792033200000,
+            "amortizacion": 0,
+            "renta": 4.56,
+            "total": 4.56,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1807758000000,
+            "amortizacion": 0,
+            "renta": 4.56,
+            "total": 4.56,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1823569200000,
+            "amortizacion": 0,
+            "renta": 4.56,
+            "total": 4.56,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1839380400000,
+            "amortizacion": 0,
+            "renta": 4.56,
+            "total": 4.56,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1855191600000,
+            "amortizacion": 0,
+            "renta": 4.56,
+            "total": 4.56,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1870916400000,
+            "amortizacion": 100,
+            "renta": 4.56,
+            "total": 104.56,
+            "valorResidual": 100
+        }
+    ]
+}

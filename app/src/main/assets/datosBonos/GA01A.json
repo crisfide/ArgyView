@@ -1,0 +1,60 @@
+{
+    "nombre": "GA01A - FF GLOBAL ARSA 1 VDF DLK ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "GA01A - FF GLOBAL ARSA 1 VDF DLK ",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "GA01A",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1744686000000,
+            "amortizacion": 0,
+            "renta": 0.74,
+            "total": 0.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1752548400000,
+            "amortizacion": 16.66,
+            "renta": 0.75,
+            "total": 17.41,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1760497200000,
+            "amortizacion": 16.66,
+            "renta": 0.63,
+            "total": 17.29,
+            "valorResidual": 83.34
+        },
+        {
+            "fecha": 1768446000000,
+            "amortizacion": 16.66,
+            "renta": 0.5,
+            "total": 17.16,
+            "valorResidual": 66.68
+        },
+        {
+            "fecha": 1776222000000,
+            "amortizacion": 16.66,
+            "renta": 0.37,
+            "total": 17.03,
+            "valorResidual": 50.02
+        },
+        {
+            "fecha": 1784084400000,
+            "amortizacion": 16.66,
+            "renta": 0.25,
+            "total": 16.91,
+            "valorResidual": 33.36
+        },
+        {
+            "fecha": 1792033200000,
+            "amortizacion": 16.7,
+            "renta": 0.13,
+            "total": 16.83,
+            "valorResidual": 16.7
+        }
+    ]
+}

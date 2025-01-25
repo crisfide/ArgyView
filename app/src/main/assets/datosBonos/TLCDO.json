@@ -1,0 +1,172 @@
+{
+    "nombre": "TLCDO - ON CLASE 12 DE TELECOM ARGENTINA S.A.",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "TLCDO - ON CLASE 12 DE TELECOM ARGENTINA S.A. - ARTECO5600E0",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "TLCDO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1737946800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1741489200000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1745722800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1749438000000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1753585200000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1757386800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761534000000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1765249200000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1769482800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1773025200000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1777258800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1780974000000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1785121200000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1788922800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1793070000000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1796785200000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1801018800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1804561200000,
+            "amortizacion": 100,
+            "renta": 0.25,
+            "total": 100.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1808794800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1816657200000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1824606000000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1832554800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1840417200000,
+            "amortizacion": 100,
+            "renta": 0.25,
+            "total": 100.25,
+            "valorResidual": 100
+        }
+    ]
+}

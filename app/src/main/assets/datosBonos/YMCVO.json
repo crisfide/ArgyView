@@ -1,0 +1,53 @@
+{
+    "nombre": "YMCVO - YPF 6 0 28052026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YMCVO - YPF 6 0 28052026",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YMCVO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1740711600000,
+            "amortizacion": 0,
+            "renta": 1.51,
+            "total": 1.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1748401200000,
+            "amortizacion": 0,
+            "renta": 1.46,
+            "total": 1.46,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1756350000000,
+            "amortizacion": 0,
+            "renta": 1.51,
+            "total": 1.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1764298800000,
+            "amortizacion": 0,
+            "renta": 1.51,
+            "total": 1.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1772247600000,
+            "amortizacion": 0,
+            "renta": 1.51,
+            "total": 1.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1779937200000,
+            "amortizacion": 100,
+            "renta": 1.46,
+            "total": 101.46,
+            "valorResidual": 100
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "nombre": "VSCJO - ON VISTA CLASE 18 DLINK T.UNI",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "VSCJO - ON VISTA CLASE 18 DLINK T.UNI",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "VSCJO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1804042800000,
+            "amortizacion": 100,
+            "renta": 0,
+            "total": 100,
+            "valorResidual": 100
+        }
+    ]
+}

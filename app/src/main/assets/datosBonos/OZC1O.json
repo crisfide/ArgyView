@@ -1,0 +1,53 @@
+{
+    "nombre": "OZC1O - ON EDEMSA CL1 UVA COMPETITIVO",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "OZC1O - ON EDEMSA CL1 UVA COMPETITIVO",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "OZC1O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1738810800000,
+            "amortizacion": 0,
+            "renta": 1.26,
+            "total": 1.26,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1746500400000,
+            "amortizacion": 0,
+            "renta": 1.22,
+            "total": 1.22,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1754449200000,
+            "amortizacion": 0,
+            "renta": 1.26,
+            "total": 1.26,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1762398000000,
+            "amortizacion": 0,
+            "renta": 1.26,
+            "total": 1.26,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1770346800000,
+            "amortizacion": 0,
+            "renta": 1.26,
+            "total": 1.26,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1778036400000,
+            "amortizacion": 100,
+            "renta": 1.22,
+            "total": 101.22,
+            "valorResidual": 100
+        }
+    ]
+}

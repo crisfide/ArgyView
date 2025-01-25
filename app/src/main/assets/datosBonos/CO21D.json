@@ -1,0 +1,25 @@
+{
+    "nombre": "CO21D - Prov. de Córdoba 2025  L.NY ",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "CO21D - Prov. de Córdoba 2025  L.NY  - USP79171AD96",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "CO21D",
+    "valorResidual": 33.33333333,
+    "flujo": [
+        {
+            "fecha": 1749524400000,
+            "amortizacion": 16.67,
+            "renta": 1.15,
+            "total": 17.82,
+            "valorResidual": 33.33333333
+        },
+        {
+            "fecha": 1765335600000,
+            "amortizacion": 16.67,
+            "renta": 0.57,
+            "total": 17.24,
+            "valorResidual": 16.66666667
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "nombre": "PHC3O - ON PUENTE HNOS C3 USD 16/01/2027",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PHC3O - ON PUENTE HNOS C3 USD 16/01/2027",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PHC3O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1752634800000,
+            "amortizacion": 0,
+            "renta": 3.22,
+            "total": 3.22,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1768532400000,
+            "amortizacion": 0,
+            "renta": 3.28,
+            "total": 3.28,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784170800000,
+            "amortizacion": 0,
+            "renta": 3.22,
+            "total": 3.22,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1800068400000,
+            "amortizacion": 100,
+            "renta": 3.28,
+            "total": 103.28,
+            "valorResidual": 100
+        }
+    ]
+}

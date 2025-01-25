@@ -1,0 +1,18 @@
+{
+    "nombre": "TV25 - BONO DEL TESORO NACIONAL VINCULADO AL DOLAR   0 50  CON VTO 31-03-2025",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "TV25 - BONO DEL TESORO NACIONAL VINCULADO AL DOLAR   0 50  CON VTO 31-03-2025",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "TV25",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1743303600000,
+            "amortizacion": 100,
+            "renta": 0.25,
+            "total": 100.25,
+            "valorResidual": 100
+        }
+    ]
+}

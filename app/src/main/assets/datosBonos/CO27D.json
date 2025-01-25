@@ -1,0 +1,74 @@
+{
+    "nombre": "CO27D - Cordoba 2029 ",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "CO27D - Cordoba 2029  - USP79171AF45",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "CO27D",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1738378800000,
+            "amortizacion": 0,
+            "renta": 3.44,
+            "total": 3.44,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1754017200000,
+            "amortizacion": 0,
+            "renta": 3.44,
+            "total": 3.44,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1769914800000,
+            "amortizacion": 0,
+            "renta": 3.44,
+            "total": 3.44,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1785553200000,
+            "amortizacion": 0,
+            "renta": 3.44,
+            "total": 3.44,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1801450800000,
+            "amortizacion": 0,
+            "renta": 3.44,
+            "total": 3.44,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1817089200000,
+            "amortizacion": 25,
+            "renta": 3.44,
+            "total": 28.44,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1832986800000,
+            "amortizacion": 25,
+            "renta": 2.58,
+            "total": 27.58,
+            "valorResidual": 75
+        },
+        {
+            "fecha": 1848711600000,
+            "amortizacion": 25,
+            "renta": 1.72,
+            "total": 26.72,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 1864609200000,
+            "amortizacion": 25,
+            "renta": 0.86,
+            "total": 25.86,
+            "valorResidual": 25
+        }
+    ]
+}

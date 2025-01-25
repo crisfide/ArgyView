@@ -1,0 +1,95 @@
+{
+    "nombre": "YPF2031 - YPF 9 50  Vto 17/01/2031",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YPF2031 - YPF 9 50  Vto 17/01/2031",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YPF2031",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1752721200000,
+            "amortizacion": 0,
+            "renta": 4.75,
+            "total": 4.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1768618800000,
+            "amortizacion": 0,
+            "renta": 4.75,
+            "total": 4.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784257200000,
+            "amortizacion": 10,
+            "renta": 4.75,
+            "total": 14.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1800154800000,
+            "amortizacion": 10,
+            "renta": 4.75,
+            "total": 14.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1815793200000,
+            "amortizacion": 10,
+            "renta": 4.75,
+            "total": 14.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1831690800000,
+            "amortizacion": 10,
+            "renta": 4.75,
+            "total": 14.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1847415600000,
+            "amortizacion": 10,
+            "renta": 4.75,
+            "total": 14.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1863313200000,
+            "amortizacion": 10,
+            "renta": 4.75,
+            "total": 14.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1878951600000,
+            "amortizacion": 10,
+            "renta": 4.75,
+            "total": 14.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1894849200000,
+            "amortizacion": 10,
+            "renta": 4.75,
+            "total": 14.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1910487600000,
+            "amortizacion": 10,
+            "renta": 4.75,
+            "total": 14.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1926385200000,
+            "amortizacion": 10,
+            "renta": 4.75,
+            "total": 14.75,
+            "valorResidual": 100
+        }
+    ]
+}

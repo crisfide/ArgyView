@@ -1,0 +1,25 @@
+{
+    "nombre": "GN40O - ON SVS CLASE XL DE GENNEIA S.A.",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "GN40O - ON SVS CLASE XL DE GENNEIA S.A.",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "GN40O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1744599600000,
+            "amortizacion": 0,
+            "renta": 1.36,
+            "total": 1.36,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1752462000000,
+            "amortizacion": 100,
+            "renta": 1.37,
+            "total": 101.37,
+            "valorResidual": 100
+        }
+    ]
+}

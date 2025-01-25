@@ -1,0 +1,18 @@
+{
+    "nombre": "CIC3O - ON CNH INDUSTRIAL CAPITAL ARGENTINA CLASE 3",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CIC3O - ON CNH INDUSTRIAL CAPITAL ARGENTINA CLASE 3 - ARCNHI560034",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "CIC3O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1761534000000,
+            "amortizacion": 100,
+            "renta": 0,
+            "total": 100,
+            "valorResidual": 100
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "nombre": "IRCOO - ON IRSA CL23 U$S 23/10/2029",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "IRCOO - ON IRSA CL23 U$S 23/10/2029 - AR0084572384",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "IRCOO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1753239600000,
+            "amortizacion": 0,
+            "renta": 5.42,
+            "total": 5.42,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1769137200000,
+            "amortizacion": 0,
+            "renta": 3.65,
+            "total": 3.65,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784775600000,
+            "amortizacion": 0,
+            "renta": 3.6,
+            "total": 3.6,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1800673200000,
+            "amortizacion": 0,
+            "renta": 3.65,
+            "total": 3.65,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1816311600000,
+            "amortizacion": 0,
+            "renta": 3.6,
+            "total": 3.6,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1832209200000,
+            "amortizacion": 0,
+            "renta": 3.65,
+            "total": 3.65,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1847934000000,
+            "amortizacion": 0,
+            "renta": 3.62,
+            "total": 3.62,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1863831600000,
+            "amortizacion": 0,
+            "renta": 3.65,
+            "total": 3.65,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1879470000000,
+            "amortizacion": 0,
+            "renta": 3.6,
+            "total": 3.6,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1887418800000,
+            "amortizacion": 100,
+            "renta": 1.83,
+            "total": 101.83,
+            "valorResidual": 100
+        }
+    ]
+}

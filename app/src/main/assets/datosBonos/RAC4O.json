@@ -1,0 +1,46 @@
+{
+    "nombre": "RAC4O - Raghsa Clase 4 11/05/2027",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "RAC4O - Raghsa Clase 4 11/05/2027 - USP79849AD07",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "RAC4O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1746932400000,
+            "amortizacion": 0,
+            "renta": 4.22,
+            "total": 4.22,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1762830000000,
+            "amortizacion": 0,
+            "renta": 4.28,
+            "total": 4.28,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1778468400000,
+            "amortizacion": 0,
+            "renta": 4.22,
+            "total": 4.22,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1794366000000,
+            "amortizacion": 0,
+            "renta": 4.28,
+            "total": 4.28,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1810004400000,
+            "amortizacion": 100,
+            "renta": 4.22,
+            "total": 104.22,
+            "valorResidual": 100
+        }
+    ]
+}

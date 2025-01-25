@@ -1,0 +1,32 @@
+{
+    "nombre": "LOC3O - ON LOMA NEGRA 3 U$S COMPETI",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "LOC3O - ON LOMA NEGRA 3 U$S COMPETI",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "LOC3O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1741662000000,
+            "amortizacion": 0,
+            "renta": 3.71,
+            "total": 3.71,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1757559600000,
+            "amortizacion": 0,
+            "renta": 3.78,
+            "total": 3.78,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1773198000000,
+            "amortizacion": 100,
+            "renta": 3.71,
+            "total": 103.71,
+            "valorResidual": 100
+        }
+    ]
+}

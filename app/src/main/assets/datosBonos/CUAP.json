@@ -1,0 +1,305 @@
+{
+    "nombre": "CUAP - Cuasipar 2045  L. Arg. ",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "CUAP - Cuasipar 2045  L. Arg.  - ARARGE03E139",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "CUAP",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1751252400000,
+            "amortizacion": 0,
+            "renta": 88.93,
+            "total": 88.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1767150000000,
+            "amortizacion": 0,
+            "renta": 89.93,
+            "total": 89.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1782788400000,
+            "amortizacion": 0,
+            "renta": 88.93,
+            "total": 88.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1798686000000,
+            "amortizacion": 0,
+            "renta": 89.93,
+            "total": 89.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1814324400000,
+            "amortizacion": 0,
+            "renta": 88.93,
+            "total": 88.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1830222000000,
+            "amortizacion": 0,
+            "renta": 89.93,
+            "total": 89.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1845946800000,
+            "amortizacion": 0,
+            "renta": 88.93,
+            "total": 88.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1861844400000,
+            "amortizacion": 0,
+            "renta": 89.93,
+            "total": 89.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1877482800000,
+            "amortizacion": 0,
+            "renta": 88.93,
+            "total": 88.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1893380400000,
+            "amortizacion": 0,
+            "renta": 89.93,
+            "total": 89.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1909018800000,
+            "amortizacion": 0,
+            "renta": 88.93,
+            "total": 88.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1924916400000,
+            "amortizacion": 0,
+            "renta": 89.93,
+            "total": 89.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1940554800000,
+            "amortizacion": 0,
+            "renta": 88.93,
+            "total": 88.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1956452400000,
+            "amortizacion": 0,
+            "renta": 89.93,
+            "total": 89.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1972177200000,
+            "amortizacion": 0,
+            "renta": 88.93,
+            "total": 88.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1988074800000,
+            "amortizacion": 0,
+            "renta": 89.93,
+            "total": 89.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2003713200000,
+            "amortizacion": 0,
+            "renta": 88.93,
+            "total": 88.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2019610800000,
+            "amortizacion": 0,
+            "renta": 89.93,
+            "total": 89.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2035249200000,
+            "amortizacion": 0,
+            "renta": 88.93,
+            "total": 88.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2051146800000,
+            "amortizacion": 0,
+            "renta": 89.93,
+            "total": 89.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2066785200000,
+            "amortizacion": 0,
+            "renta": 88.93,
+            "total": 88.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2082682800000,
+            "amortizacion": 0,
+            "renta": 89.93,
+            "total": 89.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2098407600000,
+            "amortizacion": 270.18,
+            "renta": 88.93,
+            "total": 359.11,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2114305200000,
+            "amortizacion": 270.18,
+            "renta": 85.43,
+            "total": 355.61,
+            "valorResidual": 95
+        },
+        {
+            "fecha": 2129943600000,
+            "amortizacion": 270.18,
+            "renta": 80.04,
+            "total": 350.22,
+            "valorResidual": 90
+        },
+        {
+            "fecha": 2145841200000,
+            "amortizacion": 270.18,
+            "renta": 76.44,
+            "total": 346.62,
+            "valorResidual": 85
+        },
+        {
+            "fecha": 2161479600000,
+            "amortizacion": 270.18,
+            "renta": 71.15,
+            "total": 341.33,
+            "valorResidual": 80
+        },
+        {
+            "fecha": 2177377200000,
+            "amortizacion": 270.18,
+            "renta": 67.45,
+            "total": 337.63,
+            "valorResidual": 75
+        },
+        {
+            "fecha": 2193015600000,
+            "amortizacion": 270.18,
+            "renta": 62.25,
+            "total": 332.43,
+            "valorResidual": 70
+        },
+        {
+            "fecha": 2208913200000,
+            "amortizacion": 270.18,
+            "renta": 58.45,
+            "total": 328.63,
+            "valorResidual": 65
+        },
+        {
+            "fecha": 2224638000000,
+            "amortizacion": 270.18,
+            "renta": 53.36,
+            "total": 323.54,
+            "valorResidual": 60
+        },
+        {
+            "fecha": 2240535600000,
+            "amortizacion": 270.18,
+            "renta": 49.46,
+            "total": 319.64,
+            "valorResidual": 55
+        },
+        {
+            "fecha": 2256174000000,
+            "amortizacion": 270.18,
+            "renta": 44.47,
+            "total": 314.65,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 2272071600000,
+            "amortizacion": 270.18,
+            "renta": 40.47,
+            "total": 310.65,
+            "valorResidual": 45
+        },
+        {
+            "fecha": 2287710000000,
+            "amortizacion": 270.18,
+            "renta": 35.57,
+            "total": 305.75,
+            "valorResidual": 40
+        },
+        {
+            "fecha": 2303607600000,
+            "amortizacion": 270.18,
+            "renta": 31.47,
+            "total": 301.65,
+            "valorResidual": 35
+        },
+        {
+            "fecha": 2319246000000,
+            "amortizacion": 270.18,
+            "renta": 26.68,
+            "total": 296.86,
+            "valorResidual": 30
+        },
+        {
+            "fecha": 2335143600000,
+            "amortizacion": 270.18,
+            "renta": 22.48,
+            "total": 292.66,
+            "valorResidual": 25
+        },
+        {
+            "fecha": 2350868400000,
+            "amortizacion": 270.18,
+            "renta": 17.79,
+            "total": 287.97,
+            "valorResidual": 20
+        },
+        {
+            "fecha": 2366766000000,
+            "amortizacion": 270.18,
+            "renta": 13.49,
+            "total": 283.67,
+            "valorResidual": 15
+        },
+        {
+            "fecha": 2382404400000,
+            "amortizacion": 270.18,
+            "renta": 8.89,
+            "total": 279.07,
+            "valorResidual": 10
+        },
+        {
+            "fecha": 2398302000000,
+            "amortizacion": 270.18,
+            "renta": 4.5,
+            "total": 274.68,
+            "valorResidual": 5
+        }
+    ]
+}

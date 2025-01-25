@@ -1,0 +1,53 @@
+{
+    "nombre": "MRCAO - GENERACION MEDITERRANEA SA CLASE 10 1/12/2027 ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MRCAO - GENERACION MEDITERRANEA SA CLASE 10 1/12/2027  - USP46214AC95",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MRCAO",
+    "valorResidual": 64,
+    "flujo": [
+        {
+            "fecha": 1748746800000,
+            "amortizacion": 10,
+            "renta": 3.08,
+            "total": 13.08,
+            "valorResidual": 64
+        },
+        {
+            "fecha": 1764558000000,
+            "amortizacion": 10,
+            "renta": 2.6,
+            "total": 12.6,
+            "valorResidual": 54
+        },
+        {
+            "fecha": 1780282800000,
+            "amortizacion": 10,
+            "renta": 2.12,
+            "total": 12.12,
+            "valorResidual": 44
+        },
+        {
+            "fecha": 1796094000000,
+            "amortizacion": 10,
+            "renta": 1.64,
+            "total": 11.64,
+            "valorResidual": 34
+        },
+        {
+            "fecha": 1811818800000,
+            "amortizacion": 10,
+            "renta": 1.16,
+            "total": 11.16,
+            "valorResidual": 24
+        },
+        {
+            "fecha": 1827630000000,
+            "amortizacion": 14,
+            "renta": 0.67,
+            "total": 14.67,
+            "valorResidual": 14
+        }
+    ]
+}

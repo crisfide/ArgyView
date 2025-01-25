@@ -1,0 +1,53 @@
+{
+    "nombre": "HJCBC - ON.JOHN DEERE CL XI ",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "HJCBC - ON.JOHN DEERE CL XI  - AR0790183906",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "HJCBC",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1740711600000,
+            "amortizacion": 0,
+            "renta": 1.48,
+            "total": 1.48,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1748401200000,
+            "amortizacion": 0,
+            "renta": 1.46,
+            "total": 1.46,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1756350000000,
+            "amortizacion": 0,
+            "renta": 1.51,
+            "total": 1.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1764298800000,
+            "amortizacion": 0,
+            "renta": 1.51,
+            "total": 1.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1772247600000,
+            "amortizacion": 0,
+            "renta": 1.51,
+            "total": 1.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1779937200000,
+            "amortizacion": 100,
+            "renta": 1,
+            "total": 101,
+            "valorResidual": 100
+        }
+    ]
+}

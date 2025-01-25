@@ -1,0 +1,60 @@
+{
+    "nombre": "PECBO - PETROLERA ACONCAGUA ENERGIA C11 - 29/02/2028",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PECBO - PETROLERA ACONCAGUA ENERGIA C11 - 29/02/2028 - AR0781932378",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PECBO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1740711600000,
+            "amortizacion": 0,
+            "renta": 4.76,
+            "total": 4.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1756350000000,
+            "amortizacion": 0,
+            "renta": 4.71,
+            "total": 4.71,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1772247600000,
+            "amortizacion": 0,
+            "renta": 4.79,
+            "total": 4.79,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1787886000000,
+            "amortizacion": 0,
+            "renta": 4.71,
+            "total": 4.71,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1803783600000,
+            "amortizacion": 0,
+            "renta": 4.79,
+            "total": 4.79,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1819422000000,
+            "amortizacion": 0,
+            "renta": 4.71,
+            "total": 4.71,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1835319600000,
+            "amortizacion": 100,
+            "renta": 4.79,
+            "total": 104.79,
+            "valorResidual": 100
+        }
+    ]
+}

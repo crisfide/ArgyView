@@ -1,0 +1,25 @@
+{
+    "nombre": "NPCBO - CENTRAL PUERTO CLASE B",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "NPCBO - CENTRAL PUERTO CLASE B - XS2704926737",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "NPCBO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1744858800000,
+            "amortizacion": 0,
+            "renta": 4.99,
+            "total": 4.99,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1760670000000,
+            "amortizacion": 100,
+            "renta": 5.01,
+            "total": 105.01,
+            "valorResidual": 100
+        }
+    ]
+}

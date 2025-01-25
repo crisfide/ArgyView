@@ -1,0 +1,25 @@
+{
+    "nombre": "DMC2O - IMPSA 2025",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "DMC2O - IMPSA 2025",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "DMC2O",
+    "valorResidual": 37.5,
+    "flujo": [
+        {
+            "fecha": 1751252400000,
+            "amortizacion": 0,
+            "renta": 0.67,
+            "total": 0.67,
+            "valorResidual": 37.5
+        },
+        {
+            "fecha": 1767063600000,
+            "amortizacion": 37.5,
+            "renta": 0.67,
+            "total": 38.17,
+            "valorResidual": 37.5
+        }
+    ]
+}

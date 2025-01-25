@@ -1,0 +1,137 @@
+{
+    "nombre": "DICP - Discount 2033 Pesos Ley Arg",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "DICP - Discount 2033 Pesos Ley Arg - ARARGE03E121",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "DICP",
+    "valorResidual": 90,
+    "flujo": [
+        {
+            "fecha": 1751252400000,
+            "amortizacion": 6.35,
+            "renta": 3.33,
+            "total": 9.68,
+            "valorResidual": 90
+        },
+        {
+            "fecha": 1767150000000,
+            "amortizacion": 6.35,
+            "renta": 3.15,
+            "total": 9.5,
+            "valorResidual": 85
+        },
+        {
+            "fecha": 1782788400000,
+            "amortizacion": 6.35,
+            "renta": 2.96,
+            "total": 9.31,
+            "valorResidual": 80
+        },
+        {
+            "fecha": 1798686000000,
+            "amortizacion": 6.35,
+            "renta": 2.78,
+            "total": 9.13,
+            "valorResidual": 75
+        },
+        {
+            "fecha": 1814324400000,
+            "amortizacion": 6.35,
+            "renta": 2.59,
+            "total": 8.94,
+            "valorResidual": 70
+        },
+        {
+            "fecha": 1830222000000,
+            "amortizacion": 6.35,
+            "renta": 2.41,
+            "total": 8.76,
+            "valorResidual": 65
+        },
+        {
+            "fecha": 1845946800000,
+            "amortizacion": 6.35,
+            "renta": 2.22,
+            "total": 8.57,
+            "valorResidual": 60
+        },
+        {
+            "fecha": 1861844400000,
+            "amortizacion": 6.35,
+            "renta": 2.04,
+            "total": 8.39,
+            "valorResidual": 55
+        },
+        {
+            "fecha": 1877482800000,
+            "amortizacion": 6.35,
+            "renta": 1.85,
+            "total": 8.2,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 1893380400000,
+            "amortizacion": 6.35,
+            "renta": 1.67,
+            "total": 8.02,
+            "valorResidual": 45
+        },
+        {
+            "fecha": 1909018800000,
+            "amortizacion": 6.35,
+            "renta": 1.48,
+            "total": 7.83,
+            "valorResidual": 40
+        },
+        {
+            "fecha": 1924916400000,
+            "amortizacion": 6.35,
+            "renta": 1.3,
+            "total": 7.65,
+            "valorResidual": 35
+        },
+        {
+            "fecha": 1940554800000,
+            "amortizacion": 6.35,
+            "renta": 1.11,
+            "total": 7.46,
+            "valorResidual": 30
+        },
+        {
+            "fecha": 1956452400000,
+            "amortizacion": 6.35,
+            "renta": 0.93,
+            "total": 7.28,
+            "valorResidual": 25
+        },
+        {
+            "fecha": 1972177200000,
+            "amortizacion": 6.35,
+            "renta": 0.74,
+            "total": 7.09,
+            "valorResidual": 20
+        },
+        {
+            "fecha": 1988074800000,
+            "amortizacion": 6.35,
+            "renta": 0.56,
+            "total": 6.91,
+            "valorResidual": 15
+        },
+        {
+            "fecha": 2003713200000,
+            "amortizacion": 6.35,
+            "renta": 0.37,
+            "total": 6.72,
+            "valorResidual": 10
+        },
+        {
+            "fecha": 2019610800000,
+            "amortizacion": 6.35,
+            "renta": 0.19,
+            "total": 6.54,
+            "valorResidual": 5
+        }
+    ]
+}

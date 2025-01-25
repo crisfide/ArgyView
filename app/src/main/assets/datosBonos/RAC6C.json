@@ -1,0 +1,32 @@
+{
+    "nombre": "RAC6C - ON RAGHSA CLASE 6 USD 11/04/2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "RAC6C - ON RAGHSA CLASE 6 USD 11/04/2026 - AR0583396095",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "RAC6C",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1744340400000,
+            "amortizacion": 33,
+            "renta": 2.98,
+            "total": 35.98,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1760151600000,
+            "amortizacion": 33,
+            "renta": 2.01,
+            "total": 35.01,
+            "valorResidual": 67
+        },
+        {
+            "fecha": 1775876400000,
+            "amortizacion": 34,
+            "renta": 1.01,
+            "total": 35.01,
+            "valorResidual": 34
+        }
+    ]
+}

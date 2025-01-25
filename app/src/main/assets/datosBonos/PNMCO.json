@@ -1,0 +1,25 @@
+{
+    "nombre": "PNMCO - PAN AMERCIAN ENERGY 7 25 21072025",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PNMCO - PAN AMERCIAN ENERGY 7 25 21072025",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PNMCO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1737428400000,
+            "amortizacion": 0,
+            "renta": 3.62,
+            "total": 3.62,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1753066800000,
+            "amortizacion": 100,
+            "renta": 3.62,
+            "total": 103.62,
+            "valorResidual": 100
+        }
+    ]
+}

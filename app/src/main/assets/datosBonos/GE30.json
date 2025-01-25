@@ -1,0 +1,88 @@
+{
+    "nombre": "GE30 - Bono República Argentina Ley Extranjera 2030 EUR",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "GE30 - Bono República Argentina Ley Extranjera 2030 EUR - XS2177363665",
+    "moneda": "EUR",
+    "mercado": "BCBA",
+    "ticker": "GE30",
+    "valorResidual": 88,
+    "flujo": [
+        {
+            "fecha": 1752030000000,
+            "amortizacion": 8,
+            "renta": 0.33,
+            "total": 8.33,
+            "valorResidual": 88
+        },
+        {
+            "fecha": 1767927600000,
+            "amortizacion": 8,
+            "renta": 0.3,
+            "total": 8.3,
+            "valorResidual": 80
+        },
+        {
+            "fecha": 1783566000000,
+            "amortizacion": 8,
+            "renta": 0.27,
+            "total": 8.27,
+            "valorResidual": 72
+        },
+        {
+            "fecha": 1799463600000,
+            "amortizacion": 8,
+            "renta": 0.24,
+            "total": 8.24,
+            "valorResidual": 64
+        },
+        {
+            "fecha": 1815102000000,
+            "amortizacion": 8,
+            "renta": 0.21,
+            "total": 8.21,
+            "valorResidual": 56
+        },
+        {
+            "fecha": 1830999600000,
+            "amortizacion": 8,
+            "renta": 0.42,
+            "total": 8.42,
+            "valorResidual": 48
+        },
+        {
+            "fecha": 1846724400000,
+            "amortizacion": 8,
+            "renta": 0.35,
+            "total": 8.35,
+            "valorResidual": 40
+        },
+        {
+            "fecha": 1862622000000,
+            "amortizacion": 8,
+            "renta": 0.28,
+            "total": 8.28,
+            "valorResidual": 32
+        },
+        {
+            "fecha": 1878260400000,
+            "amortizacion": 8,
+            "renta": 0.21,
+            "total": 8.21,
+            "valorResidual": 24
+        },
+        {
+            "fecha": 1894158000000,
+            "amortizacion": 8,
+            "renta": 0.14,
+            "total": 8.14,
+            "valorResidual": 16
+        },
+        {
+            "fecha": 1909796400000,
+            "amortizacion": 8,
+            "renta": 0.07,
+            "total": 8.07,
+            "valorResidual": 8
+        }
+    ]
+}

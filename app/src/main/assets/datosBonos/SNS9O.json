@@ -1,0 +1,25 @@
+{
+    "nombre": "SNS9O - ON SAN MIGUEL  9 ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "SNS9O - ON SAN MIGUEL  9 ",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "SNS9O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1742958000000,
+            "amortizacion": 0,
+            "renta": 1.23,
+            "total": 1.23,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1750906800000,
+            "amortizacion": 100,
+            "renta": 1.26,
+            "total": 101.26,
+            "valorResidual": 100
+        }
+    ]
+}

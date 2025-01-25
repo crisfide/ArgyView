@@ -1,0 +1,18 @@
+{
+    "nombre": "BAM25 - LT MUN. DE CORDOBA S.50 V16/03/25 $ CG",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "BAM25 - LT MUN. DE CORDOBA S.50 V16/03/25 $ CG - AR0213780296",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "BAM25",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1742526000000,
+            "amortizacion": 100,
+            "renta": 9.67,
+            "total": 109.67,
+            "valorResidual": 100
+        }
+    ]
+}

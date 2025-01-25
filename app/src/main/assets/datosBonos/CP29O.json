@@ -1,0 +1,67 @@
+{
+    "nombre": "CP29O - COMPAÑIA GENERAL DE COMBUSTIBLES S.A. VTO 10/01/2027",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CP29O - COMPAÑIA GENERAL DE COMBUSTIBLES S.A. VTO 10/01/2027 - ARCGCO5600U7",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "CP29O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1745031600000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1752894000000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1760842800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1768791600000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1776567600000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784430000000,
+            "amortizacion": 33.33,
+            "renta": 0.25,
+            "total": 33.58,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1792378800000,
+            "amortizacion": 33.33,
+            "renta": 0.17,
+            "total": 33.5,
+            "valorResidual": 66.67
+        },
+        {
+            "fecha": 1800327600000,
+            "amortizacion": 33.43,
+            "renta": 0.08,
+            "total": 33.51,
+            "valorResidual": 33.34
+        }
+    ]
+}

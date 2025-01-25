@@ -1,0 +1,74 @@
+{
+    "nombre": "YMC1O - YPF 8.5 27/06/2029",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YMC1O - YPF 8.5 27/06/2029 - USP989MJBP50",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YMC1O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1750993200000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1766804400000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1782529200000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1798340400000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1814065200000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1829876400000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1845687600000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1861498800000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1877223600000,
+            "amortizacion": 100,
+            "renta": 4.25,
+            "total": 104.25,
+            "valorResidual": 100
+        }
+    ]
+}

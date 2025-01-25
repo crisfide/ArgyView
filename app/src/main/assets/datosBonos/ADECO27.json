@@ -1,0 +1,53 @@
+{
+    "nombre": "ADECO27 - Adecoagro 2027",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "ADECO27 - Adecoagro 2027 - USL00849AA47",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "ADECO27",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1742526000000,
+            "amortizacion": 0,
+            "renta": 3,
+            "total": 3,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1758423600000,
+            "amortizacion": 0,
+            "renta": 3,
+            "total": 3,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1774062000000,
+            "amortizacion": 0,
+            "renta": 3,
+            "total": 3,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1789959600000,
+            "amortizacion": 0,
+            "renta": 3,
+            "total": 3,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1805598000000,
+            "amortizacion": 0,
+            "renta": 3,
+            "total": 3,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1821495600000,
+            "amortizacion": 100,
+            "renta": 3,
+            "total": 103,
+            "valorResidual": 100
+        }
+    ]
+}

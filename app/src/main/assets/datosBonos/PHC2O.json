@@ -1,0 +1,25 @@
+{
+    "nombre": "PHC2O - ON PUENTE HNOS C2 USD 16/01/2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PHC2O - ON PUENTE HNOS C2 USD 16/01/2026",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PHC2O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1752634800000,
+            "amortizacion": 0,
+            "renta": 2.73,
+            "total": 2.73,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1768532400000,
+            "amortizacion": 100,
+            "renta": 2.77,
+            "total": 102.77,
+            "valorResidual": 100
+        }
+    ]
+}

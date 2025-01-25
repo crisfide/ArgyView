@@ -1,0 +1,53 @@
+{
+    "nombre": "YCAMOExt - YPF C53 2027 Exterior",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YCAMOExt - YPF C53 2027 Exterior - US984245AQ34",
+    "moneda": "USD",
+    "mercado": "EEUU",
+    "ticker": "YCAMOExt",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1737428400000,
+            "amortizacion": 0,
+            "renta": 3.48,
+            "total": 3.48,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1753066800000,
+            "amortizacion": 0,
+            "renta": 3.48,
+            "total": 3.48,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1768964400000,
+            "amortizacion": 0,
+            "renta": 3.48,
+            "total": 3.48,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784602800000,
+            "amortizacion": 0,
+            "renta": 3.48,
+            "total": 3.48,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1800500400000,
+            "amortizacion": 0,
+            "renta": 3.48,
+            "total": 3.48,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1816138800000,
+            "amortizacion": 100,
+            "renta": 3.48,
+            "total": 103.48,
+            "valorResidual": 100
+        }
+    ]
+}

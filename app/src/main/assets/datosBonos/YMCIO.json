@@ -1,0 +1,74 @@
+{
+    "nombre": "YMCIO - YPF Step Up 2029",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YMCIO - YPF Step Up 2029 - USP989MJBS99",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YMCIO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1751252400000,
+            "amortizacion": 0,
+            "renta": 4.5,
+            "total": 4.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1767063600000,
+            "amortizacion": 0,
+            "renta": 4.5,
+            "total": 4.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1782788400000,
+            "amortizacion": 14.28,
+            "renta": 4.5,
+            "total": 18.78,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1798599600000,
+            "amortizacion": 14.28,
+            "renta": 3.86,
+            "total": 18.14,
+            "valorResidual": 85.715
+        },
+        {
+            "fecha": 1814324400000,
+            "amortizacion": 14.28,
+            "renta": 3.21,
+            "total": 17.49,
+            "valorResidual": 71.43
+        },
+        {
+            "fecha": 1830135600000,
+            "amortizacion": 14.28,
+            "renta": 2.57,
+            "total": 16.85,
+            "valorResidual": 57.145
+        },
+        {
+            "fecha": 1845946800000,
+            "amortizacion": 14.28,
+            "renta": 1.93,
+            "total": 16.21,
+            "valorResidual": 42.86
+        },
+        {
+            "fecha": 1861758000000,
+            "amortizacion": 14.28,
+            "renta": 1.29,
+            "total": 15.57,
+            "valorResidual": 28.575
+        },
+        {
+            "fecha": 1877482800000,
+            "amortizacion": 14.28,
+            "renta": 0.64,
+            "total": 14.92,
+            "valorResidual": 14.29
+        }
+    ]
+}

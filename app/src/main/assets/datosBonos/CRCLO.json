@@ -1,0 +1,46 @@
+{
+    "nombre": "CRCLO - ON CELULOSA C20 USD COMPE",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CRCLO - ON CELULOSA C20 USD COMPE - AR0697579701",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "CRCLO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1738983600000,
+            "amortizacion": 0,
+            "renta": 2,
+            "total": 2,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1746673200000,
+            "amortizacion": 0,
+            "renta": 2,
+            "total": 2,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1754622000000,
+            "amortizacion": 0,
+            "renta": 2,
+            "total": 2,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1762570800000,
+            "amortizacion": 0,
+            "renta": 2,
+            "total": 2,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1770519600000,
+            "amortizacion": 100,
+            "renta": 2,
+            "total": 102,
+            "valorResidual": 100
+        }
+    ]
+}

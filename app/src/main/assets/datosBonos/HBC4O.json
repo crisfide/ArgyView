@@ -1,0 +1,25 @@
+{
+    "nombre": "HBC4O - Hipotecario Clase 4 14/10/2025",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "HBC4O - Hipotecario Clase 4 14/10/2025 - USP1330HBH68",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "HBC4O",
+    "valorResidual": 20,
+    "flujo": [
+        {
+            "fecha": 1744599600000,
+            "amortizacion": 0,
+            "renta": 0.98,
+            "total": 0.98,
+            "valorResidual": 20
+        },
+        {
+            "fecha": 1760410800000,
+            "amortizacion": 20,
+            "renta": 0.98,
+            "total": 20.98,
+            "valorResidual": 20
+        }
+    ]
+}

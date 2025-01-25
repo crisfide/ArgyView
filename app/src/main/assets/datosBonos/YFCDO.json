@@ -1,0 +1,18 @@
+{
+    "nombre": "YFCDO - ON YPF CLASE 12",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YFCDO - ON YPF CLASE 12",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YFCDO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1787972400000,
+            "amortizacion": 100,
+            "renta": 0,
+            "total": 100,
+            "valorResidual": 100
+        }
+    ]
+}

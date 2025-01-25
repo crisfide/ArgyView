@@ -1,0 +1,53 @@
+{
+    "nombre": "PBY26 - T.D. PCIA.BS.AS. T.V. V.05/05/26 $ CG",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "PBY26 - T.D. PCIA.BS.AS. T.V. V.05/05/26 $ CG - AR0501624354",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "PBY26",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1738724400000,
+            "amortizacion": 0,
+            "renta": 9.75,
+            "total": 9.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1746414000000,
+            "amortizacion": 0,
+            "renta": 9.43,
+            "total": 9.43,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1754362800000,
+            "amortizacion": 0,
+            "renta": 9.75,
+            "total": 9.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1762311600000,
+            "amortizacion": 0,
+            "renta": 9.75,
+            "total": 9.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1770260400000,
+            "amortizacion": 0,
+            "renta": 9.75,
+            "total": 9.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1777950000000,
+            "amortizacion": 100,
+            "renta": 9.43,
+            "total": 109.43,
+            "valorResidual": 100
+        }
+    ]
+}

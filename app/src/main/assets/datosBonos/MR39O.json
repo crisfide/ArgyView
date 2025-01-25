@@ -1,0 +1,109 @@
+{
+    "nombre": "MR39O - ON GENERACION MED RG 11  1/11/2031",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MR39O - ON GENERACION MED RG 11  1/11/2031 - USP46214AG00",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MR39O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1746068400000,
+            "amortizacion": 0,
+            "renta": 5.53,
+            "total": 5.53,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761966000000,
+            "amortizacion": 0,
+            "renta": 5.5,
+            "total": 5.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1777604400000,
+            "amortizacion": 1.5,
+            "renta": 5.5,
+            "total": 7,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1793502000000,
+            "amortizacion": 1.5,
+            "renta": 5.42,
+            "total": 6.92,
+            "valorResidual": 98.5
+        },
+        {
+            "fecha": 1809140400000,
+            "amortizacion": 2.5,
+            "renta": 5.34,
+            "total": 7.84,
+            "valorResidual": 97
+        },
+        {
+            "fecha": 1825038000000,
+            "amortizacion": 2.5,
+            "renta": 5.2,
+            "total": 7.7,
+            "valorResidual": 94.5
+        },
+        {
+            "fecha": 1840762800000,
+            "amortizacion": 7.5,
+            "renta": 5.06,
+            "total": 12.56,
+            "valorResidual": 92
+        },
+        {
+            "fecha": 1856660400000,
+            "amortizacion": 7.5,
+            "renta": 4.65,
+            "total": 12.15,
+            "valorResidual": 84.5
+        },
+        {
+            "fecha": 1872298800000,
+            "amortizacion": 11,
+            "renta": 4.24,
+            "total": 15.24,
+            "valorResidual": 77
+        },
+        {
+            "fecha": 1888196400000,
+            "amortizacion": 11,
+            "renta": 3.63,
+            "total": 14.63,
+            "valorResidual": 66
+        },
+        {
+            "fecha": 1903834800000,
+            "amortizacion": 11,
+            "renta": 3.02,
+            "total": 14.02,
+            "valorResidual": 55
+        },
+        {
+            "fecha": 1919732400000,
+            "amortizacion": 11,
+            "renta": 2.42,
+            "total": 13.42,
+            "valorResidual": 44
+        },
+        {
+            "fecha": 1935370800000,
+            "amortizacion": 11,
+            "renta": 1.82,
+            "total": 12.82,
+            "valorResidual": 33
+        },
+        {
+            "fecha": 1951268400000,
+            "amortizacion": 22,
+            "renta": 1.21,
+            "total": 23.21,
+            "valorResidual": 22
+        }
+    ]
+}

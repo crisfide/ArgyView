@@ -1,0 +1,109 @@
+{
+    "nombre": "VSCQO - ON VISTA ENERGY C25 DLNK COMPE",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "VSCQO - ON VISTA ENERGY C25 DLNK COMPE - AR0941463967",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "VSCQO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1744081200000,
+            "amortizacion": 0,
+            "renta": 0.74,
+            "total": 0.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1751943600000,
+            "amortizacion": 0,
+            "renta": 0.75,
+            "total": 0.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1759892400000,
+            "amortizacion": 0,
+            "renta": 0.76,
+            "total": 0.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1767841200000,
+            "amortizacion": 0,
+            "renta": 0.76,
+            "total": 0.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1775617200000,
+            "amortizacion": 0,
+            "renta": 0.74,
+            "total": 0.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1783479600000,
+            "amortizacion": 0,
+            "renta": 0.75,
+            "total": 0.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1791428400000,
+            "amortizacion": 0,
+            "renta": 0.76,
+            "total": 0.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1799377200000,
+            "amortizacion": 0,
+            "renta": 0.76,
+            "total": 0.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1807153200000,
+            "amortizacion": 0,
+            "renta": 0.74,
+            "total": 0.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1815015600000,
+            "amortizacion": 0,
+            "renta": 0.75,
+            "total": 0.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1822964400000,
+            "amortizacion": 0,
+            "renta": 0.76,
+            "total": 0.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1830913200000,
+            "amortizacion": 0,
+            "renta": 0.76,
+            "total": 0.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1838775600000,
+            "amortizacion": 0,
+            "renta": 0.75,
+            "total": 0.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1846638000000,
+            "amortizacion": 100,
+            "renta": 0.75,
+            "total": 100.75,
+            "valorResidual": 100
+        }
+    ]
+}

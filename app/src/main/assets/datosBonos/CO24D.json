@@ -1,0 +1,46 @@
+{
+    "nombre": "CO24D - Provincia de Córdoba 2027",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "CO24D - Provincia de Córdoba 2027 - USP79171AE79",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "CO24D",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1748746800000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1764558000000,
+            "amortizacion": 25,
+            "renta": 3.5,
+            "total": 28.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1780282800000,
+            "amortizacion": 25,
+            "renta": 2.62,
+            "total": 27.62,
+            "valorResidual": 75
+        },
+        {
+            "fecha": 1796094000000,
+            "amortizacion": 25,
+            "renta": 1.75,
+            "total": 26.75,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 1811818800000,
+            "amortizacion": 25,
+            "renta": 0.87,
+            "total": 25.87,
+            "valorResidual": 25
+        }
+    ]
+}

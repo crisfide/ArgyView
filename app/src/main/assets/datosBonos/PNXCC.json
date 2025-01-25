@@ -1,0 +1,116 @@
+{
+    "nombre": "PNXCC - ON PAE CL31 U$S TT",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "PNXCC - ON PAE CL31 U$S TT - USE7S78BAC65",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PNXCC",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1745982000000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761793200000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1777518000000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1793329200000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1809054000000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1824865200000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1840676400000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1856487600000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1872212400000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1888023600000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1903748400000,
+            "amortizacion": 33,
+            "renta": 4.25,
+            "total": 37.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1919559600000,
+            "amortizacion": 0,
+            "renta": 2.85,
+            "total": 2.85,
+            "valorResidual": 67
+        },
+        {
+            "fecha": 1935284400000,
+            "amortizacion": 33,
+            "renta": 2.85,
+            "total": 35.85,
+            "valorResidual": 67
+        },
+        {
+            "fecha": 1951095600000,
+            "amortizacion": 0,
+            "renta": 1.44,
+            "total": 1.44,
+            "valorResidual": 34
+        },
+        {
+            "fecha": 1966906800000,
+            "amortizacion": 34,
+            "renta": 1.44,
+            "total": 35.44,
+            "valorResidual": 34
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "nombre": "RCCJO - ARCOR 8 25  2027",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "RCCJO - ARCOR 8 25  2027 - USP04559AW36",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "RCCJO",
+    "valorResidual": 85.715,
+    "flujo": [
+        {
+            "fecha": 1744167600000,
+            "amortizacion": 14.28,
+            "renta": 3.53,
+            "total": 17.81,
+            "valorResidual": 85.715
+        },
+        {
+            "fecha": 1759978800000,
+            "amortizacion": 14.28,
+            "renta": 2.95,
+            "total": 17.23,
+            "valorResidual": 71.43
+        },
+        {
+            "fecha": 1775703600000,
+            "amortizacion": 14.28,
+            "renta": 2.35,
+            "total": 16.63,
+            "valorResidual": 57.145
+        },
+        {
+            "fecha": 1791514800000,
+            "amortizacion": 14.28,
+            "renta": 1.77,
+            "total": 16.05,
+            "valorResidual": 42.86
+        },
+        {
+            "fecha": 1807239600000,
+            "amortizacion": 14.28,
+            "renta": 1.18,
+            "total": 15.46,
+            "valorResidual": 28.575
+        },
+        {
+            "fecha": 1823050800000,
+            "amortizacion": 14.29,
+            "renta": 0.59,
+            "total": 14.88,
+            "valorResidual": 14.29
+        }
+    ]
+}

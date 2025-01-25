@@ -1,0 +1,60 @@
+{
+    "nombre": "IRCFO - ON IRSA 8 75  Vto 22-06-28",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "IRCFO - ON IRSA 8 75  Vto 22-06-28 - USP58809BH95",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "IRCFO",
+    "valorResidual": 82.5,
+    "flujo": [
+        {
+            "fecha": 1750561200000,
+            "amortizacion": 17.5,
+            "renta": 3.61,
+            "total": 21.11,
+            "valorResidual": 82.5
+        },
+        {
+            "fecha": 1766372400000,
+            "amortizacion": 0,
+            "renta": 2.84,
+            "total": 2.84,
+            "valorResidual": 65
+        },
+        {
+            "fecha": 1782097200000,
+            "amortizacion": 17.5,
+            "renta": 2.84,
+            "total": 20.34,
+            "valorResidual": 65
+        },
+        {
+            "fecha": 1797908400000,
+            "amortizacion": 0,
+            "renta": 2.08,
+            "total": 2.08,
+            "valorResidual": 47.5
+        },
+        {
+            "fecha": 1813633200000,
+            "amortizacion": 17.5,
+            "renta": 2.08,
+            "total": 19.58,
+            "valorResidual": 47.5
+        },
+        {
+            "fecha": 1829444400000,
+            "amortizacion": 0,
+            "renta": 1.31,
+            "total": 1.31,
+            "valorResidual": 30
+        },
+        {
+            "fecha": 1845255600000,
+            "amortizacion": 30,
+            "renta": 1.31,
+            "total": 31.31,
+            "valorResidual": 30
+        }
+    ]
+}

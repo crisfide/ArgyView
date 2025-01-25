@@ -1,0 +1,67 @@
+{
+    "nombre": "PECGO - ON PETROLERA ACON 15 USD TUNIC",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PECGO - ON PETROLERA ACON 15 USD TUNIC - AR0922212433",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PECGO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1745809200000,
+            "amortizacion": 0,
+            "renta": 4.49,
+            "total": 4.49,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761620400000,
+            "amortizacion": 0,
+            "renta": 4.51,
+            "total": 4.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1777345200000,
+            "amortizacion": 0,
+            "renta": 4.49,
+            "total": 4.49,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1793156400000,
+            "amortizacion": 0,
+            "renta": 4.51,
+            "total": 4.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1808881200000,
+            "amortizacion": 0,
+            "renta": 4.49,
+            "total": 4.49,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1824692400000,
+            "amortizacion": 0,
+            "renta": 4.51,
+            "total": 4.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1840503600000,
+            "amortizacion": 0,
+            "renta": 4.51,
+            "total": 4.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1856314800000,
+            "amortizacion": 100,
+            "renta": 4.51,
+            "total": 104.51,
+            "valorResidual": 100
+        }
+    ]
+}

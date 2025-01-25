@@ -1,0 +1,53 @@
+{
+    "nombre": "GNCXO - GENNEIA SA 2027",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "GNCXO - GENNEIA SA 2027",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "GNCXO",
+    "valorResidual": 60,
+    "flujo": [
+        {
+            "fecha": 1740884400000,
+            "amortizacion": 10,
+            "renta": 2.62,
+            "total": 12.62,
+            "valorResidual": 60
+        },
+        {
+            "fecha": 1756782000000,
+            "amortizacion": 10,
+            "renta": 2.19,
+            "total": 12.19,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 1772420400000,
+            "amortizacion": 10,
+            "renta": 1.75,
+            "total": 11.75,
+            "valorResidual": 40
+        },
+        {
+            "fecha": 1788318000000,
+            "amortizacion": 10,
+            "renta": 1.31,
+            "total": 11.31,
+            "valorResidual": 30
+        },
+        {
+            "fecha": 1803956400000,
+            "amortizacion": 10,
+            "renta": 0.88,
+            "total": 10.88,
+            "valorResidual": 20
+        },
+        {
+            "fecha": 1819854000000,
+            "amortizacion": 10,
+            "renta": 0.44,
+            "total": 10.44,
+            "valorResidual": 10
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "nombre": "MTCGO - Mastellone 2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MTCGO - Mastellone 2026 - USP6460MAK01",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MTCGO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1743303600000,
+            "amortizacion": 0,
+            "renta": 2.74,
+            "total": 2.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1751252400000,
+            "amortizacion": 0,
+            "renta": 2.74,
+            "total": 2.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1759201200000,
+            "amortizacion": 0,
+            "renta": 2.74,
+            "total": 2.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1767063600000,
+            "amortizacion": 0,
+            "renta": 2.74,
+            "total": 2.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1774839600000,
+            "amortizacion": 0,
+            "renta": 2.74,
+            "total": 2.74,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1782788400000,
+            "amortizacion": 100,
+            "renta": 2.74,
+            "total": 102.74,
+            "valorResidual": 100
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "nombre": "CS38O - ON Cresud 8  Vto 03-03-26",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CS38O - ON Cresud 8  Vto 03-03-26 - ARCRES5600V9",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "CS38O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1751511600000,
+            "amortizacion": 0,
+            "renta": 3.97,
+            "total": 3.97,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1767409200000,
+            "amortizacion": 0,
+            "renta": 4.03,
+            "total": 4.03,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1772506800000,
+            "amortizacion": 100,
+            "renta": 1.29,
+            "total": 101.29,
+            "valorResidual": 100
+        }
+    ]
+}

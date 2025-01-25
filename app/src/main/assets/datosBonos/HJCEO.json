@@ -1,0 +1,39 @@
+{
+    "nombre": "HJCEO - ON JOHN DEERE C13 DLNK",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "HJCEO - ON JOHN DEERE C13 DLNK - AR0759212241",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "HJCEO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1743735600000,
+            "amortizacion": 0,
+            "renta": 0,
+            "total": 0,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1751598000000,
+            "amortizacion": 0,
+            "renta": 0,
+            "total": 0,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1759546800000,
+            "amortizacion": 0,
+            "renta": 0,
+            "total": 0,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1767495600000,
+            "amortizacion": 100,
+            "renta": 0,
+            "total": 100,
+            "valorResidual": 100
+        }
+    ]
+}

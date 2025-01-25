@@ -1,0 +1,39 @@
+{
+    "nombre": "TO26 - Bono en peso tasa fija 2026",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "TO26 - Bono en peso tasa fija 2026",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "TO26",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1744858800000,
+            "amortizacion": 0,
+            "renta": 7.75,
+            "total": 7.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1760670000000,
+            "amortizacion": 0,
+            "renta": 7.75,
+            "total": 7.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1776394800000,
+            "amortizacion": 0,
+            "renta": 7.75,
+            "total": 7.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1792206000000,
+            "amortizacion": 100,
+            "renta": 7.75,
+            "total": 107.75,
+            "valorResidual": 100
+        }
+    ]
+}

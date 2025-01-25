@@ -1,0 +1,32 @@
+{
+    "nombre": "BYC2O - Banco Galicia 2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "BYC2O - Banco Galicia 2026 - USP0R66CAA64",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "BYC2O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1752894000000,
+            "amortizacion": 0,
+            "renta": 3.58,
+            "total": 3.58,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1768791600000,
+            "amortizacion": 0,
+            "renta": 3.58,
+            "total": 3.58,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784430000000,
+            "amortizacion": 100,
+            "renta": 3.58,
+            "total": 103.58,
+            "valorResidual": 100
+        }
+    ]
+}

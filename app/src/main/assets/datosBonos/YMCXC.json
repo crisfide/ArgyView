@@ -1,0 +1,109 @@
+{
+    "nombre": "YMCXC - YPF SOCIEDAD ON  8.75  VTO. 11/09/31",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YMCXC - YPF SOCIEDAD ON  8.75  VTO. 11/09/31 - USP989MJBV29",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YMCXC",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1741662000000,
+            "amortizacion": 0,
+            "renta": 4.38,
+            "total": 4.38,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1757559600000,
+            "amortizacion": 0,
+            "renta": 4.38,
+            "total": 4.38,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1773198000000,
+            "amortizacion": 0,
+            "renta": 4.38,
+            "total": 4.38,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1789095600000,
+            "amortizacion": 0,
+            "renta": 4.38,
+            "total": 4.38,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1804734000000,
+            "amortizacion": 0,
+            "renta": 4.38,
+            "total": 4.38,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1820631600000,
+            "amortizacion": 0,
+            "renta": 4.38,
+            "total": 4.38,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1836356400000,
+            "amortizacion": 0,
+            "renta": 4.38,
+            "total": 4.38,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1852254000000,
+            "amortizacion": 0,
+            "renta": 4.38,
+            "total": 4.38,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1867892400000,
+            "amortizacion": 0,
+            "renta": 4.38,
+            "total": 4.38,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1883790000000,
+            "amortizacion": 20,
+            "renta": 4.38,
+            "total": 24.38,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1899428400000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 80
+        },
+        {
+            "fecha": 1915326000000,
+            "amortizacion": 20,
+            "renta": 3.5,
+            "total": 23.5,
+            "valorResidual": 80
+        },
+        {
+            "fecha": 1930964400000,
+            "amortizacion": 0,
+            "renta": 2.62,
+            "total": 2.62,
+            "valorResidual": 60
+        },
+        {
+            "fecha": 1946862000000,
+            "amortizacion": 60,
+            "renta": 2.62,
+            "total": 62.62,
+            "valorResidual": 60
+        }
+    ]
+}

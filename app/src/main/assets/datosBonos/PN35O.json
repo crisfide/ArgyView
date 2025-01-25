@@ -1,0 +1,81 @@
+{
+    "nombre": "PN35O - ON PAN AMERICAN ENERGY 35",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PN35O - ON PAN AMERICAN ENERGY 35 - AR0623274765",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PN35O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1743044400000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1758942000000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1774580400000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1790478000000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1806116400000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1822014000000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1837738800000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1853636400000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1869274800000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1885172400000,
+            "amortizacion": 100,
+            "renta": 3.5,
+            "total": 103.5,
+            "valorResidual": 100
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "nombre": "YCA6O - ON YPF CLASE 39 8 50  U$S VTO.28/07/2025",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YCA6O - ON YPF CLASE 39 8 50  U$S VTO.28/07/2025 - USP989MJBE04 ",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YCA6O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1738033200000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1753671600000,
+            "amortizacion": 100,
+            "renta": 4.25,
+            "total": 104.25,
+            "valorResidual": 100
+        }
+    ]
+}

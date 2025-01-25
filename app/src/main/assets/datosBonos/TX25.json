@@ -1,0 +1,25 @@
+{
+    "nombre": "TX25 - BONO DEL TESORO NACIONAL EN PESOS CON AJUSTE POR CER 1 80  VENCIMIENTO 9 DE NOVIEMBRE DE 2025",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "TX25 - BONO DEL TESORO NACIONAL EN PESOS CON AJUSTE POR CER 1 80  VENCIMIENTO 9 DE NOVIEMBRE DE 2025 - ARARGE320C83",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "TX25",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1746759600000,
+            "amortizacion": 0,
+            "renta": 0.9,
+            "total": 0.9,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1762657200000,
+            "amortizacion": 100,
+            "renta": 0.9,
+            "total": 100.9,
+            "valorResidual": 100
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "nombre": "LMS8O - ON ALUAR 8",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "LMS8O - ON ALUAR 8",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "LMS8O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1742526000000,
+            "amortizacion": 0,
+            "renta": 1.56,
+            "total": 1.56,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1750474800000,
+            "amortizacion": 0,
+            "renta": 1.56,
+            "total": 1.56,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1758423600000,
+            "amortizacion": 0,
+            "renta": 1.56,
+            "total": 1.56,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1766286000000,
+            "amortizacion": 0,
+            "renta": 1.56,
+            "total": 1.56,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1774062000000,
+            "amortizacion": 0,
+            "renta": 1.56,
+            "total": 1.56,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1782010800000,
+            "amortizacion": 25,
+            "renta": 1.56,
+            "total": 26.56,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1789959600000,
+            "amortizacion": 25,
+            "renta": 1.17,
+            "total": 26.17,
+            "valorResidual": 75
+        },
+        {
+            "fecha": 1797822000000,
+            "amortizacion": 25,
+            "renta": 0.78,
+            "total": 25.78,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 1805598000000,
+            "amortizacion": 25,
+            "renta": 0.39,
+            "total": 25.39,
+            "valorResidual": 25
+        }
+    ]
+}

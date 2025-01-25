@@ -1,0 +1,53 @@
+{
+    "nombre": "LECGO - ON ALBANESI CL 15 SERIE B",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "LECGO - ON ALBANESI CL 15 SERIE B - AR0102720320",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "LECGO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1740711600000,
+            "amortizacion": 0,
+            "renta": 4.86,
+            "total": 4.86,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1756522800000,
+            "amortizacion": 0,
+            "renta": 4.89,
+            "total": 4.89,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1772247600000,
+            "amortizacion": 0,
+            "renta": 4.86,
+            "total": 4.86,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1788058800000,
+            "amortizacion": 0,
+            "renta": 4.89,
+            "total": 4.89,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1803783600000,
+            "amortizacion": 0,
+            "renta": 4.86,
+            "total": 4.86,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1819594800000,
+            "amortizacion": 100,
+            "renta": 4.89,
+            "total": 104.89,
+            "valorResidual": 100
+        }
+    ]
+}

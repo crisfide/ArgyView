@@ -1,0 +1,25 @@
+{
+    "nombre": "IRCGO - ON IRSA CLASE 15 VTO 25/3/2025",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "IRCGO - ON IRSA CLASE 15 VTO 25/3/2025 - ARIRSA5600V4",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "IRCGO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1738292400000,
+            "amortizacion": 0,
+            "renta": 4.03,
+            "total": 4.03,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1742871600000,
+            "amortizacion": 100,
+            "renta": 1.16,
+            "total": 101.16,
+            "valorResidual": 100
+        }
+    ]
+}

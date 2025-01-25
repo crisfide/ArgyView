@@ -1,0 +1,53 @@
+{
+    "nombre": "XMC1O - ON MINERA EXAR CLASE I USD CO",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "XMC1O - ON MINERA EXAR CLASE I USD CO - AR0778941762",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "XMC1O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1746932400000,
+            "amortizacion": 0,
+            "renta": 3.97,
+            "total": 3.97,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1762830000000,
+            "amortizacion": 0,
+            "renta": 4.03,
+            "total": 4.03,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1778468400000,
+            "amortizacion": 0,
+            "renta": 3.97,
+            "total": 3.97,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1794366000000,
+            "amortizacion": 0,
+            "renta": 4.03,
+            "total": 4.03,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1810004400000,
+            "amortizacion": 50,
+            "renta": 3.97,
+            "total": 53.97,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1825902000000,
+            "amortizacion": 50,
+            "renta": 2.02,
+            "total": 52.02,
+            "valorResidual": 50
+        }
+    ]
+}

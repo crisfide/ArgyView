@@ -1,0 +1,46 @@
+{
+    "nombre": "JUS22 - Prov. de Jujuy 2027",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "JUS22 - Prov. de Jujuy 2027",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "JUS22",
+    "valorResidual": 55.56,
+    "flujo": [
+        {
+            "fecha": 1742439600000,
+            "amortizacion": 11.11,
+            "renta": 2.33,
+            "total": 13.44,
+            "valorResidual": 55.56
+        },
+        {
+            "fecha": 1758337200000,
+            "amortizacion": 11.11,
+            "renta": 1.86,
+            "total": 12.97,
+            "valorResidual": 44.45
+        },
+        {
+            "fecha": 1773975600000,
+            "amortizacion": 11.11,
+            "renta": 1.4,
+            "total": 12.51,
+            "valorResidual": 33.34
+        },
+        {
+            "fecha": 1789873200000,
+            "amortizacion": 11.11,
+            "renta": 0.93,
+            "total": 12.04,
+            "valorResidual": 22.23
+        },
+        {
+            "fecha": 1805511600000,
+            "amortizacion": 11.12,
+            "renta": 0.47,
+            "total": 11.59,
+            "valorResidual": 11.12
+        }
+    ]
+}

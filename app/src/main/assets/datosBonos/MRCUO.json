@@ -1,0 +1,32 @@
+{
+    "nombre": "MRCUO - ON GEMSA-CTR 28 USD  08/03/2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MRCUO - ON GEMSA-CTR 28 USD  08/03/2026",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MRCUO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1741402800000,
+            "amortizacion": 0,
+            "renta": 4.75,
+            "total": 4.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1757300400000,
+            "amortizacion": 0,
+            "renta": 4.75,
+            "total": 4.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1772938800000,
+            "amortizacion": 100,
+            "renta": 4.75,
+            "total": 104.75,
+            "valorResidual": 100
+        }
+    ]
+}

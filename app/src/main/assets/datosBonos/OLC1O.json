@@ -1,0 +1,18 @@
+{
+    "nombre": "OLC1O - ON OLEODUCTOS DEL VALLE CLASE 1",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "OLC1O - ON OLEODUCTOS DEL VALLE CLASE 1",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "OLC1O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1776481200000,
+            "amortizacion": 100,
+            "renta": 0,
+            "total": 100,
+            "valorResidual": 100
+        }
+    ]
+}

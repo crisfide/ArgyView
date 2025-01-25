@@ -1,0 +1,88 @@
+{
+    "nombre": "TVY0 - Valores Negociables vinculados al PBI   vto 15/12/2035",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "TVY0 - Valores Negociables vinculados al PBI   vto 15/12/2035 - XS0501197262",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "TVY0",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1765767600000,
+            "amortizacion": 0,
+            "renta": 0,
+            "total": 0,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1797303600000,
+            "amortizacion": 0,
+            "renta": 0,
+            "total": 0,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1828839600000,
+            "amortizacion": 0,
+            "renta": 0,
+            "total": 0,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1860462000000,
+            "amortizacion": 0,
+            "renta": 0,
+            "total": 0,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1891998000000,
+            "amortizacion": 0,
+            "renta": 0,
+            "total": 0,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1923534000000,
+            "amortizacion": 0,
+            "renta": 0,
+            "total": 0,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1955070000000,
+            "amortizacion": 0,
+            "renta": 0,
+            "total": 0,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1986692400000,
+            "amortizacion": 0,
+            "renta": 0,
+            "total": 0,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2018228400000,
+            "amortizacion": 0,
+            "renta": 0,
+            "total": 0,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2049764400000,
+            "amortizacion": 0,
+            "renta": 0,
+            "total": 0,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2081300400000,
+            "amortizacion": 100,
+            "renta": 0,
+            "total": 100,
+            "valorResidual": 100
+        }
+    ]
+}

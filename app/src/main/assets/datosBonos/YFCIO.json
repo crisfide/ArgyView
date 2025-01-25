@@ -1,0 +1,81 @@
+{
+    "nombre": "YFCIO - ON YPF LUZ CLASE 17 U$S COMETITTIVO",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YFCIO - ON YPF LUZ CLASE 17 U$S COMETITTIVO - AR0947502206",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YFCIO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1741834800000,
+            "amortizacion": 0,
+            "renta": 4.42,
+            "total": 4.42,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1749783600000,
+            "amortizacion": 0,
+            "renta": 1.48,
+            "total": 1.48,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1757732400000,
+            "amortizacion": 0,
+            "renta": 1.48,
+            "total": 1.48,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1765594800000,
+            "amortizacion": 0,
+            "renta": 1.48,
+            "total": 1.48,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1773370800000,
+            "amortizacion": 0,
+            "renta": 1.48,
+            "total": 1.48,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1781319600000,
+            "amortizacion": 0,
+            "renta": 1.48,
+            "total": 1.48,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1789268400000,
+            "amortizacion": 0,
+            "renta": 1.48,
+            "total": 1.48,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1797130800000,
+            "amortizacion": 0,
+            "renta": 1.48,
+            "total": 1.48,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1804906800000,
+            "amortizacion": 50,
+            "renta": 1.48,
+            "total": 51.48,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1812855600000,
+            "amortizacion": 50,
+            "renta": 0.74,
+            "total": 50.74,
+            "valorResidual": 50
+        }
+    ]
+}

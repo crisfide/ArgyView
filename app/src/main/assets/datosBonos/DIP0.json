@@ -1,0 +1,137 @@
+{
+    "nombre": "DIP0 - Discount 2033 Emisión 2010  L. Arg. ",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "DIP0 - Discount 2033 Emisión 2010  L. Arg.  - ARARGE03G696",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "DIP0",
+    "valorResidual": 90,
+    "flujo": [
+        {
+            "fecha": 1751252400000,
+            "amortizacion": 247.09,
+            "renta": 129.65,
+            "total": 376.74,
+            "valorResidual": 90
+        },
+        {
+            "fecha": 1767150000000,
+            "amortizacion": 247.09,
+            "renta": 122.45,
+            "total": 369.54,
+            "valorResidual": 85
+        },
+        {
+            "fecha": 1782788400000,
+            "amortizacion": 247.09,
+            "renta": 115.24,
+            "total": 362.33,
+            "valorResidual": 80
+        },
+        {
+            "fecha": 1798686000000,
+            "amortizacion": 247.09,
+            "renta": 108.04,
+            "total": 355.13,
+            "valorResidual": 75
+        },
+        {
+            "fecha": 1814324400000,
+            "amortizacion": 247.09,
+            "renta": 100.84,
+            "total": 347.93,
+            "valorResidual": 70
+        },
+        {
+            "fecha": 1830222000000,
+            "amortizacion": 247.09,
+            "renta": 93.64,
+            "total": 340.73,
+            "valorResidual": 65
+        },
+        {
+            "fecha": 1845946800000,
+            "amortizacion": 247.09,
+            "renta": 86.43,
+            "total": 333.52,
+            "valorResidual": 60
+        },
+        {
+            "fecha": 1861844400000,
+            "amortizacion": 247.09,
+            "renta": 79.23,
+            "total": 326.32,
+            "valorResidual": 55
+        },
+        {
+            "fecha": 1877482800000,
+            "amortizacion": 247.09,
+            "renta": 72.03,
+            "total": 319.12,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 1893380400000,
+            "amortizacion": 247.09,
+            "renta": 64.83,
+            "total": 311.92,
+            "valorResidual": 45
+        },
+        {
+            "fecha": 1909018800000,
+            "amortizacion": 247.09,
+            "renta": 57.62,
+            "total": 304.71,
+            "valorResidual": 40
+        },
+        {
+            "fecha": 1924916400000,
+            "amortizacion": 247.09,
+            "renta": 50.42,
+            "total": 297.51,
+            "valorResidual": 35
+        },
+        {
+            "fecha": 1940554800000,
+            "amortizacion": 247.09,
+            "renta": 43.22,
+            "total": 290.31,
+            "valorResidual": 30
+        },
+        {
+            "fecha": 1956452400000,
+            "amortizacion": 247.09,
+            "renta": 36.01,
+            "total": 283.1,
+            "valorResidual": 25
+        },
+        {
+            "fecha": 1972177200000,
+            "amortizacion": 247.09,
+            "renta": 28.81,
+            "total": 275.9,
+            "valorResidual": 20
+        },
+        {
+            "fecha": 1988074800000,
+            "amortizacion": 247.09,
+            "renta": 21.61,
+            "total": 268.7,
+            "valorResidual": 15
+        },
+        {
+            "fecha": 2003713200000,
+            "amortizacion": 247.09,
+            "renta": 14.41,
+            "total": 261.5,
+            "valorResidual": 10
+        },
+        {
+            "fecha": 2019610800000,
+            "amortizacion": 247.09,
+            "renta": 7.2,
+            "total": 254.29,
+            "valorResidual": 5
+        }
+    ]
+}

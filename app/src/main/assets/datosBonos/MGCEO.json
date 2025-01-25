@@ -1,0 +1,18 @@
+{
+    "nombre": "MGCEO - ON PAMPA ENERGIA DLK CLASE 13",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MGCEO - ON PAMPA ENERGIA DLK CLASE 13",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "MGCEO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1829185200000,
+            "amortizacion": 100,
+            "renta": 0,
+            "total": 100,
+            "valorResidual": 100
+        }
+    ]
+}

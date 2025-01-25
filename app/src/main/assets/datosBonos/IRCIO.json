@@ -1,0 +1,25 @@
+{
+    "nombre": "IRCIO - ON IRSA CLASE 17 ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "IRCIO - ON IRSA CLASE 17 ",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "IRCIO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1749265200000,
+            "amortizacion": 0,
+            "renta": 2.49,
+            "total": 2.49,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1765076400000,
+            "amortizacion": 100,
+            "renta": 2.51,
+            "total": 102.51,
+            "valorResidual": 100
+        }
+    ]
+}

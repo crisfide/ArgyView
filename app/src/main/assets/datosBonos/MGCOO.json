@@ -1,0 +1,151 @@
+{
+    "nombre": "MGCOO - PAMPA ENERGIA CL23 16/12/2034",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MGCOO - PAMPA ENERGIA CL23 16/12/2034",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MGCOO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1750042800000,
+            "amortizacion": 0,
+            "renta": 3.93,
+            "total": 3.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1765854000000,
+            "amortizacion": 0,
+            "renta": 3.95,
+            "total": 3.95,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1781578800000,
+            "amortizacion": 0,
+            "renta": 3.93,
+            "total": 3.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1797390000000,
+            "amortizacion": 0,
+            "renta": 3.95,
+            "total": 3.95,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1813114800000,
+            "amortizacion": 0,
+            "renta": 3.93,
+            "total": 3.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1828926000000,
+            "amortizacion": 0,
+            "renta": 3.95,
+            "total": 3.95,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1844737200000,
+            "amortizacion": 0,
+            "renta": 3.95,
+            "total": 3.95,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1860548400000,
+            "amortizacion": 0,
+            "renta": 3.95,
+            "total": 3.95,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1876273200000,
+            "amortizacion": 0,
+            "renta": 3.93,
+            "total": 3.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1892084400000,
+            "amortizacion": 0,
+            "renta": 3.95,
+            "total": 3.95,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1907809200000,
+            "amortizacion": 0,
+            "renta": 3.93,
+            "total": 3.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1923620400000,
+            "amortizacion": 0,
+            "renta": 3.95,
+            "total": 3.95,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1939345200000,
+            "amortizacion": 0,
+            "renta": 3.93,
+            "total": 3.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1955156400000,
+            "amortizacion": 0,
+            "renta": 3.95,
+            "total": 3.95,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1970967600000,
+            "amortizacion": 0,
+            "renta": 3.95,
+            "total": 3.95,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1986778800000,
+            "amortizacion": 0,
+            "renta": 3.95,
+            "total": 3.95,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2002503600000,
+            "amortizacion": 0,
+            "renta": 3.93,
+            "total": 3.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2018314800000,
+            "amortizacion": 0,
+            "renta": 3.95,
+            "total": 3.95,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2034039600000,
+            "amortizacion": 0,
+            "renta": 3.93,
+            "total": 3.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2049850800000,
+            "amortizacion": 100,
+            "renta": 3.95,
+            "total": 103.95,
+            "valorResidual": 100
+        }
+    ]
+}

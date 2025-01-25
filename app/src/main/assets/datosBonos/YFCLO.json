@@ -1,0 +1,123 @@
+{
+    "nombre": "YFCLO - ON YPF LUZ CLASE 20 USD 21/11/2028",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YFCLO - ON YPF LUZ CLASE 20 USD 21/11/2028 - AR0338531962",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YFCLO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1740193200000,
+            "amortizacion": 0,
+            "renta": 1.7,
+            "total": 1.7,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1747882800000,
+            "amortizacion": 0,
+            "renta": 1.65,
+            "total": 1.65,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1755831600000,
+            "amortizacion": 0,
+            "renta": 1.7,
+            "total": 1.7,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1763780400000,
+            "amortizacion": 0,
+            "renta": 1.7,
+            "total": 1.7,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1771729200000,
+            "amortizacion": 0,
+            "renta": 1.7,
+            "total": 1.7,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1779418800000,
+            "amortizacion": 0,
+            "renta": 1.65,
+            "total": 1.65,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1787367600000,
+            "amortizacion": 0,
+            "renta": 1.7,
+            "total": 1.7,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1795316400000,
+            "amortizacion": 0,
+            "renta": 1.7,
+            "total": 1.7,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1803265200000,
+            "amortizacion": 0,
+            "renta": 1.7,
+            "total": 1.7,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1810954800000,
+            "amortizacion": 0,
+            "renta": 1.65,
+            "total": 1.65,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1818903600000,
+            "amortizacion": 0,
+            "renta": 1.7,
+            "total": 1.7,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1826852400000,
+            "amortizacion": 0,
+            "renta": 1.7,
+            "total": 1.7,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1834801200000,
+            "amortizacion": 0,
+            "renta": 1.7,
+            "total": 1.7,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1842577200000,
+            "amortizacion": 0,
+            "renta": 1.66,
+            "total": 1.66,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1850526000000,
+            "amortizacion": 0,
+            "renta": 1.7,
+            "total": 1.7,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1858474800000,
+            "amortizacion": 100,
+            "renta": 1.7,
+            "total": 101.7,
+            "valorResidual": 100
+        }
+    ]
+}

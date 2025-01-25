@@ -1,0 +1,46 @@
+{
+    "nombre": "YMCHO - YPF Step Up 2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YMCHO - YPF Step Up 2026 - USP989MJBR17",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YMCHO",
+    "valorResidual": 38.464,
+    "flujo": [
+        {
+            "fecha": 1739329200000,
+            "amortizacion": 7.69,
+            "renta": 0.87,
+            "total": 8.56,
+            "valorResidual": 38.464
+        },
+        {
+            "fecha": 1747018800000,
+            "amortizacion": 7.69,
+            "renta": 0.69,
+            "total": 8.38,
+            "valorResidual": 30.772
+        },
+        {
+            "fecha": 1754967600000,
+            "amortizacion": 7.69,
+            "renta": 0.52,
+            "total": 8.21,
+            "valorResidual": 23.08
+        },
+        {
+            "fecha": 1762916400000,
+            "amortizacion": 7.69,
+            "renta": 0.35,
+            "total": 8.04,
+            "valorResidual": 15.388
+        },
+        {
+            "fecha": 1770865200000,
+            "amortizacion": 7.69,
+            "renta": 0.17,
+            "total": 7.86,
+            "valorResidual": 7.696
+        }
+    ]
+}

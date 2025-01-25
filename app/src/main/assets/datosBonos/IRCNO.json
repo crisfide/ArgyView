@@ -1,0 +1,53 @@
+{
+    "nombre": "IRCNO - ON IRSA CL 22 U$S 23/10/2027",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "IRCNO - ON IRSA CL 22 U$S 23/10/2027 - AR0275431465",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "IRCNO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1753153200000,
+            "amortizacion": 0,
+            "renta": 4.28,
+            "total": 4.28,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1769050800000,
+            "amortizacion": 0,
+            "renta": 2.9,
+            "total": 2.9,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784689200000,
+            "amortizacion": 0,
+            "renta": 2.85,
+            "total": 2.85,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1800586800000,
+            "amortizacion": 0,
+            "renta": 2.9,
+            "total": 2.9,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1816225200000,
+            "amortizacion": 0,
+            "renta": 2.85,
+            "total": 2.85,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1824174000000,
+            "amortizacion": 100,
+            "renta": 1.45,
+            "total": 101.45,
+            "valorResidual": 100
+        }
+    ]
+}

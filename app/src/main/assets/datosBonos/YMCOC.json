@@ -1,0 +1,18 @@
+{
+    "nombre": "YMCOC - ON YPF CLASE 23 VTO 25/04/2025",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YMCOC - ON YPF CLASE 23 VTO 25/04/2025",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "YMCOC",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1745550000000,
+            "amortizacion": 100,
+            "renta": 0,
+            "total": 100,
+            "valorResidual": 100
+        }
+    ]
+}

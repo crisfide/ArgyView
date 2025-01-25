@@ -1,0 +1,116 @@
+{
+    "nombre": "PNRCO - ON EF PAN AMERICAN ENERGY CLASE 26",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PNRCO - ON EF PAN AMERICAN ENERGY CLASE 26",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "PNRCO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1738897200000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1746586800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1754535600000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1762484400000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1770433200000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1778122800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1786071600000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1794020400000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1801969200000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1809658800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1817607600000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1825556400000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1833505200000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1841281200000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1849230000000,
+            "amortizacion": 100,
+            "renta": 0.25,
+            "total": 100.25,
+            "valorResidual": 100
+        }
+    ]
+}

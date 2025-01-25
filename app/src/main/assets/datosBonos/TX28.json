@@ -1,0 +1,67 @@
+{
+    "nombre": "TX28 - Bono del Tesoro Nacional $ CER 2028",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "TX28 - Bono del Tesoro Nacional $ CER 2028 - ARARGE3209X6",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "TX28",
+    "valorResidual": 80,
+    "flujo": [
+        {
+            "fecha": 1746759600000,
+            "amortizacion": 10,
+            "renta": 0.9,
+            "total": 10.9,
+            "valorResidual": 80
+        },
+        {
+            "fecha": 1762657200000,
+            "amortizacion": 10,
+            "renta": 0.79,
+            "total": 10.79,
+            "valorResidual": 70
+        },
+        {
+            "fecha": 1778295600000,
+            "amortizacion": 10,
+            "renta": 0.68,
+            "total": 10.68,
+            "valorResidual": 60
+        },
+        {
+            "fecha": 1794193200000,
+            "amortizacion": 10,
+            "renta": 0.56,
+            "total": 10.56,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 1809831600000,
+            "amortizacion": 10,
+            "renta": 0.45,
+            "total": 10.45,
+            "valorResidual": 40
+        },
+        {
+            "fecha": 1825729200000,
+            "amortizacion": 10,
+            "renta": 0.34,
+            "total": 10.34,
+            "valorResidual": 30
+        },
+        {
+            "fecha": 1841454000000,
+            "amortizacion": 10,
+            "renta": 0.22,
+            "total": 10.22,
+            "valorResidual": 20
+        },
+        {
+            "fecha": 1857351600000,
+            "amortizacion": 10,
+            "renta": 0.11,
+            "total": 10.11,
+            "valorResidual": 10
+        }
+    ]
+}

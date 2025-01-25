@@ -1,0 +1,109 @@
+{
+    "nombre": "PN36O - ON PAN AMERICAN ENERGY CLASE 36",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PN36O - ON PAN AMERICAN ENERGY CLASE 36",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PN36O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1747105200000,
+            "amortizacion": 0,
+            "renta": 3.6,
+            "total": 3.6,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1763002800000,
+            "amortizacion": 0,
+            "renta": 3.65,
+            "total": 3.65,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1778641200000,
+            "amortizacion": 0,
+            "renta": 3.6,
+            "total": 3.6,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1794538800000,
+            "amortizacion": 0,
+            "renta": 3.65,
+            "total": 3.65,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1810177200000,
+            "amortizacion": 0,
+            "renta": 3.6,
+            "total": 3.6,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1826074800000,
+            "amortizacion": 0,
+            "renta": 3.65,
+            "total": 3.65,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1841799600000,
+            "amortizacion": 0,
+            "renta": 3.62,
+            "total": 3.62,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1857697200000,
+            "amortizacion": 0,
+            "renta": 3.65,
+            "total": 3.65,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1873335600000,
+            "amortizacion": 0,
+            "renta": 3.6,
+            "total": 3.6,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1889233200000,
+            "amortizacion": 0,
+            "renta": 3.65,
+            "total": 3.65,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1904871600000,
+            "amortizacion": 0,
+            "renta": 3.6,
+            "total": 3.6,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1920769200000,
+            "amortizacion": 0,
+            "renta": 3.65,
+            "total": 3.65,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1936407600000,
+            "amortizacion": 0,
+            "renta": 3.6,
+            "total": 3.6,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1952305200000,
+            "amortizacion": 0,
+            "renta": 3.65,
+            "total": 3.65,
+            "valorResidual": 100
+        }
+    ]
+}

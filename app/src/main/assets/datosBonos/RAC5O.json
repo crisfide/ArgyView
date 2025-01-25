@@ -1,0 +1,88 @@
+{
+    "nombre": "RAC5O - RAGSHA SA 24/04/2030",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "RAC5O - RAGSHA SA 24/04/2030 - USP79849AE89",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "RAC5O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1745463600000,
+            "amortizacion": 0,
+            "renta": 4.12,
+            "total": 4.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761274800000,
+            "amortizacion": 0,
+            "renta": 4.12,
+            "total": 4.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1776999600000,
+            "amortizacion": 0,
+            "renta": 4.12,
+            "total": 4.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1792810800000,
+            "amortizacion": 0,
+            "renta": 4.12,
+            "total": 4.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1808535600000,
+            "amortizacion": 0,
+            "renta": 4.12,
+            "total": 4.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1824346800000,
+            "amortizacion": 0,
+            "renta": 4.12,
+            "total": 4.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1840158000000,
+            "amortizacion": 0,
+            "renta": 4.12,
+            "total": 4.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1855969200000,
+            "amortizacion": 0,
+            "renta": 4.12,
+            "total": 4.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1871694000000,
+            "amortizacion": 0,
+            "renta": 4.12,
+            "total": 4.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1887505200000,
+            "amortizacion": 0,
+            "renta": 4.12,
+            "total": 4.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1903230000000,
+            "amortizacion": 100,
+            "renta": 4.12,
+            "total": 104.12,
+            "valorResidual": 100
+        }
+    ]
+}

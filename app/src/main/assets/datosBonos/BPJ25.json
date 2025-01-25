@@ -1,0 +1,53 @@
+{
+    "nombre": "BPJ25 - BONO PARA LA RECONSTRUCCIÓN DE UNA ARGENTINA LIBRE - SERIE 2 - VENCIMIENTO 30 DE JUNIO DE 2025",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "BPJ25 - BONO PARA LA RECONSTRUCCIÓN DE UNA ARGENTINA LIBRE - SERIE 2 - VENCIMIENTO 30 DE JUNIO DE 2025",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "BPJ25",
+    "valorResidual": 50.02,
+    "flujo": [
+        {
+            "fecha": 1738292400000,
+            "amortizacion": 8.33,
+            "renta": 0,
+            "total": 8.33,
+            "valorResidual": 50.02
+        },
+        {
+            "fecha": 1740711600000,
+            "amortizacion": 8.33,
+            "renta": 0,
+            "total": 8.33,
+            "valorResidual": 41.69
+        },
+        {
+            "fecha": 1743390000000,
+            "amortizacion": 8.33,
+            "renta": 0,
+            "total": 8.33,
+            "valorResidual": 33.36
+        },
+        {
+            "fecha": 1745982000000,
+            "amortizacion": 8.33,
+            "renta": 0,
+            "total": 8.33,
+            "valorResidual": 25.03
+        },
+        {
+            "fecha": 1748660400000,
+            "amortizacion": 8.33,
+            "renta": 0,
+            "total": 8.33,
+            "valorResidual": 16.7
+        },
+        {
+            "fecha": 1751252400000,
+            "amortizacion": 8.37,
+            "renta": 0,
+            "total": 8.37,
+            "valorResidual": 8.37
+        }
+    ]
+}

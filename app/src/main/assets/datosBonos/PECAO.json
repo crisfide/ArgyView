@@ -1,0 +1,46 @@
+{
+    "nombre": "PECAO - PETROLERA ACONCAGUA ENERGIA C10 - 01/03/2027",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PECAO - PETROLERA ACONCAGUA ENERGIA C10 - 01/03/2027 - AR0342949143",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PECAO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1740711600000,
+            "amortizacion": 0,
+            "renta": 4.26,
+            "total": 4.26,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1756350000000,
+            "amortizacion": 0,
+            "renta": 4.22,
+            "total": 4.22,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1772247600000,
+            "amortizacion": 0,
+            "renta": 4.28,
+            "total": 4.28,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1787886000000,
+            "amortizacion": 0,
+            "renta": 4.22,
+            "total": 4.22,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1803783600000,
+            "amortizacion": 100,
+            "renta": 4.28,
+            "total": 104.28,
+            "valorResidual": 100
+        }
+    ]
+}

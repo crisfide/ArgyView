@@ -1,0 +1,46 @@
+{
+    "nombre": "VSCOO - ON VISTA ENERGY ARG C23 ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "VSCOO - ON VISTA ENERGY ARG C23 ",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "VSCOO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1741230000000,
+            "amortizacion": 0,
+            "renta": 3.25,
+            "total": 3.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1757127600000,
+            "amortizacion": 0,
+            "renta": 3.25,
+            "total": 3.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1772766000000,
+            "amortizacion": 0,
+            "renta": 3.25,
+            "total": 3.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1788663600000,
+            "amortizacion": 0,
+            "renta": 3.25,
+            "total": 3.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1804302000000,
+            "amortizacion": 100,
+            "renta": 3.25,
+            "total": 103.25,
+            "valorResidual": 100
+        }
+    ]
+}

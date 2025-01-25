@@ -1,0 +1,32 @@
+{
+    "nombre": "TTC7O - TECPETROL CL7 22.04.2026",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "TTC7O - TECPETROL CL7 22.04.2026",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "TTC7O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1745290800000,
+            "amortizacion": 0,
+            "renta": 2.98,
+            "total": 2.98,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761102000000,
+            "amortizacion": 0,
+            "renta": 3,
+            "total": 3,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1777172400000,
+            "amortizacion": 100,
+            "renta": 3.05,
+            "total": 103.05,
+            "valorResidual": 100
+        }
+    ]
+}

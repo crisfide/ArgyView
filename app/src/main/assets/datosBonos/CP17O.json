@@ -1,0 +1,18 @@
+{
+    "nombre": "CP17O - CGC Clase 17 08/03/2025",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CP17O - CGC Clase 17 08/03/2025 - USP3063DAB84",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "CP17O",
+    "valorResidual": 33.5,
+    "flujo": [
+        {
+            "fecha": 1741402800000,
+            "amortizacion": 33.5,
+            "renta": 1.59,
+            "total": 35.09,
+            "valorResidual": 33.5
+        }
+    ]
+}

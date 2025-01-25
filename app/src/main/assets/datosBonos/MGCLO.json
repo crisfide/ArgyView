@@ -1,0 +1,32 @@
+{
+    "nombre": "MGCLO - ON PAMPA ENERGIA 20 USD ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MGCLO - ON PAMPA ENERGIA 20 USD ",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MGCLO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1742958000000,
+            "amortizacion": 0,
+            "renta": 3,
+            "total": 3,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1758855600000,
+            "amortizacion": 0,
+            "renta": 3,
+            "total": 3,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1774494000000,
+            "amortizacion": 100,
+            "renta": 3,
+            "total": 103,
+            "valorResidual": 100
+        }
+    ]
+}

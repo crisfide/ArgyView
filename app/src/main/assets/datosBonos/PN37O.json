@@ -1,0 +1,67 @@
+{
+    "nombre": "PN37O - ON PAN AMERICAN ENERGY CLASE 37",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PN37O - ON PAN AMERICAN ENERGY CLASE 37 - AR0098578880",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PN37O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1747105200000,
+            "amortizacion": 0,
+            "renta": 3.1,
+            "total": 3.1,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1763002800000,
+            "amortizacion": 0,
+            "renta": 3.15,
+            "total": 3.15,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1778641200000,
+            "amortizacion": 0,
+            "renta": 3.1,
+            "total": 3.1,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1794538800000,
+            "amortizacion": 0,
+            "renta": 3.15,
+            "total": 3.15,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1810177200000,
+            "amortizacion": 0,
+            "renta": 3.1,
+            "total": 3.1,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1826074800000,
+            "amortizacion": 0,
+            "renta": 3.15,
+            "total": 3.15,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1841799600000,
+            "amortizacion": 0,
+            "renta": 3.12,
+            "total": 3.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1857697200000,
+            "amortizacion": 100,
+            "renta": 3.15,
+            "total": 103.15,
+            "valorResidual": 100
+        }
+    ]
+}

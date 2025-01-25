@@ -1,0 +1,102 @@
+{
+    "nombre": "TLCFO - ON TELECOM Vto. 10/02/2028",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "TLCFO - ON TELECOM Vto. 10/02/2028 - ARTECO5600G5",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "TLCFO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1739156400000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1746846000000,
+            "amortizacion": 0,
+            "renta": 0.24,
+            "total": 0.24,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1754794800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1762743600000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1770692400000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1778382000000,
+            "amortizacion": 0,
+            "renta": 0.24,
+            "total": 0.24,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1786330800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1794279600000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1802228400000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1809918000000,
+            "amortizacion": 0,
+            "renta": 0.24,
+            "total": 0.24,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1817866800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1825815600000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1833764400000,
+            "amortizacion": 100,
+            "renta": 0.25,
+            "total": 100.25,
+            "valorResidual": 100
+        }
+    ]
+}

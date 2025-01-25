@@ -1,0 +1,18 @@
+{
+    "nombre": "BVCGO - ON BCO DE SERV Y TRANS 15 V26/02/25 $ CG",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "BVCGO - ON BCO DE SERV Y TRANS 15 V26/02/25 $ CG - AR0424642160",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "BVCGO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1740538800000,
+            "amortizacion": 100,
+            "renta": 8.49,
+            "total": 108.49,
+            "valorResidual": 100
+        }
+    ]
+}

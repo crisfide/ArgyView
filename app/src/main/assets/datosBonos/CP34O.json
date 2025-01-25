@@ -1,0 +1,32 @@
+{
+    "nombre": "CP34O - CGC 7 23/02/2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CP34O - CGC 7 23/02/2026 - AR0341966585",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "CP34O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1740279600000,
+            "amortizacion": 0,
+            "renta": 3.53,
+            "total": 3.53,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1755918000000,
+            "amortizacion": 0,
+            "renta": 3.47,
+            "total": 3.47,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1771815600000,
+            "amortizacion": 100,
+            "renta": 3.53,
+            "total": 103.53,
+            "valorResidual": 100
+        }
+    ]
+}

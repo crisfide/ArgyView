@@ -1,0 +1,53 @@
+{
+    "nombre": "BPOA7 - Bopreal Serie 1A Vto. 31/10/27",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "BPOA7 - Bopreal Serie 1A Vto. 31/10/27",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "BPOA7",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1745982000000,
+            "amortizacion": 0,
+            "renta": 2.49,
+            "total": 2.49,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761793200000,
+            "amortizacion": 0,
+            "renta": 2.5,
+            "total": 2.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1777518000000,
+            "amortizacion": 0,
+            "renta": 2.5,
+            "total": 2.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1793329200000,
+            "amortizacion": 0,
+            "renta": 2.5,
+            "total": 2.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1809054000000,
+            "amortizacion": 50,
+            "renta": 2.5,
+            "total": 52.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1824865200000,
+            "amortizacion": 50,
+            "renta": 1.25,
+            "total": 51.25,
+            "valorResidual": 50
+        }
+    ]
+}

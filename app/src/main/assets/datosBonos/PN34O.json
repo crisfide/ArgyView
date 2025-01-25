@@ -1,0 +1,53 @@
+{
+    "nombre": "PN34O - ON PAE U$S CLASE 34 COMPE",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PN34O - ON PAE U$S CLASE 34 COMPE - AR0770773957",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PN34O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1743044400000,
+            "amortizacion": 0,
+            "renta": 2.46,
+            "total": 2.46,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1758942000000,
+            "amortizacion": 0,
+            "renta": 2.51,
+            "total": 2.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1774580400000,
+            "amortizacion": 0,
+            "renta": 2.46,
+            "total": 2.46,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1790478000000,
+            "amortizacion": 0,
+            "renta": 2.51,
+            "total": 2.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1806116400000,
+            "amortizacion": 0,
+            "renta": 2.46,
+            "total": 2.46,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1822014000000,
+            "amortizacion": 100,
+            "renta": 2.51,
+            "total": 102.51,
+            "valorResidual": 100
+        }
+    ]
+}

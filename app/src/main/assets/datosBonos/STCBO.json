@@ -1,0 +1,46 @@
+{
+    "nombre": "STCBO - ON GRUPO ST CLASE 11 DLK CO",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "STCBO - ON GRUPO ST CLASE 11 DLK CO",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "STCBO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1739934000000,
+            "amortizacion": 0,
+            "renta": 1.51,
+            "total": 1.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1747623600000,
+            "amortizacion": 0,
+            "renta": 1.46,
+            "total": 1.46,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1755572400000,
+            "amortizacion": 0,
+            "renta": 1.51,
+            "total": 1.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1763521200000,
+            "amortizacion": 0,
+            "renta": 1.51,
+            "total": 1.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1771470000000,
+            "amortizacion": 100,
+            "renta": 1.51,
+            "total": 101.51,
+            "valorResidual": 100
+        }
+    ]
+}

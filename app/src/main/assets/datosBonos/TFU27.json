@@ -1,0 +1,158 @@
+{
+    "nombre": "TFU27 - Tierra del Fuego 2027",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "TFU27 - Tierra del Fuego 2027 - USP91528AA03",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "TFU27",
+    "valorResidual": 49,
+    "flujo": [
+        {
+            "fecha": 1737428400000,
+            "amortizacion": 0,
+            "renta": 1.1,
+            "total": 1.1,
+            "valorResidual": 49
+        },
+        {
+            "fecha": 1745204400000,
+            "amortizacion": 1.96,
+            "renta": 1.1,
+            "total": 3.06,
+            "valorResidual": 49
+        },
+        {
+            "fecha": 1753066800000,
+            "amortizacion": 1.96,
+            "renta": 1.05,
+            "total": 3.01,
+            "valorResidual": 47.04
+        },
+        {
+            "fecha": 1761015600000,
+            "amortizacion": 1.96,
+            "renta": 1.01,
+            "total": 2.97,
+            "valorResidual": 45.08
+        },
+        {
+            "fecha": 1768964400000,
+            "amortizacion": 1.96,
+            "renta": 0.96,
+            "total": 2.92,
+            "valorResidual": 43.12
+        },
+        {
+            "fecha": 1776740400000,
+            "amortizacion": 2.45,
+            "renta": 0.92,
+            "total": 3.37,
+            "valorResidual": 41.16
+        },
+        {
+            "fecha": 1784602800000,
+            "amortizacion": 2.45,
+            "renta": 0.87,
+            "total": 3.32,
+            "valorResidual": 38.71
+        },
+        {
+            "fecha": 1792551600000,
+            "amortizacion": 2.45,
+            "renta": 0.81,
+            "total": 3.26,
+            "valorResidual": 36.26
+        },
+        {
+            "fecha": 1800500400000,
+            "amortizacion": 2.45,
+            "renta": 0.76,
+            "total": 3.21,
+            "valorResidual": 33.81
+        },
+        {
+            "fecha": 1808276400000,
+            "amortizacion": 2.45,
+            "renta": 0.7,
+            "total": 3.15,
+            "valorResidual": 31.36
+        },
+        {
+            "fecha": 1816138800000,
+            "amortizacion": 2.45,
+            "renta": 0.65,
+            "total": 3.1,
+            "valorResidual": 28.91
+        },
+        {
+            "fecha": 1824087600000,
+            "amortizacion": 2.45,
+            "renta": 0.59,
+            "total": 3.04,
+            "valorResidual": 26.46
+        },
+        {
+            "fecha": 1832036400000,
+            "amortizacion": 2.7,
+            "renta": 0.54,
+            "total": 3.24,
+            "valorResidual": 24.01
+        },
+        {
+            "fecha": 1839898800000,
+            "amortizacion": 2.7,
+            "renta": 0.48,
+            "total": 3.18,
+            "valorResidual": 21.315
+        },
+        {
+            "fecha": 1847761200000,
+            "amortizacion": 2.7,
+            "renta": 0.42,
+            "total": 3.12,
+            "valorResidual": 18.62
+        },
+        {
+            "fecha": 1855710000000,
+            "amortizacion": 2.7,
+            "renta": 0.36,
+            "total": 3.06,
+            "valorResidual": 15.925
+        },
+        {
+            "fecha": 1863658800000,
+            "amortizacion": 2.7,
+            "renta": 0.3,
+            "total": 3,
+            "valorResidual": 13.23
+        },
+        {
+            "fecha": 1871434800000,
+            "amortizacion": 2.7,
+            "renta": 0.24,
+            "total": 2.94,
+            "valorResidual": 10.535
+        },
+        {
+            "fecha": 1879297200000,
+            "amortizacion": 2.7,
+            "renta": 0.18,
+            "total": 2.88,
+            "valorResidual": 7.84
+        },
+        {
+            "fecha": 1887246000000,
+            "amortizacion": 2.7,
+            "renta": 0.12,
+            "total": 2.82,
+            "valorResidual": 5.145
+        },
+        {
+            "fecha": 1895194800000,
+            "amortizacion": 2.7,
+            "renta": 0.05,
+            "total": 2.75,
+            "valorResidual": 2.45
+        }
+    ]
+}

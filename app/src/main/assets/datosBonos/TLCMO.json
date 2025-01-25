@@ -1,0 +1,102 @@
+{
+    "nombre": "TLCMO - ON TELECOM ARGENTINA 9 5  V.18/7/31",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "TLCMO - ON TELECOM ARGENTINA 9 5  V.18/7/31 - USP9028NBT74",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "TLCMO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1752807600000,
+            "amortizacion": 0,
+            "renta": 4.75,
+            "total": 4.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1768705200000,
+            "amortizacion": 0,
+            "renta": 4.75,
+            "total": 4.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784343600000,
+            "amortizacion": 0,
+            "renta": 4.75,
+            "total": 4.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1800241200000,
+            "amortizacion": 0,
+            "renta": 4.75,
+            "total": 4.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1815879600000,
+            "amortizacion": 0,
+            "renta": 4.75,
+            "total": 4.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1831777200000,
+            "amortizacion": 0,
+            "renta": 4.75,
+            "total": 4.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1847502000000,
+            "amortizacion": 0,
+            "renta": 4.75,
+            "total": 4.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1863399600000,
+            "amortizacion": 0,
+            "renta": 4.75,
+            "total": 4.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1879038000000,
+            "amortizacion": 33,
+            "renta": 4.75,
+            "total": 37.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1894935600000,
+            "amortizacion": 0,
+            "renta": 3.18,
+            "total": 3.18,
+            "valorResidual": 67
+        },
+        {
+            "fecha": 1910574000000,
+            "amortizacion": 33,
+            "renta": 3.18,
+            "total": 36.18,
+            "valorResidual": 67
+        },
+        {
+            "fecha": 1926471600000,
+            "amortizacion": 0,
+            "renta": 1.62,
+            "total": 1.62,
+            "valorResidual": 34
+        },
+        {
+            "fecha": 1942110000000,
+            "amortizacion": 34,
+            "renta": 1.62,
+            "total": 35.62,
+            "valorResidual": 34
+        }
+    ]
+}

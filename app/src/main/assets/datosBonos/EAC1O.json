@@ -1,0 +1,60 @@
+{
+    "nombre": "EAC1O - ON PM GAR ENERG LOMAS DLK 1 CO",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "EAC1O - ON PM GAR ENERG LOMAS DLK 1 CO",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "EAC1O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1744426800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1752289200000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1760238000000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1768186800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1775962800000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1783825200000,
+            "amortizacion": 0,
+            "renta": 0.25,
+            "total": 0.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1791774000000,
+            "amortizacion": 100,
+            "renta": 0.25,
+            "total": 100.25,
+            "valorResidual": 100
+        }
+    ]
+}

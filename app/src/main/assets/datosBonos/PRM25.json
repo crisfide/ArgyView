@@ -1,0 +1,25 @@
+{
+    "nombre": "PRM25 - Proveedores Mendoza 2025",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "PRM25 - Proveedores Mendoza 2025",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "PRM25",
+    "valorResidual": 15.38461538,
+    "flujo": [
+        {
+            "fecha": 1740711600000,
+            "amortizacion": 7.69,
+            "renta": 1.38,
+            "total": 9.07,
+            "valorResidual": 15.38461538
+        },
+        {
+            "fecha": 1748401200000,
+            "amortizacion": 7.69,
+            "renta": 0.67,
+            "total": 8.36,
+            "valorResidual": 7.69230769
+        }
+    ]
+}

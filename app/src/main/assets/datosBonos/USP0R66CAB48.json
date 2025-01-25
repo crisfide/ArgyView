@@ -1,0 +1,67 @@
+{
+    "nombre": "USP0R66CAB48 - GALICIA CL16 10/10/2028",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "USP0R66CAB48 - GALICIA CL16 10/10/2028",
+    "moneda": "USD",
+    "mercado": "EEUU",
+    "ticker": "USP0R66CAB48",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1744254000000,
+            "amortizacion": 0,
+            "renta": 3.88,
+            "total": 3.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1760065200000,
+            "amortizacion": 0,
+            "renta": 3.88,
+            "total": 3.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1775790000000,
+            "amortizacion": 0,
+            "renta": 3.88,
+            "total": 3.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1791601200000,
+            "amortizacion": 0,
+            "renta": 3.88,
+            "total": 3.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1807326000000,
+            "amortizacion": 0,
+            "renta": 3.88,
+            "total": 3.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1823137200000,
+            "amortizacion": 0,
+            "renta": 3.88,
+            "total": 3.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1838948400000,
+            "amortizacion": 0,
+            "renta": 3.88,
+            "total": 3.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1854759600000,
+            "amortizacion": 100,
+            "renta": 3.88,
+            "total": 103.88,
+            "valorResidual": 100
+        }
+    ]
+}

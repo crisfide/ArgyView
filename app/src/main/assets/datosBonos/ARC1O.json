@@ -1,0 +1,200 @@
+{
+    "nombre": "ARC1O - ON CLASE 1 SERIE 2021 DE AEROPUERTOS ARGENTINA 2000 S.A.",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "ARC1O - ON CLASE 1 SERIE 2021 DE AEROPUERTOS ARGENTINA 2000 S.A.",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "ARC1O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1738378800000,
+            "amortizacion": 0,
+            "renta": 2.12,
+            "total": 2.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1746068400000,
+            "amortizacion": 0,
+            "renta": 2.12,
+            "total": 2.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1754017200000,
+            "amortizacion": 0,
+            "renta": 2.12,
+            "total": 2.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761966000000,
+            "amortizacion": 0,
+            "renta": 2.12,
+            "total": 2.12,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1769914800000,
+            "amortizacion": 4.34,
+            "renta": 2.12,
+            "total": 6.46,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1777604400000,
+            "amortizacion": 4.34,
+            "renta": 2.03,
+            "total": 6.37,
+            "valorResidual": 95.66
+        },
+        {
+            "fecha": 1785553200000,
+            "amortizacion": 4.34,
+            "renta": 1.94,
+            "total": 6.28,
+            "valorResidual": 91.32
+        },
+        {
+            "fecha": 1793502000000,
+            "amortizacion": 4.34,
+            "renta": 1.85,
+            "total": 6.19,
+            "valorResidual": 86.98
+        },
+        {
+            "fecha": 1801450800000,
+            "amortizacion": 4.34,
+            "renta": 1.76,
+            "total": 6.1,
+            "valorResidual": 82.64
+        },
+        {
+            "fecha": 1809140400000,
+            "amortizacion": 4.34,
+            "renta": 1.66,
+            "total": 6,
+            "valorResidual": 78.3
+        },
+        {
+            "fecha": 1817089200000,
+            "amortizacion": 4.34,
+            "renta": 1.57,
+            "total": 5.91,
+            "valorResidual": 73.96
+        },
+        {
+            "fecha": 1825038000000,
+            "amortizacion": 4.34,
+            "renta": 1.48,
+            "total": 5.82,
+            "valorResidual": 69.62
+        },
+        {
+            "fecha": 1832986800000,
+            "amortizacion": 4.34,
+            "renta": 1.39,
+            "total": 5.73,
+            "valorResidual": 65.28
+        },
+        {
+            "fecha": 1840762800000,
+            "amortizacion": 4.34,
+            "renta": 1.29,
+            "total": 5.63,
+            "valorResidual": 60.94
+        },
+        {
+            "fecha": 1848711600000,
+            "amortizacion": 4.34,
+            "renta": 1.2,
+            "total": 5.54,
+            "valorResidual": 56.6
+        },
+        {
+            "fecha": 1856660400000,
+            "amortizacion": 4.34,
+            "renta": 1.11,
+            "total": 5.45,
+            "valorResidual": 52.26
+        },
+        {
+            "fecha": 1864609200000,
+            "amortizacion": 4.34,
+            "renta": 1.02,
+            "total": 5.36,
+            "valorResidual": 47.92
+        },
+        {
+            "fecha": 1872298800000,
+            "amortizacion": 4.34,
+            "renta": 0.93,
+            "total": 5.27,
+            "valorResidual": 43.58
+        },
+        {
+            "fecha": 1880247600000,
+            "amortizacion": 4.34,
+            "renta": 0.83,
+            "total": 5.17,
+            "valorResidual": 39.24
+        },
+        {
+            "fecha": 1888196400000,
+            "amortizacion": 4.34,
+            "renta": 0.74,
+            "total": 5.08,
+            "valorResidual": 34.9
+        },
+        {
+            "fecha": 1896145200000,
+            "amortizacion": 4.34,
+            "renta": 0.65,
+            "total": 4.99,
+            "valorResidual": 30.56
+        },
+        {
+            "fecha": 1903834800000,
+            "amortizacion": 4.34,
+            "renta": 0.56,
+            "total": 4.9,
+            "valorResidual": 26.22
+        },
+        {
+            "fecha": 1911783600000,
+            "amortizacion": 4.34,
+            "renta": 0.46,
+            "total": 4.8,
+            "valorResidual": 21.88
+        },
+        {
+            "fecha": 1919732400000,
+            "amortizacion": 4.34,
+            "renta": 0.37,
+            "total": 4.71,
+            "valorResidual": 17.54
+        },
+        {
+            "fecha": 1927681200000,
+            "amortizacion": 4.34,
+            "renta": 0.28,
+            "total": 4.62,
+            "valorResidual": 13.2
+        },
+        {
+            "fecha": 1935370800000,
+            "amortizacion": 4.34,
+            "renta": 0.19,
+            "total": 4.53,
+            "valorResidual": 8.86
+        },
+        {
+            "fecha": 1943319600000,
+            "amortizacion": 4.52,
+            "renta": 0.1,
+            "total": 4.62,
+            "valorResidual": 4.52
+        }
+    ]
+}

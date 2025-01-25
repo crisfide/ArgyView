@@ -1,0 +1,32 @@
+{
+    "nombre": "XS2571927768 - AYSA 7.900 01-MAY-2026 ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "XS2571927768 - AYSA 7.900 01-MAY-2026 ",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "XS2571927768",
+    "valorResidual": 55,
+    "flujo": [
+        {
+            "fecha": 1746068400000,
+            "amortizacion": 20,
+            "renta": 2.17,
+            "total": 22.17,
+            "valorResidual": 55
+        },
+        {
+            "fecha": 1761966000000,
+            "amortizacion": 20,
+            "renta": 1.38,
+            "total": 21.38,
+            "valorResidual": 35
+        },
+        {
+            "fecha": 1777604400000,
+            "amortizacion": 15,
+            "renta": 0.59,
+            "total": 15.59,
+            "valorResidual": 15
+        }
+    ]
+}

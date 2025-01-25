@@ -38,7 +38,11 @@ open class Bono(ticker: String, precio: Double, moneda: String, dif: Double,
 
     fun getValTec():Double{
         val hoy = LocalDate.now()
-        val ultCupon: PagoBono = this.flujo.filter { it.fecha < hoy }.last()
+        val ultCupon: PagoBono = try {
+            this.flujo.filter { it.fecha < hoy }.last()
+        }catch (e:NoSuchElementException){
+            PagoBono(LocalDate.now(),0.0,0.0)
+        }
         val proxCupon: PagoBono = this.flujo.filter { it.fecha > hoy }.first()
 
         val diasPasados = ChronoUnit.DAYS.between(ultCupon.fecha, hoy)

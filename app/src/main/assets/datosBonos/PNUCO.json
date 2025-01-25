@@ -1,0 +1,25 @@
+{
+    "nombre": "PNUCO - PAN AMERICAN ENERGY 4 95 10/18/25 28",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PNUCO - PAN AMERICAN ENERGY 4 95 10/18/25 28 - AR0999289439",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PNUCO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1744858800000,
+            "amortizacion": 0,
+            "renta": 2.47,
+            "total": 2.47,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1760670000000,
+            "amortizacion": 100,
+            "renta": 2.48,
+            "total": 102.48,
+            "valorResidual": 100
+        }
+    ]
+}

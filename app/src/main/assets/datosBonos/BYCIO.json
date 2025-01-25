@@ -1,0 +1,18 @@
+{
+    "nombre": "BYCIO - ON BANCO GALICIA C17 USD COMPE ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "BYCIO - ON BANCO GALICIA C17 USD COMPE  - AR0943175106",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "BYCIO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1745982000000,
+            "amortizacion": 100,
+            "renta": 0.97,
+            "total": 100.97,
+            "valorResidual": 100
+        }
+    ]
+}

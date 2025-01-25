@@ -1,0 +1,158 @@
+{
+    "nombre": "GD35 - Bono República Argentina Ley Extranjera 2035",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "GD35 - Bono República Argentina Ley Extranjera 2035 - US040114HT09",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "GD35",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1752030000000,
+            "amortizacion": 0,
+            "renta": 2.06,
+            "total": 2.06,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1767927600000,
+            "amortizacion": 0,
+            "renta": 2.06,
+            "total": 2.06,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1783566000000,
+            "amortizacion": 0,
+            "renta": 2.06,
+            "total": 2.06,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1799463600000,
+            "amortizacion": 0,
+            "renta": 2.06,
+            "total": 2.06,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1815102000000,
+            "amortizacion": 0,
+            "renta": 2.06,
+            "total": 2.06,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1830999600000,
+            "amortizacion": 0,
+            "renta": 2.38,
+            "total": 2.38,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1846724400000,
+            "amortizacion": 0,
+            "renta": 2.38,
+            "total": 2.38,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1862622000000,
+            "amortizacion": 0,
+            "renta": 2.5,
+            "total": 2.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1878260400000,
+            "amortizacion": 0,
+            "renta": 2.5,
+            "total": 2.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1894158000000,
+            "amortizacion": 0,
+            "renta": 2.5,
+            "total": 2.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1909796400000,
+            "amortizacion": 0,
+            "renta": 2.5,
+            "total": 2.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1925694000000,
+            "amortizacion": 10,
+            "renta": 2.5,
+            "total": 12.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1941332400000,
+            "amortizacion": 10,
+            "renta": 2.25,
+            "total": 12.25,
+            "valorResidual": 90
+        },
+        {
+            "fecha": 1957230000000,
+            "amortizacion": 10,
+            "renta": 2,
+            "total": 12,
+            "valorResidual": 80
+        },
+        {
+            "fecha": 1972954800000,
+            "amortizacion": 10,
+            "renta": 1.75,
+            "total": 11.75,
+            "valorResidual": 70
+        },
+        {
+            "fecha": 1988852400000,
+            "amortizacion": 10,
+            "renta": 1.5,
+            "total": 11.5,
+            "valorResidual": 60
+        },
+        {
+            "fecha": 2004490800000,
+            "amortizacion": 10,
+            "renta": 1.25,
+            "total": 11.25,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 2020388400000,
+            "amortizacion": 10,
+            "renta": 1,
+            "total": 11,
+            "valorResidual": 40
+        },
+        {
+            "fecha": 2036026800000,
+            "amortizacion": 10,
+            "renta": 0.75,
+            "total": 10.75,
+            "valorResidual": 30
+        },
+        {
+            "fecha": 2051924400000,
+            "amortizacion": 10,
+            "renta": 0.5,
+            "total": 10.5,
+            "valorResidual": 20
+        },
+        {
+            "fecha": 2067562800000,
+            "amortizacion": 10,
+            "renta": 0.25,
+            "total": 10.25,
+            "valorResidual": 10
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "nombre": "NPCAO - ON CENTRAL PUERTO CLASE A",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "NPCAO - ON CENTRAL PUERTO CLASE A",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "NPCAO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1741921200000,
+            "amortizacion": 0,
+            "renta": 3.47,
+            "total": 3.47,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1757818800000,
+            "amortizacion": 0,
+            "renta": 3.53,
+            "total": 3.53,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1773457200000,
+            "amortizacion": 100,
+            "renta": 3.47,
+            "total": 103.47,
+            "valorResidual": 100
+        }
+    ]
+}

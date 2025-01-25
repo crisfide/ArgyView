@@ -1,0 +1,60 @@
+{
+    "nombre": "CH24D - Chaco 2028 L.NY ",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "CH24D - Chaco 2028 L.NY ",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "CH24D",
+    "valorResidual": 77.77,
+    "flujo": [
+        {
+            "fecha": 1739847600000,
+            "amortizacion": 11.11,
+            "renta": 3.21,
+            "total": 14.32,
+            "valorResidual": 77.77
+        },
+        {
+            "fecha": 1755486000000,
+            "amortizacion": 11.11,
+            "renta": 2.75,
+            "total": 13.86,
+            "valorResidual": 66.66
+        },
+        {
+            "fecha": 1771383600000,
+            "amortizacion": 11.11,
+            "renta": 2.29,
+            "total": 13.4,
+            "valorResidual": 55.55
+        },
+        {
+            "fecha": 1787022000000,
+            "amortizacion": 11.11,
+            "renta": 1.83,
+            "total": 12.94,
+            "valorResidual": 44.44
+        },
+        {
+            "fecha": 1802919600000,
+            "amortizacion": 11.11,
+            "renta": 1.37,
+            "total": 12.48,
+            "valorResidual": 33.33
+        },
+        {
+            "fecha": 1818558000000,
+            "amortizacion": 11.11,
+            "renta": 0.92,
+            "total": 12.03,
+            "valorResidual": 22.22
+        },
+        {
+            "fecha": 1834455600000,
+            "amortizacion": 11.11,
+            "renta": 0.46,
+            "total": 11.57,
+            "valorResidual": 11.11
+        }
+    ]
+}

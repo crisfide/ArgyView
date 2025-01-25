@@ -1,0 +1,60 @@
+{
+    "nombre": "SNABO - ON SAN MIGUEL S10 B USD ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "SNABO - ON SAN MIGUEL S10 B USD  - AR0398843448",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "SNABO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1738119600000,
+            "amortizacion": 0,
+            "renta": 4.54,
+            "total": 4.54,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1745895600000,
+            "amortizacion": 0,
+            "renta": 2.22,
+            "total": 2.22,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1753758000000,
+            "amortizacion": 0,
+            "renta": 2.24,
+            "total": 2.24,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761706800000,
+            "amortizacion": 0,
+            "renta": 2.27,
+            "total": 2.27,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1769655600000,
+            "amortizacion": 0,
+            "renta": 2.27,
+            "total": 2.27,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1777431600000,
+            "amortizacion": 0,
+            "renta": 2.22,
+            "total": 2.22,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1785294000000,
+            "amortizacion": 100,
+            "renta": 2.24,
+            "total": 102.24,
+            "valorResidual": 100
+        }
+    ]
+}

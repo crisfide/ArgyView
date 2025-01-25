@@ -1,0 +1,67 @@
+{
+    "nombre": "CS47O - ON CRESUD SERIE 31 USD 48 MESES",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CS47O - ON CRESUD SERIE 31 USD 48 MESES - AR0892513117",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "CS47O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1747278000000,
+            "amortizacion": 0,
+            "renta": 3.47,
+            "total": 3.47,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1763175600000,
+            "amortizacion": 0,
+            "renta": 3.53,
+            "total": 3.53,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1778814000000,
+            "amortizacion": 0,
+            "renta": 3.47,
+            "total": 3.47,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1794711600000,
+            "amortizacion": 0,
+            "renta": 3.53,
+            "total": 3.53,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1810350000000,
+            "amortizacion": 0,
+            "renta": 3.47,
+            "total": 3.47,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1826247600000,
+            "amortizacion": 0,
+            "renta": 3.53,
+            "total": 3.53,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1841972400000,
+            "amortizacion": 0,
+            "renta": 3.49,
+            "total": 3.49,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1857870000000,
+            "amortizacion": 100,
+            "renta": 3.53,
+            "total": 103.53,
+            "valorResidual": 100
+        }
+    ]
+}

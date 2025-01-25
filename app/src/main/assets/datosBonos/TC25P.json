@@ -1,0 +1,18 @@
+{
+    "nombre": "TC25P - Boncer 2025",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "TC25P - Boncer 2025 - ARARGE4505U2",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "TC25P",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1745722800000,
+            "amortizacion": 625.58,
+            "renta": 12.51,
+            "total": 638.09,
+            "valorResidual": 100
+        }
+    ]
+}

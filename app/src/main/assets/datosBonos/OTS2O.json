@@ -1,0 +1,81 @@
+{
+    "nombre": "OTS2O - OILTANKING EBYTEM SA S2 24/04/2027",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "OTS2O - OILTANKING EBYTEM SA S2 24/04/2027 - AR0182698750",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "OTS2O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1737687600000,
+            "amortizacion": 0,
+            "renta": 5.27,
+            "total": 5.27,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1745463600000,
+            "amortizacion": 0,
+            "renta": 1.73,
+            "total": 1.73,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1753326000000,
+            "amortizacion": 0,
+            "renta": 1.75,
+            "total": 1.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761274800000,
+            "amortizacion": 0,
+            "renta": 1.76,
+            "total": 1.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1769223600000,
+            "amortizacion": 0,
+            "renta": 1.76,
+            "total": 1.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1776999600000,
+            "amortizacion": 0,
+            "renta": 1.73,
+            "total": 1.73,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784862000000,
+            "amortizacion": 0,
+            "renta": 1.75,
+            "total": 1.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1792810800000,
+            "amortizacion": 0,
+            "renta": 1.76,
+            "total": 1.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1800759600000,
+            "amortizacion": 0,
+            "renta": 1.76,
+            "total": 1.76,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1808535600000,
+            "amortizacion": 100,
+            "renta": 1.73,
+            "total": 101.73,
+            "valorResidual": 100
+        }
+    ]
+}

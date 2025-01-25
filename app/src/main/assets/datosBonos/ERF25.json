@@ -1,0 +1,67 @@
+{
+    "nombre": "ERF25 - Entre Rios 2028",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "ERF25 - Entre Rios 2028",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "ERF25",
+    "valorResidual": 72,
+    "flujo": [
+        {
+            "fecha": 1738983600000,
+            "amortizacion": 9,
+            "renta": 2.97,
+            "total": 11.97,
+            "valorResidual": 72
+        },
+        {
+            "fecha": 1754622000000,
+            "amortizacion": 9,
+            "renta": 2.6,
+            "total": 11.6,
+            "valorResidual": 63
+        },
+        {
+            "fecha": 1770519600000,
+            "amortizacion": 9,
+            "renta": 2.23,
+            "total": 11.23,
+            "valorResidual": 54
+        },
+        {
+            "fecha": 1786158000000,
+            "amortizacion": 9,
+            "renta": 1.86,
+            "total": 10.86,
+            "valorResidual": 45
+        },
+        {
+            "fecha": 1802055600000,
+            "amortizacion": 9,
+            "renta": 1.48,
+            "total": 10.48,
+            "valorResidual": 36
+        },
+        {
+            "fecha": 1817694000000,
+            "amortizacion": 9,
+            "renta": 1.11,
+            "total": 10.11,
+            "valorResidual": 27
+        },
+        {
+            "fecha": 1833591600000,
+            "amortizacion": 9,
+            "renta": 0.74,
+            "total": 9.74,
+            "valorResidual": 18
+        },
+        {
+            "fecha": 1849316400000,
+            "amortizacion": 9,
+            "renta": 0.37,
+            "total": 9.37,
+            "valorResidual": 9
+        }
+    ]
+}

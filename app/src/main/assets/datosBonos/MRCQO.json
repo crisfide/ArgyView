@@ -1,0 +1,32 @@
+{
+    "nombre": "MRCQO - Generación Mediterránea S.A  18/4/2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MRCQO - Generación Mediterránea S.A  18/4/2026",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MRCQO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1744945200000,
+            "amortizacion": 0,
+            "renta": 4.75,
+            "total": 4.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1760756400000,
+            "amortizacion": 0,
+            "renta": 4.75,
+            "total": 4.75,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1776481200000,
+            "amortizacion": 100,
+            "renta": 4.75,
+            "total": 104.75,
+            "valorResidual": 100
+        }
+    ]
+}

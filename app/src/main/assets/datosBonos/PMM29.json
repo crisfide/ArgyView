@@ -1,0 +1,74 @@
+{
+    "nombre": "PMM29 - Mendoza 19/03/2029",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "PMM29 - Mendoza 19/03/2029 - USP6480JAH07",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PMM29",
+    "valorResidual": 69.2,
+    "flujo": [
+        {
+            "fecha": 1742353200000,
+            "amortizacion": 7.7,
+            "renta": 1.99,
+            "total": 9.69,
+            "valorResidual": 69.2
+        },
+        {
+            "fecha": 1758250800000,
+            "amortizacion": 7.7,
+            "renta": 1.77,
+            "total": 9.47,
+            "valorResidual": 61.5
+        },
+        {
+            "fecha": 1773889200000,
+            "amortizacion": 7.7,
+            "renta": 1.55,
+            "total": 9.25,
+            "valorResidual": 53.8
+        },
+        {
+            "fecha": 1789786800000,
+            "amortizacion": 7.7,
+            "renta": 1.33,
+            "total": 9.03,
+            "valorResidual": 46.1
+        },
+        {
+            "fecha": 1805425200000,
+            "amortizacion": 7.7,
+            "renta": 1.1,
+            "total": 8.8,
+            "valorResidual": 38.4
+        },
+        {
+            "fecha": 1821322800000,
+            "amortizacion": 7.7,
+            "renta": 0.88,
+            "total": 8.58,
+            "valorResidual": 30.7
+        },
+        {
+            "fecha": 1837047600000,
+            "amortizacion": 7.7,
+            "renta": 0.66,
+            "total": 8.36,
+            "valorResidual": 23
+        },
+        {
+            "fecha": 1852945200000,
+            "amortizacion": 7.7,
+            "renta": 0.44,
+            "total": 8.14,
+            "valorResidual": 15.3
+        },
+        {
+            "fecha": 1868583600000,
+            "amortizacion": 7.7,
+            "renta": 0.22,
+            "total": 7.92,
+            "valorResidual": 7.6
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "nombre": "HJCFO - ON JOHN DEERE C14 USD ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "HJCFO - ON JOHN DEERE C14 USD  - AR0594233345",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "HJCFO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1745204400000,
+            "amortizacion": 0,
+            "renta": 2.49,
+            "total": 2.49,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761015600000,
+            "amortizacion": 0,
+            "renta": 2.51,
+            "total": 2.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1776740400000,
+            "amortizacion": 0,
+            "renta": 2.49,
+            "total": 2.49,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1792551600000,
+            "amortizacion": 100,
+            "renta": 2.51,
+            "total": 102.51,
+            "valorResidual": 100
+        }
+    ]
+}

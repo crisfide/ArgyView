@@ -1,0 +1,53 @@
+{
+    "nombre": "SF27 - Santa Fe 6 9  2027",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "SF27 - Santa Fe 6 9  2027",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "SF27",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1746068400000,
+            "amortizacion": 0,
+            "renta": 3.45,
+            "total": 3.45,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761966000000,
+            "amortizacion": 33.33,
+            "renta": 3.45,
+            "total": 36.78,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1777604400000,
+            "amortizacion": 0,
+            "renta": 2.3,
+            "total": 2.3,
+            "valorResidual": 66.67
+        },
+        {
+            "fecha": 1793502000000,
+            "amortizacion": 33.33,
+            "renta": 2.3,
+            "total": 35.63,
+            "valorResidual": 66.67
+        },
+        {
+            "fecha": 1809140400000,
+            "amortizacion": 0,
+            "renta": 1.15,
+            "total": 1.15,
+            "valorResidual": 33.34
+        },
+        {
+            "fecha": 1825038000000,
+            "amortizacion": 33.34,
+            "renta": 1.15,
+            "total": 34.49,
+            "valorResidual": 33.34
+        }
+    ]
+}

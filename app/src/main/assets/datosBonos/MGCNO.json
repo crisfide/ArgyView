@@ -1,0 +1,67 @@
+{
+    "nombre": "MGCNO - ON PAMPA ENERGIA 22 USD COMP",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MGCNO - ON PAMPA ENERGIA 22 USD COMP - AR0765746752",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MGCNO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1743735600000,
+            "amortizacion": 0,
+            "renta": 2.87,
+            "total": 2.87,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1759546800000,
+            "amortizacion": 0,
+            "renta": 2.88,
+            "total": 2.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1775271600000,
+            "amortizacion": 0,
+            "renta": 2.87,
+            "total": 2.87,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1791082800000,
+            "amortizacion": 0,
+            "renta": 2.88,
+            "total": 2.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1806807600000,
+            "amortizacion": 0,
+            "renta": 2.87,
+            "total": 2.87,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1822618800000,
+            "amortizacion": 0,
+            "renta": 2.88,
+            "total": 2.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1838430000000,
+            "amortizacion": 0,
+            "renta": 2.88,
+            "total": 2.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1854241200000,
+            "amortizacion": 100,
+            "renta": 2.88,
+            "total": 102.88,
+            "valorResidual": 100
+        }
+    ]
+}

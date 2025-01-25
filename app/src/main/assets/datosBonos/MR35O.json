@@ -1,0 +1,53 @@
+{
+    "nombre": "MR35O - ON GEMSA 35 USD SERIE B",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MR35O - ON GEMSA 35 USD SERIE B",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MR35O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1740711600000,
+            "amortizacion": 0,
+            "renta": 4.86,
+            "total": 4.86,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1756350000000,
+            "amortizacion": 0,
+            "renta": 4.83,
+            "total": 4.83,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1772247600000,
+            "amortizacion": 0,
+            "renta": 4.92,
+            "total": 4.92,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1787886000000,
+            "amortizacion": 0,
+            "renta": 4.83,
+            "total": 4.83,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1803783600000,
+            "amortizacion": 0,
+            "renta": 4.92,
+            "total": 4.92,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1819422000000,
+            "amortizacion": 100,
+            "renta": 4.83,
+            "total": 104.83,
+            "valorResidual": 100
+        }
+    ]
+}

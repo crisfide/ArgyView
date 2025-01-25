@@ -1,0 +1,67 @@
+{
+    "nombre": "DNC5O - ON EDENOR CL.5 V.05/08/28 U$S CG",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "DNC5O - ON EDENOR CL.5 V.05/08/28 U$S CG - AR0674196495",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "DNC5O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1738724400000,
+            "amortizacion": 0,
+            "renta": 4.79,
+            "total": 4.79,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1754362800000,
+            "amortizacion": 0,
+            "renta": 4.71,
+            "total": 4.71,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1770260400000,
+            "amortizacion": 0,
+            "renta": 4.79,
+            "total": 4.79,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1785898800000,
+            "amortizacion": 0,
+            "renta": 4.71,
+            "total": 4.71,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1801796400000,
+            "amortizacion": 0,
+            "renta": 4.79,
+            "total": 4.79,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1817434800000,
+            "amortizacion": 0,
+            "renta": 4.71,
+            "total": 4.71,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1833332400000,
+            "amortizacion": 0,
+            "renta": 4.79,
+            "total": 4.79,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1849057200000,
+            "amortizacion": 100,
+            "renta": 4.74,
+            "total": 104.74,
+            "valorResidual": 100
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "nombre": "AER9O - Aeropuertos 2000 Vto 2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "AER9O - Aeropuertos 2000 Vto 2026",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "AER9O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1771729200000,
+            "amortizacion": 33.33,
+            "renta": 0,
+            "total": 33.33,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1779418800000,
+            "amortizacion": 33.33,
+            "renta": 0,
+            "total": 33.33,
+            "valorResidual": 66.67
+        },
+        {
+            "fecha": 1787367600000,
+            "amortizacion": 33.34,
+            "renta": 0,
+            "total": 33.34,
+            "valorResidual": 33.34
+        }
+    ]
+}

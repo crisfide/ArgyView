@@ -1,0 +1,53 @@
+{
+    "nombre": "SA24D - BONO PCIA SALTA REGS 9 125  V 01/12/2027",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "SA24D - BONO PCIA SALTA REGS 9 125  V 01/12/2027 - USP8388TAB00",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "SA24D",
+    "valorResidual": 75,
+    "flujo": [
+        {
+            "fecha": 1748746800000,
+            "amortizacion": 12.5,
+            "renta": 3.19,
+            "total": 15.69,
+            "valorResidual": 75
+        },
+        {
+            "fecha": 1764558000000,
+            "amortizacion": 12.5,
+            "renta": 2.66,
+            "total": 15.16,
+            "valorResidual": 62.5
+        },
+        {
+            "fecha": 1780282800000,
+            "amortizacion": 12.5,
+            "renta": 2.12,
+            "total": 14.62,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 1796094000000,
+            "amortizacion": 12.5,
+            "renta": 1.59,
+            "total": 14.09,
+            "valorResidual": 37.5
+        },
+        {
+            "fecha": 1811818800000,
+            "amortizacion": 12.5,
+            "renta": 1.06,
+            "total": 13.56,
+            "valorResidual": 25
+        },
+        {
+            "fecha": 1827630000000,
+            "amortizacion": 12.5,
+            "renta": 0.53,
+            "total": 13.03,
+            "valorResidual": 12.5
+        }
+    ]
+}

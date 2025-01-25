@@ -1,0 +1,32 @@
+{
+    "nombre": "CRCIO - ON Celulosa Argentina Cl 17 DLnk",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CRCIO - ON Celulosa Argentina Cl 17 DLnk",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "CRCIO",
+    "valorResidual": 42.8,
+    "flujo": [
+        {
+            "fecha": 1738983600000,
+            "amortizacion": 14.3,
+            "renta": 1.02,
+            "total": 15.32,
+            "valorResidual": 42.8
+        },
+        {
+            "fecha": 1746673200000,
+            "amortizacion": 14.3,
+            "renta": 0.68,
+            "total": 14.98,
+            "valorResidual": 28.5
+        },
+        {
+            "fecha": 1754622000000,
+            "amortizacion": 14.2,
+            "renta": 0.34,
+            "total": 14.54,
+            "valorResidual": 14.2
+        }
+    ]
+}

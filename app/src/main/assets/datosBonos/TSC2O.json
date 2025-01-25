@@ -1,0 +1,18 @@
+{
+    "nombre": "TSC2O - ON TGS S.A. 2 REGS U$S  6.75  02/05/25 ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "TSC2O - ON TGS S.A. 2 REGS U$S  6.75  02/05/25  -  USP9308RAZ66 ",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "TSC2O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1746154800000,
+            "amortizacion": 100,
+            "renta": 3.38,
+            "total": 103.38,
+            "valorResidual": 100
+        }
+    ]
+}

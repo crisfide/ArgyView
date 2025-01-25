@@ -1,0 +1,53 @@
+{
+    "nombre": "LMS9O - ALUAR 6 0 13/06/2026",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "LMS9O - ALUAR 6 0 13/06/2026 - AR0226237573",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "LMS9O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1741834800000,
+            "amortizacion": 0,
+            "renta": 1.5,
+            "total": 1.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1749783600000,
+            "amortizacion": 0,
+            "renta": 1.53,
+            "total": 1.53,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1757732400000,
+            "amortizacion": 0,
+            "renta": 1.53,
+            "total": 1.53,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1765594800000,
+            "amortizacion": 0,
+            "renta": 1.52,
+            "total": 1.52,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1773370800000,
+            "amortizacion": 0,
+            "renta": 1.5,
+            "total": 1.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1781319600000,
+            "amortizacion": 100,
+            "renta": 1.53,
+            "total": 101.53,
+            "valorResidual": 100
+        }
+    ]
+}

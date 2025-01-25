@@ -1,0 +1,67 @@
+{
+    "nombre": "YFCKO - ON YPF LUZ CLASE 19 USD ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YFCKO - ON YPF LUZ CLASE 19 USD  - AR0015491712",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YFCKO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1740193200000,
+            "amortizacion": 0,
+            "renta": 1.32,
+            "total": 1.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1747882800000,
+            "amortizacion": 0,
+            "renta": 1.28,
+            "total": 1.28,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1755831600000,
+            "amortizacion": 0,
+            "renta": 1.32,
+            "total": 1.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1763780400000,
+            "amortizacion": 0,
+            "renta": 1.32,
+            "total": 1.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1771729200000,
+            "amortizacion": 0,
+            "renta": 1.32,
+            "total": 1.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1779418800000,
+            "amortizacion": 0,
+            "renta": 1.28,
+            "total": 1.28,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1787367600000,
+            "amortizacion": 0,
+            "renta": 1.32,
+            "total": 1.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1795316400000,
+            "amortizacion": 100,
+            "renta": 1.32,
+            "total": 101.32,
+            "valorResidual": 100
+        }
+    ]
+}

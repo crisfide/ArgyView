@@ -1,0 +1,109 @@
+{
+    "nombre": "TSC3O - TGS SA 8 5 24/07/2031",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "TSC3O - TGS SA 8 5 24/07/2031 - USP9308RBA07",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "TSC3O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1737687600000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1753326000000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1769223600000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1784862000000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1800759600000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1816398000000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1832295600000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1848020400000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1863918000000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1879556400000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1895454000000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1911092400000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1926990000000,
+            "amortizacion": 0,
+            "renta": 4.25,
+            "total": 4.25,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1942628400000,
+            "amortizacion": 100,
+            "renta": 4.25,
+            "total": 104.25,
+            "valorResidual": 100
+        }
+    ]
+}

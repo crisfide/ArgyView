@@ -1,0 +1,46 @@
+{
+    "nombre": "MIC2O - ON MIRGOR CLASE II DLK T. UNICO",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MIC2O - ON MIRGOR CLASE II DLK T. UNICO - AR0155263046",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "MIC2O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1738206000000,
+            "amortizacion": 0,
+            "renta": 0.95,
+            "total": 0.95,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1745982000000,
+            "amortizacion": 0,
+            "renta": 0.92,
+            "total": 0.92,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1753844400000,
+            "amortizacion": 33,
+            "renta": 0.93,
+            "total": 33.93,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761793200000,
+            "amortizacion": 33,
+            "renta": 0.63,
+            "total": 33.63,
+            "valorResidual": 67
+        },
+        {
+            "fecha": 1769742000000,
+            "amortizacion": 34,
+            "renta": 0.32,
+            "total": 34.32,
+            "valorResidual": 34
+        }
+    ]
+}

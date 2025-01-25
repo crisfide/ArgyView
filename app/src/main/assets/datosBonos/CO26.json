@@ -1,0 +1,67 @@
+{
+    "nombre": "CO26 - Cba. USD 2026  L. Arg ",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "CO26 - Cba. USD 2026  L. Arg  - ARPCDB320099",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "CO26",
+    "valorResidual": 25,
+    "flujo": [
+        {
+            "fecha": 1737946800000,
+            "amortizacion": 3.12,
+            "renta": 0.45,
+            "total": 3.57,
+            "valorResidual": 25
+        },
+        {
+            "fecha": 1745722800000,
+            "amortizacion": 3.12,
+            "renta": 0.39,
+            "total": 3.51,
+            "valorResidual": 21.875
+        },
+        {
+            "fecha": 1753585200000,
+            "amortizacion": 3.12,
+            "renta": 0.33,
+            "total": 3.45,
+            "valorResidual": 18.75
+        },
+        {
+            "fecha": 1761534000000,
+            "amortizacion": 3.12,
+            "renta": 0.28,
+            "total": 3.4,
+            "valorResidual": 15.625
+        },
+        {
+            "fecha": 1769482800000,
+            "amortizacion": 3.12,
+            "renta": 0.22,
+            "total": 3.34,
+            "valorResidual": 12.5
+        },
+        {
+            "fecha": 1777258800000,
+            "amortizacion": 3.12,
+            "renta": 0.17,
+            "total": 3.29,
+            "valorResidual": 9.375
+        },
+        {
+            "fecha": 1785121200000,
+            "amortizacion": 3.12,
+            "renta": 0.11,
+            "total": 3.23,
+            "valorResidual": 6.25
+        },
+        {
+            "fecha": 1793070000000,
+            "amortizacion": 3.12,
+            "renta": 0.06,
+            "total": 3.18,
+            "valorResidual": 3.125
+        }
+    ]
+}

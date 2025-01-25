@@ -1,0 +1,39 @@
+{
+    "nombre": "LECEO - ON ALBANESI ENERGIA 13 USD COM",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "LECEO - ON ALBANESI ENERGIA 13 USD COM",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "LECEO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1739502000000,
+            "amortizacion": 0,
+            "renta": 4.5,
+            "total": 4.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1755140400000,
+            "amortizacion": 0,
+            "renta": 4.5,
+            "total": 4.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1771038000000,
+            "amortizacion": 0,
+            "renta": 4.5,
+            "total": 4.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1786676400000,
+            "amortizacion": 100,
+            "renta": 4.5,
+            "total": 104.5,
+            "valorResidual": 100
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "nombre": "CP33O - ON CGC CLASE 33 DLK COMPE",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "CP33O - ON CGC CLASE 33 DLK COMPE",
+    "moneda": "USD-L",
+    "mercado": "BCBA",
+    "ticker": "CP33O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1740279600000,
+            "amortizacion": 0,
+            "renta": 1.01,
+            "total": 1.01,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1747969200000,
+            "amortizacion": 0,
+            "renta": 0.98,
+            "total": 0.98,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1755918000000,
+            "amortizacion": 0,
+            "renta": 1.01,
+            "total": 1.01,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1763866800000,
+            "amortizacion": 0,
+            "renta": 1.01,
+            "total": 1.01,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1771815600000,
+            "amortizacion": 100,
+            "renta": 1.01,
+            "total": 101.01,
+            "valorResidual": 100
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "nombre": "IRCHO - ON IRSA CLASE 16 VTO 25/7/2025",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "IRCHO - ON IRSA CLASE 16 VTO 25/7/2025 - ARIRSA5600U6",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "IRCHO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1738292400000,
+            "amortizacion": 0,
+            "renta": 3.53,
+            "total": 3.53,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1753412400000,
+            "amortizacion": 100,
+            "renta": 3.36,
+            "total": 103.36,
+            "valorResidual": 100
+        }
+    ]
+}

@@ -1,0 +1,284 @@
+{
+    "nombre": "CR2044 - Costa Rica 7  Vto 04/05/2044",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "CR2044 - Costa Rica 7  Vto 04/05/2044",
+    "moneda": "USD",
+    "mercado": "EEUU",
+    "ticker": "CR2044",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1743908400000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1759719600000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1775444400000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1791255600000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1806980400000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1822791600000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1838602800000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1854414000000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1870138800000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1885950000000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1901674800000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1917486000000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1933210800000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1949022000000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1964833200000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1980644400000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1996369200000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2012180400000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2027905200000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2043716400000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2059441200000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2075252400000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2091063600000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2106874800000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2122599600000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2138410800000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2154135600000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2169946800000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2185671600000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2201482800000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2217294000000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2233105200000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2248830000000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2264641200000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2280366000000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2296177200000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2311902000000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2327713200000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 2343524400000,
+            "amortizacion": 100,
+            "renta": 3.5,
+            "total": 103.5,
+            "valorResidual": 100
+        }
+    ]
+}

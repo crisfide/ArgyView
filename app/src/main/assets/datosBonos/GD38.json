@@ -1,0 +1,193 @@
+{
+    "nombre": "GD38 - Bono República Argentina Ley Extranjera 2038",
+    "categoria": "Argentina - Soberanos",
+    "nombreISIN": "GD38 - Bono República Argentina Ley Extranjera 2038 - US040114HU71",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "GD38",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1752030000000,
+            "amortizacion": 0,
+            "renta": 2.5,
+            "total": 2.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1767927600000,
+            "amortizacion": 0,
+            "renta": 2.5,
+            "total": 2.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1783566000000,
+            "amortizacion": 0,
+            "renta": 2.5,
+            "total": 2.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1799463600000,
+            "amortizacion": 0,
+            "renta": 2.5,
+            "total": 2.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1815102000000,
+            "amortizacion": 4.55,
+            "renta": 2.5,
+            "total": 7.05,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1830999600000,
+            "amortizacion": 4.55,
+            "renta": 2.39,
+            "total": 6.94,
+            "valorResidual": 95.45455
+        },
+        {
+            "fecha": 1846724400000,
+            "amortizacion": 4.55,
+            "renta": 2.27,
+            "total": 6.82,
+            "valorResidual": 90.9091
+        },
+        {
+            "fecha": 1862622000000,
+            "amortizacion": 4.55,
+            "renta": 2.16,
+            "total": 6.71,
+            "valorResidual": 86.36365
+        },
+        {
+            "fecha": 1878260400000,
+            "amortizacion": 4.55,
+            "renta": 2.05,
+            "total": 6.6,
+            "valorResidual": 81.8182
+        },
+        {
+            "fecha": 1894158000000,
+            "amortizacion": 4.55,
+            "renta": 1.93,
+            "total": 6.48,
+            "valorResidual": 77.27275
+        },
+        {
+            "fecha": 1909796400000,
+            "amortizacion": 4.55,
+            "renta": 1.82,
+            "total": 6.37,
+            "valorResidual": 72.7273
+        },
+        {
+            "fecha": 1925694000000,
+            "amortizacion": 4.55,
+            "renta": 1.7,
+            "total": 6.25,
+            "valorResidual": 68.18185
+        },
+        {
+            "fecha": 1941332400000,
+            "amortizacion": 4.55,
+            "renta": 1.59,
+            "total": 6.14,
+            "valorResidual": 63.6364
+        },
+        {
+            "fecha": 1957230000000,
+            "amortizacion": 4.55,
+            "renta": 1.48,
+            "total": 6.03,
+            "valorResidual": 59.09095
+        },
+        {
+            "fecha": 1972954800000,
+            "amortizacion": 4.55,
+            "renta": 1.36,
+            "total": 5.91,
+            "valorResidual": 54.5455
+        },
+        {
+            "fecha": 1988852400000,
+            "amortizacion": 4.55,
+            "renta": 1.25,
+            "total": 5.8,
+            "valorResidual": 50.00005
+        },
+        {
+            "fecha": 2004490800000,
+            "amortizacion": 4.55,
+            "renta": 1.14,
+            "total": 5.69,
+            "valorResidual": 45.4546
+        },
+        {
+            "fecha": 2020388400000,
+            "amortizacion": 4.55,
+            "renta": 1.02,
+            "total": 5.57,
+            "valorResidual": 40.90915
+        },
+        {
+            "fecha": 2036026800000,
+            "amortizacion": 4.55,
+            "renta": 0.91,
+            "total": 5.46,
+            "valorResidual": 36.3637
+        },
+        {
+            "fecha": 2051924400000,
+            "amortizacion": 4.55,
+            "renta": 0.8,
+            "total": 5.35,
+            "valorResidual": 31.81825
+        },
+        {
+            "fecha": 2067562800000,
+            "amortizacion": 4.55,
+            "renta": 0.68,
+            "total": 5.23,
+            "valorResidual": 27.2728
+        },
+        {
+            "fecha": 2083460400000,
+            "amortizacion": 4.55,
+            "renta": 0.57,
+            "total": 5.12,
+            "valorResidual": 22.72735
+        },
+        {
+            "fecha": 2099185200000,
+            "amortizacion": 4.55,
+            "renta": 0.45,
+            "total": 5,
+            "valorResidual": 18.1819
+        },
+        {
+            "fecha": 2115082800000,
+            "amortizacion": 4.55,
+            "renta": 0.34,
+            "total": 4.89,
+            "valorResidual": 13.63645
+        },
+        {
+            "fecha": 2130721200000,
+            "amortizacion": 4.55,
+            "renta": 0.23,
+            "total": 4.78,
+            "valorResidual": 9.091
+        },
+        {
+            "fecha": 2146618800000,
+            "amortizacion": 4.55,
+            "renta": 0.11,
+            "total": 4.66,
+            "valorResidual": 4.55
+        }
+    ]
+}

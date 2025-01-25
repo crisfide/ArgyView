@@ -1,0 +1,116 @@
+{
+    "nombre": "PNXCO - Panamerican Energy 8 5  2032",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "PNXCO - Panamerican Energy 8 5  2032 - USE7S78BAC65",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "PNXCO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1745982000000,
+            "amortizacion": 0,
+            "renta": 4.3,
+            "total": 4.3,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761793200000,
+            "amortizacion": 0,
+            "renta": 4.32,
+            "total": 4.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1777518000000,
+            "amortizacion": 0,
+            "renta": 4.3,
+            "total": 4.3,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1793329200000,
+            "amortizacion": 0,
+            "renta": 4.32,
+            "total": 4.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1809054000000,
+            "amortizacion": 0,
+            "renta": 4.3,
+            "total": 4.3,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1824865200000,
+            "amortizacion": 0,
+            "renta": 4.32,
+            "total": 4.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1840676400000,
+            "amortizacion": 0,
+            "renta": 4.32,
+            "total": 4.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1856487600000,
+            "amortizacion": 0,
+            "renta": 4.32,
+            "total": 4.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1872212400000,
+            "amortizacion": 0,
+            "renta": 4.3,
+            "total": 4.3,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1888023600000,
+            "amortizacion": 0,
+            "renta": 4.32,
+            "total": 4.32,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1903748400000,
+            "amortizacion": 33.33,
+            "renta": 4.3,
+            "total": 37.63,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1919559600000,
+            "amortizacion": 0,
+            "renta": 2.88,
+            "total": 2.88,
+            "valorResidual": 66.66675
+        },
+        {
+            "fecha": 1935284400000,
+            "amortizacion": 33.33,
+            "renta": 2.86,
+            "total": 36.19,
+            "valorResidual": 66.66675
+        },
+        {
+            "fecha": 1951095600000,
+            "amortizacion": 0,
+            "renta": 1.44,
+            "total": 1.44,
+            "valorResidual": 33.3335
+        },
+        {
+            "fecha": 1966906800000,
+            "amortizacion": 33.33,
+            "renta": 1.44,
+            "total": 34.77,
+            "valorResidual": 33.3335
+        }
+    ]
+}

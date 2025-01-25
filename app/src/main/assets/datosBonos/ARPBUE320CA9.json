@@ -1,0 +1,18 @@
+{
+    "nombre": "ARPBUE320CA9 - BONO PCIA BSAS $ CANC DE DEUDA V27/02/25",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "ARPBUE320CA9 - BONO PCIA BSAS $ CANC DE DEUDA V27/02/25",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "ARPBUE320CA9",
+    "valorResidual": 25,
+    "flujo": [
+        {
+            "fecha": 1740625200000,
+            "amortizacion": 25,
+            "renta": 2,
+            "total": 27,
+            "valorResidual": 25
+        }
+    ]
+}

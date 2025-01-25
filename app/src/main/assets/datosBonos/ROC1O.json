@@ -1,0 +1,88 @@
+{
+    "nombre": "ROC1O - ROCH S.A. ON CLASE 1 VTO 27/9/2027",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "ROC1O - ROCH S.A. ON CLASE 1 VTO 27/9/2027 - ARROCH5600A5",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "ROC1O",
+    "valorResidual": 72.856,
+    "flujo": [
+        {
+            "fecha": 1743044400000,
+            "amortizacion": 0,
+            "renta": 1.18,
+            "total": 1.18,
+            "valorResidual": 72.856
+        },
+        {
+            "fecha": 1750993200000,
+            "amortizacion": 0,
+            "renta": 1.18,
+            "total": 1.18,
+            "valorResidual": 72.856
+        },
+        {
+            "fecha": 1758942000000,
+            "amortizacion": 0,
+            "renta": 1.18,
+            "total": 1.18,
+            "valorResidual": 72.856
+        },
+        {
+            "fecha": 1766804400000,
+            "amortizacion": 9.11,
+            "renta": 1.18,
+            "total": 10.29,
+            "valorResidual": 72.856
+        },
+        {
+            "fecha": 1774580400000,
+            "amortizacion": 9.11,
+            "renta": 1.04,
+            "total": 10.15,
+            "valorResidual": 63.749
+        },
+        {
+            "fecha": 1782529200000,
+            "amortizacion": 9.11,
+            "renta": 0.89,
+            "total": 10,
+            "valorResidual": 54.642
+        },
+        {
+            "fecha": 1790478000000,
+            "amortizacion": 9.11,
+            "renta": 0.74,
+            "total": 9.85,
+            "valorResidual": 45.535
+        },
+        {
+            "fecha": 1798340400000,
+            "amortizacion": 9.11,
+            "renta": 0.59,
+            "total": 9.7,
+            "valorResidual": 36.428
+        },
+        {
+            "fecha": 1806116400000,
+            "amortizacion": 9.11,
+            "renta": 0.44,
+            "total": 9.55,
+            "valorResidual": 27.321
+        },
+        {
+            "fecha": 1814065200000,
+            "amortizacion": 9.11,
+            "renta": 0.3,
+            "total": 9.41,
+            "valorResidual": 18.214
+        },
+        {
+            "fecha": 1822014000000,
+            "amortizacion": 9.11,
+            "renta": 0.15,
+            "total": 9.26,
+            "valorResidual": 9.107
+        }
+    ]
+}

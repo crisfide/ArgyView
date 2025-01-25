@@ -1,0 +1,53 @@
+{
+    "nombre": "TTC8O - ON TECPETROL CLASE 8 USD COMPE",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "TTC8O - ON TECPETROL CLASE 8 USD COMPE - AR0166027471",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "TTC8O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1745463600000,
+            "amortizacion": 0,
+            "renta": 2.49,
+            "total": 2.49,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1761274800000,
+            "amortizacion": 0,
+            "renta": 2.51,
+            "total": 2.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1776999600000,
+            "amortizacion": 0,
+            "renta": 2.49,
+            "total": 2.49,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1792810800000,
+            "amortizacion": 0,
+            "renta": 2.51,
+            "total": 2.51,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1808535600000,
+            "amortizacion": 0,
+            "renta": 2.49,
+            "total": 2.49,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1824346800000,
+            "amortizacion": 100,
+            "renta": 2.51,
+            "total": 102.51,
+            "valorResidual": 100
+        }
+    ]
+}

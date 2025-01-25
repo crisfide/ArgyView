@@ -1,0 +1,60 @@
+{
+    "nombre": "RIF25 - Provincia de La Rioja 2028",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "RIF25 - Provincia de La Rioja 2028",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "RIF25",
+    "valorResidual": 83.125,
+    "flujo": [
+        {
+            "fecha": 1740366000000,
+            "amortizacion": 11.88,
+            "renta": 3.53,
+            "total": 15.41,
+            "valorResidual": 83.125
+        },
+        {
+            "fecha": 1756004400000,
+            "amortizacion": 11.88,
+            "renta": 3.03,
+            "total": 14.91,
+            "valorResidual": 71.25
+        },
+        {
+            "fecha": 1771902000000,
+            "amortizacion": 11.88,
+            "renta": 2.52,
+            "total": 14.4,
+            "valorResidual": 59.375
+        },
+        {
+            "fecha": 1787540400000,
+            "amortizacion": 11.88,
+            "renta": 2.02,
+            "total": 13.9,
+            "valorResidual": 47.5
+        },
+        {
+            "fecha": 1803438000000,
+            "amortizacion": 11.88,
+            "renta": 1.51,
+            "total": 13.39,
+            "valorResidual": 35.625
+        },
+        {
+            "fecha": 1819076400000,
+            "amortizacion": 11.88,
+            "renta": 1.01,
+            "total": 12.89,
+            "valorResidual": 23.75
+        },
+        {
+            "fecha": 1834974000000,
+            "amortizacion": 11.88,
+            "renta": 0.5,
+            "total": 12.38,
+            "valorResidual": 11.875
+        }
+    ]
+}

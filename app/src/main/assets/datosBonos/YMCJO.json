@@ -1,0 +1,137 @@
+{
+    "nombre": "YMCJO - YPF Step Up 2033",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "YMCJO - YPF Step Up 2033 - USP989MJBT72",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "YMCJO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1743303600000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1759201200000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1774839600000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1790737200000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1806375600000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1822273200000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1837998000000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1853895600000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1869534000000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1885431600000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1901070000000,
+            "amortizacion": 0,
+            "renta": 3.5,
+            "total": 3.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1916967600000,
+            "amortizacion": 25,
+            "renta": 3.5,
+            "total": 28.5,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1932606000000,
+            "amortizacion": 0,
+            "renta": 2.62,
+            "total": 2.62,
+            "valorResidual": 75
+        },
+        {
+            "fecha": 1948503600000,
+            "amortizacion": 25,
+            "renta": 2.62,
+            "total": 27.62,
+            "valorResidual": 75
+        },
+        {
+            "fecha": 1964228400000,
+            "amortizacion": 0,
+            "renta": 1.75,
+            "total": 1.75,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 1980126000000,
+            "amortizacion": 25,
+            "renta": 1.75,
+            "total": 26.75,
+            "valorResidual": 50
+        },
+        {
+            "fecha": 1995764400000,
+            "amortizacion": 0,
+            "renta": 0.88,
+            "total": 0.88,
+            "valorResidual": 25
+        },
+        {
+            "fecha": 2011662000000,
+            "amortizacion": 25,
+            "renta": 0.88,
+            "total": 25.88,
+            "valorResidual": 25
+        }
+    ]
+}

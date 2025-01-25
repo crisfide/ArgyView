@@ -1,0 +1,46 @@
+{
+    "nombre": "COY27 - ARG. TD PROV CORDOBA AJ.CER $ CL 2 24/05/2027",
+    "categoria": "Argentina - Provinciales",
+    "nombreISIN": "COY27 - ARG. TD PROV CORDOBA AJ.CER $ CL 2 24/05/2027 - AR0401732018",
+    "moneda": "ARS",
+    "mercado": "BCBA",
+    "ticker": "COY27",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1748055600000,
+            "amortizacion": 0,
+            "renta": 2.23,
+            "total": 2.23,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1763953200000,
+            "amortizacion": 0,
+            "renta": 2.27,
+            "total": 2.27,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1779591600000,
+            "amortizacion": 0,
+            "renta": 2.23,
+            "total": 2.23,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1795489200000,
+            "amortizacion": 25,
+            "renta": 2.27,
+            "total": 27.27,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1811127600000,
+            "amortizacion": 75,
+            "renta": 1.67,
+            "total": 76.67,
+            "valorResidual": 75
+        }
+    ]
+}

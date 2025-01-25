@@ -1,0 +1,46 @@
+{
+    "nombre": "ARCOS2027 - Arcos Dorados 2027",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "ARCOS2027 - Arcos Dorados 2027 - USG0457FAC ",
+    "moneda": "USD",
+    "mercado": "EEUU",
+    "ticker": "ARCOS2027",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1743735600000,
+            "amortizacion": 0,
+            "renta": 2.94,
+            "total": 2.94,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1759546800000,
+            "amortizacion": 0,
+            "renta": 2.94,
+            "total": 2.94,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1775271600000,
+            "amortizacion": 0,
+            "renta": 2.94,
+            "total": 2.94,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1791082800000,
+            "amortizacion": 0,
+            "renta": 2.94,
+            "total": 2.94,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1806807600000,
+            "amortizacion": 100,
+            "renta": 2.94,
+            "total": 102.94,
+            "valorResidual": 100
+        }
+    ]
+}

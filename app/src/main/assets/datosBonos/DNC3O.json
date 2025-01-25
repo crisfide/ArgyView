@@ -1,0 +1,39 @@
+{
+    "nombre": "DNC3O - ON CLASE 3 DE EMPRESA DISTRIBUIDORA Y COMERCIALIZADORA NORTE S.A.  EDENOR ",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "DNC3O - ON CLASE 3 DE EMPRESA DISTRIBUIDORA Y COMERCIALIZADORA NORTE S.A.  EDENOR ",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "DNC3O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1747882800000,
+            "amortizacion": 0,
+            "renta": 4.88,
+            "total": 4.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1763780400000,
+            "amortizacion": 0,
+            "renta": 4.88,
+            "total": 4.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1779418800000,
+            "amortizacion": 0,
+            "renta": 4.88,
+            "total": 4.88,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1795316400000,
+            "amortizacion": 100,
+            "renta": 4.88,
+            "total": 104.88,
+            "valorResidual": 100
+        }
+    ]
+}

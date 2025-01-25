@@ -1,0 +1,109 @@
+{
+    "nombre": "MGCMO - PAMPA ENERGÍA CL21 7 95 10/09/2031",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "MGCMO - PAMPA ENERGÍA CL21 7 95 10/09/2031 - USP7464EAS56",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "MGCMO",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1741575600000,
+            "amortizacion": 0,
+            "renta": 3.98,
+            "total": 3.98,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1757473200000,
+            "amortizacion": 0,
+            "renta": 3.98,
+            "total": 3.98,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1773111600000,
+            "amortizacion": 0,
+            "renta": 3.98,
+            "total": 3.98,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1789009200000,
+            "amortizacion": 0,
+            "renta": 3.98,
+            "total": 3.98,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1804647600000,
+            "amortizacion": 0,
+            "renta": 3.98,
+            "total": 3.98,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1820545200000,
+            "amortizacion": 0,
+            "renta": 3.98,
+            "total": 3.98,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1836270000000,
+            "amortizacion": 0,
+            "renta": 3.98,
+            "total": 3.98,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1852167600000,
+            "amortizacion": 0,
+            "renta": 3.98,
+            "total": 3.98,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1867806000000,
+            "amortizacion": 0,
+            "renta": 3.98,
+            "total": 3.98,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1883703600000,
+            "amortizacion": 0,
+            "renta": 3.98,
+            "total": 3.98,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1899342000000,
+            "amortizacion": 0,
+            "renta": 3.98,
+            "total": 3.98,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1915239600000,
+            "amortizacion": 0,
+            "renta": 3.98,
+            "total": 3.98,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1930878000000,
+            "amortizacion": 0,
+            "renta": 3.98,
+            "total": 3.98,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1946775600000,
+            "amortizacion": 100,
+            "renta": 3.98,
+            "total": 103.98,
+            "valorResidual": 100
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "nombre": "EAC3O - MSU GREEN ENERGY CL3 20/12/2028",
+    "categoria": "Argentina - Corporativos",
+    "nombreISIN": "EAC3O - MSU GREEN ENERGY CL3 20/12/2028",
+    "moneda": "USD",
+    "mercado": "BCBA",
+    "ticker": "EAC3O",
+    "valorResidual": 100,
+    "flujo": [
+        {
+            "fecha": 1750388400000,
+            "amortizacion": 0,
+            "renta": 4.24,
+            "total": 4.24,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1766199600000,
+            "amortizacion": 0,
+            "renta": 4.26,
+            "total": 4.26,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1781924400000,
+            "amortizacion": 0,
+            "renta": 4.24,
+            "total": 4.24,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1797735600000,
+            "amortizacion": 0,
+            "renta": 4.26,
+            "total": 4.26,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1813460400000,
+            "amortizacion": 0,
+            "renta": 4.24,
+            "total": 4.24,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1829271600000,
+            "amortizacion": 0,
+            "renta": 4.26,
+            "total": 4.26,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1845082800000,
+            "amortizacion": 0,
+            "renta": 4.26,
+            "total": 4.26,
+            "valorResidual": 100
+        },
+        {
+            "fecha": 1860894000000,
+            "amortizacion": 100,
+            "renta": 4.26,
+            "total": 104.26,
+            "valorResidual": 100
+        }
+    ]
+}
