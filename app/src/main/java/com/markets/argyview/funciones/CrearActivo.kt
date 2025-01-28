@@ -51,6 +51,15 @@ class CrearActivo {
                 Pair("Opciones", urlBymaOpciones),
                 Pair("Letras", urlBymaLetras)
             )
+
+            fun optionsHeader (tipo:String): String{
+                return when (tipo){
+                    "Bonos", "Obligaciones negociables", "Letras" -> "renta-fija"
+                    "Acciones", "Panel General", "Cedears" -> "renta-variable"
+                    "Opciones" -> "derivados"
+                    else -> ""
+                }
+            }
         }
     }
 
@@ -159,7 +168,7 @@ class CrearActivo {
                 val json = preferences.getString("json-$tipo", null)
                 if (json != null) return json
             }
-            return Red.conectar(Urls.urlsByma[tipo]!!, bodyByma)
+            return Red.conectar(Urls.urlsByma[tipo]!!, bodyByma, Urls.optionsHeader(tipo))
         }
 
 
@@ -244,7 +253,10 @@ class CrearActivo {
 
         private fun obtenerFlujo(ticker: String): List<PagoBono> {
             val tickerP = pesificarActivo(ticker)
+            //Log.i("bono.1",tickerP.toString())
+
             var jsonStr = jsonDesdeAssets("datosBonos/${tickerP}.json")
+
             Log.i("bono.json",jsonStr.toString())
 
             if (jsonStr == null){

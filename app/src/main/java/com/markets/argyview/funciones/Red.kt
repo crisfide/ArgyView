@@ -33,24 +33,30 @@ class Red {
         }
 
 
-        suspend fun conectar(url:String, body:String): String? {
+        suspend fun conectar(url:String, body:String, optionsHeader:String="renta-fija"): String? {
             return withContext(Dispatchers.IO) {
                 try {
                     val asyncResult = async {
                         val response = Jsoup.connect(url)
-                            .header("Connection","keep-alive")
-                            .header("sec-ch-ua","\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"")
                             .header("Accept","application/json, text/plain, */*")
-                            .header("Content-Type","application/json")
-                            .header("sec-ch-ua-mobile","?0")
-                            .header("User-Agent","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36")
-                            .header("sec-ch-ua-platform","\"Windows\"")
-                            .header("Origin","https://open.bymadata.com.ar")
-                            .header("Sec-Fetch-Site","same-origin")
-                            .header("Sec-Fetch-Mode","cors")
-                            .header("Sec-Fetch-Dest","empty")
-                            .header("Referer","https://open.bymadata.com.ar/")
                             .header("Accept-Language","es-US,es-419;q=0.9,es;q=0.8,en;q=0.7")
+                            .header("cache-control","no-cache,no-store,max-age=1,must-revaliidate")
+                            .header("Connection","keep-alive")
+                            .header("Content-Type","application/json")
+                            .header("Origin","https://open.bymadata.com.ar")
+                            .header("Referer","https://open.bymadata.com.ar/")
+
+                            .header("expires","1")
+                            .header("options",optionsHeader)
+
+                            .header("sec-ch-ua","\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"")
+                            .header("Sec-Fetch-Dest","empty")
+                            .header("sec-ch-ua-mobile","?0")
+                            .header("Sec-Fetch-Mode","cors")
+                            .header("sec-ch-ua-platform","\"Windows\"")
+                            .header("Sec-Fetch-Site","same-origin")
+                            .header("User-Agent","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36")
+
                             .requestBody(body)
                             .ignoreContentType(true)
                             .ignoreHttpErrors(true)

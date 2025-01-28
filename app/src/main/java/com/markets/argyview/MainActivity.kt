@@ -80,6 +80,8 @@ class MainActivity : AppCompatActivity() {
         navigation = binding.bNav
         navigation.setOnNavigationItemSelectedListener(mOnNavMenu)
 
+        CrearActivo.initPrefs(this)
+
         if (savedInstanceState == null){
 
             this.datosAlCierre()
@@ -112,8 +114,6 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        CrearActivo.initPrefs(this)
-
         val guardados = preferences.getBoolean("datosGuardados", false)
         if (guardados)
             return
@@ -126,7 +126,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 arrPaneles.forEach {
-                    val json = Red.conectar(CrearActivo.Urls.urlsByma[it]!!, CrearActivo.bodyByma)
+                    val json = Red.conectar(CrearActivo.Urls.urlsByma[it]!!, CrearActivo.bodyByma, CrearActivo.Urls.optionsHeader(it))
                     editor.putString("json-$it", json)
                     editor.apply()
                 }
