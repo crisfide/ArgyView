@@ -63,6 +63,9 @@ class Frag1Fav : Fragment() {
             SnackbarX.noInternet(binding.root)
         }
 
+        val arrPaneles = resources.getStringArray(R.array.paneles)
+        BDActivos.inicializarListados(arrPaneles.filter { it!="Opciones" })
+
         preferences = this.requireActivity().getSharedPreferences("db", 0)
         editor = preferences.edit()
         val tickers = preferences.getStringSet("tickers", mutableSetOf())!!.toList()

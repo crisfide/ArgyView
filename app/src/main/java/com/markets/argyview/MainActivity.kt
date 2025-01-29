@@ -27,8 +27,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var preferences: SharedPreferences
     lateinit var editor: SharedPreferences.Editor
 
-    private lateinit var arrPaneles: Array<String>
-
     private val mOnNavMenu = BottomNavigationView.OnNavigationItemSelectedListener{item->
         when(item.itemId){
             R.id.itemFavFragment->{
@@ -87,11 +85,7 @@ class MainActivity : AppCompatActivity() {
 
         if (savedInstanceState == null){
 
-            arrPaneles = resources.getStringArray(R.array.paneles)
-            BDActivos.inicializarListados(arrPaneles.filter { it!="Opciones" })
-
             this.datosAlCierre()
-
 
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
@@ -131,6 +125,7 @@ class MainActivity : AppCompatActivity() {
                     throw Exception("No hay conexión a internet")
                 }
 
+                val arrPaneles = resources.getStringArray(R.array.paneles)
                 arrPaneles.forEach {
                     val json = CrearActivo.obtenerJsonByma(it)
                     editor.putString("json-$it", json)

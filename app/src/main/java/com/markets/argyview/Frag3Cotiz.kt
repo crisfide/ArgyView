@@ -21,6 +21,7 @@ import com.markets.argyview.activos.Activo
 import com.markets.argyview.databinding.FragmentFrag3CotizBinding
 import com.markets.argyview.funciones.CheckMercado
 import com.markets.argyview.funciones.CrearActivo
+import com.markets.argyview.funciones.CrearActivo.Companion
 import com.markets.argyview.funciones.Red
 import com.markets.argyview.funciones.SnackbarX
 import com.markets.argyview.recyclerView.Activo3Adapter
@@ -119,7 +120,6 @@ class Frag3Cotiz : Fragment() {
     @SuppressLint("NotifyDataSetChanged")
     suspend fun cargarCotiz(tipo:String){
         try {
-            //val arr = CrearActivo.crear(BDActivos.mapa[tipo]!!)
 
             if (binding.rvCotiz.adapter==null){
 
@@ -127,22 +127,33 @@ class Frag3Cotiz : Fragment() {
 
                     listado.addAll(CrearActivo.crearPanelBYMA(tipo).toMutableList())
                     listado.sortBy { it.ticker }
+
                 }
-                Log.i("spinner-creando",listado.joinToString("-") { it.ticker })
+                //Log.i("spinner-creando",listado.joinToString("-") { it.ticker })
                 binding.rvCotiz.adapter = Activo3Adapter(listado,this)
                 val manager = LinearLayoutManager(this.requireContext())
                 binding.rvCotiz.layoutManager = manager
                 binding.rvCotiz.addItemDecoration(DividerItemDecoration(this.requireContext(),manager.orientation))
             }else{
 
+                listado.removeAll(listado)
+                binding.rvCotiz.adapter!!.notifyDataSetChanged()
+
                 withContext(Dispatchers.IO){
-                    listado.removeAll(listado)
-                    listado.addAll(CrearActivo.crearPanelBYMA(tipo))
+
+                    val json = CrearActivo.obtenerJson(tipo)
+                    listado.addAll(CrearActivo.crearPanelBYMA(tipo, json))
                     listado.sortBy { it.ticker }
+
+                    val jsonEnSharedPref = preferences.getString("json-$tipo", null)
+                    if (jsonEnSharedPref == null) {
+                        editor.putString("json-$tipo", json)
+                        editor.apply()
+                    }
                 }
 
-                Log.i("spinner",listado.joinToString("-"){it.ticker})
-                Log.i("spinner","itemcount"+ binding.rvCotiz.adapter!!.itemCount )
+                //Log.i("spinner",listado.joinToString("-"){it.ticker})
+                //Log.i("spinner","itemcount"+ binding.rvCotiz.adapter!!.itemCount )
                 binding.rvCotiz.adapter!!.notifyDataSetChanged()
                 //binding.rvCotiz.adapter!!.notifyItemRangeChanged(0, listado.size)
             }

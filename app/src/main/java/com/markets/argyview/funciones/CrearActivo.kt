@@ -129,10 +129,10 @@ class CrearActivo {
         }
 
 
-        suspend fun crearPanelBYMA(tipo:String):List<Activo>{
-            val json = obtenerJson(tipo)
-            return crear(tipo, json)
-        }
+        suspend fun crearPanelBYMA(tipo:String):List<Activo> = crear(tipo, obtenerJson(tipo))
+
+        fun crearPanelBYMA(tipo:String, json:String?):List<Activo> = crear(tipo, json)
+
 
         private suspend fun crearBonoBYMA(ticker: String): Activo {
             val tipo = BDActivos.obtenerTipo(ticker)
@@ -163,7 +163,7 @@ class CrearActivo {
         }
 
 
-        private suspend fun obtenerJson(tipo: String): String? {
+        suspend fun obtenerJson(tipo: String): String? {
             if (CheckMercado.cerrado()){
                 val json = obtenerJsonPref(tipo)
                 if (json != null) return json
