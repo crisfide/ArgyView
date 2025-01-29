@@ -56,7 +56,7 @@ class Frag1Fav : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapterEdtBuscar = ArrayAdapter(this.requireContext(),R.layout.edt_buscar_item, BDActivos.arr)
+        val adapterEdtBuscar = ArrayAdapter(this.requireContext(),R.layout.edt_buscar_item, BDActivos.arr.toList())
         binding.edtBuscar.setAdapter(adapterEdtBuscar)
 
         if (!cerrado && !Red.isConnected(this.requireActivity() as AppCompatActivity)){

@@ -165,15 +165,19 @@ class CrearActivo {
 
         private suspend fun obtenerJson(tipo: String): String? {
             if (CheckMercado.cerrado()){
-                val json = preferences.getString("json-$tipo", null)
+                val json = obtenerJsonPref(tipo)
                 if (json != null) return json
             }
-            return Red.conectar(Urls.urlsByma[tipo]!!, bodyByma, Urls.optionsHeader(tipo))
+            return obtenerJsonByma(tipo)
         }
+
+        suspend fun obtenerJsonByma(tipo: String) = Red.conectar(Urls.urlsByma[tipo]!!, bodyByma, Urls.optionsHeader(tipo))
+
+        fun obtenerJsonPref(tipo: String): String? = preferences.getString("json-$tipo", null)
 
 
         @Suppress("UNCHECKED_CAST")
-        private fun jsonToData(jsonStr: String?): List<Map<*,*>> {
+        fun jsonToData(jsonStr: String?): List<Map<*,*>> {
             val gson = Gson()
             if (jsonStr!!.startsWith("[")){
                 return gson.fromJson(jsonStr, List::class.java) as List<Map<*, *>>

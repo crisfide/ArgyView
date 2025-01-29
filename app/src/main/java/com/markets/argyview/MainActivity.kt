@@ -10,6 +10,7 @@ import androidx.fragment.app.replace
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.markets.argyview.databinding.ActivityMainBinding
+import com.markets.argyview.funciones.BDActivos
 import com.markets.argyview.funciones.CheckMercado
 import com.markets.argyview.funciones.CrearActivo
 import com.markets.argyview.funciones.Red
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var preferences: SharedPreferences
     lateinit var editor: SharedPreferences.Editor
+
+    private lateinit var arrPaneles: Array<String>
 
     private val mOnNavMenu = BottomNavigationView.OnNavigationItemSelectedListener{item->
         when(item.itemId){
@@ -84,7 +87,11 @@ class MainActivity : AppCompatActivity() {
 
         if (savedInstanceState == null){
 
+            arrPaneles = resources.getStringArray(R.array.paneles)
+            BDActivos.inicializarListados(arrPaneles.filter { it!="Opciones" })
+
             this.datosAlCierre()
+
 
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
@@ -118,7 +125,6 @@ class MainActivity : AppCompatActivity() {
         if (guardados)
             return
 
-        val arrPaneles = resources.getStringArray(R.array.paneles)
         lifecycleScope.launch {
             try {
                 if (!Red.isConnected(this@MainActivity)){
@@ -126,7 +132,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 arrPaneles.forEach {
-                    val json = Red.conectar(CrearActivo.Urls.urlsByma[it]!!, CrearActivo.bodyByma, CrearActivo.Urls.optionsHeader(it))
+                    val json = CrearActivo.obtenerJsonByma(it)
                     editor.putString("json-$it", json)
                     editor.apply()
                 }

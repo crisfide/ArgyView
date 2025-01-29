@@ -51,8 +51,8 @@ class ActivoAdapter(var favoritos:MutableList<Activo>, val frag1Fav: Frag1Fav)
             itemView.setOnClickListener {
                 val txvListado = frag1Fav.requireActivity().findViewById<TextView>(R.id.txvListado)
 
-                if (activo.dif == 0.0) SnackbarX.normal(itemView,"Precio no disponible")
-                else txvListado.text = activo.toString()
+                /*if (activo.dif == 0.0) SnackbarX.normal(itemView,"Precio no disponible")
+                else */txvListado.text = activo.toString()
             }
 
         }

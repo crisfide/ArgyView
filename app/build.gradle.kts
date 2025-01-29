@@ -2,6 +2,9 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+
+    //id("kotlin-kapt")
+
 }
 
 android {
@@ -64,5 +67,8 @@ dependencies {
 
     //java.time para android < 8 (api 26)
     implementation("com.jakewharton.threetenabp:threetenabp:1.3.1")
+
+    //implementation("androidx.room:room-ktx:2.6.1")
+    //kapt("androidx.room:room-compiler:2.2.5")
 
 }
