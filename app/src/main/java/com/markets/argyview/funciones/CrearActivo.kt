@@ -124,8 +124,8 @@ class CrearActivo {
                         && !it.endsWith("Z")
             }
 
-            Log.i("creapb",lista.joinToString("-"))
-            return lista.map { crearBonoBYMA(it, jsonStr, tipo) }
+            //Log.i("creapb",lista.joinToString("-"))
+            return lista.map { crearBonoBYMA(it, data, tipo) }
         }
 
 
@@ -143,6 +143,9 @@ class CrearActivo {
 
         private fun crearBonoBYMA(ticker: String, jsonStr: String?, tipo: String): Activo {
             val data = jsonToData(jsonStr)
+            return crearBonoBYMA(ticker,data,tipo)
+        }
+        private fun crearBonoBYMA(ticker: String, data: List<Map<*, *>>, tipo: String): Activo {
 
             val papelEncontrado = data.filter { it ["symbol"] == ticker }
             if (papelEncontrado.isEmpty()) return Activo(ticker,0.0, getMoneda(ticker),0.0)

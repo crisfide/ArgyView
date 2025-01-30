@@ -56,6 +56,9 @@ class Frag1Fav : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val arrPaneles = resources.getStringArray(R.array.paneles)
+        BDActivos.inicializarListados(arrPaneles.filter { it!="Opciones" })
+
         val adapterEdtBuscar = ArrayAdapter(this.requireContext(),R.layout.edt_buscar_item, BDActivos.arr.toList())
         binding.edtBuscar.setAdapter(adapterEdtBuscar)
 
@@ -63,8 +66,6 @@ class Frag1Fav : Fragment() {
             SnackbarX.noInternet(binding.root)
         }
 
-        val arrPaneles = resources.getStringArray(R.array.paneles)
-        BDActivos.inicializarListados(arrPaneles.filter { it!="Opciones" })
 
         preferences = this.requireActivity().getSharedPreferences("db", 0)
         editor = preferences.edit()
@@ -101,7 +102,7 @@ class Frag1Fav : Fragment() {
 
                             }
                             val tickers2 = favoritos.map { it.ticker }
-                            favoritos.removeAll(favoritos)
+                            favoritos.clear()
                             favoritos.addAll(CrearActivo.crear(tickers2))
                             binding.rvFav.adapter!!.notifyItemRangeChanged(0,favoritos.size+1)
                         }

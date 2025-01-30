@@ -136,7 +136,7 @@ class Frag3Cotiz : Fragment() {
                 binding.rvCotiz.addItemDecoration(DividerItemDecoration(this.requireContext(),manager.orientation))
             }else{
 
-                listado.removeAll(listado)
+                listado.clear()
                 binding.rvCotiz.adapter!!.notifyDataSetChanged()
 
                 withContext(Dispatchers.IO){
