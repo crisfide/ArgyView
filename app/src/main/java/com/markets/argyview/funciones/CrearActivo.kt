@@ -211,6 +211,8 @@ class CrearActivo {
                 "BPOB7" -> "BPB7D"
                 "BPOC7" -> "BPC7D"
                 "BPOD7" -> "BPD7D"
+                "BPJ25" -> "BPJ5D"
+                "BPY26" -> "BPY6D"
                 else -> tickerP + "D"
             }
         }
@@ -233,6 +235,8 @@ class CrearActivo {
                 "BPB7D" -> "BPOB7"
                 "BPC7D" -> "BPOC7"
                 "BPD7D" -> "BPOD7"
+                "BPJ5D" -> "BPJ25"
+                "BPY6D" -> "BPY26"
                 else -> tickerD.removeSuffix("D")
             }
         }

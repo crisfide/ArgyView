@@ -62,28 +62,32 @@ open class Bono(ticker: String, precio: Double, moneda: String, dif: Double,
     fun getMD():Double{
         if (Build.VERSION.SDK_INT < 26) {
             //todo
-            return 0.0
+            //return 0.0
         }
 
-        val flujoDesc = this.flujo.filter { it.fecha > LocalDate.now() }
+        val tir = this.getTIR()
+
+        val flujoDesc = this.flujo
+            .filter { it.fecha > LocalDate.now() }
             .mapIndexed { i, pago ->
-                (pago.cupon + pago.amort) / (1 + this.getTIR()).pow(i+1)
+                val aniosHastaFecha : Double = abs(ChronoUnit.DAYS.between(LocalDate.now(), pago.fecha)) / 365.0
+                val pagoDesc = (pago.cupon + pago.amort) / (1 + tir).pow(aniosHastaFecha)
+
+                Pair(aniosHastaFecha,pagoDesc)
             }
-        val precioDesc = flujoDesc.sum()
-        val dMAC = flujoDesc.reduceIndexed { i, a, v ->
-            flujoDesc[i] * (i+1) / precioDesc
-        }
+
+        val sumaPagosDesc = flujoDesc.sumOf { it.second }
+        val dMAC = flujoDesc.sumOf { it.first * it.second } / sumaPagosDesc
 
         val flujoFuturo = this.flujo.filter { it.fecha > LocalDate.now() }
-        val periodos = mutableListOf<Long>()
-        for (i in 1..< flujoFuturo.size){
-            periodos.add(ChronoUnit.DAYS.between(flujoFuturo[i-1].fecha, flujoFuturo[i].fecha))
-        }
-        val frecuencia = 1 / (periodos.average() / 365)
-        Log.i("pagobono",frecuencia.toString())
+        val periodos = flujoFuturo.zipWithNext { a, b -> ChronoUnit.DAYS.between(a.fecha, b.fecha) }
+        val frecuencia = 365 / periodos.average()
 
-        return dMAC / (1+this.getTIR()) / frecuencia
+
+        return dMAC / (1 + tir / frecuencia)
         // fuente https://www.investopedia.com/terms/m/modifiedduration.asp
+        //       https://es.wikipedia.org/wiki/Duraci%C3%B3n_de_Macaulay
+        //       https://es.wikipedia.org/wiki/Duraci%C3%B3n_modificada
     }
     fun getMDf() = String.format("%.2f",this.getMD())
 
