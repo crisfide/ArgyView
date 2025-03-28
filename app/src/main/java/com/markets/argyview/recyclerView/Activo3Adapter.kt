@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.markets.argyview.Frag3Cotiz
 import com.markets.argyview.R
 import com.markets.argyview.activos.Activo
@@ -68,10 +69,17 @@ class Activo3Adapter(var listado:List<Activo>, val frag3Cotiz: Frag3Cotiz)
             }
 
             itemView.setOnClickListener {
-                val txvListado = frag3Cotiz.requireActivity().findViewById<TextView>(R.id.txvListado)
+                val diag = BottomSheetDialog(frag3Cotiz.requireContext())
+                val view = LayoutInflater.from(frag3Cotiz.requireActivity().applicationContext).inflate(R.layout.bottom_sheet_dialog,null)
+
+                val txvDetalle = view.findViewById<TextView>(R.id.txvDetalle)
 
                 if (activo.dif == 0.0) SnackbarX.normal(itemView,"Precio no disponible")
-                else txvListado.text = activo.toString()
+                else txvDetalle.text = activo.toString()
+
+                diag.setCancelable(true)
+                diag.setContentView(view)
+                diag.show()
             }
 
         }

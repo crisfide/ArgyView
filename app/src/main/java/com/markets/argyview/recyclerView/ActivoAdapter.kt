@@ -1,12 +1,13 @@
 package com.markets.argyview.recyclerView
 
-import android.graphics.Color
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.markets.argyview.Frag1Fav
 import com.markets.argyview.R
 import com.markets.argyview.activos.Activo
@@ -49,10 +50,20 @@ class ActivoAdapter(var favoritos:MutableList<Activo>, val frag1Fav: Frag1Fav)
             }
 
             itemView.setOnClickListener {
-                val txvListado = frag1Fav.requireActivity().findViewById<TextView>(R.id.txvListado)
+                val diag = BottomSheetDialog(frag1Fav.requireContext())
+                val view = LayoutInflater.from(frag1Fav.requireActivity().applicationContext).inflate(R.layout.bottom_sheet_dialog,null)
+
+                val txvDetalle = view.findViewById<TextView>(R.id.txvDetalle)
 
                 /*if (activo.dif == 0.0) SnackbarX.normal(itemView,"Precio no disponible")
-                else */txvListado.text = activo.toString()
+                else */txvDetalle.text = activo.toString()
+
+                diag.setCancelable(true)
+                diag.setContentView(view)
+
+
+                diag.show()
+
             }
 
         }
