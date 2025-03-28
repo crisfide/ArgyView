@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.Lifecycle
@@ -18,7 +19,11 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+
 import com.markets.argyview.activos.Activo
+import com.markets.argyview.activos.Bono
 import com.markets.argyview.databinding.FragmentFrag1FavBinding
 import com.markets.argyview.funciones.BDActivos
 import com.markets.argyview.funciones.CheckMercado
@@ -26,10 +31,8 @@ import com.markets.argyview.funciones.CrearActivo
 import com.markets.argyview.funciones.Red
 import com.markets.argyview.funciones.SnackbarX
 import com.markets.argyview.recyclerView.ActivoAdapter
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import org.json.JSONArray
 
 
 class Frag1Fav : Fragment() {
@@ -72,10 +75,36 @@ class Frag1Fav : Fragment() {
         val tickers = preferences.getStringSet("tickers", mutableSetOf())!!.toList()
         viewLifecycleOwner.lifecycleScope.launch{
             try {
-                if (!cerrado)
-                    SnackbarX.cargando(binding.root)
 
-                favoritos.addAll(CrearActivo.crear(tickers))
+                if (savedInstanceState==null){
+                    if (!cerrado)
+                        SnackbarX.cargando(binding.root)
+
+                    favoritos.addAll(CrearActivo.crear(tickers))
+                }else{
+                    val jsonStr = savedInstanceState.getString("favoritos")
+                    if (jsonStr != null) {
+//                        val jsonArray = JSONArray(jsonStr)
+//
+//                        for (i in 0 until jsonArray.length()) {
+//                            val jsonObject = jsonArray.getJSONObject(i)
+//                            val tipo = BDActivos.obtenerTipo(jsonObject.getString("ticker"))
+//
+//                            val papel = if (tipo == "Bonos") {
+//                                Gson().fromJson(jsonObject.toString(), Bono::class.java)
+//                            } else {
+//                                Gson().fromJson(jsonObject.toString(), Activo::class.java)
+//                            }
+//                            favoritos.add(papel)
+//
+//                        }
+
+
+                        val type = object : TypeToken<List<Activo>>() {}.type
+                        val lista = Gson().fromJson<List<Activo>>(jsonStr, type)
+                        favoritos.addAll(lista)
+                    }
+                }
                 favoritos.sortBy { it.ticker }
                 binding.rvFav.adapter = ActivoAdapter(favoritos, this@Frag1Fav)
                 val manager = LinearLayoutManager(this@Frag1Fav.requireContext())
@@ -188,6 +217,12 @@ class Frag1Fav : Fragment() {
         editor.putStringSet("tickers",tickers)
         editor.apply()
         Log.i("prefesB",preferences.getStringSet("tickers",null)!!.joinToString(" "))
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        val jsonStr = Gson().toJson(favoritos)
+        outState.putString("favoritos", jsonStr)
     }
 
     override fun onDestroyView() {

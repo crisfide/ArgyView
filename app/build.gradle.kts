@@ -58,6 +58,7 @@ dependencies {
 
 
     implementation("com.google.code.gson:gson:2.11.0")
+    //implementation ("com.google.code.gson:gson-extras:2.8.9")
     implementation("com.github.RayDeCampo:java-xirr:1.2")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
     implementation ("com.jakewharton.threetenabp:threetenabp:1.4.7")

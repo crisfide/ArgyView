@@ -51,7 +51,7 @@ class ActivoAdapter(var favoritos:MutableList<Activo>, val frag1Fav: Frag1Fav)
 
             itemView.setOnClickListener {
                 val diag = BottomSheetDialog(frag1Fav.requireContext())
-                val view = LayoutInflater.from(frag1Fav.requireActivity().applicationContext).inflate(R.layout.bottom_sheet_dialog,null)
+                val view = LayoutInflater.from(frag1Fav.requireContext()).inflate(R.layout.bottom_sheet_dialog,null)
 
                 val txvDetalle = view.findViewById<TextView>(R.id.txvDetalle)
 
