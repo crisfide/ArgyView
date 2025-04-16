@@ -3,6 +3,7 @@ package com.markets.argyview.activos
 import android.os.Build
 import android.util.Log
 import com.google.gson.annotations.Expose
+import com.markets.argyview.funciones.CrearActivo
 import org.decampo.xirr.Transaction
 import org.decampo.xirr.Xirr
 import java.time.LocalDate as ldJT
@@ -15,15 +16,19 @@ import org.threeten.bp.temporal.ChronoUnit
 import kotlin.math.abs
 
 open class Bono(ticker: String, precio: Double, moneda: String, dif: Double,
-                @Expose val flujo : List<PagoBono>) : Activo(ticker, precio, moneda, dif) {
+                @Expose val flujo : FlujoBono) : Activo(ticker, precio, moneda, dif) {
+
+    fun precioEnMonedaDeFlujo() = if (moneda==flujo.monedaFlujo) this.precio
+                            else if (moneda==CrearActivo.monedas["ARS"]) this.precio/flujo.mep
+                            else this.precio*flujo.mep
 
     fun getTIR():Double{
         if (Build.VERSION.SDK_INT < 26) {
             //todo
             return 0.0
         }
-
-        val compra = Transaction(-this.precio, ldJT.now())
+        Log.i("tirbono",flujo.monedaFlujo)
+        val compra = Transaction(-precioEnMonedaDeFlujo(), ldJT.now())
         val trans:List<Transaction> =  flujo.filter { ldJT.ofEpochDay(it.fecha.toEpochDay()) > ldJT.now() }.map {
             Transaction(it.cupon+it.amort, ldJT.ofEpochDay(it.fecha.toEpochDay()))
         } + compra
@@ -56,7 +61,7 @@ open class Bono(ticker: String, precio: Double, moneda: String, dif: Double,
 
         return getVN() + intCorrido
     }
-    fun getParidad() = this.precio / this.getValTec()
+    fun getParidad() = this.precioEnMonedaDeFlujo() / this.getValTec()
     fun getParidadF() = String.format("%.1f",this.getParidad()*100) + "%"
 
     fun getMD():Double{

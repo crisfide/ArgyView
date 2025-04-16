@@ -7,6 +7,7 @@ import android.util.Log
 import com.google.gson.Gson
 import com.markets.argyview.activos.Activo
 import com.markets.argyview.activos.Bono
+import com.markets.argyview.activos.FlujoBono
 import com.markets.argyview.activos.PagoBono
 import org.threeten.bp.Instant
 
@@ -262,23 +263,23 @@ class CrearActivo {
             }
         }
 
-        private fun obtenerFlujo(ticker: String): List<PagoBono> {
+        private fun obtenerFlujo(ticker: String): FlujoBono {
             val tickerP = pesificarActivo(ticker)
             //Log.i("bono.1",tickerP.toString())
 
-            var jsonStr = jsonDesdeAssets("datosBonos/${tickerP}.json")
+            val jsonStr = jsonDesdeAssets("datosBonos/${tickerP}.json")
+                ?: return flujoLoco() as FlujoBono
 
-            Log.i("bono.json",jsonStr.toString())
-
-            if (jsonStr == null){
-                return flujoLoco()
-            }
+            //Log.i("bono.json",jsonStr.toString())
 
             val gson = Gson()
-            var flujoArr = gson.fromJson(jsonStr, Map::class.java)["flujo"] as List<Map<String,Double>>
-            Log.i("bono.flujo",flujoArr[0].toString())
+            val json = gson.fromJson(jsonStr, Map::class.java)
+            //Log.i("bono.flujo",flujoArr[0].toString())
 
-            var flujo = flujoArr.map {
+            val monedaFlujo = monedas[json["moneda"]]!!
+            val flujoArr = json["flujo"] as List<Map<String, Double>>
+
+            val flujo = flujoArr.map {
                 PagoBono(
                     Instant.ofEpochMilli(it["fecha"]!!.toLong()) // Convertir a Instant
                         .atZone(ZoneId.systemDefault())    // Aplicar zona horaria
@@ -287,16 +288,17 @@ class CrearActivo {
                     it["amortizacion"]!!)
             }
 
-            Log.i("bono.ff",flujo.toString())
+            //Log.i("bono.ff",flujo.toString())
+            val mep = preferences.getFloat("MEP",1.0f).toDouble()
 
-            return flujo
+            return FlujoBono(flujo, monedaFlujo, mep)
         }
 
         private fun flujoLoco(): List<PagoBono> {
-            return listOf<PagoBono>(
+            return FlujoBono(listOf<PagoBono>(
                 (PagoBono(LocalDate.of(0, 1, 1), 0.0, 0.0)),
                 (PagoBono(LocalDate.of(2099, 1, 1), 0.0, 100.0))
-            )
+            ), monedas["USD"]!!, 1.0)
         }
 
 

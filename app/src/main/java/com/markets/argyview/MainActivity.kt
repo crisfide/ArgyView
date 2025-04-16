@@ -89,6 +89,8 @@ class MainActivity : AppCompatActivity() {
 
             this.datosAlCierre()
 
+            this.guardarMEP()
+
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
                 add<Frag1Fav>(R.id.fragmentContainer)
@@ -139,6 +141,18 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+    }
+
+    private fun guardarMEP() {
+        lifecycleScope.launch {
+            try {
+                val mep = CrearActivo.crear("MEP").precio
+                editor.putFloat("MEP", mep.toFloat())
+                editor.apply()
+            }catch (_:Exception){
+
+            }
+        }
     }
 
 }
