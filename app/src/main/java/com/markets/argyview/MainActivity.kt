@@ -18,6 +18,8 @@ import com.markets.argyview.funciones.SnackbarX
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import org.threeten.bp.DateTimeUtils
+import org.threeten.bp.LocalDate
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
@@ -108,15 +110,13 @@ class MainActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(mode)
     }
 
-    private fun datosAlCierre() {
-        if ( ! CheckMercado.cerrado()) {
-            editor.putBoolean("datosGuardados", false)
-            editor.apply()
-            return
-        }
 
-        val guardados = preferences.getBoolean("datosGuardados", false)
-        if (guardados)
+    private fun datosAlCierre() {
+        if ( ! CheckMercado.cerrado())
+            return
+
+        val guardados = preferences.getLong("datosGuardados", 0)
+        if (guardados >= LocalDate.now().toEpochDay())
             return
 
         lifecycleScope.launch {
@@ -131,7 +131,7 @@ class MainActivity : AppCompatActivity() {
                     editor.putString("json-$it", json)
                     editor.apply()
                 }
-                editor.putBoolean("datosGuardados", true)
+                editor.putLong("datosGuardados", LocalDate.now().toEpochDay())
                 editor.apply()
 
             }catch (e:Exception){
